@@ -1,0 +1,28 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.24.2",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "LLmI",
+      "code_hash": "86843db2ccc5f87a20dc7a71c61ba8bd",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "syntax",
+          "evalue": "line 1\n    freight_charges[[\n                   ^\nSyntaxError: '[' was never closed\n",
+          "traceback": []
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "oreI",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    }
+  ]
+}

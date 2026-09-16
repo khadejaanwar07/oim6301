@@ -49,6 +49,23 @@ def _():
     return (mo,)
 
 
+@app.cell
+def _():
+    1+2
+    return
+
+
+@app.cell
+def _():
+    print('hello world')
+    return
+
+
+@app.cell
+def _():
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -121,6 +138,37 @@ def _(mo):
     return
 
 
+@app.cell
+def _(freight_charges):
+    freight_charges[0]
+    return
+
+
+@app.cell
+def _(freight_charges):
+    len(freight_charges)
+    return
+
+
+@app.cell
+def _(freight_charges):
+    total = sum(freight_charges)
+    total
+    return
+
+
+@app.cell
+def _():
+    total = 1
+    return
+
+
+@app.cell
+def _(freight_charges):
+    print(freight_charges)
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -145,6 +193,11 @@ def _(mo):
     typing inside one cell. Use the **undo** button at the bottom right, which stays
     there until you close the notebook, or `Ctrl+K` and search for undo.*
     """)
+    return
+
+
+@app.cell
+def _():
     return
 
 

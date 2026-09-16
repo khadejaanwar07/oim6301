@@ -13,7 +13,25 @@
     },
     {
       "id": "MJUe",
-      "code_hash": "7831a116d931c68fee667380f10afe58",
+      "code_hash": "c22edbd0ac0f827509d95355a6bbb767",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "677fbdfab67a65ef7526c029c556b7e2",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "tsny",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "f140325dac078e0ce683a390f306fc98",
       "outputs": [
         {
           "type": "data",
@@ -25,7 +43,7 @@
       "console": []
     },
     {
-      "id": "vblA",
+      "id": "lEQa",
       "code_hash": "2d0d85065247efe10d8069dd4e27755c",
       "outputs": [
         {
@@ -38,7 +56,7 @@
       "console": []
     },
     {
-      "id": "bkHC",
+      "id": "PKri",
       "code_hash": "c05af1acb7fb61e96fa582120abc88fd",
       "outputs": [
         {
@@ -51,13 +69,20 @@
       "console": []
     },
     {
-      "id": "lEQa",
+      "id": "Xref",
       "code_hash": "bb74efdbc983ea90b6751814ad1974a4",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"text/plain+float:16.75\", \"text/plain+float:22.25\", \"text/plain+float:25.0\", \"text/plain+float:20.25\", \"text/plain+float:36.25\"]"
+          }
+        }
+      ],
       "console": []
     },
     {
-      "id": "PKri",
+      "id": "SFPL",
       "code_hash": "14a04c3e9180f0188c38b1c23f12b8aa",
       "outputs": [
         {
@@ -70,7 +95,79 @@
       "console": []
     },
     {
-      "id": "Xref",
+      "id": "YwXa",
+      "code_hash": "abd5a46c9b2d6515004aada631c3ff55",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>16.75</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "JdNY",
+      "code_hash": "47c11c10e5fa42f4ae3d744af66eaac0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>5</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "AcQn",
+      "code_hash": "e707e1d0713d0e505ef05956a4278cac",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>120.5</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vNNg",
+      "code_hash": "4f00a0e3e13847deba738628f6b4f131",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "multiple-defs",
+          "evalue": "The variable 'total' was defined by another cell",
+          "traceback": []
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "cqGP",
+      "code_hash": "49d4d6fb1dd99767be971665e8c326d0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "[16.75, 22.25, 25.0, 20.25, 36.25]\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "BYtC",
       "code_hash": "f6fb677847fe08c8ebf95d9dc18753f1",
       "outputs": [
         {
@@ -83,7 +180,13 @@
       "console": []
     },
     {
-      "id": "SFPL",
+      "id": "FSSz",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "RGSE",
       "code_hash": "94fc538783b175ccabeca7ea18376daa",
       "outputs": [
         {
@@ -96,7 +199,7 @@
       "console": []
     },
     {
-      "id": "BYtC",
+      "id": "Kclp",
       "code_hash": "1057f06a192ac3338dafec878b1a2ac3",
       "outputs": [
         {
@@ -109,13 +212,13 @@
       "console": []
     },
     {
-      "id": "RGSE",
+      "id": "emfo",
       "code_hash": "fcd5fe5a90d3e8ec5b572d836365a5bf",
       "outputs": [],
       "console": []
     },
     {
-      "id": "Kclp",
+      "id": "Hstk",
       "code_hash": "5efbf782f352cbf51fa54e3ef1ddf8fe",
       "outputs": [
         {
@@ -128,7 +231,7 @@
       "console": []
     },
     {
-      "id": "emfo",
+      "id": "nWHF",
       "code_hash": "16f6fbf463783aae459729b112ccc5b6",
       "outputs": [
         {
@@ -141,13 +244,13 @@
       "console": []
     },
     {
-      "id": "Hstk",
+      "id": "iLit",
       "code_hash": "e39d0cb0faca87714f6349b49d61ed46",
       "outputs": [],
       "console": []
     },
     {
-      "id": "nWHF",
+      "id": "ZHCJ",
       "code_hash": "e37bd35d034f1b1250af1bc0ff154ca7",
       "outputs": [
         {
@@ -160,7 +263,7 @@
       "console": []
     },
     {
-      "id": "iLit",
+      "id": "ROlb",
       "code_hash": "e772d821a86328a255a3c0e7072f418c",
       "outputs": [
         {
@@ -173,7 +276,7 @@
       "console": []
     },
     {
-      "id": "ZHCJ",
+      "id": "qnkX",
       "code_hash": "61c872df0f30ee9fc863188843e1827f",
       "outputs": [
         {
@@ -186,7 +289,7 @@
       "console": []
     },
     {
-      "id": "ROlb",
+      "id": "TqIu",
       "code_hash": "f055d6c47921af028d1e478512b0c4ef",
       "outputs": [
         {
@@ -199,7 +302,7 @@
       "console": []
     },
     {
-      "id": "qnkX",
+      "id": "Vxnm",
       "code_hash": "c769b53cfa5c0d31eb4774ccc90cead4",
       "outputs": [
         {
@@ -212,13 +315,13 @@
       "console": []
     },
     {
-      "id": "TqIu",
+      "id": "DnEU",
       "code_hash": "ab81ca09e82b5615c45e533a8eb8a2d5",
       "outputs": [],
       "console": []
     },
     {
-      "id": "Vxnm",
+      "id": "ulZA",
       "code_hash": "3412983ccee1651667e60ce26c8ebab7",
       "outputs": [
         {
@@ -231,7 +334,7 @@
       "console": []
     },
     {
-      "id": "DnEU",
+      "id": "ecfG",
       "code_hash": "b5c6307d9f340546ecafd72384ccf761",
       "outputs": [
         {
@@ -244,7 +347,7 @@
       "console": []
     },
     {
-      "id": "ulZA",
+      "id": "Pvdt",
       "code_hash": "820c55de11633da2a9d03c20e93517b6",
       "outputs": [
         {
@@ -257,13 +360,13 @@
       "console": []
     },
     {
-      "id": "ecfG",
+      "id": "ZBYS",
       "code_hash": "99d2afc68739f124c36b434e4f86adcf",
       "outputs": [],
       "console": []
     },
     {
-      "id": "Pvdt",
+      "id": "aLJB",
       "code_hash": "cfb66343400f3ca3ff1c2cef1cf4eb77",
       "outputs": [
         {
@@ -276,7 +379,7 @@
       "console": []
     },
     {
-      "id": "ZBYS",
+      "id": "nHfw",
       "code_hash": "1e85202839c307956f0e6508c1b9a173",
       "outputs": [
         {
@@ -289,7 +392,7 @@
       "console": []
     },
     {
-      "id": "aLJB",
+      "id": "xXTn",
       "code_hash": "3c0f55b2f8582e207416da282626db3d",
       "outputs": [
         {
@@ -302,7 +405,7 @@
       "console": []
     },
     {
-      "id": "nHfw",
+      "id": "AjVT",
       "code_hash": "ceef6bdc4617e1512188a28309983104",
       "outputs": [
         {
@@ -315,7 +418,7 @@
       "console": []
     },
     {
-      "id": "xXTn",
+      "id": "pHFh",
       "code_hash": "830409d9361fd16a4b5b79956f3dae62",
       "outputs": [
         {
@@ -328,7 +431,7 @@
       "console": []
     },
     {
-      "id": "AjVT",
+      "id": "NCOB",
       "code_hash": "b3a11deac49dcba187ae6c47dcc0854c",
       "outputs": [
         {
@@ -341,7 +444,7 @@
       "console": []
     },
     {
-      "id": "pHFh",
+      "id": "aqbW",
       "code_hash": "9604a4334a5c681e4d051bb1c7468616",
       "outputs": [
         {
@@ -354,7 +457,7 @@
       "console": []
     },
     {
-      "id": "NCOB",
+      "id": "TRpd",
       "code_hash": "7f4e264e78ab6dd843ac3e6075fab76b",
       "outputs": [
         {
@@ -367,7 +470,7 @@
       "console": []
     },
     {
-      "id": "aqbW",
+      "id": "TXez",
       "code_hash": "e9ca853ddcb78178993918292b0b7e14",
       "outputs": [
         {
@@ -380,7 +483,7 @@
       "console": []
     },
     {
-      "id": "TRpd",
+      "id": "dNNg",
       "code_hash": "e781eafc6868bace783ea55113641762",
       "outputs": [
         {
