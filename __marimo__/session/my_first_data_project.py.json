@@ -6,20 +6,20 @@
   },
   "cells": [
     {
-      "id": "LLmI",
+      "id": "Hbol",
       "code_hash": "86843db2ccc5f87a20dc7a71c61ba8bd",
       "outputs": [
         {
           "type": "error",
-          "ename": "syntax",
+          "ename": "exception",
           "evalue": "line 1\n    freight_charges[[\n                   ^\nSyntaxError: '[' was never closed\n",
-          "traceback": []
+          "traceback": null
         }
       ],
       "console": []
     },
     {
-      "id": "oreI",
+      "id": "MJUe",
       "code_hash": null,
       "outputs": [],
       "console": []

@@ -6,28 +6,110 @@
   },
   "cells": [
     {
+      "id": "kedP",
+      "code_hash": "8dfd9af8887a4a8def2c7f7b396cbd46",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Let's get started with some Python basics! \ud83d\udc0d\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
       "id": "Hbol",
       "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
+    },
+    {
+      "id": "tQly",
+      "code_hash": "1ab3ffd82bda132ff514cfc4eaa14e64",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Welcome to the notebook! \ud83c\udf89\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "MJUe",
       "code_hash": "c22edbd0ac0f827509d95355a6bbb767",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>3</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "vblA",
       "code_hash": "677fbdfab67a65ef7526c029c556b7e2",
-      "outputs": [],
-      "console": []
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "hello world\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "bkHC",
-      "code_hash": null,
-      "outputs": [],
-      "console": []
+      "code_hash": "4def692754cbd39b7c35437712f7912e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "0\n1\n2\n3\n4\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "lEQa",
@@ -70,16 +152,36 @@
     },
     {
       "id": "SFPL",
-      "code_hash": "bb74efdbc983ea90b6751814ad1974a4",
+      "code_hash": "a42b66ff97ed2c8609fa38e7c2bb7ace",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "application/json": "[\"text/plain+float:16.75\", \"text/plain+float:22.25\", \"text/plain+float:25.0\", \"text/plain+float:20.25\", \"text/plain+float:36.25\"]"
+            "text/plain": ""
           }
         }
       ],
       "console": []
+    },
+    {
+      "id": "xBBe",
+      "code_hash": "49d4d6fb1dd99767be971665e8c326d0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "[16.75, 22.25, 25.0, 20.25, 36.25]\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "BYtC",
@@ -89,6 +191,19 @@
           "type": "data",
           "data": {
             "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"add-three-cells\">\u270f\ufe0f Add Three Cells</h1>\n<span class=\"paragraph\">Add three cells below with the <strong>+</strong> button. Put one line in each.</span>\n<ol>\n<li>The freight on the <strong>first</strong> order: <code>freight_charges[0]</code></li>\n<li><strong>How many</strong> orders there are: <code>len(freight_charges)</code></li>\n<li>The <strong>total</strong>: <code>total = sum(freight_charges)</code>, then <code>total</code> on the next line</li>\n</ol>\n<span class=\"paragraph\">Keep them in separate cells. The next section depends on it.</span>\n<span class=\"paragraph\"><code>len</code> and <code>sum</code> are <strong>functions</strong>, and what you put in the brackets is the <strong>argument</strong>.</span>\n<span class=\"paragraph\"><em>The number in brackets is an </em><em>index</em><em>, and Python counts from zero, so\n<code>freight_charges[0]</code> is the first one.</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bDIl",
+      "code_hash": "dd8d1464825b764fe61b1489019a50c4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"text/plain+float:16.75\", \"text/plain+float:22.25\", \"text/plain+float:25.0\", \"text/plain+float:20.25\", \"text/plain+float:36.25\"]"
           }
         }
       ],
@@ -122,26 +237,26 @@
     },
     {
       "id": "emfo",
-      "code_hash": "e707e1d0713d0e505ef05956a4278cac",
+      "code_hash": "103deaf77a2537a08bf5a67577bd7f58",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<pre class='text-xs'>120.5</pre>"
+            "text/plain": ""
           }
         }
       ],
       "console": []
     },
     {
-      "id": "Hstk",
-      "code_hash": "4f00a0e3e13847deba738628f6b4f131",
+      "id": "Xfxn",
+      "code_hash": "fbb44b4487415b134bce9c790a27fe5e",
       "outputs": [
         {
-          "type": "error",
-          "ename": "exception",
-          "evalue": "The variable 'total' was defined by another cell",
-          "traceback": null
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>120.5</pre>"
+          }
         }
       ],
       "console": []
@@ -182,7 +297,14 @@
     {
       "id": "ZHCJ",
       "code_hash": null,
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -214,7 +336,14 @@
     {
       "id": "TqIu",
       "code_hash": "fcd5fe5a90d3e8ec5b572d836365a5bf",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[10248, 10249, 10250, 10251, 10252]"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -246,7 +375,14 @@
     {
       "id": "ulZA",
       "code_hash": "e39d0cb0faca87714f6349b49d61ed46",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"text/plain:<class 'float'>\", \"text/plain:<class 'int'>\", \"text/plain:<class 'str'>\", \"text/plain:<class 'bool'>\"]"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -317,8 +453,22 @@
     {
       "id": "xXTn",
       "code_hash": "ab81ca09e82b5615c45e533a8eb8a2d5",
-      "outputs": [],
-      "console": []
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Order 10248 paid $16.75 in freight.\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "AjVT",
@@ -362,7 +512,14 @@
     {
       "id": "aqbW",
       "code_hash": "99d2afc68739f124c36b434e4f86adcf",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"text/plain+float:22.25\", \"text/plain+float:25.0\", \"text/plain+float:20.25\", \"text/plain+float:36.25\"]"
+          }
+        }
+      ],
       "console": []
     },
     {

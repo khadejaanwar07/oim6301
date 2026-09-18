@@ -44,9 +44,21 @@ app = marimo.App(width="medium", sql_output="pandas")
 
 @app.cell
 def _():
+    print("Let's get started with some Python basics! 🐍")
+    return
+
+
+@app.cell
+def _():
     import marimo as mo
 
     return (mo,)
+
+
+@app.cell
+def _():
+    print("Welcome to the notebook! 🎉")
+    return
 
 
 @app.cell
@@ -61,9 +73,13 @@ def _():
     return
 
 
-@app.cell
-def _():
-    return
+app._unparsable_cell(
+    r"""
+    for i in range(5):
+    print(i)
+    """,
+    name="_"
+)
 
 
 @app.cell(hide_code=True)
@@ -113,8 +129,15 @@ def _(mo):
 @app.cell
 def _():
     freight_charges = [16.75, 22.25, 25.00, 20.25, 36.25]
-    freight_charges
     return (freight_charges,)
+
+
+app._unparsable_cell(
+    r"""
+    print(freight_charges
+    """,
+    name="_"
+)
 
 
 @app.cell(hide_code=True)
@@ -140,6 +163,12 @@ def _(mo):
 
 @app.cell
 def _(freight_charges):
+    freight_charges
+    return
+
+
+@app.cell
+def _(freight_charges):
     freight_charges[0]
     return
 
@@ -153,13 +182,12 @@ def _(freight_charges):
 @app.cell
 def _(freight_charges):
     total = sum(freight_charges)
-    total
-    return
+    return (total,)
 
 
 @app.cell
-def _():
-    total = 1
+def _(total):
+    total
     return
 
 
