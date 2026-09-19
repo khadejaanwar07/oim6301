@@ -685,6 +685,29 @@ def _(mo):
     return
 
 
+@app.cell
+def _(freight_charges):
+    total = sum(freight_charges)
+    return (total,)
+
+
+app._unparsable_cell(
+    r"""
+    I would change line 1. The problem arises because data in line 1 includes 'pending'is text, while the other values are numbers.
+    """,
+    name="_"
+)
+
+
+app._unparsable_cell(
+    r"""
+    I would change line 1 to: freight_charges = [16.75, 22.25, 9.50] and then say total = sum(freight_charges)
+    print(total)
+    """,
+    name="_"
+)
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
