@@ -595,8 +595,41 @@
     },
     {
       "id": "HYNA",
-      "code_hash": null,
-      "outputs": [],
+      "code_hash": "1061f64eea1fdc45d218324185d4bc0d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>False</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TUVR",
+      "code_hash": "fa74ccaf14ae4d37593fa3e3a8b32203",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>True</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "HSxF",
+      "code_hash": "8c827640c13f9bce9fc2a9af3489c083",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>&lt;class &#x27;bool&#x27;&gt;</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {

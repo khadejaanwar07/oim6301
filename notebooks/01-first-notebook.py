@@ -432,7 +432,20 @@ def _(mo):
 
 
 @app.cell
-def _():
+def _(freight_charges):
+    freight_charges[0] > 20
+    return
+
+
+@app.cell
+def _(freight_charges):
+    freight_charges[-1] == max(freight_charges)
+    return
+
+
+@app.cell
+def _(freight_charges):
+    type(freight_charges[0] > 20)
     return
 
 
