@@ -127,17 +127,9 @@ def _(mo):
 
 
 @app.cell
-def _():
-    freight_charges = [16.75, 22.25, 25.00, 20.25, 36.25]
-    return (freight_charges,)
-
-
-app._unparsable_cell(
-    r"""
-    print(freight_charges
-    """,
-    name="_"
-)
+def _(freight_charges):
+    print(freight_charges)
+    return
 
 
 @app.cell(hide_code=True)
@@ -162,9 +154,9 @@ def _(mo):
 
 
 @app.cell
-def _(freight_charges):
-    freight_charges
-    return
+def _():
+    freight_charges= [16.75, 22.25, 25.00, 20.25, 36.25]
+    return (freight_charges,)
 
 
 @app.cell
@@ -176,6 +168,11 @@ def _(freight_charges):
 @app.cell
 def _(freight_charges):
     len(freight_charges)
+    return
+
+
+@app.cell
+def _():
     return
 
 
@@ -284,6 +281,12 @@ def _(mo):
     6. `orders * 2`, then `orders + freight_charges`. Neither one is an error.
     7. `sorted(freight_charges)`, then `sorted(freight_charges, reverse=True)`. What did `reverse=True` change, and did `freight_charges` itself change?
     """)
+    return
+
+
+@app.cell
+def _(freight_charges):
+    freight_charges[-1]
     return
 
 

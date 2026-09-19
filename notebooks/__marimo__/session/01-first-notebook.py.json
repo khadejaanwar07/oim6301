@@ -151,19 +151,6 @@
       "console": []
     },
     {
-      "id": "SFPL",
-      "code_hash": "a42b66ff97ed2c8609fa38e7c2bb7ace",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": []
-    },
-    {
       "id": "xBBe",
       "code_hash": "49d4d6fb1dd99767be971665e8c326d0",
       "outputs": [
@@ -197,13 +184,13 @@
       "console": []
     },
     {
-      "id": "bDIl",
-      "code_hash": "dd8d1464825b764fe61b1489019a50c4",
+      "id": "hVyf",
+      "code_hash": "2cf9e326a2b1cb27817dc2267324aadc",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "application/json": "[\"text/plain+float:16.75\", \"text/plain+float:22.25\", \"text/plain+float:25.0\", \"text/plain+float:20.25\", \"text/plain+float:36.25\"]"
+            "text/plain": ""
           }
         }
       ],
@@ -233,6 +220,12 @@
           }
         }
       ],
+      "console": []
+    },
+    {
+      "id": "llNy",
+      "code_hash": null,
+      "outputs": [],
       "console": []
     },
     {
@@ -354,6 +347,19 @@
           "type": "data",
           "data": {
             "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"explore\">\ud83d\ude4b Explore</h1>\n<span class=\"paragraph\">One line per cell. Write down what you expect before you run it. What each one gives\nback depends on what kind of value you hand it, which the next section names.</span>\n<ol>\n<li><code>freight_charges[-1]</code></li>\n<li><code>freight_charges[:3]</code>, which is a <strong>slice</strong></li>\n<li><code>orders[0]</code> and <code>freight_charges[0]</code>. What do those two have in common?</li>\n<li><code>category = \"Confections\"</code>, then <code>len(category)</code>. <code>len</code> counted five things a moment ago. What is it counting now?</li>\n<li><code>sum(orders)</code>. It runs. Should it?</li>\n<li><code>orders * 2</code>, then <code>orders + freight_charges</code>. Neither one is an error.</li>\n<li><code>sorted(freight_charges)</code>, then <code>sorted(freight_charges, reverse=True)</code>. What did <code>reverse=True</code> change, and did <code>freight_charges</code> itself change?</li>\n</ol></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nqHv",
+      "code_hash": "c0a7a809473e29effbb39c4685dd71f9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>36.25</pre>"
           }
         }
       ],
