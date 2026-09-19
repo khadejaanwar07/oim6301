@@ -487,6 +487,12 @@ def _(mo):
     return
 
 
+@app.cell
+def _(freight_charges, total):
+    print(f"Total freight was ${total:.2f}, for an average of ${total / len(freight_charges):.2f} per order.")
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""

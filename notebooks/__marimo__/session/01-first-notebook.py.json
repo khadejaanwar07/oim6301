@@ -93,23 +93,16 @@
     },
     {
       "id": "bkHC",
-      "code_hash": "4def692754cbd39b7c35437712f7912e",
+      "code_hash": "bcd5cf53a7b7a1a5b7816041fc608ed8",
       "outputs": [
         {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
+          "type": "error",
+          "ename": "syntax",
+          "evalue": "line 2\n    print(i)\n    ^^^^^\nIndentationError: expected an indented block after 'for' statement on line 1\n",
+          "traceback": []
         }
       ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "0\n1\n2\n3\n4\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "console": []
     },
     {
       "id": "lEQa",
@@ -225,7 +218,14 @@
     {
       "id": "llNy",
       "code_hash": null,
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -690,6 +690,26 @@
         }
       ],
       "console": []
+    },
+    {
+      "id": "lUlN",
+      "code_hash": "9ce65a1b2cc5025bb271fb8575e52006",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Total freight was $120.50, for an average of $24.10 per order.\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "NCOB",
