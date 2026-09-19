@@ -764,6 +764,39 @@
       "console": []
     },
     {
+      "id": "fYJj",
+      "code_hash": "1ea1648fc782117f9c997101717fa30c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"text/plain+float:16.75\", \"text/plain+float:22.25\", \"text/plain+float:20.25\"]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "NnYF",
+      "code_hash": "80e5635fe2a9c89a7b58691654c5456f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "There are 3 charges below 25, adding up to $59.25.\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
       "id": "dNNg",
       "code_hash": "3c0f55b2f8582e207416da282626db3d",
       "outputs": [

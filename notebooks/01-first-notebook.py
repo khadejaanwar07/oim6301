@@ -543,6 +543,22 @@ def _(mo):
     return
 
 
+@app.cell
+def _(freight_charges):
+    below_25 = []
+    for c in freight_charges:
+        if c < 25:
+            below_25.append(c)
+    below_25
+    return (below_25,)
+
+
+@app.cell
+def _(below_25):
+    print(f"There are {len(below_25)} charges below 25, adding up to ${sum(below_25):.2f}.")
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
