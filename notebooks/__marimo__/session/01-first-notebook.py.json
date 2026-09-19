@@ -405,6 +405,84 @@
       "console": []
     },
     {
+      "id": "sBIS",
+      "code_hash": "e4712679f318d013776735f3aa1a8654",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>11</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "xgLL",
+      "code_hash": "3185adb3fd9ee53e74b5778d920b025e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>51250</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "CpwF",
+      "code_hash": "b05be89abffffdcbc9bafefd6fceb963",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[[10248, 10249, 10250, 10251, 10252, 10248, 10249, 10250, 10251, 10252]]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "QnOy",
+      "code_hash": "954c6a48329eec4c1e36f2a6e3b81139",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[10248, 10249, 10250, 10251, 10252, \"text/plain+float:16.75\", \"text/plain+float:22.25\", \"text/plain+float:25.0\", \"text/plain+float:20.25\", \"text/plain+float:36.25\"]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "XmVW",
+      "code_hash": "c868ee09c8177da4fbaedcb30ed7efbe",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"text/plain+float:16.75\", \"text/plain+float:20.25\", \"text/plain+float:22.25\", \"text/plain+float:25.0\", \"text/plain+float:36.25\"]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Micu",
+      "code_hash": "ae7555daaeaad700a408a44157317898",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"text/plain+float:36.25\", \"text/plain+float:25.0\", \"text/plain+float:22.25\", \"text/plain+float:20.25\", \"text/plain+float:16.75\"]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "DnEU",
       "code_hash": "16f6fbf463783aae459729b112ccc5b6",
       "outputs": [
@@ -457,6 +535,39 @@
       "console": []
     },
     {
+      "id": "pTPp",
+      "code_hash": "b0edec4e15698beb44aca5790c83e9d8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>&#x27;16.7522.25&#x27;</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "DyRa",
+      "code_hash": "670df440749065272ea17293d93060d6",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "exception",
+          "evalue": "unsupported operand type(s) for +: 'float' and 'str'",
+          "traceback": null
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">\"C:\\Users\\Dr.Tanvir\\AppData\\Local\\Temp\\marimo_25628\\__marimo__cell_DyRa_.py\"</span>, line <span class=\"m\">1</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"mf\">16.75</span> <span class=\"o\">+</span> <span class=\"s2\">\"22.25\"</span>\n<span class=\"w\">    </span><span class=\"pm\">~~~~~~^~~~~~~~~</span>\n<span class=\"gr\">TypeError</span>: <span class=\"n\">unsupported operand type(s) for +: 'float' and 'str'</span>\n</pre></div>\n</span>",
+          "mimetype": "application/vnd.marimo+traceback"
+        }
+      ]
+    },
+    {
       "id": "ZBYS",
       "code_hash": "61c872df0f30ee9fc863188843e1827f",
       "outputs": [
@@ -480,6 +591,12 @@
           }
         }
       ],
+      "console": []
+    },
+    {
+      "id": "HYNA",
+      "code_hash": null,
+      "outputs": [],
       "console": []
     },
     {
