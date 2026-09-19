@@ -597,6 +597,30 @@ def _(mo):
     return
 
 
+@app.cell
+def _(mo):
+    mo.md(r"""
+    **`FileNotFoundError: [Errno 2] No such file or directory: 'sales.csv'`** — Python tried to open a file called `sales.csv` and looked in the current project folder, but no file by that name exists there. Unlike the module error, this isn't a typo; the file genuinely isn't present in this project. To fix it, the file would need to be added to the project (or the path corrected to point to where it actually lives).
+    """)
+    return
+
+
+@app.cell
+def _(mo):
+    mo.md(r"""
+    **`ModuleNotFoundError: No module named 'pandsa'`** — Python looked for a package called `pandsa` and could not find it installed anywhere. This is not a real package; it's a typo of `pandas`. Python does not guess what you meant, it just reports that nothing by that exact name exists.
+    """)
+    return
+
+
+@app.cell
+def _(mo):
+    mo.md(r"""
+    **`SyntaxError: '[' was never closed`** — Python started reading a list at the `[` character but never found the matching `]` to close it. Since the list was never finished, Python doesn't know where the statement ends, so it can't run any of the code, not even earlier lines. This is a structural error, not a values-or-logic error: something is missing from the shape of the code itself, and Python points you right back to the exact bracket that started the problem.
+    """)
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -606,6 +630,12 @@ def _(mo):
 
     `max(["9.50", "16.75", "22.25"])`
     """)
+    return
+
+
+@app.cell
+def _():
+    max(["9.50", "16.75", "22.25"])
     return
 
 

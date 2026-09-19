@@ -823,6 +823,45 @@
       "console": []
     },
     {
+      "id": "zCdL",
+      "code_hash": "1218bbb60522acb1f269c6b9a5bef84c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong><code>FileNotFoundError: [Errno 2] No such file or directory: 'sales.csv'</code></strong> \u2014 Python tried to open a file called <code>sales.csv</code> and looked in the current project folder, but no file by that name exists there. Unlike the module error, this isn't a typo; the file genuinely isn't present in this project. To fix it, the file would need to be added to the project (or the path corrected to point to where it actually lives).</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "CUGa",
+      "code_hash": "fffcd3223b1a3fa48d9d40901310b065",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong><code>ModuleNotFoundError: No module named 'pandsa'</code></strong> \u2014 Python looked for a package called <code>pandsa</code> and could not find it installed anywhere. This is not a real package; it's a typo of <code>pandas</code>. Python does not guess what you meant, it just reports that nothing by that exact name exists.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "diNJ",
+      "code_hash": "2a33503e38996003cc237a91d57c203f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong><code>SyntaxError: '[' was never closed</code></strong> \u2014 Python started reading a list at the <code>[</code> character but never found the matching <code>]</code> to close it. Since the list was never finished, Python doesn't know where the statement ends, so it can't run any of the code, not even earlier lines. This is a structural error, not a values-or-logic error: something is missing from the shape of the code itself, and Python points you right back to the exact bracket that started the problem.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "wlCL",
       "code_hash": "830409d9361fd16a4b5b79956f3dae62",
       "outputs": [
@@ -830,6 +869,19 @@
           "type": "data",
           "data": {
             "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"a-line-that-does-not-break\">\ud83d\ude4b A Line That Does Not Break</h1>\n<span class=\"paragraph\">Write down what this gives, then run it in a cell of your own.</span>\n<span class=\"paragraph\"><code>max([\"9.50\", \"16.75\", \"22.25\"])</code></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "tgDi",
+      "code_hash": "3ecb5a15eac460ce6adc166848ad8c47",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>&#x27;9.50&#x27;</pre>"
           }
         }
       ],
