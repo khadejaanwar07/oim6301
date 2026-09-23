@@ -90,6 +90,31 @@ def _(mo):
 
 @app.cell
 def _():
+    cost = 16.75
+    print(f'The cost is ${cost}.')
+    return (cost,)
+
+
+@app.cell
+def _(cost):
+    type(cost)
+    return
+
+
+@app.cell
+def _():
+    x = 4//3 
+    type(x)
+    return
+
+
+@app.cell
+def _():
+    return
+
+
+@app.cell
+def _():
     # Your own example of each name.
 
     # 1. value:

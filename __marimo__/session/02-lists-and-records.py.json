@@ -71,6 +71,58 @@
       "console": []
     },
     {
+      "id": "SHtV",
+      "code_hash": "ece6f47f3a910225cac1a3410bd56b3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "The cost is $16.75.\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "MlJl",
+      "code_hash": "9bc20ec431429cc424aa1c2fdfac1894",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>&lt;class &#x27;float&#x27;&gt;</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TkDK",
+      "code_hash": "4065b63e1a201d302b5cf1b985164fb8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>&lt;class &#x27;float&#x27;&gt;</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "wrij",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
       "id": "bkHC",
       "code_hash": "115cdc766461e63d887742e99ed47a5d",
       "outputs": [],
