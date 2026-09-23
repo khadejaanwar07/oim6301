@@ -289,7 +289,7 @@
     },
     {
       "id": "YxGh",
-      "code_hash": "44ae4f85c2a312c5a13d8de7947b46f1",
+      "code_hash": "33bce87b401ae2274e7e2724bfcc3c3d",
       "outputs": [
         {
           "type": "data",
@@ -302,10 +302,23 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "16.75\n22.25\n18.5\n12.99\n",
+          "text": "16.75\n22.25\n25.0\n18.5\n12.99\n",
           "mimetype": "text/plain"
         }
       ]
+    },
+    {
+      "id": "yMtd",
+      "code_hash": "c868ee09c8177da4fbaedcb30ed7efbe",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"text/plain+float:12.99\", \"text/plain+float:16.75\", \"text/plain+float:18.5\", \"text/plain+float:22.25\", \"text/plain+float:25.0\", \"text/plain+float:30.0\"]"
+          }
+        }
+      ],
+      "console": []
     },
     {
       "id": "Hstk",
@@ -387,23 +400,29 @@
     },
     {
       "id": "TqIu",
-      "code_hash": "dc0cf7ab380db59842116577d44768e7",
+      "code_hash": "ded22b494b55254299120bfdb87e6b07",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/plain": ""
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">score = 95</span>\n<span class=\"paragraph\">if score &gt;= 60:\n    print(\"Pass\")</span>\n<span class=\"paragraph\">elif score &gt;= 90:\n    print(\"A\")</span></span>"
           }
         }
       ],
-      "console": [
+      "console": []
+    },
+    {
+      "id": "GnfN",
+      "code_hash": "8787a6d1640b06394a4fea15caa3fd46",
+      "outputs": [
         {
-          "type": "stream",
-          "name": "stdout",
-          "text": "Pass\n",
-          "mimetype": "text/plain"
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Q) When a score satisfies two of these tests at once, which one decides what gets printed?</span></span>"
+          }
         }
-      ]
+      ],
+      "console": []
     },
     {
       "id": "Vxnm",

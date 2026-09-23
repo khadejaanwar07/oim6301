@@ -205,9 +205,16 @@ def _():
 
 @app.cell
 def _(freight_charges):
+    # find out all the charges below 25 (25 is included)
     for freight_charge in freight_charges:
-        if freight_charge < 25:
+        if freight_charge <= 25:
             print(freight_charge)
+    return
+
+
+@app.cell
+def _(freight_charg):
+    sorted(freight_charg)
     return
 
 
@@ -339,13 +346,25 @@ def _(mo):
     return
 
 
-@app.cell
-def _():
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     score = 95
+
     if score >= 60:
         print("Pass")
+
     elif score >= 90:
         print("A")
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    Q) When a score satisfies two of these tests at once, which one decides what gets printed?
+    """)
     return
 
 
