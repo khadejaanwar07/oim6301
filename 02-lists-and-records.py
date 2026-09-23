@@ -163,6 +163,15 @@ def _(freight_charges):
 
 
 @app.cell
+def _(freight_charges):
+    for charge in freight_charges:
+        freight_tax = charge * 0.0625
+        total_charge = charge + freight_tax
+        print(f'Total charge is ${total_charge: .2f}.')
+    return (charge,)
+
+
+@app.cell
 def _():
     # Your own example of each name.
 

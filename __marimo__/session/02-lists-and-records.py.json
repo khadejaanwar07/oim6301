@@ -235,6 +235,26 @@
       "console": []
     },
     {
+      "id": "YCyS",
+      "code_hash": "71f44041a00e4e2c37a5c7dd7dc0a03e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Total charge is $ 17.80.\nTotal charge is $ 23.64.\nTotal charge is $ 26.56.\nTotal charge is $ 19.66.\nTotal charge is $ 31.88.\nTotal charge is $ 13.80.\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
       "id": "emfo",
       "code_hash": "115cdc766461e63d887742e99ed47a5d",
       "outputs": [
