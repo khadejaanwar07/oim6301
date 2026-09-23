@@ -106,10 +106,16 @@ def _():
 @app.cell
 def _(cost, tax):
 
-    total_cost = cost+tax
+    total_cost = float(cost) +float(tax)
     print(total_cost)
 
     # print(f'The cost is ${cost:.2f}. Total is ${total_cost:.2f}.')
+    return
+
+
+@app.cell
+def _(cost):
+    cost * 2
     return
 
 
@@ -128,6 +134,31 @@ def _():
 
 @app.cell
 def _():
+    freight_charges = [16.75, 22.25, 25.00,18.50, 30.00, 12.99]
+    return (freight_charges,)
+
+
+@app.cell
+def _(freight_charges):
+    freight_charges[-1]
+    return
+
+
+@app.cell
+def _(freight_charges):
+    freight_charges[0]
+    return
+
+
+@app.cell
+def _(freight_charges):
+    freight_charges[0:4]
+    return
+
+
+@app.cell
+def _(freight_charges):
+    freight_charges[1:4]
     return
 
 
