@@ -106,16 +106,10 @@ def _():
 @app.cell
 def _(cost, tax):
 
-    total_cost = float(cost) +float(tax)
+    total_cost = cost+tax
     print(total_cost)
 
     # print(f'The cost is ${cost:.2f}. Total is ${total_cost:.2f}.')
-    return
-
-
-@app.cell
-def _(cost):
-    cost * 2
     return
 
 
@@ -134,54 +128,6 @@ def _():
 
 @app.cell
 def _():
-    freight_charges = [16.75, 22.25, 25.00,18.50, 30.00, 12.99]
-    return (freight_charges,)
-
-
-@app.cell
-def _(freight_charges):
-    freight_charges[-1]
-    return
-
-
-@app.cell
-def _(freight_charges):
-    freight_charges[0]
-    return
-
-
-@app.cell
-def _(freight_charges):
-    freight_charges[0:4]
-    return
-
-
-@app.cell
-def _(freight_charges):
-    freight_charges[1:4]
-    return
-
-
-@app.cell
-def _(freight_charges):
-    for charge in freight_charges:
-        freight_tax = charge * 0.0625
-        total_charge = charge + freight_tax
-        print(f'Total charge is ${total_charge: .2f}.')
-    return (charge,)
-
-
-@app.cell
-def _(freight_charges):
-    step = 0
-    for _charge in freight_charges:
-        step = step +1
-        print("---")
-        print(f"charge is now {_charge}")
-        _freight_tax = _charge * 0.0625
-        print(f"tax on this charge is {_freight_tax}")
-        _total_charge = _charge + _freight_tax
-        print(f"charge plus tax is {_total_charge}")
     return
 
 
@@ -200,21 +146,6 @@ def _():
     # 9. many into one number:
     # 10. function and argument:
     # 11. error:
-    return
-
-
-@app.cell
-def _(freight_charges):
-    # find out all the charges below 25 (25 is included)
-    for freight_charge in freight_charges:
-        if freight_charge <= 25:
-            print(freight_charge)
-    return
-
-
-@app.cell
-def _(freight_charg):
-    sorted(freight_charg)
     return
 
 
@@ -346,40 +277,13 @@ def _(mo):
     return
 
 
-@app.cell(hide_code=True)
-def _(mo):
-    mo.md(r"""
-    score = 95
-
-    if score >= 60:
-        print("Pass")
-
-    elif score >= 90:
-        print("A")
-    """)
-    return
-
-
 @app.cell
 def _():
-    score = 59
-
-    if score >= 90:
-        print('A')
-    elif score >= 80:
-        print('B')
-    elif score >= 60:
-        print('Pass')
-    else:
-        print('Fail')
-    return
-
-
-@app.cell(hide_code=True)
-def _(mo):
-    mo.md(r"""
-    Q) When a score satisfies two of these tests at once, which one decides what gets printed?
-    """)
+    score = 95
+    if score >= 60:
+        print("Pass")
+    elif score >= 90:
+        print("A")
     return
 
 
