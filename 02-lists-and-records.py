@@ -20,6 +20,18 @@ def _():
     return (mo,)
 
 
+@app.cell
+def _():
+    charge = 10
+    return (charge,)
+
+
+@app.cell
+def _(charge):
+    print(charge)
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -229,7 +241,7 @@ def _():
         print("Pass")
     elif score >= 90:
         print("A")
-    return (score,)
+    return
 
 
 @app.cell(hide_code=True)
@@ -256,7 +268,7 @@ def _(mo):
 def _():
     statuses = ["shipped", "pending", "shipped", "cancelled", "shipped"]
     statuses
-    return (statuses,)
+    return
 
 
 @app.cell(hide_code=True)
@@ -285,7 +297,7 @@ def _():
     order_lines = ["notebook", "pen"]
     order_lines.append(["stapler", "tape"])
     len(order_lines)
-    return (order_lines,)
+    return
 
 
 @app.cell(hide_code=True)
@@ -315,7 +327,7 @@ def _():
     print(sorted(tickers))
     print(tickers.sort())
     tickers
-    return (tickers,)
+    return
 
 
 @app.cell(hide_code=True)
@@ -351,7 +363,7 @@ def _():
     sale_prices = prices
     sale_prices.append(4.99)
     prices
-    return (prices, sale_prices,)
+    return
 
 
 @app.cell(hide_code=True)
