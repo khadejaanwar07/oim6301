@@ -32,6 +32,14 @@ def _(charge):
     return
 
 
+@app.cell
+def _():
+    import csv
+
+
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
