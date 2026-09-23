@@ -172,6 +172,20 @@ def _(freight_charges):
 
 
 @app.cell
+def _(freight_charges):
+    step = 0
+    for _charge in freight_charges:
+        step = step +1
+        print("---")
+        print(f"charge is now {_charge}")
+        _freight_tax = _charge * 0.0625
+        print(f"tax on this charge is {_freight_tax}")
+        _total_charge = _charge + _freight_tax
+        print(f"charge plus tax is {_total_charge}")
+    return
+
+
+@app.cell
 def _():
     # Your own example of each name.
 
@@ -186,6 +200,14 @@ def _():
     # 9. many into one number:
     # 10. function and argument:
     # 11. error:
+    return
+
+
+@app.cell
+def _(freight_charges):
+    for freight_charge in freight_charges:
+        if freight_charge < 25:
+            print(freight_charge)
     return
 
 

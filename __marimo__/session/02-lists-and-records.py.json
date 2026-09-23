@@ -23,10 +23,10 @@
       "code_hash": "8e1efb6ffc987da1e685901b363443ba",
       "outputs": [
         {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
+          "type": "error",
+          "ename": "multiple-defs",
+          "evalue": "The variable 'charge' was defined by another cell",
+          "traceback": []
         }
       ],
       "console": []
@@ -46,7 +46,7 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "10\n",
+          "text": "12.99\n",
           "mimetype": "text/plain"
         }
       ]
@@ -255,6 +255,26 @@
       ]
     },
     {
+      "id": "tDDV",
+      "code_hash": "c22524226e60fb378bdd6ae8b693d3f6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "---\ncharge is now 16.75\ntax on this charge is 1.046875\ncharge plus tax is 17.796875\n---\ncharge is now 22.25\ntax on this charge is 1.390625\ncharge plus tax is 23.640625\n---\ncharge is now 25.0\ntax on this charge is 1.5625\ncharge plus tax is 26.5625\n---\ncharge is now 18.5\ntax on this charge is 1.15625\ncharge plus tax is 19.65625\n---\ncharge is now 30.0\ntax on this charge is 1.875\ncharge plus tax is 31.875\n---\ncharge is now 12.99\ntax on this charge is 0.811875\ncharge plus tax is 13.801875\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
       "id": "emfo",
       "code_hash": "115cdc766461e63d887742e99ed47a5d",
       "outputs": [
@@ -266,6 +286,26 @@
         }
       ],
       "console": []
+    },
+    {
+      "id": "YxGh",
+      "code_hash": "44ae4f85c2a312c5a13d8de7947b46f1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "16.75\n22.25\n18.5\n12.99\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "Hstk",
