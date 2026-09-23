@@ -90,11 +90,19 @@ def _(mo):
 
 @app.cell
 def _():
-    cost = 16.75
-    tax = 3.25
-    total_cost = cost + tax
-    print(f'The cost is ${cost:.2f}. Total is ${total_cost:.2f}.')
-    return (cost,)
+    cost = input('Enter the cost:')
+    tax = input('Enter the tax:')
+    return cost, tax
+
+
+@app.cell
+def _(cost, tax):
+
+    total_cost = cost+tax
+    print(total_cost)
+
+    # print(f'The cost is ${cost:.2f}. Total is ${total_cost:.2f}.')
+    return
 
 
 @app.cell

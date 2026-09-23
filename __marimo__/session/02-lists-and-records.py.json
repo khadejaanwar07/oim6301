@@ -78,8 +78,8 @@
       "console": []
     },
     {
-      "id": "SHtV",
-      "code_hash": "f3b6b1e0d5c31c3213d7a5084772d9a2",
+      "id": "rFww",
+      "code_hash": "2925020507ce88b015d3cbca9b4c57a8",
       "outputs": [
         {
           "type": "data",
@@ -92,7 +92,27 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "The cost is $16.75. Total is $20.00.\n",
+          "text": "Enter the cost: 16.75\nEnter the tax: 3.25\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "SHtV",
+      "code_hash": "70e4c9080dd188e766646c31085ce29d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "16.753.25\n",
           "mimetype": "text/plain"
         }
       ]
@@ -104,7 +124,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<pre class='text-xs'>&lt;class &#x27;float&#x27;&gt;</pre>"
+            "text/html": "<pre class='text-xs'>&lt;class &#x27;str&#x27;&gt;</pre>"
           }
         }
       ],
