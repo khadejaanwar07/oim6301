@@ -360,6 +360,21 @@ def _(mo):
     return
 
 
+@app.cell
+def _():
+    score = 59
+
+    if score >= 90:
+        print('A')
+    elif score >= 80:
+        print('B')
+    elif score >= 60:
+        print('Pass')
+    else:
+        print('Fail')
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""

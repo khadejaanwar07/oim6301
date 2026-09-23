@@ -412,6 +412,26 @@
       "console": []
     },
     {
+      "id": "CMQG",
+      "code_hash": "d2249fc7685dd8d22aafeabe96f16e98",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Fail\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
       "id": "GnfN",
       "code_hash": "8787a6d1640b06394a4fea15caa3fd46",
       "outputs": [
