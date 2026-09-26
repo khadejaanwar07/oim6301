@@ -201,7 +201,7 @@ def _(mo):
 def _():
     charges = [16.75, 22.25, 25.00, 20.25, 36.25]
     charges
-    return
+    return (charges,)
 
 
 @app.cell(hide_code=True)
@@ -297,11 +297,19 @@ def _(mo):
 
 @app.cell
 def _():
-    score = 95
+    score = 75
     if score >= 90:
         print("A")
     elif score >= 60:
         print("Pass")
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    The first if or elif test the score satisfies is the one that decides what gets printed because elif skips all the tests after it.
+    """)
     return
 
 
@@ -329,7 +337,39 @@ def _(mo):
 def _():
     statuses = ["shipped", "pending", "shipped", "cancelled", "shipped"]
     statuses
+    return (statuses,)
+
+
+@app.cell
+def _():
     return
+
+
+@app.cell
+def _(statuses):
+    shipped_count = 0
+    for status in statuses:
+        if status == "shipped":
+            shipped_count = shipped_count + 1
+    shipped_count
+    return (shipped_count,)
+
+
+@app.cell
+def _(statuses):
+    not_shipped_count = 0
+    for _status in statuses:
+        if _status != "shipped":
+            not_shipped_count = not_shipped_count + 1
+    not_shipped_count
+    return
+
+
+@app.cell
+def _(shipped_count, statuses):
+    percent_shipped = shipped_count / len(statuses) * 100
+    percent_shipped
+    return (percent_shipped,)
 
 
 @app.cell(hide_code=True)
@@ -355,9 +395,41 @@ def _(mo):
 
 @app.cell
 def _():
+    return
+
+
+@app.cell
+def _():
+    order_line= ["notebook", "pen"]
+    order_line.append(["stapler", "tape"])
+    return (order_line,)
+
+
+@app.cell
+def _(order_line):
+    order_line[2]
+    return
+
+
+@app.cell
+def _():
     order_lines = ["notebook", "pen"]
-    order_lines.append(["stapler", "tape"])
+    order_lines.extend(["stapler", "tape"])
     len(order_lines)
+    return (order_lines,)
+
+
+@app.cell
+def _(order_lines):
+    order_lines[2]
+    return
+
+
+@app.cell
+def _(mo):
+    mo.md(r"""
+    Append always adds exactly one item, even when what you hand it is itself a list.
+    """)
     return
 
 
@@ -388,6 +460,20 @@ def _():
     print(sorted(tickers))
     print(tickers.sort())
     tickers
+    return (tickers,)
+
+
+@app.cell
+def _(mo):
+    mo.md(r"""
+    tickers.sort() sorts the list in place and hands back nothing (None). Sorted(tickers) leaves tickers alone and gives a new and sorted list.
+    """)
+    return
+
+
+@app.cell
+def _(tickers):
+    sorted(tickers, reverse=True)
     return
 
 
@@ -421,9 +507,23 @@ def _(mo):
 @app.cell
 def _():
     prices = [12.50, 8.00, 19.99]
-    sale_prices = prices
+    sale_prices = prices[:]
     sale_prices.append(4.99)
     prices
+    return prices, sale_prices
+
+
+@app.cell
+def _(prices, sale_prices):
+    prices is sale_prices
+    return
+
+
+@app.cell
+def _(mo):
+    mo.md(r"""
+    You would want two names for the same list on purpose when you want a change made through one name, such as adding an item, to show up wherever the other name is used too.
+    """)
     return
 
 
@@ -455,6 +555,26 @@ def _():
     return
 
 
+@app.cell
+def _(mo):
+    mo.md(r"""
+    "100" + "50" joined the two pieces of text end to end into "10050", which is reasonable for text because + on text means "stick these together", not "add these as numbers".
+    """)
+    return
+
+
+@app.cell
+def _():
+    print(int("100") + int("50"))
+    return
+
+
+@app.cell
+def _():
+    float("100.5")
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -474,6 +594,48 @@ def _(mo):
     > `3 of 5 orders shipped (60%)`. An f-string is the short way to build a sentence out of
     > values, and it was section 5 of last week's notebook.
     """)
+    return
+
+
+@app.cell
+def _(charges):
+    charges[5]
+    return
+
+
+@app.cell
+def _(mo):
+    mo.md(r"""
+    Charges holds five items at positions 0, 1, 2, 3, and 4. Counting starts at zero so the fifth and last item is at index 4, not 5. There is no item 5 because that would be a sixth item which this list does not have.
+    """)
+    return
+
+
+@app.cell
+def _(charges):
+    print(charges[-1])
+    print(charges[len(charges) - 1])
+    return
+
+
+@app.cell
+def _(charges):
+    charges[-6]
+    return
+
+
+@app.cell
+def _(mo):
+    mo.md(r"""
+    Negative indexing counts backwards from the end. -1 is the last item, -2 the one before it, and so on. Charges has five items so the furthest back you can go is -5, the first item. -6 asks for a sixth item counting backwards, which does not exist, so Python raises the same IndexError as charges[5].
+    """)
+    return
+
+
+@app.cell
+def _(percent_shipped, shipped_count, statuses):
+    print(f"{shipped_count} of {len(statuses)} orders shipped")
+    print(f"{shipped_count} of {len(statuses)} orders shipped ({percent_shipped:.0f}%)")
     return
 
 

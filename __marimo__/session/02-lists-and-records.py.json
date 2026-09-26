@@ -159,7 +159,14 @@
     {
       "id": "Kclp",
       "code_hash": null,
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -242,8 +249,15 @@
     },
     {
       "id": "OiGy",
-      "code_hash": null,
-      "outputs": [],
+      "code_hash": "09eacd43cd8dee49c8457a129261476f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">hello</span></span>"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -262,7 +276,14 @@
     {
       "id": "TqIu",
       "code_hash": null,
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -280,7 +301,7 @@
     },
     {
       "id": "DnEU",
-      "code_hash": "8843c34e9c020d6b440803ace4560244",
+      "code_hash": "02b7c526e06db68f5bd42a94ba3b40a7",
       "outputs": [
         {
           "type": "data",
@@ -293,10 +314,23 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "A\n",
+          "text": "Pass\n",
           "mimetype": "text/plain"
         }
       ]
+    },
+    {
+      "id": "bQLl",
+      "code_hash": "bd386c7dbc6cb531a93d82e612129dfe",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">The first if or elif test the score satisfies is the one that decides what gets printed because elif skips all the tests after it.</span></span>"
+          }
+        }
+      ],
+      "console": []
     },
     {
       "id": "ulZA",
@@ -325,6 +359,58 @@
       "console": []
     },
     {
+      "id": "YCrm",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ifRf",
+      "code_hash": "e8314d4e1e17c66196461db6bae9def2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>3</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "fSun",
+      "code_hash": "d304d01b464eeae66a190746c5ac5738",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>2</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "mMFe",
+      "code_hash": "bb9ae010e642564cccf8ca6b78f22f7a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>60.0</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "Pvdt",
       "code_hash": "53b3a52a2d49ccac692ab047603ba4c1",
       "outputs": [
@@ -338,13 +424,78 @@
       "console": []
     },
     {
-      "id": "ZBYS",
-      "code_hash": "d7f1e30a273b00c372f58d2c77801a99",
+      "id": "mVCT",
+      "code_hash": null,
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<pre class='text-xs'>3</pre>"
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "pWTk",
+      "code_hash": "e76f7335466d8bafbdd3cb7813cc4f47",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TRBA",
+      "code_hash": "33204a08d1bb8e3dc1843aca6bc419e6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"stapler\", \"tape\"]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BXkB",
+      "code_hash": "c85449df5aaeecfdcb957912380535a2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>4</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Wqzz",
+      "code_hash": "dc4562b11af0fc62ed5e1f1dc59956c4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>&#x27;stapler&#x27;</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "FqMG",
+      "code_hash": "b5847d2f2e2249d40a165962f5512f6f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Append always adds exactly one item, even when what you hand it is itself a list.</span></span>"
           }
         }
       ],
@@ -384,6 +535,32 @@
       ]
     },
     {
+      "id": "jFNa",
+      "code_hash": "f6a57a6f43312af1c92d3becb3dc7cac",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">tickers.sort() sorts the list in place and hands back nothing (None). Sorted(tickers) leaves tickers alone and gives a new and sorted list.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "cSgV",
+      "code_hash": "976ab415ada8b578bfa5f54bec60eec0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"NVDA\", \"MSFT\", \"AAPL\"]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "xXTn",
       "code_hash": "f405b348260f91aaa0a73e40c618af25",
       "outputs": [
@@ -398,12 +575,38 @@
     },
     {
       "id": "AjVT",
-      "code_hash": "8d95c8f244caaf7e1606caf938476e98",
+      "code_hash": "fef8050147ab6b97e03e371500ce2207",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "application/json": "[\"text/plain+float:12.5\", \"text/plain+float:8.0\", \"text/plain+float:19.99\", \"text/plain+float:4.99\"]"
+            "application/json": "[\"text/plain+float:12.5\", \"text/plain+float:8.0\", \"text/plain+float:19.99\"]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "POES",
+      "code_hash": "da56d086dd6116a545e315bc3806642d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>False</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "uGcH",
+      "code_hash": "0723ea6f7800516794d550078b1db6f0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">You would want two names for the same list on purpose when you want a change made through one name, such as adding an item, to show up wherever the other name is used too. </span></span>"
           }
         }
       ],
@@ -443,6 +646,52 @@
       ]
     },
     {
+      "id": "Bsto",
+      "code_hash": "e07ce96f7668892be7f017fbab424a0e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">\"100\" + \"50\" joined the two pieces of text end to end into \"10050\", which is reasonable for text because + on text means \"stick these together\", not \"add these as numbers\".</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "YwWq",
+      "code_hash": "ca9b34ba04cb0c82764164612079017e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "150\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "hJjF",
+      "code_hash": "214b029b8c946cea7bf3dd66ac5798cb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>100.5</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "aqbW",
       "code_hash": "1d4cd33d87f69cef37de87f6bdd519ca",
       "outputs": [
@@ -454,6 +703,112 @@
         }
       ],
       "console": []
+    },
+    {
+      "id": "iKJW",
+      "code_hash": "c33d04356fed101f03103b3a587b36ee",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "exception",
+          "evalue": "list index out of range",
+          "traceback": null
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">\"C:\\Users\\Dr.Tanvir\\AppData\\Local\\Temp\\marimo_33316\\__marimo__cell_iKJW_.py\"</span>, line <span class=\"m\">1</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"n\">charges</span><span class=\"p\">[</span><span class=\"mi\">5</span><span class=\"p\">]</span>\n<span class=\"w\">    </span><span class=\"pm\">~~~~~~~^^^</span>\n<span class=\"gr\">IndexError</span>: <span class=\"n\">list index out of range</span>\n</pre></div>\n</span>",
+          "mimetype": "application/vnd.marimo+traceback"
+        }
+      ]
+    },
+    {
+      "id": "rJLT",
+      "code_hash": "eef66da81a9dc9c19b2024533f4b312c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Charges holds five items at positions 0, 1, 2, 3, and 4. Counting starts at zero so the fifth and last item is at index 4, not 5. There is no item 5 because that would be a sixth item which this list does not have.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PLFf",
+      "code_hash": "c29b27f37294d95e3e0dcc9180ad2c93",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "36.25\n36.25\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "wxoq",
+      "code_hash": "53ae0f9a499fc8cdd75fdec1d1d87e1a",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "exception",
+          "evalue": "list index out of range",
+          "traceback": null
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">\"C:\\Users\\Dr.Tanvir\\AppData\\Local\\Temp\\marimo_33316\\__marimo__cell_wxoq_.py\"</span>, line <span class=\"m\">1</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"n\">charges</span><span class=\"p\">[</span><span class=\"o\">-</span><span class=\"mi\">6</span><span class=\"p\">]</span>\n<span class=\"w\">    </span><span class=\"pm\">~~~~~~~^^^^</span>\n<span class=\"gr\">IndexError</span>: <span class=\"n\">list index out of range</span>\n</pre></div>\n</span>",
+          "mimetype": "application/vnd.marimo+traceback"
+        }
+      ]
+    },
+    {
+      "id": "kcuf",
+      "code_hash": "f8618ef8558a74841f346d2f3970b1fc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Negative indexing counts backwards from the end. -1 is the last item, -2 the one before it, and so on. Charges has five items so the furthest back you can go is -5, the first item. -6 asks for a sixth item counting backwards, which does not exist, so Python raises the same IndexError as charges[5].</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vzZd",
+      "code_hash": "62dfaa4eaff94ef3b6d04d48e71d8d00",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "3 of 5 orders shipped\n3 of 5 orders shipped (60%)\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "TRpd",
