@@ -235,6 +235,19 @@ def _(mo):
     return
 
 
+@app.cell
+def _():
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    hello
+    """)
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -252,6 +265,11 @@ def _(mo):
 
     **E ·**
     """)
+    return
+
+
+@app.cell
+def _():
     return
 
 
@@ -280,10 +298,10 @@ def _(mo):
 @app.cell
 def _():
     score = 95
-    if score >= 60:
-        print("Pass")
-    elif score >= 90:
+    if score >= 90:
         print("A")
+    elif score >= 60:
+        print("Pass")
     return
 
 
