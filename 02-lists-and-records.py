@@ -136,16 +136,40 @@ def _():
     # Your own example of each name.
 
     # 1. value:
+    16.75
+
     # 2. name and assignment:
+    age = 42
+
     # 3. type:
+    print(type(16.75))
+    print(type("hello"))
+
     # 4. list:
+    colors = ["red", "green", "blue"]
+
     # 5. index:
+    colors[0]
+
     # 6. loop:
+    for color in colors:
+        print(color)
+
     # 7. condition:
+    if age >= 18:
+        print("adult")
+
     # 8. f-string:
+    f"My age is {age}"
+
     # 9. many into one number:
+    sum([1, 2, 3])
+
     # 10. function and argument:
+    sorted(colors, reverse=True)
+
     # 11. error:
+    # colors[10] would raise IndexError: list index out of range, since colors only has 3 items
     return
 
 
@@ -257,13 +281,13 @@ def _(mo):
     it, write under the letter, and press `Ctrl+Enter`. Code still goes in cells of your
     own, added with the **+** button.
 
-    **A ·**
+    **A ·** The first `if` or `elif` test the score satisfies, reading top to bottom, is the one that decides what gets printed, because `elif` skips all the tests after it.
 
-    **C ·**
+    **C ·** `append` always adds exactly one item, even when what you hand it is itself a list.
 
-    **D ·**
+    **D ·** `tickers.sort()` sorts the list in place and hands back nothing (`None`), while `sorted(tickers)` leaves `tickers` alone and hands back a new, sorted list.
 
-    **E ·**
+    **E ·** You would want two names for the same list on purpose when you want a change made through one name, such as adding an item, to show up wherever the other name is used too.
     """)
     return
 
@@ -681,6 +705,24 @@ def _(first_order):
     return
 
 
+@app.cell
+def _(first_order):
+    first_order["Freight"]
+    return
+
+
+@app.cell
+def _(first_order):
+    first_order["freight"]
+    return
+
+
+@app.cell
+def _(first_order):
+    first_order[0]
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -695,6 +737,11 @@ def _(mo):
     Two of them fail, and both give the same kind of error. Add a cell and find out
     which, and what the message says. A `KeyError` names the key it could not find.
     """)
+    return
+
+
+@app.cell
+def _():
     return
 
 
@@ -787,6 +834,35 @@ def _(mo):
     return
 
 
+@app.cell
+def _(orders):
+    total_freight = 0
+    for _order in orders:
+        total_freight = total_freight + _order["Freight"]
+    total_freight
+    return
+
+
+@app.cell
+def _(orders):
+    no_shipped_date_count = 0
+    for _order in orders:
+        if _order["ShippedDate"] is None:
+            no_shipped_date_count = no_shipped_date_count + 1
+    no_shipped_date_count
+    return
+
+
+@app.cell
+def _(orders):
+    largest_order = orders[0]
+    for _order in orders:
+        if _order["Freight"] > largest_order["Freight"]:
+            largest_order = _order
+    print(largest_order["OrderID"], largest_order["Freight"])
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -807,10 +883,9 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    *One row is ...*
+    One row is one order placed by one customer on one day.
 
-    *(Replace this line with your own sentence. If this cell shows you code instead of
-    text, use the cell menu to turn it into a markdown cell.)*
+    Check: if a row is one order, then this table should have one row per order — and `orders` holds 30 orders, which matches the 30 rows.
     """)
     return
 
@@ -838,6 +913,39 @@ def _(mo):
 
 
 @app.cell
+def _(portfolio):
+    my_total = 0
+    for item in portfolio:
+        my_total = my_total + item["Shares"] * item["Price"]
+    f"${my_total:.2f}"
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    *Write your own plain-words steps here, three or four lines, before reading the code below.*
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    For each holding, multiply the number of shares by the price per share. Calculate this value separately for all six holdings. Add the values of all six holdings together. The final total is the cost of buying the entire portfolio.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+ 
+    """)
+    return
+
+
+@app.cell
 def _():
     portfolio = [
         {"Symbol": "AAPL", "Shares": 100, "Price": 173.93},
@@ -848,6 +956,53 @@ def _():
         {"Symbol": "TSLA", "Shares": 150, "Price": 255.70},
     ]
     portfolio
+    return (portfolio,)
+
+
+@app.cell
+def _(portfolio):
+    portfolio_total_cost = 0
+    for holding in portfolio:
+        portfolio_total_cost = portfolio_total_cost + holding["Shares"] * holding["Price"]
+    f"${portfolio_total_cost:.2f}"
+    return
+
+
+@app.cell
+def _():
+    books_on_order = [
+        {"Title": "Python Basics", "Quantity": 12, "Price": 24.99},
+        {"Title": "Data Stories", "Quantity": 5, "Price": 34.50},
+        {"Title": "Clean Code", "Quantity": 8, "Price": 29.95},
+        {"Title": "The Pragmatic Coder", "Quantity": 15, "Price": 19.99},
+    ]
+    books_on_order
+    return (books_on_order,)
+
+
+@app.cell
+def _(books_on_order):
+    books_total_cost = 0
+    for book in books_on_order:
+        books_total_cost = books_total_cost + book["Quantity"] * book["Price"]
+    f"${books_total_cost:.2f}"
+    return
+
+
+@app.cell
+def _():
+    portfolio2 = [
+        {"Symbol": "ABC", "Shares": 50, "Price": 120},
+        {"Symbol": "XYZ", "Shares": 75, "Price": 80},
+        {"Symbol": "DEF", "Shares": 40, "Price": 150}
+    ]
+
+    total = 0
+
+    for stock in portfolio2:
+        total = total + stock["Shares"] * stock["Price"]
+
+    total
     return
 
 
@@ -899,6 +1054,30 @@ def _(mo):
         _where = f"could not write into {_data_dir.name}/: {_error}"
 
     _where
+    return (portfolio_csv,)
+
+
+@app.cell
+def _(portfolio_csv):
+    # Reading a file is new: open(...) opens it, and "with" closes it again
+    # automatically when the block below it finishes, even if something goes wrong.
+    with open(portfolio_csv) as file:
+        file_lines = file.readlines()
+
+    file_total = 0
+    print(f"{'name':<8}{'shares':>8}{'price':>10}")
+
+    # file_lines[0] is the header row ("name,shares,price"), so skip it with [1:].
+    for line in file_lines[1:]:
+        # Each line ends with \n (a newline character); strip() removes it.
+        # split(",") breaks "AAPL,100,173.93" into ["AAPL", "100", "173.93"].
+        name, shares_text, price_text = line.strip().split(",")
+        shares = int(shares_text)
+        price = float(price_text)
+        print(f"{name:<8}{shares:>8}{price:>10.2f}")
+        file_total = file_total + shares * price
+
+    print(f"Total cost: ${file_total:.2f}")
     return
 
 
