@@ -2,7 +2,7 @@
 # requires-python = ">=3.12"
 # dependencies = [
 #     "marimo",
-#     "requests",
+#     "requests==2.34.2",
 # ]
 # ///
 """Collections and APIs.
@@ -10,7 +10,7 @@
 
 import marimo
 
-__generated_with = "0.24.2"
+__generated_with = "0.25.1"
 app = marimo.App(width="medium", sql_output="polars")
 
 
@@ -55,6 +55,11 @@ def _(mo):
     uv add requests
     ```
     """)
+    return
+
+
+@app.cell
+def _():
     return
 
 
@@ -194,6 +199,55 @@ def _():
     return (closing_prices,)
 
 
+@app.cell
+def _(closing_prices):
+    closing_prices["AAPL"]
+    return
+
+
+@app.cell
+def _(closing_prices):
+    closing_prices["TSLA"]
+    return
+
+
+@app.cell
+def _(closing_prices):
+    closing_prices.get("TSLA")
+    return
+
+
+@app.cell
+def _(closing_prices):
+    above_200 = []
+    for _ticker, _price in closing_prices.items():
+        if _price > 200:
+            above_200.append(_ticker)
+    above_200
+    return
+
+
+@app.cell
+def _(closing_prices):
+    highest_price = 0
+    highest_ticker = ""
+    for _ticker, _price in closing_prices.items():
+        if _price > highest_price:
+            highest_price = _price
+            highest_ticker = _ticker
+    highest_ticker
+    return
+
+
+@app.cell
+def _(closing_prices):
+    raised_prices = {}
+    for _ticker, _price in closing_prices.items():
+        raised_prices[_ticker] = _price * 1.10
+    raised_prices
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -219,6 +273,16 @@ def _():
     ]
     len(ship_countries)
     return (ship_countries,)
+
+
+@app.cell
+def _(ship_countries):
+    country_counts = {}
+    for _country in ship_countries:
+        country_counts[_country] = country_counts.get(_country, 0) + 1
+
+    country_counts
+    return
 
 
 @app.cell(hide_code=True)
