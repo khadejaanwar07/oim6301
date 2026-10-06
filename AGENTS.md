@@ -22,4 +22,3 @@ I am a graduate business student learning Python and SQL for analytics. Treat me
 
 ## Checking work
 
-- Before you tell me something works, run it and show me what it printed. A marimo notebook runs top to bottom with `uv run python <notebook>.py`.

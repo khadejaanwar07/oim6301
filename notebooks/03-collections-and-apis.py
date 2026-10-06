@@ -10,7 +10,7 @@
 
 import marimo
 
-__generated_with = "0.25.1"
+__generated_with = "0.24.2"
 app = marimo.App(width="medium", sql_output="polars")
 
 
@@ -170,6 +170,19 @@ def _(mo):
 
     **G ·**
     """)
+    return
+
+
+app._unparsable_cell(
+    r"""
+    B. France, Germany, Brazil, and USA each had the most orders, with 4 each.
+    """,
+    name="_"
+)
+
+
+@app.cell
+def _():
     return
 
 
