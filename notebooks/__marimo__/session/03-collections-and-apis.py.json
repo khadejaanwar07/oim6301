@@ -502,7 +502,14 @@
     {
       "id": "tZnO",
       "code_hash": "8e41e132c0014809fc7c6d99010a66d6",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -520,9 +527,23 @@
     },
     {
       "id": "CLip",
-      "code_hash": "b0a00ff4650826e66e32fe0666f52a91",
-      "outputs": [],
-      "console": []
+      "code_hash": "a532eb8141386bdb461a41af4ac65c93",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>200</pre>"
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "https://api.open-meteo.com/v1/forecast?latitude=42.2987&longitude=-71.2595&current=temperature_2m,wind_speed_10m&temperature_unit=fahrenheit&wind_speed_unit=mph&timezone=America/New_York\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "YECM",
@@ -540,7 +561,14 @@
     {
       "id": "cEAS",
       "code_hash": "25e9c1190b53d7f608172bbf33825be4",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"latitude\": \"text/plain+float:42.299843\", \"longitude\": \"text/plain+float:-71.27756\", \"generationtime_ms\": \"text/plain+float:0.4858970642089844\", \"utc_offset_seconds\": -14400, \"timezone\": \"America/New_York\", \"timezone_abbreviation\": \"GMT-4\", \"elevation\": \"text/plain+float:49.0\", \"current_units\": {\"time\": \"iso8601\", \"interval\": \"seconds\", \"temperature_2m\": \"\\u00b0F\", \"wind_speed_10m\": \"mp/h\"}, \"current\": {\"time\": \"2026-10-07T11:30\", \"interval\": 900, \"temperature_2m\": \"text/plain+float:58.8\", \"wind_speed_10m\": \"text/plain+float:8.0\"}}"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -559,7 +587,14 @@
     {
       "id": "EJmg",
       "code_hash": "11b5f79650a5781c25cfe837407d6333",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>58.8</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {

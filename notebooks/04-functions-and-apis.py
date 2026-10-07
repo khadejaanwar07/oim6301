@@ -153,7 +153,7 @@ def _(holdings):
 @app.function
 def compute_cost_v2(portfolio):
     cost_so_far = 0
-    for symbol, shares, price in portfolio:
+    for symbol, shares, price in portfolio: #unpacking
         cost_so_far = cost_so_far + shares+ price
     for stock in portfolio:
         print(stock)
