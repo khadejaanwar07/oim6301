@@ -647,14 +647,17 @@ def _(mo):
     return
 
 
-@app.cell
-def _(requests):
+app._unparsable_cell(
+    r"""
     bad_latitude_reply = requests.get(
-        "https://api.open-meteo.com/v1/forecast?latitude=422&longitude=-71.2595&current=temperature_2m",
+        "https://api.open-meteo.com/v1/forecast?
+        latitude=422&longitude=-71.2595&current=temperature_2m",
         timeout=10,
     )
     bad_latitude_reply.status_code, bad_latitude_reply.json()
-    return
+    """,
+    name="_"
+)
 
 
 @app.cell(hide_code=True)
@@ -714,6 +717,11 @@ def _(mo):
 
     **E · The wind in a sentence.** Add a cell that takes the wind speed and its unit out of `babson_weather` and puts both into one sentence with an f-string. *Check yourself: the unit reads `mp/h`, which is how this service writes miles per hour.*
     """)
+    return
+
+
+@app.cell
+def _():
     return
 
 
