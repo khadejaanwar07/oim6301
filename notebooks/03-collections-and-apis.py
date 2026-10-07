@@ -721,7 +721,10 @@ def _(mo):
 
 
 @app.cell
-def _():
+def _(babson_weather):
+    wind_speed = babson_weather["current"]["wind_speed_10m"]
+    wind_unit = babson_weather["current_units"]["wind_speed_10m"]
+    f"The wind is blowing at {wind_speed} {wind_unit}."
     return
 
 
@@ -733,6 +736,17 @@ def _(mo):
     return
 
 
+@app.cell
+def _(requests):
+    wellesley_reply = requests.get(
+        "https://geocoding-api.open-meteo.com/v1/search?name=Wellesley&count=1",
+        timeout=10,
+    )
+    wellesley_results = wellesley_reply.json()["results"]
+    wellesley_results
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -740,6 +754,17 @@ def _(mo):
 
     **Going further.** Use F's coordinates to ask for Wellesley's current temperature. Build the address with an f-string, so that changing the town changes the forecast.
     """)
+    return
+
+
+@app.cell
+def _(requests):
+    babson_park_reply = requests.get(
+        "https://geocoding-api.open-meteo.com/v1/search?name=Babson Park&count=1",
+        timeout=10,
+    )
+    babson_park_results = babson_park_reply.json()["results"]
+    babson_park_results
     return
 
 

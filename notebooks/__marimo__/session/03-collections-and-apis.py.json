@@ -8,7 +8,14 @@
     {
       "id": "Hbol",
       "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -53,7 +60,14 @@
     {
       "id": "lEQa",
       "code_hash": null,
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -72,7 +86,14 @@
     {
       "id": "Xref",
       "code_hash": "3ec179977eb886c2c66062090edededa",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"Symbol\": \"GOOG\", \"Price\": \"text/plain+float:133.1\", \"Currency\": \"USD\"}"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -91,7 +112,14 @@
     {
       "id": "BYtC",
       "code_hash": "eea132fed27efd6f1db408185f7d665e",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>True</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -110,7 +138,14 @@
     {
       "id": "Kclp",
       "code_hash": "d36c2544a9da3d7ca41366697fa9ad45",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>0</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -129,7 +164,14 @@
     {
       "id": "Hstk",
       "code_hash": "c6eaa2401b0fa36823b5bb26bdb54aba",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"Symbol: GOOG\", \"Price: 133.1\", \"Currency: USD\"]"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -148,7 +190,14 @@
     {
       "id": "iLit",
       "code_hash": "a098e7088e3366c7409a5de0cd5ca558",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"shipped\": 4, \"pending\": 2, \"cancelled\": 1}"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -167,13 +216,27 @@
     {
       "id": "ROlb",
       "code_hash": "78ec65fe03ee74a116aa0d95abe0542b",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "syntax",
+          "evalue": "line 1\n    B. France, Germany, Brazil, and USA each had the most orders, with 4 each.\n                                ^^^\nSyntaxError: invalid syntax\n",
+          "traceback": []
+        }
+      ],
       "console": []
     },
     {
       "id": "qnkX",
       "code_hash": null,
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -192,43 +255,99 @@
     {
       "id": "Vxnm",
       "code_hash": "b3baada9d1fcfdd58bb210c538eb3881",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"AAPL\": \"text/plain+float:260.81\", \"NVDA\": \"text/plain+float:186.0\", \"MSFT\": \"text/plain+float:404.88\", \"GOOG\": \"text/plain+float:308.42\"}"
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "DnEU",
       "code_hash": "1ac612db125e3b2944b69318890e73bd",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>260.81</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "ulZA",
       "code_hash": "68b2c05c327f302524823762c7ee6234",
-      "outputs": [],
-      "console": []
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "exception",
+          "evalue": "'TSLA'",
+          "traceback": null
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">\"C:\\Users\\Dr.Tanvir\\AppData\\Local\\Temp\\marimo_21120\\__marimo__cell_ulZA_.py\"</span>, line <span class=\"m\">1</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"n\">closing_prices</span><span class=\"p\">[</span><span class=\"s2\">\"TSLA\"</span><span class=\"p\">]</span>\n<span class=\"w\">    </span><span class=\"pm\">~~~~~~~~~~~~~~^^^^^^^^</span>\n<span class=\"gr\">KeyError</span>: <span class=\"n\">'TSLA'</span>\n</pre></div>\n</span>",
+          "mimetype": "application/vnd.marimo+traceback"
+        }
+      ]
     },
     {
       "id": "ecfG",
       "code_hash": "186b62d24d492ec154bdd903af6eb017",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "Pvdt",
       "code_hash": "086521750e673b986de6c11eecfd933f",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"AAPL\", \"MSFT\", \"GOOG\"]"
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "ZBYS",
       "code_hash": "3dfb5ed0c8c10efb691f89c3c6bfc4b7",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>&#x27;MSFT&#x27;</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "aLJB",
       "code_hash": "db10994d4a3cb2c2d09fc24a9be4f988",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"AAPL\": \"text/plain+float:286.891\", \"NVDA\": \"text/plain+float:204.60000000000002\", \"MSFT\": \"text/plain+float:445.36800000000005\", \"GOOG\": \"text/plain+float:339.26200000000006\"}"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -247,13 +366,27 @@
     {
       "id": "xXTn",
       "code_hash": "cf013d266ae6857b91858009b7c8ab48",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>30</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "AjVT",
       "code_hash": "3d67860eb639d0282e028a896a65dd94",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"France\": 4, \"Germany\": 4, \"Brazil\": 4, \"Belgium\": 1, \"Switzerland\": 2, \"Venezuela\": 3, \"Austria\": 3, \"Mexico\": 1, \"USA\": 4, \"Sweden\": 1, \"Finland\": 2, \"Argentina\": 1}"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -272,7 +405,14 @@
     {
       "id": "NCOB",
       "code_hash": "28bb1887819d424fa39aa23560629d78",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"GOOG\", 3]"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -304,7 +444,14 @@
     {
       "id": "TXez",
       "code_hash": "8cb4b4c9b56148cf5915a10cbe0dd092",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>&#x27;GOOG cost $13,136.00&#x27;</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -336,7 +483,14 @@
     {
       "id": "wlCL",
       "code_hash": "95a3924e5bdeb1262241b6861ecbb4f2",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[20, 10]"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -355,7 +509,14 @@
     {
       "id": "wAgl",
       "code_hash": "f01f1fda7f571e14bf2a6509ace69186",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>&#x27;Independence Day&#x27;</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -374,7 +535,14 @@
     {
       "id": "dGlV",
       "code_hash": "3ec454296bb0dc1ab5b1eba9bb86ad77",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[7, 4, [\"AAPL\", \"GOOG\", \"MSFT\", \"TSLA\"]]"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -406,7 +574,14 @@
     {
       "id": "yOPj",
       "code_hash": "fd30a3b2532bb06bb2b05ca93f53b70c",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[[\"AAPL\", \"GOOG\", \"MSFT\", \"TSLA\"], [\"AMZN\", \"NVDA\"]]"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -464,7 +639,14 @@
     {
       "id": "mWxS",
       "code_hash": "c8f862e56b4e11f6d7863336e449abd5",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[[\"AAPL\", 100, \"text/plain+float:173.93\"], [\"MSFT\", 50, \"text/plain+float:319.53\"], [\"GOOG\", 80, \"text/plain+float:131.36\"], [\"AMZN\", 200, \"text/plain+float:129.33\"], [\"NVDA\", 20, \"text/plain+float:410.17\"], [\"TSLA\", 150, \"text/plain+float:255.7\"]]"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -483,7 +665,14 @@
     {
       "id": "YWSi",
       "code_hash": "fa923984c3255ec447f3c2f9d1ae94e5",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[[\"2026-01-05\", \"AAPL\", \"buy\", 100, \"text/plain+float:180.0\"], [\"2026-02-10\", \"MSFT\", \"buy\", 40, \"text/plain+float:400.0\"], [\"2026-03-02\", \"AAPL\", \"buy\", 50, \"text/plain+float:210.0\"], [\"2026-04-15\", \"AAPL\", \"sell\", 120, \"text/plain+float:230.0\"], [\"2026-05-20\", \"MSFT\", \"buy\", 20, \"text/plain+float:380.0\"], [\"2026-06-08\", \"MSFT\", \"sell\", 50, \"text/plain+float:420.0\"], [\"2026-07-01\", \"AAPL\", \"buy\", 30, \"text/plain+float:240.0\"], [\"2026-08-12\", \"AAPL\", \"sell\", 40, \"text/plain+float:250.0\"]]"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -625,8 +814,15 @@
     },
     {
       "id": "kLmu",
-      "code_hash": "80c6a8567fd12b007ce7e420740ff83e",
-      "outputs": [],
+      "code_hash": "fc196def6fc494462dc4db508998d02e",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "syntax",
+          "evalue": "line 2\n    \"https://api.open-meteo.com/v1/forecast?\n    ^\nSyntaxError: unterminated string literal (detected at line 2)\n",
+          "traceback": []
+        }
+      ],
       "console": []
     },
     {
@@ -645,7 +841,14 @@
     {
       "id": "dxZZ",
       "code_hash": "5bd422ed104db59bf08fcd74f9c7c304",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[200, {\"generationtime_ms\": \"text/plain+float:0.5710125\"}]"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -664,7 +867,14 @@
     {
       "id": "TTti",
       "code_hash": "9e24f0f5b2cd162f0e0a7f9d94eefd0c",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>True</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -695,8 +905,15 @@
     },
     {
       "id": "oFNT",
-      "code_hash": null,
-      "outputs": [],
+      "code_hash": "e7e3599821c45a037dc041d1a5e1ba41",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>&#x27;The wind is blowing at 8.0 mp/h.&#x27;</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -713,6 +930,19 @@
       "console": []
     },
     {
+      "id": "aXcV",
+      "code_hash": "46a72457d377f4e999ec2a5507352ac9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[{\"id\": 4954738, \"name\": \"Wellesley\", \"latitude\": \"text/plain+float:42.29649\", \"longitude\": \"text/plain+float:-71.29256\", \"elevation\": \"text/plain+float:38.0\", \"feature_code\": \"PPL\", \"country_code\": \"US\", \"admin1_id\": 6254926, \"admin2_id\": 4945455, \"admin3_id\": 4954762, \"timezone\": \"America/New_York\", \"population\": 27982, \"postcodes\": [\"02482\"], \"country_id\": 6252001, \"country\": \"United States\", \"admin1\": \"Massachusetts\", \"admin2\": \"Norfolk\", \"admin3\": \"Town of Wellesley\"}]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "fCoF",
       "code_hash": "21d3ca8f95327f43ccfb133da060a48a",
       "outputs": [
@@ -720,6 +950,19 @@
           "type": "data",
           "data": {
             "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>G \u00b7 The first result.</strong> Search for <code>Babson Park</code> and look at the first place in <code>results</code>. In the written answers cell, answer under <strong>G</strong>: which state is it in, and what would code that always takes <code>[0]</code> have done with it?</span>\n<span class=\"paragraph\"><strong>Going further.</strong> Use F's coordinates to ask for Wellesley's current temperature. Build the address with an f-string, so that changing the town changes the forecast.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "veDb",
+      "code_hash": "a78c9d08294a0b428e1ee3ee59a1ddb6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[{\"id\": 4146481, \"name\": \"Babson Park\", \"latitude\": \"text/plain+float:27.83197\", \"longitude\": \"text/plain+float:-81.5223\", \"elevation\": \"text/plain+float:44.0\", \"feature_code\": \"PPL\", \"country_code\": \"US\", \"admin1_id\": 4155751, \"admin2_id\": 4168988, \"timezone\": \"America/New_York\", \"population\": 1356, \"postcodes\": [\"33827\"], \"country_id\": 6252001, \"country\": \"United States\", \"admin1\": \"Florida\", \"admin2\": \"Polk\"}]"
           }
         }
       ],
