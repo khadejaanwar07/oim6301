@@ -2,13 +2,20 @@
   "version": "1",
   "metadata": {
     "marimo_version": "0.25.1",
-    "script_metadata_hash": "d848f9de174660e41a371f5f58ae3c23"
+    "script_metadata_hash": "9868b6f061f02a54a7fa5827a3a61ef5"
   },
   "cells": [
     {
       "id": "Hbol",
       "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -79,7 +86,14 @@
     {
       "id": "Xref",
       "code_hash": "b9a3dad2977289276ed8dbc74e102af3",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>106.25</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -124,7 +138,14 @@
     {
       "id": "BYtC",
       "code_hash": "c8f862e56b4e11f6d7863336e449abd5",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[[\"AAPL\", 100, \"text/plain+float:173.93\"], [\"MSFT\", 50, \"text/plain+float:319.53\"], [\"GOOG\", 80, \"text/plain+float:131.36\"], [\"AMZN\", 200, \"text/plain+float:129.33\"], [\"NVDA\", 20, \"text/plain+float:410.17\"], [\"TSLA\", 150, \"text/plain+float:255.7\"]]"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -141,15 +162,55 @@
       "console": []
     },
     {
+      "id": "QpmS",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "Kclp",
-      "code_hash": "5972c5742a2be0f99522ee4be2cdbb74",
-      "outputs": [],
+      "code_hash": "aa47a66a71c35e7150c7add7c49850cb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>116302.7</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "iDyA",
+      "code_hash": "93119d7bb38de5bba1936e6e5b6202e2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "emfo",
       "code_hash": "fbcdd90c11ec2831b00fa6033a5c4c9a",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>116302.7</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -168,13 +229,27 @@
     {
       "id": "nWHF",
       "code_hash": "428b4c0c99c1cdc56d12353697857ed6",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[[\"VTI\", 120, \"text/plain+float:228.4\"], [\"BND\", 300, \"text/plain+float:72.15\"], [\"AAPL\", 40, \"text/plain+float:173.93\"]]"
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "iLit",
       "code_hash": "f081abd5f16aabef5649ae6239b827c2",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>56010.2</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -245,13 +320,27 @@
     {
       "id": "DnEU",
       "code_hash": "8e41e132c0014809fc7c6d99010a66d6",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "ulZA",
       "code_hash": "afdea3774b798b782ef68b655c7e9fad",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"source\": \"Massachusetts Department of Revenue, Division of Local Services, Municipal Databank (https://www.mass.gov/info-details/division-of-local-services-municipal-databank)\", \"endpoints\": {\"/ma/towns\": \"Every town with its latest single-family value and bill, 50 to a page. Query: county, name, max_bill, max_value, sort (name, population, income, value, bill), order (asc, desc), page, per_page\", \"/ma/towns/{dor_code}\": \"One town and its latest finances\", \"/ma/towns/{dor_code}/history\": \"Tax rates and single-family bills by fiscal year. Query: from_year, to_year\", \"/ma/counties\": \"The 14 counties, with their number of towns and population\", \"/ma/votes\": \"Override and underride ballot votes. Query: dor_code, from_year, to_year, page, per_page\"}}"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -270,7 +359,14 @@
     {
       "id": "Pvdt",
       "code_hash": "14cde2c50bca4b2639420fbb27ccefe8",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[200, \"https://oim.zhili.dev/ma/towns?county=Norfolk\"]"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -289,7 +385,14 @@
     {
       "id": "aLJB",
       "code_hash": "38507227e42cfbedc8c8954016b16b92",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"page\": 1, \"per_page\": 50, \"total\": 28, \"pages\": 1, \"has_next\": false, \"has_prev\": false}"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -308,7 +411,14 @@
     {
       "id": "xXTn",
       "code_hash": "a71705731d61b6a8136fd49323b520cb",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"dor_code\": \"018\", \"name\": \"Avon\", \"county\": \"Norfolk\", \"type\": \"town\", \"area_square_miles\": \"text/plain+float:5.1\", \"founded_year\": 1888, \"population\": 4801, \"income_per_capita_dollars\": 44742, \"equalized_value_dollars\": 1239903800, \"equalized_value_per_capita_dollars\": 258259, \"data_fiscal_year\": 2027, \"average_single_family_value_dollars\": 572492, \"average_single_family_bill_dollars\": 7643, \"finances_fiscal_year\": 2026}"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -327,13 +437,27 @@
     {
       "id": "pHFh",
       "code_hash": "4109b7e974f26a60556ee3f973cb12d3",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "NCOB",
       "code_hash": "887930193010547e7f6c8af54f576e31",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[{\"dor_code\": \"035\", \"name\": \"Boston\", \"county\": \"Suffolk\", \"type\": \"city\", \"area_square_miles\": \"text/plain+float:48.4\", \"founded_year\": 1630, \"population\": 673458, \"income_per_capita_dollars\": 65287, \"equalized_value_dollars\": 241761863000, \"equalized_value_per_capita_dollars\": 358986, \"data_fiscal_year\": 2027, \"average_single_family_value_dollars\": 615084, \"average_single_family_bill_dollars\": 7627, \"finances_fiscal_year\": 2026}, {\"dor_code\": \"057\", \"name\": \"Chelsea\", \"county\": \"Suffolk\", \"type\": \"city\", \"area_square_miles\": \"text/plain+float:2.2\", \"founded_year\": 1739, \"population\": 40245, \"income_per_capita_dollars\": 27806, \"equalized_value_dollars\": 6348238400, \"equalized_value_per_capita_dollars\": 157740, \"data_fiscal_year\": 2027, \"average_single_family_value_dollars\": 367078, \"average_single_family_bill_dollars\": 4214, \"finances_fiscal_year\": 2026}, {\"dor_code\": \"248\", \"name\": \"Revere\", \"county\": \"Suffolk\", \"type\": \"city\", \"area_square_miles\": \"text/plain+float:5.9\", \"founded_year\": 1871, \"population\": 60702, \"income_per_capita_dollars\": 33133, \"equalized_value_dollars\": 12020129000, \"equalized_value_per_capita_dollars\": 198019, \"data_fiscal_year\": 2027, \"average_single_family_value_dollars\": 623461, \"average_single_family_bill_dollars\": 5574, \"finances_fiscal_year\": 2026}, {\"dor_code\": \"346\", \"name\": \"Winthrop\", \"county\": \"Suffolk\", \"type\": \"town\", \"area_square_miles\": \"text/plain+float:2.0\", \"founded_year\": 1852, \"population\": 18739, \"income_per_capita_dollars\": 47434, \"equalized_value_dollars\": 3873447100, \"equalized_value_per_capita_dollars\": 206705, \"data_fiscal_year\": 2027, \"average_single_family_value_dollars\": 744423, \"average_single_family_bill_dollars\": 8293, \"finances_fiscal_year\": 2026}]"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -391,7 +515,14 @@
     {
       "id": "yCnT",
       "code_hash": "a8af7dc0d3029782a8e02b74a19d0330",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[50, {\"page\": 1, \"per_page\": 50, \"total\": 351, \"pages\": 8, \"has_next\": true, \"has_prev\": false}]"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -410,7 +541,14 @@
     {
       "id": "kqZH",
       "code_hash": "c7fc10556c32764f544faf48140c6d25",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[422, {\"detail\": [{\"type\": \"less_than_equal\", \"loc\": [\"query\", \"per_page\"], \"msg\": \"Input should be less than or equal to 100\", \"input\": \"500\", \"ctx\": {\"le\": 100}}]}]"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -429,13 +567,27 @@
     {
       "id": "rEll",
       "code_hash": "6faf21dd04d541a6216521c2c7181fe4",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "dGlV",
       "code_hash": "fac3aeaf89e0bdbcc0f9cfba304ef1c5",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"page\": 1, \"per_page\": 100, \"total\": 351, \"pages\": 4, \"has_next\": true, \"has_prev\": false}"
+          }
+        }
+      ],
       "console": []
     },
     {

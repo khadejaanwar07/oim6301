@@ -2,7 +2,7 @@
 # requires-python = ">=3.12"
 # dependencies = [
 #     "marimo",
-#     "requests",
+#     "requests==2.34.2",
 # ]
 # ///
 """Functions and APIs.
@@ -128,16 +128,42 @@ def _(mo):
     return
 
 
-@app.function
-def compute_cost(portfolio):
-    cost_so_far = 0
-    for symbol, shares, price in portfolio:
-        cost_so_far = cost_so_far + shares * price
-    return round(cost_so_far, 2)
+@app.cell
+def _():
+    return
 
 
 @app.cell
 def _(holdings):
+    def compute_cost(portfolio):
+        """
+        Computes the total cost of a portfolio.
+        portfolio: list of tuples (symbol, shares, price)
+
+        Returns the total cost rounded to 2 decimal places.
+        """
+        cost_so_far = 0
+        for symbol, shares, price in portfolio:
+            cost_so_far = cost_so_far + shares * price
+        return round(cost_so_far, 2)
+    compute_cost(holdings)
+    return (compute_cost,)
+
+
+@app.function
+def compute_cost_v2(portfolio):
+    cost_so_far = 0
+    for symbol, shares, price in portfolio:
+        cost_so_far = cost_so_far + shares+ price
+    for stock in portfolio:
+        print(stock)
+        stock_cost = stock[1] * stock[2]
+        cost_so_far += stock_cost
+    return round(cost_so_far, 2)
+
+
+@app.cell
+def _(compute_cost, holdings):
     compute_cost(holdings)
     return
 
@@ -162,7 +188,7 @@ def _():
 
 
 @app.cell
-def _(retirement_holdings):
+def _(compute_cost, retirement_holdings):
     compute_cost(retirement_holdings)
     return
 
