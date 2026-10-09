@@ -45,7 +45,19 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    A Babson graduate student could use this tool to decide which Boston-area sporting event best fits their monthly entertainment budget. The tool compares the total cost of attending each event, including the ticket, transportation, food, and other spending, and recommends the most affordable option based on how much of the student's budget it uses.
+    Babson graduate student has a monthly entertainment budget and wants to see a Boston
+    pro sports game this fall. There are 22 upcoming home games which include 5 Patriots games at
+    Gillette Stadium, 8 Celtics and 9 Bruins games at TD Garden. This section names
+    the three teams and their venues rather than listing every game. The full list with
+    each game's date, opponent, and prices is in section 3. A game costs more than the
+    ticket, because getting there from Babson, food, and other spending add up.
+
+    **Which of these games is the best value for the student given their budget and
+    how they plan to get there?**
+
+    The tool adds up the full cost of each game (ticket, round-trip transportation from Babson, food, and other spending) which shows what share of the monthly budget it uses, labels each game from Excellent Value to Over Budget, and names the game that uses the smallest share. Changing the budget or the transportation method in section 3 updates every result.
+
+    Prices are representative estimates and all of the data was last checked on 11/8/2026
     """)
     return
 

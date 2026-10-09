@@ -45,20 +45,20 @@
       "console": []
     },
     {
-      "id": "AYBe",
-      "code_hash": "a8ad491cb34f3633a9ab3c9b9bb3a352",
+      "id": "YTDo",
+      "code_hash": "3ea25152eedf689707b7d612ba6de04b",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">A Babson graduate student could use this tool to decide which Boston-area sporting event best fits their monthly entertainment budget. The tool compares the total cost of attending each event, including the ticket, transportation, food, and other spending, and recommends the most affordable option based on how much of the student's budget it uses.</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Babson graduate student has a monthly entertainment budget and wants to see a Boston\npro sports game this fall. There are 22 upcoming home games which include 5 Patriots games at\nGillette Stadium, 8 Celtics and 9 Bruins games at TD Garden. This section names\nthe three teams and their venues rather than listing every game. The full list with\neach game's date, opponent, and prices is in section 3. A game costs more than the\nticket, because getting there from Babson, food, and other spending add up.</span>\n<span class=\"paragraph\"><strong>Which of these games is the best value for the student given their budget and\nhow they plan to get there?</strong></span>\n<span class=\"paragraph\">The tool adds up the full cost of each game (ticket, round-trip transportation from Babson, food, and other spending) which shows what share of the monthly budget it uses, labels each game from Excellent Value to Over Budget, and names the game that uses the smallest share. Changing the budget or the transportation method in section 3 updates every result.</span>\n<span class=\"paragraph\">Prices are representative estimates and all of the data was last checked on 11/8/2026</span></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "bkHC",
+      "id": "lEQa",
       "code_hash": "f5e3e0e704045272fd881089e5d00c3d",
       "outputs": [
         {
@@ -71,13 +71,13 @@
       "console": []
     },
     {
-      "id": "ZzQU",
+      "id": "PKri",
       "code_hash": null,
       "outputs": [],
       "console": []
     },
     {
-      "id": "lEQa",
+      "id": "Xref",
       "code_hash": "20f0e7f2f4fdae13652d41330c39ad42",
       "outputs": [
         {
@@ -90,38 +90,19 @@
       "console": []
     },
     {
-      "id": "PKri",
+      "id": "SFPL",
       "code_hash": "54436c443c60319e53020cf945095f3d",
       "outputs": [],
       "console": []
     },
     {
-      "id": "Xref",
+      "id": "BYtC",
       "code_hash": "71d32bd63e1b86444a83f18329c3c3f8",
       "outputs": [
         {
           "type": "data",
           "data": {
             "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"4-the-work\">4. The Work</h2>\n<span class=\"paragraph\">Add as many cells as you need. Try each step yourself before you ask your agent, and commit as you go.</span></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "SFPL",
-      "code_hash": null,
-      "outputs": [],
-      "console": []
-    },
-    {
-      "id": "BYtC",
-      "code_hash": "189948d98f771b65614d9dc06a5a3ea6",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"5-the-answer\">5. The Answer</h2>\n<span class=\"paragraph\"><em>A table of your results in the cell below, printed with <code>print</code> and f-strings, then one sentence here that answers the question in section 1, with the number in it.</em></span></span>"
           }
         }
       ],
@@ -135,12 +116,12 @@
     },
     {
       "id": "Kclp",
-      "code_hash": "cefd9fb4105f4ca556cfc0dc69895e7a",
+      "code_hash": "189948d98f771b65614d9dc06a5a3ea6",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"6-how-i-know-these-numbers-are-right\">6. How I Know These Numbers Are Right</h2>\n<span class=\"paragraph\"><em>At least one check that reaches a result a second, independent way. Name what you compared and what came out.</em></span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"5-the-answer\">5. The Answer</h2>\n<span class=\"paragraph\"><em>A table of your results in the cell below, printed with <code>print</code> and f-strings, then one sentence here that answers the question in section 1, with the number in it.</em></span></span>"
           }
         }
       ],
@@ -154,6 +135,25 @@
     },
     {
       "id": "Hstk",
+      "code_hash": "cefd9fb4105f4ca556cfc0dc69895e7a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"6-how-i-know-these-numbers-are-right\">6. How I Know These Numbers Are Right</h2>\n<span class=\"paragraph\"><em>At least one check that reaches a result a second, independent way. Name what you compared and what came out.</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "iLit",
       "code_hash": "4fa513d08c761dfe89641eaef1357bc2",
       "outputs": [
         {
@@ -166,7 +166,7 @@
       "console": []
     },
     {
-      "id": "nWHF",
+      "id": "ZHCJ",
       "code_hash": "9e11622311558f577bd7fefb4cd2c3ec",
       "outputs": [
         {
