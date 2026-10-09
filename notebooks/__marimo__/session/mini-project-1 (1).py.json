@@ -71,9 +71,22 @@
       "console": []
     },
     {
-      "id": "PKri",
+      "id": "tNBW",
       "code_hash": null,
       "outputs": [],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "4c00942a755f3209148ad846d9c193db",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"2-my-plan-before-ai\">2. My Plan Before AI</h2>\n<span class=\"paragraph\"><strong>Inputs</strong></span>\n<ul>\n<li>The student's monthly entertainment budget (for example $150)</li>\n<li>The student's transportation method: MBTA, Rideshare, or Drive</li>\n<li>22 upcoming games, each with a date, team, opponent, venue, ticket price, food\n  estimate, and other spending</li>\n<li>The round-trip cost from Babson to each venue (TD Garden and Gillette Stadium) for\n  each transportation method</li>\n</ul>\n<span class=\"paragraph\"><strong>Steps</strong></span>\n<ol>\n<li>Start with no \"cheapest game so far\" as the starting value of the loop.</li>\n<li>Go through the games one at a time. For each game:<ul>\n<li>Look up the transportation cost for its venue and the student's method.</li>\n<li>Add up the total: ticket + transportation + food + other.</li>\n<li>Divide the total by the budget to get the % of the budget it uses.</li>\n<li>Give it a label: under 40% is Excellent Value, 40% to under 60% is Good Value,\n  60% to under 80% is Expensive, 80% to 100% is Poor Fit and over 100% is Over Budget.</li>\n<li>If it uses a smaller percentage than the cheapest game so far, it becomes the new cheapest.</li>\n<li>Save its results for the table.</li>\n</ul>\n</li>\n<li>Print a table with one row per game with the date, team, opponent, ticket, transport, food,\n   other, total, percentage of budget and label.</li>\n<li>Print one sentence naming the best-value game, with its date, total, and % of budget.</li>\n</ol>\n<span class=\"paragraph\"><strong>What does my loop carry from one step to the next?</strong></span>\n<span class=\"paragraph\">The cheapest game found so far and the percentage of the budget it uses. Each game is compared\nagainst it so after the last game it holds the answer. The loop also builds up the\nlist of results that the table prints.</span>\n<span class=\"paragraph\"><strong>Which check will I use in section 6, and which two numbers should agree?</strong></span>\n<span class=\"paragraph\">I will work out the total and % of the budget for one game, for example Celtics vs. Nets on Oct 27,\nby hand and compare my numbers next to the program's since they should be the same. As a second\ncheck, tickets + transport + food + other added up over all 22 games should equal the\n22 totals added up.</span></span>"
+          }
+        }
+      ],
       "console": []
     },
     {

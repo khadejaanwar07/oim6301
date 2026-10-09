@@ -85,6 +85,51 @@ def _():
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    ## 2. My Plan Before AI
+
+    **Inputs**
+
+    - The student's monthly entertainment budget (for example $150)
+    - The student's transportation method: MBTA, Rideshare, or Drive
+    - 22 upcoming games, each with a date, team, opponent, venue, ticket price, food
+      estimate, and other spending
+    - The round-trip cost from Babson to each venue (TD Garden and Gillette Stadium) for
+      each transportation method
+
+    **Steps**
+
+    1. Start with no "cheapest game so far" as the starting value of the loop.
+    2. Go through the games one at a time. For each game:
+        - Look up the transportation cost for its venue and the student's method.
+        - Add up the total: ticket + transportation + food + other.
+        - Divide the total by the budget to get the % of the budget it uses.
+        - Give it a label: under 40% is Excellent Value, 40% to under 60% is Good Value,
+          60% to under 80% is Expensive, 80% to 100% is Poor Fit and over 100% is Over Budget.
+        - If it uses a smaller percentage than the cheapest game so far, it becomes the new cheapest.
+        - Save its results for the table.
+    3. Print a table with one row per game with the date, team, opponent, ticket, transport, food,
+       other, total, percentage of budget and label.
+    4. Print one sentence naming the best-value game, with its date, total, and % of budget.
+
+    **What does my loop carry from one step to the next?**
+
+    The cheapest game found so far and the percentage of the budget it uses. Each game is compared
+    against it so after the last game it holds the answer. The loop also builds up the
+    list of results that the table prints.
+
+    **Which check will I use in section 6, and which two numbers should agree?**
+
+    I will work out the total and % of the budget for one game, for example Celtics vs. Nets on Oct 27,
+    by hand and compare my numbers next to the program's since they should be the same. As a second
+    check, tickets + transport + food + other added up over all 22 games should equal the
+    22 totals added up.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     ## 3. Inputs
 
     Every number the project starts from goes in the cell below, and nowhere else, so that changing one input changes every result after it.
