@@ -111,7 +111,7 @@
     },
     {
       "id": "aaCR",
-      "code_hash": "f978534ad393e58cecaa1b56d9738d7e",
+      "code_hash": "0c84c6d915bc68358251a93f3263d954",
       "outputs": [
         {
           "type": "data",
@@ -137,12 +137,38 @@
     },
     {
       "id": "RGSE",
-      "code_hash": null,
+      "code_hash": "517b90497b82c5942b960b761f204866",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/plain": ""
+            "application/json": "{\"TD Garden\": 6, \"Gillette\": 25}"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "temW",
+      "code_hash": "4b4d2d6ec2e3cd690e06ae12ab1e6281",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>&#x27;Good Value&#x27;</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "euww",
+      "code_hash": "c6bde65afaa45768d335caa5ef5e2681",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"Date\": \"2026-10-27\", \"Team\": \"Celtics\", \"Opponent\": \"Nets\", \"Ticket\": 41, \"Transport\": 6, \"Food\": 20, \"Other\": 5, \"Total\": 72, \"Percent\": \"text/plain+float:48.0\", \"Label\": \"Good Value\"}"
           }
         }
       ],
@@ -163,7 +189,7 @@
     },
     {
       "id": "emfo",
-      "code_hash": null,
+      "code_hash": "7d182c69c4dae76bf55e201670025865",
       "outputs": [
         {
           "type": "data",
@@ -172,7 +198,34 @@
           }
         }
       ],
-      "console": []
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Date        Team      Opponent           Ticket  Transport     Food    Other     Total  % Budget  Label          \n-----------------------------------------------------------------------------------------------------------------\n2026-10-11  Patriots  Raiders            $95.00     $25.00   $25.00   $10.00   $155.00    103.3%  Over Budget    \n2026-10-18  Patriots  Jets               $90.00     $25.00   $25.00   $10.00   $150.00    100.0%  Poor Fit       \n2026-10-22  Bruins    Predators          $55.00      $6.00   $20.00    $5.00    $86.00     57.3%  Good Value     \n2026-10-23  Celtics   Knicks            $181.00      $6.00   $20.00    $5.00   $212.00    141.3%  Over Budget    \n2026-10-24  Bruins    Sharks             $50.00      $6.00   $20.00    $5.00    $81.00     54.0%  Good Value     \n2026-10-26  Celtics   Bulls              $49.00      $6.00   $20.00    $5.00    $80.00     53.3%  Good Value     \n2026-10-27  Celtics   Nets               $41.00      $6.00   $20.00    $5.00    $72.00     48.0%  Good Value     \n2026-10-30  Celtics   Bulls              $90.00      $6.00   $20.00    $5.00   $121.00     80.7%  Poor Fit       \n2026-10-31  Bruins    Blackhawks         $70.00      $6.00   $20.00    $5.00   $101.00     67.3%  Expensive      \n2026-11-02  Bruins    Golden Knights     $65.00      $6.00   $20.00    $5.00    $96.00     64.0%  Expensive      \n2026-11-04  Celtics   Bucks              $70.00      $6.00   $20.00    $5.00   $101.00     67.3%  Expensive      \n2026-11-08  Patriots  Packers           $140.00     $25.00   $25.00   $10.00   $200.00    133.3%  Over Budget    \n2026-11-08  Bruins    Panthers           $85.00      $6.00   $20.00    $5.00   $116.00     77.3%  Expensive      \n2026-11-12  Bruins    Canadiens         $110.00      $6.00   $20.00    $5.00   $141.00     94.0%  Poor Fit       \n2026-11-14  Bruins    Wild               $60.00      $6.00   $20.00    $5.00    $91.00     60.7%  Expensive      \n2026-11-15  Celtics   Mavericks          $65.00      $6.00   $20.00    $5.00    $96.00     64.0%  Expensive      \n2026-11-16  Celtics   Magic              $55.00      $6.00   $20.00    $5.00    $86.00     57.3%  Good Value     \n2026-11-17  Bruins    Kings              $60.00      $6.00   $20.00    $5.00    $91.00     60.7%  Expensive      \n2026-11-21  Bruins    Capitals           $75.00      $6.00   $20.00    $5.00   $106.00     70.7%  Expensive      \n2026-11-27  Celtics   Hawks              $75.00      $6.00   $20.00    $5.00   $106.00     70.7%  Expensive      \n2026-12-06  Patriots  Bills             $160.00     $25.00   $25.00   $10.00   $220.00    146.7%  Over Budget    \n2026-12-10  Patriots  Vikings           $130.00     $25.00   $25.00   $10.00   $190.00    126.7%  Over Budget    \n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "TDBM",
+      "code_hash": "49d8afe982cdd53e961bcb12974f9e74",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "With a $150.00 monthly budget and MBTA as transportation, the best value is the Celtics vs. Nets on 2026-10-27: $72.00 in all, 48.0% of the budget (Good Value).\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "Hstk",
@@ -188,8 +241,21 @@
       "console": []
     },
     {
+      "id": "TUDT",
+      "code_hash": "7a4d6515c530efeabf947bad98df1e60",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Check 1: Calculating one manually.</strong> I worked out the Celtics vs. Nets game on Oct 27 without\nthe code. The calculation is $41 ticket + $6 MBTA + $20 food + $5 other = $72, and $72 out of a $150\nbudget is 48.0%. The program gives the same: $72.00 and 48.0%. I have checked again by the code below:</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "nWHF",
-      "code_hash": null,
+      "code_hash": "d65901d3d816a28d1ca533ac3997ffd9",
       "outputs": [
         {
           "type": "data",
@@ -198,7 +264,34 @@
           }
         }
       ],
-      "console": []
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Total:    by hand $72.00   program $72.00\n% Budget: by hand 48.0%      program 48.0%\nTotals match: True\nPercents match: True\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "UOTm",
+      "code_hash": "d489c36cd9bcc6a0a768c26d3d9acd8b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Tickets $1,871.00 + transport $227.00 + food $465.00 + other $135.00 = $2,698.00\nSum of the 22 totals = $2,698.00\nMatch: True\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "iLit",

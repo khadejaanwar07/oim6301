@@ -141,6 +141,7 @@ def _(mo):
 
 @app.cell
 def _():
+    # All amounts are in US dollars
     monthly_budget = 150
     transport_mode = "MBTA"
 
@@ -175,7 +176,14 @@ def _():
         ("2026-12-10", "Patriots", "Vikings", "Gillette", 130, 25, 10),
     ]
     len(games)
-    return
+    return (
+        drive_costs,
+        games,
+        mbta_costs,
+        monthly_budget,
+        rideshare_costs,
+        transport_mode,
+    )
 
 
 @app.cell(hide_code=True)
@@ -189,8 +197,62 @@ def _(mo):
 
 
 @app.cell
+def _(drive_costs, mbta_costs, rideshare_costs, transport_mode):
+    if transport_mode == "MBTA":
+        transport_costs = mbta_costs
+    elif transport_mode == "Rideshare":
+        transport_costs = rideshare_costs
+    else:
+        transport_costs = drive_costs
+    transport_costs
+    return (transport_costs,)
+
+
+@app.cell
 def _():
-    return
+    def value_label(percent):
+        if percent < 40:
+            return "Excellent Value"
+        elif percent < 60:
+            return "Good Value"
+        elif percent < 80:
+            return "Expensive"
+        elif percent <= 100:
+            return "Poor Fit"
+        else:
+            return "Over Budget"
+
+    value_label(48)
+    return (value_label,)
+
+
+@app.cell
+def _(games, monthly_budget, transport_costs, value_label):
+    results = []
+    cheapest_so_far = None
+    for _date, _team, _opponent, _venue, _ticket, _food, _other in games:
+        _transport = transport_costs[_venue]
+        _total = _ticket + _transport + _food + _other
+        _percent = _total / monthly_budget * 100
+        _row = {
+            "Date": _date,
+            "Team": _team,
+            "Opponent": _opponent,
+            "Ticket": _ticket,
+            "Transport": _transport,
+            "Food": _food,
+            "Other": _other,
+            "Total": _total,
+            "Percent": _percent,
+            "Label": value_label(_percent),
+        }
+        results.append(_row)
+        if cheapest_so_far is None:
+            cheapest_so_far = _row
+        elif _percent < cheapest_so_far["Percent"]:
+            cheapest_so_far = _row
+    cheapest_so_far
+    return cheapest_so_far, results
 
 
 @app.cell(hide_code=True)
@@ -204,7 +266,28 @@ def _(mo):
 
 
 @app.cell
-def _():
+def _(results):
+    print(f"{'Date':<12}{'Team':<10}{'Opponent':<16}{'Ticket':>9}{'Transport':>11}{'Food':>9}{'Other':>9}{'Total':>10}{'% Budget':>10}  {'Label':<15}")
+    print("-----------------------------------------------------------------------------------------------------------------")
+    for _row in results:
+        _ticket = f"${_row['Ticket']:,.2f}"
+        _transport = f"${_row['Transport']:,.2f}"
+        _food = f"${_row['Food']:,.2f}"
+        _other = f"${_row['Other']:,.2f}"
+        _total = f"${_row['Total']:,.2f}"
+        _percent = f"{_row['Percent']:.1f}%"
+        print(f"{_row['Date']:<12}{_row['Team']:<10}{_row['Opponent']:<16}{_ticket:>9}{_transport:>11}{_food:>9}{_other:>9}{_total:>10}{_percent:>10}  {_row['Label']:<15}")
+    return
+
+
+@app.cell
+def _(cheapest_so_far, monthly_budget, transport_mode):
+    print(
+        f"With a ${monthly_budget:,.2f} monthly budget and {transport_mode} as transportation, "
+        f"the best value is the {cheapest_so_far['Team']} vs. {cheapest_so_far['Opponent']} "
+        f"on {cheapest_so_far['Date']}: ${cheapest_so_far['Total']:,.2f} in all, "
+        f"{cheapest_so_far['Percent']:.1f}% of the budget ({cheapest_so_far['Label']})."
+    )
     return
 
 
@@ -218,8 +301,54 @@ def _(mo):
     return
 
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **Check 1: Calculating one manually.** I worked out the Celtics vs. Nets game on Oct 27 without
+    the code. The calculation is \$41 ticket + \$6 MBTA + \$20 food + \$5 other = \$72, and \$72 out of a \$150
+    budget is 48.0%. The program gives the same: \$72.00 and 48.0%. I have checked again by the code below:
+    """)
+    return
+
+
 @app.cell
-def _():
+def _(results):
+    hand_total = 72
+    hand_percent = 48.0
+
+    # The same game, as the program worked it out in section 4
+    for _row in results:
+        if _row["Date"] == "2026-10-27":
+            program_total = _row["Total"]
+            program_percent = _row["Percent"]
+
+    print(f"Total:    by hand ${hand_total:,.2f}   program ${program_total:,.2f}")
+    print(f"% Budget: by hand {hand_percent:.1f}%      program {program_percent:.1f}%")
+    print(f"Totals match: {hand_total == program_total}")
+    print(f"Percents match: {hand_percent == program_percent}")
+    return
+
+
+@app.cell
+def _(games, results, transport_costs):
+    tickets_so_far = 0
+    transport_so_far = 0
+    food_so_far = 0
+    other_so_far = 0
+    for _date, _team, _opponent, _venue, _ticket, _food, _other in games:
+        tickets_so_far = tickets_so_far + _ticket
+        transport_so_far = transport_so_far + transport_costs[_venue]
+        food_so_far = food_so_far + _food
+        other_so_far = other_so_far + _other
+    parts_sum = tickets_so_far + transport_so_far + food_so_far + other_so_far
+
+    totals_so_far = 0
+    for _row in results:
+        totals_so_far = totals_so_far + _row["Total"]
+
+    print(f"Tickets ${tickets_so_far:,.2f} + transport ${transport_so_far:,.2f} + food ${food_so_far:,.2f} + other ${other_so_far:,.2f} = ${parts_sum:,.2f}")
+    print(f"Sum of the 22 totals = ${totals_so_far:,.2f}")
+    print(f"Match: {parts_sum == totals_so_far}")
     return
 
 
