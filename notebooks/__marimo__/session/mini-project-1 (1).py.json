@@ -73,7 +73,14 @@
     {
       "id": "tNBW",
       "code_hash": null,
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -103,9 +110,16 @@
       "console": []
     },
     {
-      "id": "SFPL",
-      "code_hash": "54436c443c60319e53020cf945095f3d",
-      "outputs": [],
+      "id": "aaCR",
+      "code_hash": "f978534ad393e58cecaa1b56d9738d7e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>22</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -124,7 +138,14 @@
     {
       "id": "RGSE",
       "code_hash": null,
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -143,7 +164,14 @@
     {
       "id": "emfo",
       "code_hash": null,
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -162,7 +190,14 @@
     {
       "id": "nWHF",
       "code_hash": null,
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {

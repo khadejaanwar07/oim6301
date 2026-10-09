@@ -141,7 +141,40 @@ def _(mo):
 
 @app.cell
 def _():
-    # Your inputs.
+    monthly_budget = 150
+    transport_mode = "MBTA"
+
+    # Round-trip cost from Babson to each venue, one dictionary per way of getting there
+    mbta_costs = {"TD Garden": 6, "Gillette": 25}
+    rideshare_costs = {"TD Garden": 28, "Gillette": 50}
+    drive_costs = {"TD Garden": 18, "Gillette": 30}
+
+    # One tuple per game: date, team, opponent, venue, ticket, food, other
+    games = [
+        ("2026-10-11", "Patriots", "Raiders", "Gillette", 95, 25, 10),
+        ("2026-10-18", "Patriots", "Jets", "Gillette", 90, 25, 10),
+        ("2026-10-22", "Bruins", "Predators", "TD Garden", 55, 20, 5),
+        ("2026-10-23", "Celtics", "Knicks", "TD Garden", 181, 20, 5),
+        ("2026-10-24", "Bruins", "Sharks", "TD Garden", 50, 20, 5),
+        ("2026-10-26", "Celtics", "Bulls", "TD Garden", 49, 20, 5),
+        ("2026-10-27", "Celtics", "Nets", "TD Garden", 41, 20, 5),
+        ("2026-10-30", "Celtics", "Bulls", "TD Garden", 90, 20, 5),
+        ("2026-10-31", "Bruins", "Blackhawks", "TD Garden", 70, 20, 5),
+        ("2026-11-02", "Bruins", "Golden Knights", "TD Garden", 65, 20, 5),
+        ("2026-11-04", "Celtics", "Bucks", "TD Garden", 70, 20, 5),
+        ("2026-11-08", "Patriots", "Packers", "Gillette", 140, 25, 10),
+        ("2026-11-08", "Bruins", "Panthers", "TD Garden", 85, 20, 5),
+        ("2026-11-12", "Bruins", "Canadiens", "TD Garden", 110, 20, 5),
+        ("2026-11-14", "Bruins", "Wild", "TD Garden", 60, 20, 5),
+        ("2026-11-15", "Celtics", "Mavericks", "TD Garden", 65, 20, 5),
+        ("2026-11-16", "Celtics", "Magic", "TD Garden", 55, 20, 5),
+        ("2026-11-17", "Bruins", "Kings", "TD Garden", 60, 20, 5),
+        ("2026-11-21", "Bruins", "Capitals", "TD Garden", 75, 20, 5),
+        ("2026-11-27", "Celtics", "Hawks", "TD Garden", 75, 20, 5),
+        ("2026-12-06", "Patriots", "Bills", "Gillette", 160, 25, 10),
+        ("2026-12-10", "Patriots", "Vikings", "Gillette", 130, 25, 10),
+    ]
+    len(games)
     return
 
 
