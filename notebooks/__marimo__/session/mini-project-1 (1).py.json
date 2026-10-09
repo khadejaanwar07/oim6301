@@ -318,6 +318,39 @@
         }
       ],
       "console": []
+    },
+    {
+      "id": "Uenw",
+      "code_hash": "0e8824d716b2315894920ce594416b21",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>What I tried:</strong> I asked whether the best-value game changes with the way the student\ntravels. The cell below runs the whole comparison three times, once for each\ntransportation method (MBTA, Rideshare, Drive), with a loop inside a loop: the outer\nloop goes through the three methods and the inner loop goes through all 22 games.</span>\n<span class=\"paragraph\"><strong>What I found:</strong> The best game is the same every time, the <strong>Celtics vs. Nets on Oct 27</strong>,\nbecause its $41 ticket is the cheapest of all 22 and every TD Garden game has the same\ntransport cost. What changes is the price and how many games fit the budget. By MBTA it\ncosts $72 (48%, Good Value) and 17 of 22 games fit in $150. By rideshare it costs $94\n(62.7%, Expensive) and only 15 fit. Driving costs $84 (56%). Taking the MBTA instead of a\nrideshare saves the student $22 on this game.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "kPcM",
+      "code_hash": "2794d50102059c54cfdef62d012a3ae0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Mode       Best game                          Total  % Budget  Label           Within budget\n------------------------------------------------------------------------------------------\nMBTA       Celtics vs. Nets (2026-10-27)     $72.00     48.0%  Good Value           17 of 22\nRideshare  Celtics vs. Nets (2026-10-27)     $94.00     62.7%  Expensive            15 of 22\nDrive      Celtics vs. Nets (2026-10-27)     $84.00     56.0%  Good Value           15 of 22\n",
+          "mimetype": "text/plain"
+        }
+      ]
     }
   ]
 }

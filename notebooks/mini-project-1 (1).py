@@ -374,5 +374,60 @@ def _(mo):
     return
 
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **What I tried:** I asked whether the best-value game changes with the way the student
+    travels. The cell below runs the whole comparison three times, once for each
+    transportation method (MBTA, Rideshare, Drive), with a loop inside a loop: the outer
+    loop goes through the three methods and the inner loop goes through all 22 games.
+
+    **What I found:** The best game is the same every time, the **Celtics vs. Nets on Oct 27**,
+    because its \$41 ticket is the cheapest of all 22 and every TD Garden game has the same
+    transport cost. What changes is the price and how many games fit the budget. By MBTA it
+    costs \$72 (48%, Good Value) and 17 of 22 games fit in \$150. By rideshare it costs \$94
+    (62.7%, Expensive) and only 15 fit. Driving costs \$84 (56%). Taking the MBTA instead of a
+    rideshare saves the student \$22 on this game.
+    """)
+    return
+
+
+@app.cell
+def _(
+    drive_costs,
+    games,
+    mbta_costs,
+    monthly_budget,
+    rideshare_costs,
+    value_label,
+):
+    all_modes = [
+        ("MBTA", mbta_costs),
+        ("Rideshare", rideshare_costs),
+        ("Drive", drive_costs),
+    ]
+
+    print(f"{'Mode':<11}{'Best game':<30}{'Total':>10}{'% Budget':>10}  {'Label':<16}{'Within budget':>13}")
+    print("------------------------------------------------------------------------------------------")
+    for _mode, _costs in all_modes:
+        _best = None
+        _within = 0
+        for _date, _team, _opponent, _venue, _ticket, _food, _other in games:
+            _total = _ticket + _costs[_venue] + _food + _other
+            _percent = _total / monthly_budget * 100
+            if _percent <= 100:
+                _within = _within + 1
+            if _best is None:
+                _best = (_date, _team, _opponent, _total, _percent)
+            elif _percent < _best[4]:
+                _best = (_date, _team, _opponent, _total, _percent)
+        _game = f"{_best[1]} vs. {_best[2]} ({_best[0]})"
+        _total_text = f"${_best[3]:,.2f}"
+        _percent_text = f"{_best[4]:.1f}%"
+        _within_text = f"{_within} of {len(games)}"
+        print(f"{_mode:<11}{_game:<30}{_total_text:>10}{_percent_text:>10}  {value_label(_best[4]):<16}{_within_text:>13}")
+    return
+
+
 if __name__ == "__main__":
     app.run()
