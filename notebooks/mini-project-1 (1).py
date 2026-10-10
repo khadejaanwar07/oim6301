@@ -57,7 +57,8 @@ def _(mo):
 
     The tool adds up the full cost of each game (ticket, round-trip transportation from Babson, food, and other spending) which shows what share of the monthly budget it uses, labels each game from Excellent Value to Over Budget, and names the game that uses the smallest share. Changing the budget or the transportation method in section 3 updates every result.
 
-    Prices are representative estimates and all of the data was last checked on 11/8/2026
+    1. Prices are representative estimates and all of the data was last checked on 11/8/2026
+    2. The schedules come from Patriots.com and TDGarden.com. Four Celtics ticket prices are Vivid Seats listings, and the other prices are representative estimates. The MBTA costs are based on the $2.40 subway fare and the $20 Patriots event train.
     """)
     return
 
@@ -149,6 +150,7 @@ def _():
     mbta_costs = {"TD Garden": 6, "Gillette": 25}
     rideshare_costs = {"TD Garden": 28, "Gillette": 50}
     drive_costs = {"TD Garden": 18, "Gillette": 30}
+    # For the sake of simplicity of the model, dynamic pricing is not considered, and costs are pre-allocated based on data. 
 
     # One tuple per game: date, team, opponent, venue, ticket, food, other
     games = [
@@ -198,6 +200,7 @@ def _(mo):
 
 @app.cell
 def _(drive_costs, mbta_costs, rideshare_costs, transport_mode):
+    #choosing the transport cost
     if transport_mode == "MBTA":
         transport_costs = mbta_costs
     elif transport_mode == "Rideshare":
@@ -210,6 +213,7 @@ def _(drive_costs, mbta_costs, rideshare_costs, transport_mode):
 
 @app.cell
 def _():
+    # The label function
     def value_label(percent):
         if percent < 40:
             return "Excellent Value"
@@ -222,12 +226,14 @@ def _():
         else:
             return "Over Budget"
 
+    #check
     value_label(48)
     return (value_label,)
 
 
 @app.cell
 def _(games, monthly_budget, transport_costs, value_label):
+    #The loop
     results = []
     cheapest_so_far = None
     for _date, _team, _opponent, _venue, _ticket, _food, _other in games:
@@ -367,6 +373,32 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    **What the AI gave me:** In section 4, the agent's first version of the loop chose the
+    cheapest game with `if cheapest_so_far is None or _percent < cheapest_so_far["Percent"]:`,
+    and in section 6 it compared the two numbers with `and` and printed the result with
+    `print("Match:", ...)`. Earlier, its first inputs cell in section 3 also stored the
+    transport costs as a dictionary inside a dictionary (`transport_costs["Gillette"]["MBTA"]`).
+
+    **What I changed:** I asked whether we had covered all of this in class, and checked each
+    line against my four class notebooks. `or`, `and`, a `print` with a comma, and a dictionary
+    inside a dictionary were not in any of them. I had the agent rewrite them using only what
+    we covered:
+    - the `or` became an `if / elif` (cell 5 in section 4),
+    - check 1 now matches the game by its date alone, so it no longer needs `and` (section 6),
+    - each comparison is printed with an f-string,
+    - the transport costs became three flat dictionaries, one per mode, like `closing_prices`
+      in notebook 3 (section 3).
+
+      **How I knew the change was right:** After the rewrite I re-ran every cell. The results
+    did not change - the best game is still the Celtics vs. Nets on Oct 27 at \$72.00 (48.0%),
+    the parts and the totals in check 2 both add up to \$2,698.00, and every check prints True.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     ## 8. Going Further
 
     *Take at least one step past the main task, in any direction, and use your agent as much as you like. It does not have to work. State what you tried, what you found, and where it is in this notebook.*
@@ -379,7 +411,7 @@ def _(mo):
     mo.md(r"""
     **What I tried:** I asked whether the best-value game changes with the way the student
     travels. The cell below runs the whole comparison three times, once for each
-    transportation method (MBTA, Rideshare, Drive), with a loop inside a loop: the outer
+    transportation method (MBTA, Rideshare, Drive), with a loop inside a loop. The outer
     loop goes through the three methods and the inner loop goes through all 22 games.
 
     **What I found:** The best game is the same every time, the **Celtics vs. Nets on Oct 27**,
@@ -387,7 +419,7 @@ def _(mo):
     transport cost. What changes is the price and how many games fit the budget. By MBTA it
     costs \$72 (48%, Good Value) and 17 of 22 games fit in \$150. By rideshare it costs \$94
     (62.7%, Expensive) and only 15 fit. Driving costs \$84 (56%). Taking the MBTA instead of a
-    rideshare saves the student \$22 on this game.
+    rideshare saves the student \$22 on this game. Here, we assume that the budget remains the same.
     """)
     return
 
