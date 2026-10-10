@@ -48,7 +48,7 @@ def _(mo):
     Babson graduate student has a monthly entertainment budget and wants to see a Boston
     pro sports game this fall. There are 22 upcoming home games which include 5 Patriots games at
     Gillette Stadium, 8 Celtics and 9 Bruins games at TD Garden. This section names
-    the three teams and their venues rather than listing every game. The full list with
+    the three teams and their venues. The full list with
     each game's date, opponent, and prices is in section 3. A game costs more than the
     ticket, because getting there from Babson, food, and other spending add up.
 
@@ -248,10 +248,10 @@ def _(games, monthly_budget, transport_costs, value_label):
             "Label": value_label(_percent),
         }
         results.append(_row)
-        if cheapest_so_far is None:
-            cheapest_so_far = _row
-        elif _percent < cheapest_so_far["Percent"]:
-            cheapest_so_far = _row
+        if cheapest_so_far is None:                      # line 21
+            cheapest_so_far = _row                       # line 22
+        elif _percent < cheapest_so_far["Percent"]:      # line 23
+            cheapest_so_far = _row                       # line 24
     cheapest_so_far
     return cheapest_so_far, results
 
