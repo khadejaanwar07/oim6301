@@ -90,7 +90,7 @@ def _(mo):
     - 22 upcoming games, each with a date, team, opponent, venue, ticket price, food
       estimate, and other spending
     - The round-trip cost from Babson to each venue (TD Garden and Gillette Stadium) for
-      each transportation method
+      each transportation method.
 
     **Steps**
 
