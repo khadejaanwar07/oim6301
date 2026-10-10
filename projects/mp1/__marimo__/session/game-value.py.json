@@ -1,0 +1,362 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.24.2",
+    "script_metadata_hash": "da873d5d09e69dbc37de3cbfd95dec06"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "9804517b8efe0048be5c04d263c3ffa2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"mini-project-1\">Mini Project 1</h1>\n<span class=\"paragraph\">Your choice of project, what each one asks for, the due date and how it is graded are on the Mini Project 1 page of the course site, linked from the calendar. This notebook is the shape to build it in. Keep the headings, and replace each line in italics with your own.</span>\n<span class=\"paragraph\">Save it in your course repository as <code>projects/mp1/&lt;your-tool&gt;.py</code>, named for what it does, such as <code>loan-schedule.py</code>, and open it with <code>uv run marimo edit</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "341b470af643068ae6fa175257567582",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"1-the-question\">1. The Question</h2>\n<span class=\"paragraph\"><em>Who would use this, and what decision does it help them make? Two or three sentences, in words somebody outside this course would understand.</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "784a73e89a6bd76e2e51ab8843c64291",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Babson graduate student has a monthly entertainment budget and wants to see a Boston\npro sports game this fall. There are 22 upcoming home games which include 5 Patriots games at\nGillette Stadium, 8 Celtics and 9 Bruins games at TD Garden. This section names\nthe three teams and their venues. The full list with\neach game's date, opponent, and prices is in section 3. A game costs more than the\nticket, because getting there from Babson, food, and other spending add up.</span>\n<span class=\"paragraph\"><strong>Which of these games is the best value for the student given their budget and\nhow they plan to get there?</strong></span>\n<span class=\"paragraph\">The tool adds up the full cost of each game (ticket, round-trip transportation from Babson, food, and other spending) which shows what share of the monthly budget it uses, labels each game from Excellent Value to Over Budget, and names the game that uses the smallest share. Changing the budget or the transportation method in section 3 updates every result.</span>\n<ol>\n<li>Prices are representative estimates and all of the data was last checked on 10/10/2026</li>\n<li>The schedules come from Patriots.com and TDGarden.com. Four Celtics ticket prices are Vivid Seats listings, and the other prices are representative estimates. The MBTA costs are based on the $2.40 subway fare and the $20 Patriots event train.</li>\n</ol></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "f5e3e0e704045272fd881089e5d00c3d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"2-my-plan-before-ai\">2. My Plan Before AI</h2>\n<span class=\"paragraph\"><em>Before you ask your agent anything, write how you would solve it: the steps, in order, in plain words, in five lines or more. Then answer these two questions:</em></span>\n<ul>\n<li><em>What does your loop carry from one step to the next, the way a running total carries its sum?</em></li>\n<li><em>Which check will you use in section 6, and which two numbers should agree?</em></li>\n</ul>\n<span class=\"paragraph\"><em>Commit this notebook with the message <code>mp1: plan before AI</code>.</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "e60982b58a2117c163658dd0dd8133e8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"2-my-plan-before-ai\">2. My Plan Before AI</h2>\n<span class=\"paragraph\"><strong>Inputs</strong></span>\n<ul>\n<li>The student's monthly entertainment budget (for example $150)</li>\n<li>The student's transportation method: MBTA, Rideshare, or Drive</li>\n<li>22 upcoming games, each with a date, team, opponent, venue, ticket price, food\n  estimate, and other spending</li>\n<li>The round-trip cost from Babson to each venue (TD Garden and Gillette Stadium) for\n  each transportation method.</li>\n</ul>\n<span class=\"paragraph\"><strong>Steps</strong></span>\n<ol>\n<li>Start with no \"cheapest game so far\" as the starting value of the loop.</li>\n<li>Go through the games one at a time. For each game:<ul>\n<li>Look up the transportation cost for its venue and the student's method.</li>\n<li>Add up the total: ticket + transportation + food + other.</li>\n<li>Divide the total by the budget to get the % of the budget it uses.</li>\n<li>Give it a label: under 40% is Excellent Value, 40% to under 60% is Good Value,\n  60% to under 80% is Expensive, 80% to 100% is Poor Fit and over 100% is Over Budget.</li>\n<li>If it uses a smaller percentage than the cheapest game so far, it becomes the new cheapest.</li>\n<li>Save its results for the table.</li>\n</ul>\n</li>\n<li>Print a table with one row per game with the date, team, opponent, ticket, transport, food,\n   other, total, percentage of budget and label.</li>\n<li>Print one sentence naming the best-value game, with its date, total, and % of budget.</li>\n</ol>\n<span class=\"paragraph\"><strong>What does my loop carry from one step to the next?</strong></span>\n<span class=\"paragraph\">The cheapest game found so far and the percentage of the budget it uses. Each game is compared\nagainst it so after the last game it holds the answer. The loop also builds up the\nlist of results that the table prints.</span>\n<span class=\"paragraph\"><strong>Which check will I use in section 6, and which two numbers should agree?</strong></span>\n<span class=\"paragraph\">I will work out the total and % of the budget for one game, for example Celtics vs. Nets on Oct 27,\nby hand and compare my numbers next to the program's since they should be the same. As a second\ncheck, tickets + transport + food + other added up over all 22 games should equal the\n22 totals added up.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "20f0e7f2f4fdae13652d41330c39ad42",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"3-inputs\">3. Inputs</h2>\n<span class=\"paragraph\">Every number the project starts from goes in the cell below, and nowhere else, so that changing one input changes every result after it.</span>\n<span class=\"paragraph\">Copy in the default inputs for your project from the Mini Project 1 page. If you chose your own project, type your data in here, or ask your agent to generate it with <code>faker</code>. The required part reads no file.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "695edd2d4e425e786e354d4f0ecfb55c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>22</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "71d32bd63e1b86444a83f18329c3c3f8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"4-the-work\">4. The Work</h2>\n<span class=\"paragraph\">Add as many cells as you need. Try each step yourself before you ask your agent, and commit as you go.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "252d3207041c50e4c609380c8ae84439",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"TD Garden\": 6, \"Gillette\": 25}"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "ced010053cda5c3980699da5072e6840",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>&#x27;Good Value&#x27;</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "7cbd21f321e179d7bd9fe833d2efb79e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"Date\": \"2026-10-27\", \"Team\": \"Celtics\", \"Opponent\": \"Nets\", \"Ticket\": 41, \"Transport\": 6, \"Food\": 20, \"Other\": 5, \"Total\": 72, \"Percent\": \"text/plain+float:48.0\", \"Label\": \"Good Value\"}"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "189948d98f771b65614d9dc06a5a3ea6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"5-the-answer\">5. The Answer</h2>\n<span class=\"paragraph\"><em>A table of your results in the cell below, printed with <code>print</code> and f-strings, then one sentence here that answers the question in section 1, with the number in it.</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "7d182c69c4dae76bf55e201670025865",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Date        Team      Opponent           Ticket  Transport     Food    Other     Total  % Budget  Label          \n-----------------------------------------------------------------------------------------------------------------\n2026-10-11  Patriots  Raiders            $95.00     $25.00   $25.00   $10.00   $155.00    103.3%  Over Budget    \n2026-10-18  Patriots  Jets               $90.00     $25.00   $25.00   $10.00   $150.00    100.0%  Poor Fit       \n2026-10-22  Bruins    Predators          $55.00      $6.00   $20.00    $5.00    $86.00     57.3%  Good Value     \n2026-10-23  Celtics   Knicks            $181.00      $6.00   $20.00    $5.00   $212.00    141.3%  Over Budget    \n2026-10-24  Bruins    Sharks             $50.00      $6.00   $20.00    $5.00    $81.00     54.0%  Good Value     \n2026-10-26  Celtics   Bulls              $49.00      $6.00   $20.00    $5.00    $80.00     53.3%  Good Value     \n2026-10-27  Celtics   Nets               $41.00      $6.00   $20.00    $5.00    $72.00     48.0%  Good Value     \n2026-10-30  Celtics   Bulls              $90.00      $6.00   $20.00    $5.00   $121.00     80.7%  Poor Fit       \n2026-10-31  Bruins    Blackhawks         $70.00      $6.00   $20.00    $5.00   $101.00     67.3%  Expensive      \n2026-11-02  Bruins    Golden Knights     $65.00      $6.00   $20.00    $5.00    $96.00     64.0%  Expensive      \n2026-11-04  Celtics   Bucks              $70.00      $6.00   $20.00    $5.00   $101.00     67.3%  Expensive      \n2026-11-08  Patriots  Packers           $140.00     $25.00   $25.00   $10.00   $200.00    133.3%  Over Budget    \n2026-11-08  Bruins    Panthers           $85.00      $6.00   $20.00    $5.00   $116.00     77.3%  Expensive      \n2026-11-12  Bruins    Canadiens         $110.00      $6.00   $20.00    $5.00   $141.00     94.0%  Poor Fit       \n2026-11-14  Bruins    Wild               $60.00      $6.00   $20.00    $5.00    $91.00     60.7%  Expensive      \n2026-11-15  Celtics   Mavericks          $65.00      $6.00   $20.00    $5.00    $96.00     64.0%  Expensive      \n2026-11-16  Celtics   Magic              $55.00      $6.00   $20.00    $5.00    $86.00     57.3%  Good Value     \n2026-11-17  Bruins    Kings              $60.00      $6.00   $20.00    $5.00    $91.00     60.7%  Expensive      \n2026-11-21  Bruins    Capitals           $75.00      $6.00   $20.00    $5.00   $106.00     70.7%  Expensive      \n2026-11-27  Celtics   Hawks              $75.00      $6.00   $20.00    $5.00   $106.00     70.7%  Expensive      \n2026-12-06  Patriots  Bills             $160.00     $25.00   $25.00   $10.00   $220.00    146.7%  Over Budget    \n2026-12-10  Patriots  Vikings           $130.00     $25.00   $25.00   $10.00   $190.00    126.7%  Over Budget    \n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "iLit",
+      "code_hash": "49d8afe982cdd53e961bcb12974f9e74",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "With a $150.00 monthly budget and MBTA as transportation, the best value is the Celtics vs. Nets on 2026-10-27: $72.00 in all, 48.0% of the budget (Good Value).\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "cefd9fb4105f4ca556cfc0dc69895e7a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"6-how-i-know-these-numbers-are-right\">6. How I Know These Numbers Are Right</h2>\n<span class=\"paragraph\"><em>At least one check that reaches a result a second, independent way. Name what you compared and what came out.</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ROlb",
+      "code_hash": "7a4d6515c530efeabf947bad98df1e60",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Check 1: Calculating one manually.</strong> I worked out the Celtics vs. Nets game on Oct 27 without\nthe code. The calculation is $41 ticket + $6 MBTA + $20 food + $5 other = $72, and $72 out of a $150\nbudget is 48.0%. The program gives the same: $72.00 and 48.0%. I have checked again by the code below:</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "qnkX",
+      "code_hash": "d65901d3d816a28d1ca533ac3997ffd9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Total:    by hand $72.00   program $72.00\n% Budget: by hand 48.0%      program 48.0%\nTotals match: True\nPercents match: True\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "TqIu",
+      "code_hash": "6ef4ba1729b5bda7b73245a56cc02d13",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Check 2: The parts add up to the totals.</strong> I added up every ticket, transport cost, food\ncost and other cost straight from the inputs gives $2,698.00. Adding up the 22 totals the\nprogram calculated also gives $2,698.00, so no game was skipped and no cost was left out.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Vxnm",
+      "code_hash": "d489c36cd9bcc6a0a768c26d3d9acd8b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Tickets $1,871.00 + transport $227.00 + food $465.00 + other $135.00 = $2,698.00\nSum of the 22 totals = $2,698.00\nMatch: True\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "DnEU",
+      "code_hash": "4fa513d08c761dfe89641eaef1357bc2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"7-working-with-the-agent\">7. Working With the Agent</h2>\n<span class=\"paragraph\"><em>Pick one piece of AI output you did not accept as-is. What did it give you, what did you change, and how did you know? Point to the commit or the cell.</em></span>\n<span class=\"paragraph\"><em>If the agent got it right the first time: what did you do to verify that?</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ulZA",
+      "code_hash": "83131baa95a14810dbf5f1cb7c97f4d7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>What the AI gave me:</strong> In section 4, the agent's first version of the loop chose the\ncheapest game with <code>if cheapest_so_far is None or _percent &lt; cheapest_so_far[\"Percent\"]:</code>,\nand in section 6 it compared the two numbers with <code>and</code> and printed the result with\n<code>print(\"Match:\", ...)</code>. Earlier, its first inputs cell in section 3 also stored the\ntransport costs as a dictionary inside a dictionary (<code>transport_costs[\"Gillette\"][\"MBTA\"]</code>).</span>\n<span class=\"paragraph\"><strong>What I changed:</strong> I asked whether we had covered all of this in class, and checked each\nline against my four class notebooks. <code>or</code>, <code>and</code>, a <code>print</code> with a comma, and a dictionary\ninside a dictionary were not in any of them. I had the agent rewrite them using only what\nwe covered:</span>\n<ul>\n<li>the <code>or</code> became an <code>if / elif</code> (cell 5 in section 4),</li>\n<li>check 1 now matches the game by its date alone, so it no longer needs <code>and</code> (section 6),</li>\n<li>each comparison is printed with an f-string,</li>\n<li>the transport costs became three flat dictionaries, one per mode, like <code>closing_prices</code>\n  in notebook 3 (section 3).</li>\n</ul>\n<span class=\"paragraph\"><strong>How I knew the change was right:</strong> After the rewrite I re-ran every cell. The results\ndid not change - the best game is still the Celtics vs. Nets on Oct 27 at $72.00 (48.0%),\nthe parts and the totals in check 2 both add up to $2,698.00, and every check prints True.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ecfG",
+      "code_hash": "9e11622311558f577bd7fefb4cd2c3ec",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"8-going-further\">8. Going Further</h2>\n<span class=\"paragraph\"><em>Take at least one step past the main task, in any direction, and use your agent as much as you like. It does not have to work. State what you tried, what you found, and where it is in this notebook.</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Pvdt",
+      "code_hash": "6b63f0be76a0b1214805c472f963e725",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>What I tried:</strong> I asked whether the best-value game changes with the way the student\ntravels. The cell below runs the whole comparison three times, once for each\ntransportation method (MBTA, Rideshare, Drive), with a loop inside a loop. The outer\nloop goes through the three methods and the inner loop goes through all 22 games.</span>\n<span class=\"paragraph\"><strong>What I found:</strong> The best game is the same every time, the <strong>Celtics vs. Nets on Oct 27</strong>,\nbecause its $41 ticket is the cheapest of all 22 and every TD Garden game has the same\ntransport cost. What changes is the price and how many games fit the budget. By MBTA it\ncosts $72 (48%, Good Value) and 17 of 22 games fit in $150. By rideshare it costs $94\n(62.7%, Expensive) and only 15 fit. Driving costs $84 (56%). Taking the MBTA instead of a\nrideshare saves the student $22 on this game. Here, we assume that the budget remains the same.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZBYS",
+      "code_hash": "2794d50102059c54cfdef62d012a3ae0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Mode       Best game                          Total  % Budget  Label           Within budget\n------------------------------------------------------------------------------------------\nMBTA       Celtics vs. Nets (2026-10-27)     $72.00     48.0%  Good Value           17 of 22\nRideshare  Celtics vs. Nets (2026-10-27)     $94.00     62.7%  Expensive            15 of 22\nDrive      Celtics vs. Nets (2026-10-27)     $84.00     56.0%  Good Value           15 of 22\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    }
+  ]
+}
