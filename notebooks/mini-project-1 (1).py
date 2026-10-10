@@ -57,7 +57,7 @@ def _(mo):
 
     The tool adds up the full cost of each game (ticket, round-trip transportation from Babson, food, and other spending) which shows what share of the monthly budget it uses, labels each game from Excellent Value to Over Budget, and names the game that uses the smallest share. Changing the budget or the transportation method in section 3 updates every result.
 
-    1. Prices are representative estimates and all of the data was last checked on 11/8/2026
+    1. Prices are representative estimates and all of the data was last checked on 10/10/2026
     2. The schedules come from Patriots.com and TDGarden.com. Four Celtics ticket prices are Vivid Seats listings, and the other prices are representative estimates. The MBTA costs are based on the $2.40 subway fare and the $20 Patriots event train.
     """)
     return
