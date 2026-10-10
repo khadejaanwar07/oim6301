@@ -71,12 +71,6 @@
       "console": []
     },
     {
-      "id": "PKri",
-      "code_hash": null,
-      "outputs": [],
-      "console": []
-    },
-    {
       "id": "Xref",
       "code_hash": "4c00942a755f3209148ad846d9c193db",
       "outputs": [
@@ -265,6 +259,19 @@
           "mimetype": "text/plain"
         }
       ]
+    },
+    {
+      "id": "gArr",
+      "code_hash": "6ef4ba1729b5bda7b73245a56cc02d13",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Check 2: The parts add up to the totals.</strong> I added up every ticket, transport cost, food\ncost and other cost straight from the inputs gives $2,698.00. Adding up the 22 totals the\nprogram calculated also gives $2,698.00, so no game was skipped and no cost was left out.</span></span>"
+          }
+        }
+      ],
+      "console": []
     },
     {
       "id": "Vxnm",

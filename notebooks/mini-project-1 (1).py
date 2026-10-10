@@ -78,11 +78,6 @@ def _(mo):
     return
 
 
-@app.cell
-def _():
-    return
-
-
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -332,6 +327,16 @@ def _(results):
     print(f"% Budget: by hand {hand_percent:.1f}%      program {program_percent:.1f}%")
     print(f"Totals match: {hand_total == program_total}")
     print(f"Percents match: {hand_percent == program_percent}")
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **Check 2: The parts add up to the totals.** I added up every ticket, transport cost, food
+    cost and other cost straight from the inputs gives \$2,698.00. Adding up the 22 totals the
+    program calculated also gives \$2,698.00, so no game was skipped and no cost was left out.
+    """)
     return
 
 
