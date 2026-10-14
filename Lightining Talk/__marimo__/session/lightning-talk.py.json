@@ -1,0 +1,80 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.24.2",
+    "script_metadata_hash": "da873d5d09e69dbc37de3cbfd95dec06"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "350ddfe91c4bb1bdae0fdc7d4f51b22a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"lightning-talk\">LIGHTNING TALK</h1>\n<h3 id=\"the-change-in-robotics-through-ai\">The change in Robotics through AI</h3>\n<span class=\"paragraph\">Khadeja Anwar</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "e633c28e9c13a0af50df911ce00388f2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"programming-and-training\">Programming and Training</h2>\n<span class=\"paragraph\"><strong>Before</strong></span>\n<span class=\"paragraph\">Engineers coded every movement. Great at one repetitive job, lost in anything messy or new.</span>\n<span class=\"paragraph\"><strong>Now</strong></span>\n<span class=\"paragraph\">AI models learn from recorded demonstrations, the way chatbots learn from text and adapt to new objects.</span>\n<span class=\"paragraph\">AI has transformed robots from machines that follow fixed instructions into machines that learn from examples.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "2d31b469b526d52fc518ab2dfd80e3a0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"where-does-the-data-come-from\">Where does the data come from?</h2>\n<span class=\"paragraph\">Chatbots learned from the whole internet. There's no internet of robot movements, so companies are building one.</span>\n<span class=\"paragraph\"><strong>Training facilities</strong></span>\n<span class=\"paragraph\">Apptronik opened a dedicated data-collection and training center in Austin.</span>\n<span class=\"paragraph\"><strong>Data marketplaces</strong></span>\n<span class=\"paragraph\">Kinectic Block sells first-person video and teleoperation recordings.</span>\n<span class=\"paragraph\"><strong>AI Models</strong></span>\n<span class=\"paragraph\">The AI model used to teach robots is vision language action (VLA) models. Pi0, from Physical Intelligence, GR00T, from NVIDIA and RT-2, from Google DeepMind.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "e45b7d240b06bd81930f1b38c7617255",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"boston-dynamics-atlas-robots-60-seconds\">Boston Dynamics Atlas Robots (60 seconds)</h2>\n<span class=\"paragraph\"><em>This slide holds an embedded video in the original PowerPoint; it isn't reproduced here. See the slide in <code>Lightning Talk_Khadeja Anwar.pptx</code> for the clip.</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "12abfa14e025e69a95078533b07e40b4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"discussion\">Discussion</h2>\n<span class=\"paragraph\">Should countries compete to build the most advanced robots, or should they set global limits on what robots can do?</span></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
