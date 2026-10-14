@@ -25,6 +25,9 @@ def main():
     print(f"Your BMI is: {bmi_value:.2f}, and your category is {result}.")
   
 main()
+if __name__ == "--main--":
+    main()
+    
 
     
 
