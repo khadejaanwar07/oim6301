@@ -74,8 +74,6 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    # 2. My Plan Before AI
-
     My tool gets its data from the World Bank, which publishes economic numbers for every country, like average income and what each country imports. I also need to know which countries are in Latin America and drive on the same side as China. REST Countries used to give that for free, but its free version has been retired and the new one needs a key. Since every Spanish, Portuguese and French speaking country in Latin America drives on the right like China, I'll type that list into my inputs instead.
 
     **Steps**
@@ -614,8 +612,40 @@ def _(mo):
     **What I changed:** The new version of REST Countries needs an API key, which would have meant setting up a `.env` file and a new package. Since every Spanish, Portuguese and French speaking country in Latin America drives on the right like China, I deleted both functions and typed the list of Latin American country codes into my Inputs cell instead. I rewrote the filter cell to check each World Bank country against that list. The GDP and fuel data still comes live from the World Bank.
 
     **How I checked the fix:** The filter cell now shows (15, 27): 21 Latin American countries minus the 6 I leave out is 15, and 42 minus 15 is 27, which matches the World Bank's total of 42.
+    """)
+    return
 
-    **Where it is:** The filter cell in section 4, the `latin_american_codes` list in the Inputs cell, and commit [your commit message].
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    # 8. Reading It Back
+
+    ## get_region_countries
+
+    **What goes in:** A region code, like "LCN" for Latin America & Caribbean, and how many countries to ask for on each page.
+
+    **What comes out:** One list with every country in that region. Each country is a small record with its two-letter code, its name and its income group.
+
+    **How it works:** It asks the World Bank for page 1 first, because that page also says how many pages there are in total. Then it goes through the rest of the pages one by one and adds each page's countries to the same list. At the end it keeps only the three fields I need from each country.
+
+    **A line I had to ask about:** `for page in range(2, pages + 1):`. I didn't get why it starts at 2 and ends at pages + 1. It starts at 2 because page 1 was already fetched above the loop, and it's pages + 1 because range stops one before the last number, so to include the last page you have to go one past it. With 3 pages, range(2, 4) gives 2 and 3.
+
+    ## get_latest_value
+
+    **What goes in:** A country's two-letter code and the World Bank code for the number I want, like NY.GDP.PCAP.CD for GDP per person.
+
+    **What comes out:** The most recent value the World Bank has for that country, and the year it's from. If there's no value, it gives back None for both instead of crashing.
+
+    **How it works:** It asks the World Bank for one indicator for one country, with mrnev=1, which means "the most recent year that actually has a value." The reply comes back as two parts, info about the reply and then the data, so it takes the value and year from the second part.
+
+    **A line I had to ask about:** `if value_page[1] is None:`. I didn't know why this was needed if the request worked. It turns out that when a country has no data for an indicator, the World Bank still answers, but the data part comes back empty (None). Without this check the code would try to read a value from nothing and stop with an error, so it would break the whole loop over one missing country.
+
+    ## My prediction
+
+    I'm changing `min_fuel_import_share` in the Inputs cell from 15 to 10.
+
+    I expect the shortlist to grow from 4 countries to 6, because my Going Further table showed 6 countries passing at 10%. The 2 new countries should show up at the bottom of the ranking, since the list is sorted by fuel share and they have lower shares than the original four. Panama should still be the top market, so the answer sentence should still name Panama with the same numbers, but it should now say 6 of 15 countries passed instead of 4.
     """)
     return
 
@@ -663,7 +693,7 @@ def _(mo):
 
 @app.cell
 def _():
-    ## Can the power grid charge the car cleanly?
+    ## Can the power grid charge the car cleanly?** Share of electricity from renewables for each country on the shortlist. This data is often a few years old, so I show the year.
     return
 
 
