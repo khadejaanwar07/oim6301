@@ -520,6 +520,98 @@
         }
       ],
       "console": []
+    },
+    {
+      "id": "FEoL",
+      "code_hash": "83878fbd500660c11754dde5f692abda",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "iNsm",
+      "code_hash": "58a4c227f05b9d34ecfa1d022bfed9ed",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Fuel limit %  Countries passing\n          10                  6\n          15                  4\n          20                  0\n          25                  0\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "oGHr",
+      "code_hash": "5aafb2654c6e1ad61ff26deee680cd6f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>What I tried:</strong> I picked 15% as the cutoff for \"depends on imported fuel,\" but that number was my own judgment, so I wanted to see what happens if the team picks a different one. I reran the same filter at 10%, 15%, 20% and 25%, using the data I already had, so it didn't need any new requests.</span>\n<span class=\"paragraph\"><strong>What I found:</strong> At 10%, 6 countries passed. At 15% it was 4, and at 20% and 25% none passed. So every country on my shortlist gets between 15% and 20% of its imports from fuel, and the answer depends a lot on where the cutoff is. If the team decided \"high dependence\" means 20%, the tool would say no market qualifies. That's worth telling them, because the 15% line is a judgment call, not a hard rule.</span>\n<span class=\"paragraph\"><strong>Where it is:</strong> The first cell in section 9. It uses <code>fuel_limits_to_test</code> from the Inputs cell, so the team can try other limits by changing that list.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "HgAO",
+      "code_hash": "eb1a4bfbf129835361650bb87c0b30c0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "LiXA",
+      "code_hash": "b5382d71e82309eae2ab4e4a5a3cc29c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Country                 Renewable % of power  Year\nPanama                                  69.0  2021\nDominican Republic                      17.1  2021\nPeru                                    61.8  2021\nChile                                   48.1  2021\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "isAV",
+      "code_hash": "3c13775e651240c5517f526707594b14",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>What I tried:</strong> An EV is only as cheap and clean as the electricity behind it, so for each country on the shortlist I asked the World Bank for the share of its electricity that comes from renewables.</span>\n<span class=\"paragraph\"><strong>What I found:</strong> Panama had the highest renewable share at 69.0%, then Peru at 61.8%, Chile at 48.1%, and the Dominican Republic at 17.1%, all from 2021. Panama is also top of my main ranking, so it looks even stronger: drivers would be switching from imported fuel to mostly local clean power. The Dominican Republic is the weak spot. It passes the fuel filter, but most of its electricity still comes from fossil fuels, so the \"run your car on local power\" pitch doesn't really work there. The data is from 2021, so it shows the general picture rather than today's grid.</span>\n<span class=\"paragraph\">One thing I'd check before trusting Panamas number: a lot of goods pass through Panama's canal and free trade zone, so its import figures might include fuel that gets sold on to other countries rather than used there.</span>\n<span class=\"paragraph\"><strong>Where it is:</strong> The second cell in section 9. It uses <code>renewable_indicator</code> from the Inputs cell and the same <code>get_latest_value</code> function as the main task.</span></span>"
+          }
+        }
+      ],
+      "console": []
     }
   ]
 }

@@ -169,6 +169,7 @@ def _():
         check_tolerance_percent,
         excluded_countries,
         fuel_indicator,
+        fuel_limits_to_test,
         gdp_indicator,
         latin_american_codes,
         min_fuel_import_share,
@@ -176,6 +177,7 @@ def _():
         page_size,
         population_indicator,
         region_code,
+        renewable_indicator,
         total_gdp_indicator,
     )
 
@@ -624,6 +626,69 @@ def _(mo):
     ## 8. Going Further
 
     *Take at least one step past the main task, in any direction, and use your agent as much as you like. It does not have to work. State what you tried, what you found, and where it is in this notebook.*
+    """)
+    return
+
+
+@app.cell
+def _():
+    ## How much does the shortlist depend on my 15% fuel limit?
+    return
+
+
+@app.cell
+def _(fuel_limits_to_test, min_gdp_per_person, tested_records):
+    print(f"{'Fuel limit %':>12}{'Countries passing':>19}")
+    for _limit in fuel_limits_to_test:
+        _count = 0
+        for _r in tested_records:
+            if _r["gdp_per_person"] >= min_gdp_per_person:
+                if _r["fuel_import_share"] >= _limit:
+                    _count = _count + 1
+        print(f"{_limit:>12}{_count:>19}")
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **What I tried:** I picked 15% as the cutoff for "depends on imported fuel," but that number was my own judgment, so I wanted to see what happens if the team picks a different one. I reran the same filter at 10%, 15%, 20% and 25%, using the data I already had, so it didn't need any new requests.
+
+    **What I found:** At 10%, 6 countries passed. At 15% it was 4, and at 20% and 25% none passed. So every country on my shortlist gets between 15% and 20% of its imports from fuel, and the answer depends a lot on where the cutoff is. If the team decided "high dependence" means 20%, the tool would say no market qualifies. That's worth telling them, because the 15% line is a judgment call, not a hard rule.
+
+    **Where it is:** The first cell in section 9. It uses `fuel_limits_to_test` from the Inputs cell, so the team can try other limits by changing that list.
+    """)
+    return
+
+
+@app.cell
+def _():
+    ## Can the power grid charge the car cleanly?
+    return
+
+
+@app.cell
+def _(get_latest_value, ranked_shortlist, renewable_indicator):
+    print(f"{'Country':<22}{'Renewable % of power':>22}{'Year':>6}")
+    for _r in ranked_shortlist:
+        _renewable = get_latest_value(_r["code"], renewable_indicator)
+        if _renewable["value"] is None:
+            print(f"{_r['name']:<22}{'no data':>22}")
+        else:
+            print(f"{_r['name']:<22}{_renewable['value']:>22.1f}{_renewable['year']:>6}")
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    **What I tried:** An EV is only as cheap and clean as the electricity behind it, so for each country on the shortlist I asked the World Bank for the share of its electricity that comes from renewables.
+
+    **What I found:** Panama had the highest renewable share at 69.0%, then Peru at 61.8%, Chile at 48.1%, and the Dominican Republic at 17.1%, all from 2021. Panama is also top of my main ranking, so it looks even stronger: drivers would be switching from imported fuel to mostly local clean power. The Dominican Republic is the weak spot. It passes the fuel filter, but most of its electricity still comes from fossil fuels, so the "run your car on local power" pitch doesn't really work there. The data is from 2021, so it shows the general picture rather than today's grid.
+
+    One thing I'd check before trusting Panamas number: a lot of goods pass through Panama's canal and free trade zone, so its import figures might include fuel that gets sold on to other countries rather than used there.
+
+    **Where it is:** The second cell in section 9. It uses `renewable_indicator` from the Inputs cell and the same `get_latest_value` function as the main task.
     """)
     return
 
