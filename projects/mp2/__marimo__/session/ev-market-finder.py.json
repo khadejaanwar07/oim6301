@@ -535,19 +535,6 @@
       "console": []
     },
     {
-      "id": "yOOC",
-      "code_hash": "d21fa17a4e21af857434232811b9ffb5",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"what-happened\">What happened</h2>\n<span class=\"paragraph\">[Which 2 countries joined the list, whether Panama stayed on top, and what the answer sentence now says.] [It matched / It didn't match, because ...]</span></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
       "id": "nWHF",
       "code_hash": "9e11622311558f577bd7fefb4cd2c3ec",
       "outputs": [
