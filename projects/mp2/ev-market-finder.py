@@ -139,6 +139,31 @@ def _(mo):
 
 @app.cell
 def _():
+    # Where the data comes from
+    region_code = "LCN"
+    americas_region = "americas"
+    home_country_code = "CN"
+    latin_languages = ["Spanish", "Portuguese", "French"]
+    excluded_countries = ["VE", "CU", "HT", "PR"]
+    page_size = 20
+
+    # The car and the filters
+    car_price_dollars = 20000
+    min_gdp_per_person = 8000
+    min_fuel_import_share = 15
+
+    # World Bank indicators
+    gdp_indicator = "NY.GDP.PCAP.CD"
+    fuel_indicator = "TM.VAL.FUEL.ZS.UN"
+    total_gdp_indicator = "NY.GDP.MKTP.CD"
+    population_indicator = "SP.POP.TOTL"
+
+    # Section 6 check
+    check_tolerance_percent = 1
+
+    # Going further
+    fuel_limits_to_test = [10, 15, 20, 25]
+    renewable_indicator = "EG.ELC.RNEW.ZS"
     return
 
 
