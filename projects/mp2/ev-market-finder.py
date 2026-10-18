@@ -166,11 +166,20 @@ def _():
     renewable_indicator = "EG.ELC.RNEW.ZS"
     return (
         car_price_dollars,
+        excluded_countries,
+        fuel_indicator,
+        gdp_indicator,
+        latin_american_codes,
         min_fuel_import_share,
         min_gdp_per_person,
         page_size,
         region_code,
     )
+
+
+@app.cell
+def _():
+    return
 
 
 @app.cell(hide_code=True)
@@ -179,6 +188,14 @@ def _(mo):
     ## 4. The Work
 
     Add as many cells as you need. Try each step yourself before you ask your agent, and commit as you go.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ### Every country in the region
     """)
     return
 
@@ -234,68 +251,191 @@ def _(get_country_page):
 @app.cell
 def _(get_region_countries, page_size, region_code):
     latam_countries = get_region_countries(region_code, page_size)
-    len(latam_countries)
+
+    print(f"{len(latam_countries)} countries in the region:")
+    for _country in latam_countries:
+        print(_country["name"])
+    return (latam_countries,)
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ### Filter 1: Latin American, same side of the road as China, not left out
+
+    My plan used REST Countries for driving side and languages, but it retired its free address after I wrote the plan, and the new version needs a key. Since every Spanish, Portuguese and French speaking country in Latin America drives on the right like China, I typed that list into the Inputs cell instead. All the economic data still comes live from the World Bank.
+    """)
+    return
+
+
+@app.cell
+def _(excluded_countries, latam_countries, latin_american_codes):
+    candidates = []
+    screened_out = []
+    for _country in latam_countries:
+        if _country["code"] in excluded_countries:
+            screened_out.append((_country["name"], "left out by choice"))
+        elif _country["code"] in latin_american_codes:
+            candidates.append(
+                {
+                    "code": _country["code"],
+                    "name": _country["name"],
+                    "income_group": _country["income_group"],
+                }
+            )
+        else:
+            screened_out.append((_country["name"], "not Latin American, or drives on the left"))
+
+    len(candidates), len(screened_out)
+    return (candidates,)
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    _df = mo.sql(
+        f"""
+        mo.md(r\"""
+        ### Filters 2 and 3: GDP per person and fuel share of imports
+        \""")
+        """
+    )
     return
 
 
 @app.cell
 def _(requests):
-    def get_driving_side(country_code):
-        side_reply = requests.get(
-            "https://restcountries.com/v3.1/alpha",
-            params={"codes": country_code, "fields": "cca2,car"},
+    def get_latest_value(country_code, indicator):
+        value_reply = requests.get(
+            f"https://api.worldbank.org/v2/country/{country_code}/indicator/{indicator}",
+            params={"format": "json", "mrnev": 1},
             timeout=10,
         )
-        return side_reply.json()[0]["car"]["side"]
+        value_page = value_reply.json()
 
-    return (get_driving_side,)
+        result = {"value": None, "year": None}
+        if len(value_page) == 2:
+            if value_page[1] is None:
+                result = {"value": None, "year": None}
+            else:
+                result = {"value": value_page[1][0]["value"], "year": value_page[1][0]["date"]}
+        return result
 
-
-@app.cell
-def _(requests):
-    def get_country_details(region_name):
-        details_reply = requests.get(
-            f"https://restcountries.com/v3.1/region/{region_name}",
-            params={"fields": "cca2,car,languages"},
-            timeout=10,
-        )
-        details = []
-        for country in details_reply.json():
-            language_names = []
-            for code, language in country.get("languages", {}).items():
-                language_names.append(language)
-            details.append(
-                {
-                    "code": country["cca2"],
-                    "driving_side": country["car"]["side"],
-                    "languages": language_names,
-                }
-            )
-        return details
-
-    return (get_country_details,)
+    return (get_latest_value,)
 
 
 @app.cell
 def _(
-    americas_region,
-    get_country_details,
-    get_driving_side,
-    home_country_code,
+    candidates,
+    car_price_dollars,
+    fuel_indicator,
+    gdp_indicator,
+    get_latest_value,
+    min_fuel_import_share,
+    min_gdp_per_person,
 ):
-    home_side = get_driving_side(home_country_code)
-    americas_details = get_country_details(americas_region)
-    home_side, len(americas_details)
+    country_records = []
+    for _country in candidates:
+        _gdp = get_latest_value(_country["code"], gdp_indicator)
+        _fuel = get_latest_value(_country["code"], fuel_indicator)
+
+        _failed_rules = []
+        _years_of_income = None
+        if _gdp["value"] is None:
+            _status = "no data"
+            _failed_rules.append("no GDP data")
+        elif _fuel["value"] is None:
+            _status = "no data"
+            _failed_rules.append("no fuel data")
+        else:
+            _years_of_income = round(car_price_dollars / _gdp["value"], 1)
+            if _gdp["value"] < min_gdp_per_person:
+                _failed_rules.append("GDP per person")
+            if _fuel["value"] < min_fuel_import_share:
+                _failed_rules.append("fuel share")
+            if len(_failed_rules) == 0:
+                _status = "pass"
+            else:
+                _status = "fail"
+
+        country_records.append(
+            {
+                "name": _country["name"],
+                "code": _country["code"],
+                "income_group": _country["income_group"],
+                "gdp_per_person": _gdp["value"],
+                "gdp_year": _gdp["year"],
+                "fuel_import_share": _fuel["value"],
+                "fuel_year": _fuel["year"],
+                "years_of_income": _years_of_income,
+                "status": _status,
+                "failed_rules": ", ".join(_failed_rules),
+            }
+        )
+
+    len(country_records)
+    return (country_records,)
+
+
+@app.cell
+def _():
+    ### Saving what I fetched
     return
 
 
 @app.cell
-def _(requests):
-    print(requests.get(
-        "https://restcountries.com/v3.1/alpha",
-        params={"codes": "CN", "fields": "cca2,car"},
-        timeout=10,
-    ).json())
+def _(country_records, mo):
+    _lines = ["name,code,income_group,gdp_per_person,gdp_year,fuel_import_share,fuel_year,years_of_income,status"]
+    for _r in country_records:
+        _lines.append(
+            f'"{_r["name"]}",{_r["code"]},"{_r["income_group"]}",{_r["gdp_per_person"]},'
+            f'{_r["gdp_year"]},{_r["fuel_import_share"]},{_r["fuel_year"]},{_r["years_of_income"]},{_r["status"]}'
+        )
+
+    _data_dir = mo.notebook_dir() / "data"
+    try:
+        _data_dir.mkdir(parents=True, exist_ok=True)
+        screen_csv = _data_dir / "latam_ev_screen.csv"
+        screen_csv.write_text("\n".join(_lines) + "\n")
+        _where = f"wrote {screen_csv.parent.name}/{screen_csv.name}"
+    except OSError as _error:
+        _where = f"could not write into {_data_dir.name}/: {_error}"
+
+    _where
+    return
+
+
+@app.cell
+def _():
+    ### Sorting the results
+    return
+
+
+@app.cell
+def _(country_records):
+    shortlist = []
+    tested_records = []
+    not_passed = []
+    for _r in country_records:
+        if _r["status"] == "pass":
+            shortlist.append(_r)
+            tested_records.append(_r)
+        elif _r["status"] == "fail":
+            tested_records.append(_r)
+            not_passed.append(_r)
+        else:
+            not_passed.append(_r)
+
+    _ranking = []
+    for _r in shortlist:
+        _ranking.append((_r["fuel_import_share"], _r["code"]))
+
+    ranked_shortlist = []
+    for _share, _code in sorted(_ranking, reverse=True):
+        for _r in shortlist:
+            if _r["code"] == _code:
+                ranked_shortlist.append(_r)
+
+    len(ranked_shortlist), len(not_passed)
     return
 
 
@@ -310,57 +450,7 @@ def _(mo):
 
 
 @app.cell
-def _(not_passed, ranked_shortlist):
-    print("Countries that pass all three filters, highest fuel share first")
-    print()
-    print(f"{'Country':<22}{'GDP/person':>12}{'Year':>6}{'Fuel % imports':>16}{'Year':>6}{'Years of income':>17}")
-    for _r in ranked_shortlist:
-        print(
-            f"{_r['name']:<22}"
-            f"{_r['gdp_per_person']:>12,.0f}"
-            f"{_r['gdp_year']:>6}"
-            f"{_r['fuel_import_share']:>16.1f}"
-            f"{_r['fuel_year']:>6}"
-            f"{_r['years_of_income']:>17.1f}"
-        )
-
-    print()
-    print("Countries that did not pass")
-    print()
-    print(f"{'Country':<22}{'Status':<10}{'Why':<28}")
-    for _r in not_passed:
-        print(f"{_r['name']:<22}{_r['status']:<10}{_r['failed_rules']:<28}")
-    return
-
-
-@app.cell
-def _(
-    candidates,
-    car_price_dollars,
-    min_fuel_import_share,
-    min_gdp_per_person,
-    ranked_shortlist,
-):
-    if len(ranked_shortlist) == 0:
-        answer_sentence = (
-            f"No Latin American country that drives on China's side has GDP per person of at least "
-            f"${min_gdp_per_person:,} and fuel at {min_fuel_import_share}% or more of its imports, "
-            f"so the limits need another look before picking a market."
-        )
-    else:
-        _best = ranked_shortlist[0]
-        _names = []
-        for _r in ranked_shortlist:
-            _names.append(_r["name"])
-        answer_sentence = (
-            f"{_best['name']} looks like the best first market for the ${car_price_dollars:,} EV: "
-            f"GDP per person is ${_best['gdp_per_person']:,.0f} ({_best['gdp_year']}), so the car costs "
-            f"about {_best['years_of_income']} years of average income, and fuel is "
-            f"{_best['fuel_import_share']:.1f}% of everything it imports ({_best['fuel_year']}). "
-            f"{len(ranked_shortlist)} of {len(candidates)} countries passed: {', '.join(_names)}."
-        )
-
-    print(answer_sentence)
+def _():
     return
 
 

@@ -110,7 +110,7 @@
       "console": []
     },
     {
-      "id": "PKri",
+      "id": "fqjc",
       "code_hash": "9b30bbffcbc5c7fb33bdaa808a7e5dd0",
       "outputs": [
         {
@@ -120,6 +120,12 @@
           }
         }
       ],
+      "console": []
+    },
+    {
+      "id": "Bdmo",
+      "code_hash": null,
+      "outputs": [],
       "console": []
     },
     {
@@ -136,7 +142,13 @@
       "console": []
     },
     {
-      "id": "qNSi",
+      "id": "jRGl",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "VQvW",
       "code_hash": "8e41e132c0014809fc7c6d99010a66d6",
       "outputs": [
         {
@@ -149,7 +161,7 @@
       "console": []
     },
     {
-      "id": "SFPL",
+      "id": "KyvG",
       "code_hash": "d29c6d7821cc8a428cbaf207390da297",
       "outputs": [
         {
@@ -162,7 +174,7 @@
       "console": []
     },
     {
-      "id": "fRMN",
+      "id": "BCWO",
       "code_hash": "3b924f63efde28296abe0a0c0219edab",
       "outputs": [
         {
@@ -175,67 +187,8 @@
       "console": []
     },
     {
-      "id": "dWNL",
-      "code_hash": "9bcdf2092f3e09e276e9e42b33332a9e",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>42</pre>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "wNRX",
-      "code_hash": "66c6000cdf512011186d7cea3f006a70",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "Yxbs",
-      "code_hash": "e6ff9b2409af00d0ee8e08975231432b",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "xMcX",
-      "code_hash": "40820e2477ff3bee6f5c48be08086ae5",
-      "outputs": [
-        {
-          "type": "error",
-          "ename": "exception",
-          "evalue": "name 'home_country_code' is not defined",
-          "traceback": null
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stderr",
-          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">\"C:\\Users\\Dr.Tanvir\\AppData\\Local\\Temp\\marimo_5136\\__marimo__cell_xMcX_.py\"</span>, line <span class=\"m\">1</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"n\">home_side</span> <span class=\"o\">=</span> <span class=\"n\">get_driving_side</span><span class=\"p\">(</span><span class=\"n\">home_country_code</span><span class=\"p\">)</span>\n<span class=\"w\">                                 </span><span class=\"pm\">^^^^^^^^^^^^^^^^^</span>\n<span class=\"gr\">NameError</span>: <span class=\"n\">name 'home_country_code' is not defined</span>\n</pre></div>\n</span>",
-          "mimetype": "application/vnd.marimo+traceback"
-        }
-      ]
-    },
-    {
-      "id": "lhhF",
-      "code_hash": "097aaf77bc9bd1191890dabd375ba723",
+      "id": "TEdc",
+      "code_hash": "1828b3423515771f6655825187c15217",
       "outputs": [
         {
           "type": "data",
@@ -248,10 +201,127 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "{'success': False, 'data': None, 'errors': [{'message': 'This API version has been deprecated. Please visit https://restcountries.com/docs/countries/legacy-api-deprecation to migrate to our new version (v5).'}]}\n",
+          "text": "42 countries in the region:\nAruba\nArgentina\nAntigua and Barbuda\nBahamas, The\nBelize\nBolivia\nBrazil\nBarbados\nChile\nColombia\nCosta Rica\nCuba\nCuracao\nCayman Islands\nDominica\nDominican Republic\nEcuador\nGrenada\nGuatemala\nGuyana\nHonduras\nHaiti\nJamaica\nSt. Kitts and Nevis\nSt. Lucia\nSt. Martin (French part)\nMexico\nNicaragua\nPanama\nPeru\nPuerto Rico (US)\nParaguay\nEl Salvador\nSuriname\nSint Maarten (Dutch part)\nTurks and Caicos Islands\nTrinidad and Tobago\nUruguay\nSt. Vincent and the Grenadines\nVenezuela, RB\nBritish Virgin Islands\nVirgin Islands (U.S.)\n",
           "mimetype": "text/plain"
         }
       ]
+    },
+    {
+      "id": "gFCZ",
+      "code_hash": "c924564955d62cf2637aac1330dfe98b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"filter-1-latin-american-same-side-of-the-road-as-china-not-left-out\">Filter 1: Latin American, same side of the road as China, not left out</h3>\n<span class=\"paragraph\">My plan used REST Countries for driving side and languages, but it retired its free address after I wrote the plan, and the new version needs a key. Since every Spanish, Portuguese and French speaking country in Latin America drives on the right like China, I typed that list into the Inputs cell instead. All the economic data still comes live from the World Bank.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "wtgd",
+      "code_hash": "073a9b2ac9dbfc6099680e32bf995fc0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[15, 27]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "euPs",
+      "code_hash": "ee4cbb0a15511b770bcbc411066b7708",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"filters-2-and-3-gdp-per-person-and-fuel-share-of-imports\">Filters 2 and 3: GDP per person and fuel share of imports</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "aNDY",
+      "code_hash": "31718e3ea49ded78d75240beaa81dbcc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "kUNI",
+      "code_hash": "11285279a6ee227bceb8ac4ddea44a84",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>15</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "YJGF",
+      "code_hash": "9f2530724d266e6a4677e48ed5daff82",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "kxQi",
+      "code_hash": "52133b2b5ecb756431521293c843990a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>&#x27;wrote data/latam_ev_screen.csv&#x27;</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "NSLl",
+      "code_hash": "4e051bd800fd9ec54d8066c6bd7444a9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "NvOd",
+      "code_hash": "f6dbf8d4c01f4814228a9691f6859617",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[4, 11]"
+          }
+        }
+      ],
+      "console": []
     },
     {
       "id": "BYtC",
@@ -267,50 +337,10 @@
       "console": []
     },
     {
-      "id": "RGSE",
-      "code_hash": "66a98959ed6c68b7294df831a805ff1e",
-      "outputs": [
-        {
-          "type": "error",
-          "ename": "exception",
-          "evalue": "name 'ranked_shortlist' is not defined",
-          "traceback": null
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "Countries that pass all three filters, highest fuel share first\n\nCountry                 GDP/person  Year  Fuel % imports  Year  Years of income\n",
-          "mimetype": "text/plain"
-        },
-        {
-          "type": "stream",
-          "name": "stderr",
-          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">\"C:\\Users\\Dr.Tanvir\\AppData\\Local\\Temp\\marimo_5136\\__marimo__cell_RGSE_.py\"</span>, line <span class=\"m\">4</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"k\">for</span> <span class=\"n\">_r</span> <span class=\"ow\">in</span> <span class=\"n\">ranked_shortlist</span><span class=\"p\">:</span>\n<span class=\"w\">              </span><span class=\"pm\">^^^^^^^^^^^^^^^^</span>\n<span class=\"gr\">NameError</span>: <span class=\"n\">name 'ranked_shortlist' is not defined</span>\n</pre></div>\n</span>",
-          "mimetype": "application/vnd.marimo+traceback"
-        }
-      ]
-    },
-    {
-      "id": "khkx",
-      "code_hash": "36ed51227f78a80ef91f4a5c614fe262",
-      "outputs": [
-        {
-          "type": "error",
-          "ename": "exception",
-          "evalue": "name 'ranked_shortlist' is not defined",
-          "traceback": null
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stderr",
-          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">\"C:\\Users\\Dr.Tanvir\\AppData\\Local\\Temp\\marimo_5136\\__marimo__cell_khkx_.py\"</span>, line <span class=\"m\">1</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"k\">if</span> <span class=\"nb\">len</span><span class=\"p\">(</span><span class=\"n\">ranked_shortlist</span><span class=\"p\">)</span> <span class=\"o\">==</span> <span class=\"mi\">0</span><span class=\"p\">:</span>\n<span class=\"w\">           </span><span class=\"pm\">^^^^^^^^^^^^^^^^</span>\n<span class=\"gr\">NameError</span>: <span class=\"n\">name 'ranked_shortlist' is not defined</span>\n</pre></div>\n</span>",
-          "mimetype": "application/vnd.marimo+traceback"
-        }
-      ]
+      "id": "kHGr",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
     },
     {
       "id": "Kclp",
