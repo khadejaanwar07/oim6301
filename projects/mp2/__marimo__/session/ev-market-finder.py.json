@@ -390,8 +390,8 @@
       "console": []
     },
     {
-      "id": "emfo",
-      "code_hash": null,
+      "id": "mOYh",
+      "code_hash": "25d9996eee0f4626dd21037790b1f9c6",
       "outputs": [
         {
           "type": "data",
@@ -401,6 +401,72 @@
         }
       ],
       "console": []
+    },
+    {
+      "id": "RziT",
+      "code_hash": "69a2656069b65ec8d7968a1f40b4300b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Countries I collected:      42\nWorld Bank says there are:  42\nSame: True\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "esbf",
+      "code_hash": "5226f641b35e37bb69b3cc5cb87b3108",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "qwBk",
+      "code_hash": "fdc5c784b3bd6788ff81cd6c20284bba",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "xOiW",
+      "code_hash": "8043232ce2955f43c54eb90ecc86dbb9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Panama, 2025\nGDP per person (World Bank):  $19,789.73\nTotal GDP / population:       $19,789.73\nDifference: 0.0%   Within 1%: True\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "Hstk",

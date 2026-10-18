@@ -166,6 +166,7 @@ def _():
     renewable_indicator = "EG.ELC.RNEW.ZS"
     return (
         car_price_dollars,
+        check_tolerance_percent,
         excluded_countries,
         fuel_indicator,
         gdp_indicator,
@@ -173,7 +174,9 @@ def _():
         min_fuel_import_share,
         min_gdp_per_person,
         page_size,
+        population_indicator,
         region_code,
+        total_gdp_indicator,
     )
 
 
@@ -436,7 +439,7 @@ def _(country_records):
                 ranked_shortlist.append(_r)
 
     len(ranked_shortlist), len(not_passed)
-    return not_passed, ranked_shortlist
+    return not_passed, ranked_shortlist, tested_records
 
 
 @app.cell(hide_code=True)
@@ -516,6 +519,74 @@ def _(mo):
 
 @app.cell
 def _():
+    ### Check 1 The number of countries I collected should match the total the World Bank reports.
+    return
+
+
+@app.cell
+def _(get_country_page, latam_countries, page_size, region_code):
+    reported_total = get_country_page(region_code, 1, page_size)[0]["total"]
+    print(f"Countries I collected:      {len(latam_countries)}")
+    print(f"World Bank says there are:  {reported_total}")
+    print(f"Same: {len(latam_countries) == reported_total}")
+    return
+
+
+@app.cell
+def _():
+    ### Check 2 - For the top country, total GDP divided by population (same year) should be really close to the GDP per person the World Bank reports.
+    return
+
+
+@app.cell
+def _(requests):
+    def get_value_for_year(country_code, indicator, year):
+        year_reply = requests.get(
+            f"https://api.worldbank.org/v2/country/{country_code}/indicator/{indicator}",
+            params={"format": "json", "date": year},
+            timeout=10,
+        )
+        year_page = year_reply.json()
+
+        value = None
+        if len(year_page) == 2:
+            if year_page[1] is None:
+                value = None
+            else:
+                value = year_page[1][0]["value"]
+        return value
+
+    return (get_value_for_year,)
+
+
+@app.cell
+def _(
+    check_tolerance_percent,
+    get_value_for_year,
+    population_indicator,
+    ranked_shortlist,
+    tested_records,
+    total_gdp_indicator,
+):
+    if len(ranked_shortlist) > 0:
+        _check = ranked_shortlist[0]
+    else:
+        _check = tested_records[0]
+
+    _total_gdp = get_value_for_year(_check["code"], total_gdp_indicator, _check["gdp_year"])
+    _population = get_value_for_year(_check["code"], population_indicator, _check["gdp_year"])
+    _computed = _total_gdp / _population
+    _difference = round((_computed - _check["gdp_per_person"]) / _check["gdp_per_person"] * 100, 2)
+
+    _close = False
+    if _difference < check_tolerance_percent:
+        if _difference > -check_tolerance_percent:
+            _close = True
+
+    print(f"{_check['name']}, {_check['gdp_year']}")
+    print(f"GDP per person (World Bank):  ${_check['gdp_per_person']:,.2f}")
+    print(f"Total GDP / population:       ${_computed:,.2f}")
+    print(f"Difference: {_difference}%   Within {check_tolerance_percent}%: {_close}")
     return
 
 
