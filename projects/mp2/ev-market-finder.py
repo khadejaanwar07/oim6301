@@ -2,6 +2,7 @@
 # requires-python = ">=3.12"
 # dependencies = [
 #     "marimo",
+#     "requests==2.34.2",
 # ]
 # ///
 """Mini Project 2.
@@ -144,7 +145,7 @@ def _():
     americas_region = "americas"
     home_country_code = "CN"
     latin_languages = ["Spanish", "Portuguese", "French"]
-    excluded_countries = ["VE", "CU", "HT", "PR"]
+    excluded_countries = ["VE", "CU", "HT", "PR", "BR", "MX"]
     page_size = 20
 
     # The car and the filters
@@ -164,7 +165,7 @@ def _():
     # Going further
     fuel_limits_to_test = [10, 15, 20, 25]
     renewable_indicator = "EG.ELC.RNEW.ZS"
-    return
+    return page_size, region_code
 
 
 @app.cell(hide_code=True)
@@ -179,6 +180,56 @@ def _(mo):
 
 @app.cell
 def _():
+    import requests
+
+    return (requests,)
+
+
+@app.cell
+def _(requests):
+    def get_country_page(region, page, per_page):
+        page_reply = requests.get(
+            "https://api.worldbank.org/v2/country",
+            params={"region": region, "format": "json", "page": page, "per_page": per_page},
+            timeout=10,
+        )
+        return page_reply.json()
+
+    return (get_country_page,)
+
+
+@app.cell
+def _(get_country_page):
+    def get_region_countries(region, per_page):
+        first_page = get_country_page(region, 1, per_page)
+        pages = first_page[0]["pages"]
+
+        all_rows = []
+        for row in first_page[1]:
+            all_rows.append(row)
+        for page in range(2, pages + 1):
+            next_page = get_country_page(region, page, per_page)
+            for row in next_page[1]:
+                all_rows.append(row)
+
+        countries = []
+        for row in all_rows:
+            countries.append(
+                {
+                    "code": row["iso2Code"],
+                    "name": row["name"],
+                    "income_group": row["incomeLevel"]["value"],
+                }
+            )
+        return countries
+
+    return (get_region_countries,)
+
+
+@app.cell
+def _(get_region_countries, page_size, region_code):
+    latam_countries = get_region_countries(region_code, page_size)
+    len(latam_countries)
     return
 
 

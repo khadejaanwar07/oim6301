@@ -2,7 +2,7 @@
   "version": "1",
   "metadata": {
     "marimo_version": "0.25.1",
-    "script_metadata_hash": "da873d5d09e69dbc37de3cbfd95dec06"
+    "script_metadata_hash": "9868b6f061f02a54a7fa5827a3a61ef5"
   },
   "cells": [
     {
@@ -34,7 +34,14 @@
     {
       "id": "KBaB",
       "code_hash": null,
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -117,7 +124,7 @@
     },
     {
       "id": "PKri",
-      "code_hash": "b6dc24e7923defefc7987540848e272d",
+      "code_hash": "08744e34ec58c49694a8d5128d2857c2",
       "outputs": [
         {
           "type": "data",
@@ -142,9 +149,55 @@
       "console": []
     },
     {
+      "id": "qNSi",
+      "code_hash": "8e41e132c0014809fc7c6d99010a66d6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "SFPL",
-      "code_hash": null,
-      "outputs": [],
+      "code_hash": "d29c6d7821cc8a428cbaf207390da297",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "fRMN",
+      "code_hash": "3b924f63efde28296abe0a0c0219edab",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "dWNL",
+      "code_hash": "9bcdf2092f3e09e276e9e42b33332a9e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>42</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -163,7 +216,14 @@
     {
       "id": "RGSE",
       "code_hash": null,
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -182,7 +242,14 @@
     {
       "id": "emfo",
       "code_hash": null,
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
