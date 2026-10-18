@@ -76,21 +76,22 @@ def _(mo):
     mo.md(r"""
     # 2. My Plan Before AI
 
-    My tool uses two free, public data sources. The World Bank publishes economic figures for every country, such as average income and what each country imports. REST Countries publishes basic facts about each country, including its languages and which side of the road it drives on.
+    My tool gets its data from the World Bank, which publishes economic numbers for every country, like average income and what each country imports. I also need to know which countries are in Latin America and drive on the same side as China. REST Countries used to give that for free, but its free version has been retired and the new one needs a key. Since every Spanish, Portuguese and French speaking country in Latin America drives on the right like China, I'll type that list into my inputs instead.
 
     **Steps**
 
     1. Get the list of countries the World Bank puts under Latin America & Caribbean. It only sends 20 at a time, so I'll have to ask for each page and put them together into one list. Then check my list has the same number of countries as the total the World Bank gives.
-    2. Look up which side of the road China drives on, since that's how the car is built. Then get the driving side and languages for every country in the Americas from REST Countries.
-    3. Narrow the list down. Keep a country if it speaks Spanish, Portuguese or French, drives on the same side as China, and isn't one I'm leaving out (Venezuela, Cuba, Haiti, Puerto Rico). I'll keep track of which countries got dropped and why.
-    4. For each country that's left, get its GDP per person (average income in US dollars) and what percent of its imports is fuel. Also save the year for each number, since some countries have older data than others.
-    5. A country passes if GDP per person is $8,000 or more and fuel is 15% or more of its imports. If one of the numbers is missing I'll mark it "no data" instead. I'll also figure out how many years of average income the $20,000 car would cost in each country.
+    2. Narrow the list down. Keep a country if it's on my list of Latin American countries and isn't one I'm leaving out (Venezuela, Cuba, Haiti, Puerto Rico, Brazil, Mexico). I'll keep track of which countries got dropped and why.
+    3. For each country that's left, get its GDP per person (average income in US dollars) and what percent of its imports is fuel. Also save the year for each number, since some countries have older data than others.
+    4. A country passes if GDP per person is $8,000 or more and fuel is 15% or more of its imports. If one of the numbers is missing I'll mark it "no data" instead. I'll also figure out how many years of average income the $20,000 car would cost in each country.
+    5. Save everything to a CSV in projects/mp2/data/.
     6. Sort the countries that passed by fuel share, highest first, because those are the ones where depending on imported fuel hurts the most. Print a table and a sentence that says which country is the best bet and why.
-    7. The point of all this is to help a Chinese EV company figure out where in Latin America its $20,000 car makes the most sense to sell, and at the end I should have a short ranked list of countries that pass all three filters, with the top one named.
+
+    The point of all this is to help a Chinese EV company figure out where in Latin America its $20,000 car makes the most sense to sell, and at the end I should have a short ranked list of countries that pass all three filters, with the top one named.
 
     **What does my loop carry from one step to the next, the way a running total carries its sum?**
 
-    My loops carry a list that grows instead of a number that grows. When I go through the World Bank's pages, the list of countries collected so far gets each new page's countries added to it, so after the last page it covers the whole region. When I go through the potential countries to consider, the list of country records gets one new record each time, with that country's GDP per person, fuel share, years of income and whether it passed. A running total ends with one sum; my lists end with one row per country.
+    My loops carry a list that grows instead of a number that grows. When I go through the World Bank's pages, the list of countries collected so far gets each new page's countries added to it, so after the last page it covers the whole region. When I go through the countries that are left, the list of country records gets one new record each time, with that country's GDP per person, fuel share, years of income and whether it passed. A running total ends with one sum; my lists end with one row per country.
 
     **Which check will I use in section 6, and which two numbers should agree?**
 
@@ -99,10 +100,8 @@ def _(mo):
 
     **Which functions will my tool need?**
 
-    - `get_country_page(region, page, per_page)`: a region code and a page number go in; one page of the World Bank's reply comes out.
-    - `get_region_countries(region)`: a region code goes in; a list of every country in it comes out (code, name, income group).
-    - `get_driving_side(country_code)`: a two-letter code goes in; "right" or "left" comes out.
-    - `get_country_details(region_name)`: a REST Countries region goes in; a list of countries with their driving side and languages comes out.
+    - `get_country_page(region, page, per_page)`: a region code, a page number and a page size go in; one page of the World Bank's reply comes out.
+    - `get_region_countries(region, per_page)`: a region code and a page size go in; a list of every country in it comes out (code, name, income group).
     - `get_latest_value(country_code, indicator)`: a country and an indicator code go in; the latest value and its year come out.
     - `get_value_for_year(country_code, indicator, year)`: the same, but for one chosen year. I need this for the check.
 
@@ -110,8 +109,7 @@ def _(mo):
 
     - `https://api.worldbank.org/v2/country?region=LCN&format=json&page=1&per_page=20`
     - `https://api.worldbank.org/v2/country/{code}/indicator/{indicator}?format=json&mrnev=1`
-    - `https://restcountries.com/v3.1/alpha?codes=CN&fields=cca2,car`
-    - `https://restcountries.com/v3.1/region/americas?fields=cca2,car,languages`
+    - `https://api.worldbank.org/v2/country/{code}/indicator/{indicator}?format=json&date={year}`
 
     **How will I know I have every record?**
 
