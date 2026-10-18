@@ -111,7 +111,7 @@
     },
     {
       "id": "fqjc",
-      "code_hash": "9b30bbffcbc5c7fb33bdaa808a7e5dd0",
+      "code_hash": "2a53338f7581b98c60b0fec595f03b3f",
       "outputs": [
         {
           "type": "data",
@@ -331,7 +331,7 @@
         {
           "type": "data",
           "data": {
-            "application/json": "[4, 11]"
+            "application/json": "[6, 9]"
           }
         }
       ],
@@ -365,7 +365,7 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "Countries that pass all three filters, highest fuel share first\n\nCountry                 GDP/person  Year  Fuel % imports  Year  Years of income\nPanama                      19,790  2025            19.3  2025              1.0\nDominican Republic          11,059  2025            17.6  2025              1.8\nPeru                         9,684  2025            16.4  2024              2.1\nChile                       17,995  2025            15.5  2025              1.1\n\nCountries that did not pass\n\nCountry               Status    Why                         \nArgentina             fail      fuel share                  \nBolivia               fail      GDP per person              \nColombia              fail      fuel share                  \nCosta Rica            fail      fuel share                  \nEcuador               fail      GDP per person              \nGuatemala             fail      GDP per person, fuel share  \nHonduras              fail      GDP per person              \nNicaragua             fail      GDP per person, fuel share  \nParaguay              fail      GDP per person, fuel share  \nEl Salvador           fail      GDP per person, fuel share  \nUruguay               fail      fuel share                  \n",
+          "text": "Countries that pass all three filters, highest fuel share first\n\nCountry                 GDP/person  Year  Fuel % imports  Year  Years of income\nPanama                      19,790  2025            19.3  2025              1.0\nDominican Republic          11,059  2025            17.6  2025              1.8\nPeru                         9,684  2025            16.4  2024              2.1\nChile                       17,995  2025            15.5  2025              1.1\nUruguay                     25,216  2025            14.2  2024              0.8\nCosta Rica                  19,970  2025            10.3  2024              1.0\n\nCountries that did not pass\n\nCountry               Status    Why                         \nArgentina             fail      fuel share                  \nBolivia               fail      GDP per person              \nColombia              fail      fuel share                  \nEcuador               fail      GDP per person              \nGuatemala             fail      GDP per person              \nHonduras              fail      GDP per person              \nNicaragua             fail      GDP per person              \nParaguay              fail      GDP per person              \nEl Salvador           fail      GDP per person              \n",
           "mimetype": "text/plain"
         }
       ]
@@ -385,7 +385,7 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "Panama looks like the best first market for the $20,000 EV: GDP per person is $19,790 (2025), so the car costs about 1.0 years of average income, and fuel is 19.3% of everything it imports (2025). 4 of 15 countries passed: Panama, Dominican Republic, Peru, Chile.\n",
+          "text": "Panama looks like the best first market for the $20,000 EV: GDP per person is $19,790 (2025), so the car costs about 1.0 years of average income, and fuel is 19.3% of everything it imports (2025). 6 of 15 countries passed: Panama, Dominican Republic, Peru, Chile, Uruguay, Costa Rica.\n",
           "mimetype": "text/plain"
         }
       ]
@@ -522,6 +522,32 @@
       "console": []
     },
     {
+      "id": "ohaI",
+      "code_hash": "7af4f1d881427ccd4b0911ede13ef9c4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"what-happened\">What happened</h2>\n<span class=\"paragraph\">I changed min_fuel_import_share from 15 to 10 and the notebook reran everything after it. The shortlist grew from 4 countries to 6, as I predicted. The two new countries are Uruguay and Costa Rica, and they came in at the bottom of the ranking, since they import less fuel as a share of everything they buy than the original four. Panama stayed on top with the same numbers: GDP per person of $19,790 (2025), so the car costs about 1.0 years of average income, and fuel is 19.3% of its imports (2025). The answer sentence now says 6 of 15 countries passed: Panama, Dominican Republic, Peru, Chile, Uruguay and Costa Rica.</span>\n<span class=\"paragraph\">It matched my prediction. The agents summary said the new countries were Peru and Costa Rica, but Peru was already on the list at 15%, so I checked the answer sentence against my earlier shortlist instead of trusting the summary.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "yOOC",
+      "code_hash": "d21fa17a4e21af857434232811b9ffb5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"what-happened\">What happened</h2>\n<span class=\"paragraph\">[Which 2 countries joined the list, whether Panama stayed on top, and what the answer sentence now says.] [It matched / It didn't match, because ...]</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "nWHF",
       "code_hash": "9e11622311558f577bd7fefb4cd2c3ec",
       "outputs": [
@@ -536,7 +562,7 @@
     },
     {
       "id": "FEoL",
-      "code_hash": "83878fbd500660c11754dde5f692abda",
+      "code_hash": "d31d35a7dfe3021d811950f1724d47a0",
       "outputs": [
         {
           "type": "data",
@@ -582,7 +608,7 @@
     },
     {
       "id": "HgAO",
-      "code_hash": "eb1a4bfbf129835361650bb87c0b30c0",
+      "code_hash": "c4ee40560d74db015e94dbee46104411",
       "outputs": [
         {
           "type": "data",
@@ -608,7 +634,7 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "Country                 Renewable % of power  Year\nPanama                                  69.0  2021\nDominican Republic                      17.1  2021\nPeru                                    61.8  2021\nChile                                   48.1  2021\n",
+          "text": "Country                 Renewable % of power  Year\nPanama                                  69.0  2021\nDominican Republic                      17.1  2021\nPeru                                    61.8  2021\nChile                                   48.1  2021\nUruguay                                 84.4  2021\nCosta Rica                              99.4  2021\n",
           "mimetype": "text/plain"
         }
       ]

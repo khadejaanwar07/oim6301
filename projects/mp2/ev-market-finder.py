@@ -148,7 +148,7 @@ def _():
     # The car and the filters
     car_price_dollars = 20000
     min_gdp_per_person = 8000
-    min_fuel_import_share = 15
+    min_fuel_import_share = 10
 
     # World Bank indicators
     gdp_indicator = "NY.GDP.PCAP.CD"
@@ -646,6 +646,28 @@ def _(mo):
     I'm changing `min_fuel_import_share` in the Inputs cell from 15 to 10.
 
     I expect the shortlist to grow from 4 countries to 6, because my Going Further table showed 6 countries passing at 10%. The 2 new countries should show up at the bottom of the ranking, since the list is sorted by fuel share and they have lower shares than the original four. Panama should still be the top market, so the answer sentence should still name Panama with the same numbers, but it should now say 6 of 15 countries passed instead of 4.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## What happened
+
+    I changed min_fuel_import_share from 15 to 10 and the notebook reran everything after it. The shortlist grew from 4 countries to 6, as I predicted. The two new countries are Uruguay and Costa Rica, and they came in at the bottom of the ranking, since they import less fuel as a share of everything they buy than the original four. Panama stayed on top with the same numbers: GDP per person of $19,790 (2025), so the car costs about 1.0 years of average income, and fuel is 19.3% of its imports (2025). The answer sentence now says 6 of 15 countries passed: Panama, Dominican Republic, Peru, Chile, Uruguay and Costa Rica.
+
+    It matched my prediction. The agents summary said the new countries were Peru and Costa Rica, but Peru was already on the list at 15%, so I checked the answer sentence against my earlier shortlist instead of trusting the summary.
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    ## What happened
+
+    [Which 2 countries joined the list, whether Panama stayed on top, and what the answer sentence now says.] [It matched / It didn't match, because ...]
     """)
     return
 
