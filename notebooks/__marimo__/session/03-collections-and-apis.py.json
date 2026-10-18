@@ -60,14 +60,7 @@
     {
       "id": "lEQa",
       "code_hash": null,
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -214,20 +207,13 @@
       "console": []
     },
     {
-      "id": "qnkX",
+      "id": "ROlb",
       "code_hash": null,
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "TqIu",
+      "id": "qnkX",
       "code_hash": "58dc8270546fd2fd62eebb9d4c463be7",
       "outputs": [
         {
@@ -240,7 +226,7 @@
       "console": []
     },
     {
-      "id": "Vxnm",
+      "id": "TqIu",
       "code_hash": "b3baada9d1fcfdd58bb210c538eb3881",
       "outputs": [
         {
@@ -253,7 +239,7 @@
       "console": []
     },
     {
-      "id": "DnEU",
+      "id": "Vxnm",
       "code_hash": "1ac612db125e3b2944b69318890e73bd",
       "outputs": [
         {
@@ -266,7 +252,7 @@
       "console": []
     },
     {
-      "id": "ulZA",
+      "id": "DnEU",
       "code_hash": "68b2c05c327f302524823762c7ee6234",
       "outputs": [
         {
@@ -286,7 +272,7 @@
       ]
     },
     {
-      "id": "ecfG",
+      "id": "ulZA",
       "code_hash": "186b62d24d492ec154bdd903af6eb017",
       "outputs": [
         {
@@ -299,7 +285,7 @@
       "console": []
     },
     {
-      "id": "Pvdt",
+      "id": "ecfG",
       "code_hash": "086521750e673b986de6c11eecfd933f",
       "outputs": [
         {
@@ -312,7 +298,7 @@
       "console": []
     },
     {
-      "id": "ZBYS",
+      "id": "Pvdt",
       "code_hash": "3dfb5ed0c8c10efb691f89c3c6bfc4b7",
       "outputs": [
         {
@@ -325,7 +311,7 @@
       "console": []
     },
     {
-      "id": "aLJB",
+      "id": "ZBYS",
       "code_hash": "db10994d4a3cb2c2d09fc24a9be4f988",
       "outputs": [
         {
@@ -338,7 +324,7 @@
       "console": []
     },
     {
-      "id": "nHfw",
+      "id": "aLJB",
       "code_hash": "38e3929260a968d03b1c60e535823939",
       "outputs": [
         {
@@ -351,7 +337,7 @@
       "console": []
     },
     {
-      "id": "xXTn",
+      "id": "nHfw",
       "code_hash": "cf013d266ae6857b91858009b7c8ab48",
       "outputs": [
         {
@@ -364,7 +350,7 @@
       "console": []
     },
     {
-      "id": "AjVT",
+      "id": "xXTn",
       "code_hash": "3d67860eb639d0282e028a896a65dd94",
       "outputs": [
         {
@@ -377,7 +363,7 @@
       "console": []
     },
     {
-      "id": "pHFh",
+      "id": "AjVT",
       "code_hash": "3576afafe4f102de73f70bcc988d0156",
       "outputs": [
         {
@@ -390,7 +376,7 @@
       "console": []
     },
     {
-      "id": "NCOB",
+      "id": "pHFh",
       "code_hash": "28bb1887819d424fa39aa23560629d78",
       "outputs": [
         {
@@ -403,7 +389,7 @@
       "console": []
     },
     {
-      "id": "aqbW",
+      "id": "NCOB",
       "code_hash": "7c943e39264a8aef1d3cc8633eb583a7",
       "outputs": [
         {
@@ -416,7 +402,7 @@
       "console": []
     },
     {
-      "id": "TRpd",
+      "id": "aqbW",
       "code_hash": "e71c30995427d2372c2b45f530459055",
       "outputs": [
         {
@@ -429,7 +415,7 @@
       "console": []
     },
     {
-      "id": "TXez",
+      "id": "TRpd",
       "code_hash": "8cb4b4c9b56148cf5915a10cbe0dd092",
       "outputs": [
         {
@@ -442,7 +428,7 @@
       "console": []
     },
     {
-      "id": "dNNg",
+      "id": "TXez",
       "code_hash": "509a47f88e82e63dc61ce34410d09c99",
       "outputs": [
         {
@@ -455,7 +441,7 @@
       "console": []
     },
     {
-      "id": "yCnT",
+      "id": "dNNg",
       "code_hash": "bf81f0030fc2e70a06a4810783a2cb1a",
       "outputs": [
         {
@@ -468,7 +454,7 @@
       "console": []
     },
     {
-      "id": "wlCL",
+      "id": "yCnT",
       "code_hash": "95a3924e5bdeb1262241b6861ecbb4f2",
       "outputs": [
         {
@@ -481,7 +467,7 @@
       "console": []
     },
     {
-      "id": "kqZH",
+      "id": "wlCL",
       "code_hash": "c92111f8ba93cd61e7dac40805e86c03",
       "outputs": [
         {
@@ -494,7 +480,7 @@
       "console": []
     },
     {
-      "id": "wAgl",
+      "id": "kqZH",
       "code_hash": "f01f1fda7f571e14bf2a6509ace69186",
       "outputs": [
         {
@@ -507,7 +493,7 @@
       "console": []
     },
     {
-      "id": "rEll",
+      "id": "wAgl",
       "code_hash": "cb4baa718dd7852085fc8ba738deffb8",
       "outputs": [
         {
@@ -520,7 +506,7 @@
       "console": []
     },
     {
-      "id": "dGlV",
+      "id": "rEll",
       "code_hash": "3ec454296bb0dc1ab5b1eba9bb86ad77",
       "outputs": [
         {
@@ -533,7 +519,7 @@
       "console": []
     },
     {
-      "id": "SdmI",
+      "id": "dGlV",
       "code_hash": "e8e9d094fc7d0401397d4d636d248303",
       "outputs": [
         {
@@ -546,7 +532,7 @@
       "console": []
     },
     {
-      "id": "lgWD",
+      "id": "SdmI",
       "code_hash": "63c7a81e8331a57d1b8de839772f6fb3",
       "outputs": [
         {
@@ -559,7 +545,7 @@
       "console": []
     },
     {
-      "id": "yOPj",
+      "id": "lgWD",
       "code_hash": "fd30a3b2532bb06bb2b05ca93f53b70c",
       "outputs": [
         {
@@ -572,7 +558,7 @@
       "console": []
     },
     {
-      "id": "fwwy",
+      "id": "yOPj",
       "code_hash": "c6c75ddcafc956ac599c5182c747b1f7",
       "outputs": [
         {
@@ -585,7 +571,7 @@
       "console": []
     },
     {
-      "id": "LJZf",
+      "id": "fwwy",
       "code_hash": "1f8ec4989f418d94de26cf9165d7d390",
       "outputs": [
         {
@@ -598,7 +584,7 @@
       "console": []
     },
     {
-      "id": "urSm",
+      "id": "LJZf",
       "code_hash": "2687f8e179dd9abafc8e640ae9eef324",
       "outputs": [
         {
@@ -611,7 +597,7 @@
       "console": []
     },
     {
-      "id": "jxvo",
+      "id": "urSm",
       "code_hash": "eaa7dc8bc1c38a0f67724dfe79a290ae",
       "outputs": [
         {
@@ -624,7 +610,7 @@
       "console": []
     },
     {
-      "id": "mWxS",
+      "id": "jxvo",
       "code_hash": "c8f862e56b4e11f6d7863336e449abd5",
       "outputs": [
         {
@@ -637,7 +623,7 @@
       "console": []
     },
     {
-      "id": "aySY",
+      "id": "mWxS",
       "code_hash": "bfbe7a65b5997dcdd15fe059221bc5d0",
       "outputs": [
         {
@@ -818,9 +804,9 @@
       "outputs": [
         {
           "type": "error",
-          "ename": "syntax",
+          "ename": "exception",
           "evalue": "line 2\n    \"https://api.open-meteo.com/v1/forecast?\n    ^\nSyntaxError: unterminated string literal (detected at line 2)\n",
-          "traceback": []
+          "traceback": null
         }
       ],
       "console": []
