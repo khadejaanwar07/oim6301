@@ -1,0 +1,208 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.25.1",
+    "script_metadata_hash": "da873d5d09e69dbc37de3cbfd95dec06"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "652f1ff0e9ca2e7096cc13dc1ba5a949",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"mini-project-2\">Mini Project 2</h1>\n<span class=\"paragraph\">Your choice of project, what each one asks for, the due date and how it is graded are on the Mini Project 2 page of the course site, linked from the calendar. This notebook is the shape to build it in. Keep the headings, and replace each line in italics with your own.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "KBaB",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "341b470af643068ae6fa175257567582",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"1-the-question\">1. The Question</h2>\n<span class=\"paragraph\"><em>Who would use this, and what decision does it help them make? Two or three sentences, in words somebody outside this course would understand.</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "hUxF",
+      "code_hash": "66f6dab2469453236299954a10e8ffbd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">A Chinese carmaker wants to launch a $20,000 electric car in Latin America. Brazil and Mexico are getting harder to enter, with rising tariffs and BYD already selling most of the EVs there, so the strategy team wants to know which other markets are worth a closer look. This tool gives them a shortlist of countries where the car can be shipped exactly as it is built in China, where people can realistically afford it, and where buying imported fuel gives drivers a reason to switch to electric.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "txUI",
+      "code_hash": "e27a73652289d7f6b071cd58ab377bf2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">I left out Venezuela, Cuba, Haiti and Puerto Rico on purpose. The first three have been removed due to sanctions, a very small private car market or instability, and Puerto Rico because it has been remvoved since it follows US trade rules, which put very high tariffs on Chinese EVs.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "776354511ed24ebb0509f02eb9b67d00",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"2-my-plan-before-ai\">2. My Plan Before AI</h2>\n<span class=\"paragraph\"><em>Before you ask your agent anything, write how you would solve it: the steps, in order, in plain words, in five lines or more. Then answer these two questions:</em></span>\n<ul>\n<li><em>What does your loop carry from one step to the next, the way a running total carries its sum?</em></li>\n<li><em>Which check will you use in section 6, and which two numbers should agree?</em></li>\n</ul>\n<span class=\"paragraph\"><em>Commit this notebook with the message <code>mp2: plan before AI</code>.</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ghNv",
+      "code_hash": "2f5a0ef2dbe3ca3c66e8f54c583cb31e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"2-my-plan-before-ai\">2. My Plan Before AI</h1>\n<span class=\"paragraph\">I opened the World Bank and REST Countries addresses in my browser first. The World Bank sends back a list of two parts: the first part is about pages (page, pages, per_page, total) and the second is the actual countries. When a country has no value for an indicator, the second part comes back empty (null). REST Countries sends a list of countries, and each one has a <code>car</code> field with the side of the road it drives on.</span>\n<span class=\"paragraph\"><strong>Steps</strong></span>\n<ol>\n<li>Get every country the World Bank puts in Latin America &amp; Caribbean (region code LCN), page by page, and check that I have as many as the total it reports.</li>\n<li>Ask REST Countries which side of the road China drives on, then get the driving side and languages of every country in the Americas.</li>\n<li>Keep the countries that speak Spanish, Portuguese or French, drive on the same side as China, and are not on my exclusion list. Keep a list of the ones I drop and why.</li>\n<li>For each country left, ask the World Bank for its latest GDP per person and its fuel imports as a share of all imports, along with the year each number is from.</li>\n<li>Mark each country pass, fail or no data against my limits ($8,000 GDP per person, 15% fuel share), and work out how many years of average income the $20,000 car costs there.</li>\n<li>Save the records to a CSV in projects/mp2/data/.</li>\n<li>Rank the countries that pass by fuel share, highest first, since that is where expensive imported fuel hurts most, then print a table and one sentence naming the top market.</li>\n</ol>\n<span class=\"paragraph\"><strong>Which functions will my tool need?</strong></span>\n<ul>\n<li><code>get_country_page(region, page, per_page)</code>: a region code and a page number go in; one page of the World Bank's reply comes out.</li>\n<li><code>get_region_countries(region)</code>: a region code goes in; a list of every country in it comes out (code, name, income group).</li>\n<li><code>get_driving_side(country_code)</code>: a two-letter code goes in; \"right\" or \"left\" comes out.</li>\n<li><code>get_country_details(region_name)</code>: a REST Countries region goes in; a list of countries with their driving side and languages comes out.</li>\n<li><code>get_latest_value(country_code, indicator)</code>: a country and an indicator code go in; the latest value and its year come out.</li>\n<li><code>get_value_for_year(country_code, indicator, year)</code>: the same, but for one chosen year. I need this for the check.</li>\n</ul>\n<span class=\"paragraph\"><strong>Which addresses will they request?</strong></span>\n<ul>\n<li><code>https://api.worldbank.org/v2/country?region=LCN&amp;format=json&amp;page=1&amp;per_page=20</code></li>\n<li><code>https://api.worldbank.org/v2/country/{code}/indicator/{indicator}?format=json&amp;mrnev=1</code></li>\n<li><code>https://restcountries.com/v3.1/alpha?codes=CN&amp;fields=cca2,car</code></li>\n<li><code>https://restcountries.com/v3.1/region/americas?fields=cca2,car,languages</code></li>\n</ul>\n<span class=\"paragraph\"><strong>How will I know I have every record?</strong></span>\n<span class=\"paragraph\">The World Bank's first page tells me how many pages and how many countries there are. I'll ask for 20 per page so the region takes more than one page and my page loop actually gets used. Then I'll compare the number of countries I collected with the total it reports.</span>\n<span class=\"paragraph\"><strong>Which check will I use in section 6, and which two numbers should agree?</strong></span>\n<ol>\n<li>The number of countries I collected should equal the World Bank's reported total.</li>\n</ol></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "b6d59f77fcce3557b73b2caca0885a04",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"3-inputs\">3. Inputs</h2>\n<span class=\"paragraph\">Every number the project starts from goes in the cell below, and nowhere else, so that changing one input changes every result after it.</span>\n<span class=\"paragraph\">Copy in the default inputs for your project from the Mini Project 2 page. If you chose your own project, type your data in here, or ask your agent to generate it with <code>faker</code>. The required part reads no file.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "71d32bd63e1b86444a83f18329c3c3f8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"4-the-work\">4. The Work</h2>\n<span class=\"paragraph\">Add as many cells as you need. Try each step yourself before you ask your agent, and commit as you go.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "189948d98f771b65614d9dc06a5a3ea6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"5-the-answer\">5. The Answer</h2>\n<span class=\"paragraph\"><em>A table of your results in the cell below, printed with <code>print</code> and f-strings, then one sentence here that answers the question in section 1, with the number in it.</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "cefd9fb4105f4ca556cfc0dc69895e7a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"6-how-i-know-these-numbers-are-right\">6. How I Know These Numbers Are Right</h2>\n<span class=\"paragraph\"><em>At least one check that reaches a result a second, independent way. Name what you compared and what came out.</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "4fa513d08c761dfe89641eaef1357bc2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"7-working-with-the-agent\">7. Working With the Agent</h2>\n<span class=\"paragraph\"><em>Pick one piece of AI output you did not accept as-is. What did it give you, what did you change, and how did you know? Point to the commit or the cell.</em></span>\n<span class=\"paragraph\"><em>If the agent got it right the first time: what did you do to verify that?</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "9e11622311558f577bd7fefb4cd2c3ec",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"8-going-further\">8. Going Further</h2>\n<span class=\"paragraph\"><em>Take at least one step past the main task, in any direction, and use your agent as much as you like. It does not have to work. State what you tried, what you found, and where it is in this notebook.</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
