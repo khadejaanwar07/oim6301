@@ -162,23 +162,19 @@ def _(mo):
 
     Several questions below ask for a sentence. This cell is where they go. Click into it, write under the letter, and press `Ctrl+Enter` (Windows) or `Cmd+Enter` (macOS).
 
-    **B ·**
+    **B ·** France, Germany, Brazil, and USA each had the most orders, with 4 each.
 
     **C ·**
+    1. The lines on one order, which the customer can add to, remove from and reorder — a **list**: it holds many of the same kind of thing, in an order that can change.
+    2. Every customer who has ordered this year, each once — a **set**: the question only asks who is among them, not how many times or in what order.
+    3. The units sold of each product, looked up by product name — a **dictionary**: each value is found by a key, not by position.
+    4. One shipment's carrier, tracking number and ship date, which must not change — a **tuple**: it is one thing with named parts that should never change once recorded.
 
-    **D ·**
+    **D ·** I would rather work with the list of dictionaries. Each part is read by name, like `holding["symbol"]`, so the code says what it means. With the list of tuples, `holding[1]` works but does not say whether it is shares or price without checking back on how the tuple was built.
 
-    **G ·**
+    **G ·** This "Babson Park" is in Florida, not Massachusetts — there is more than one town by that name. Code that always takes `[0]` would have silently used the Florida result instead of the one near Babson College, with no error at all. The mistake would only turn up later, as a wrong answer.
     """)
     return
-
-
-app._unparsable_cell(
-    r"""
-    B. France, Germany, Brazil, and USA each had the most orders, with 4 each.
-    """,
-    name="_"
-)
 
 
 @app.cell
@@ -522,6 +518,15 @@ def _():
         ("TSLA", 150, 255.70),
     ]
     holdings
+    return (holdings,)
+
+
+@app.cell
+def _(holdings):
+    portfolio_cost = 0
+    for _symbol, _shares, _price in holdings:
+        portfolio_cost += _shares * _price
+    portfolio_cost
     return
 
 
