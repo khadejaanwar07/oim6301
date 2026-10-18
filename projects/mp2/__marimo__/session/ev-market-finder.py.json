@@ -338,9 +338,43 @@
     },
     {
       "id": "kHGr",
-      "code_hash": null,
-      "outputs": [],
-      "console": []
+      "code_hash": "66a98959ed6c68b7294df831a805ff1e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Countries that pass all three filters, highest fuel share first\n\nCountry                 GDP/person  Year  Fuel % imports  Year  Years of income\nPanama                      19,790  2025            19.3  2025              1.0\nDominican Republic          11,059  2025            17.6  2025              1.8\nPeru                         9,684  2025            16.4  2024              2.1\nChile                       17,995  2025            15.5  2025              1.1\n\nCountries that did not pass\n\nCountry               Status    Why                         \nArgentina             fail      fuel share                  \nBolivia               fail      GDP per person              \nColombia              fail      fuel share                  \nCosta Rica            fail      fuel share                  \nEcuador               fail      GDP per person              \nGuatemala             fail      GDP per person, fuel share  \nHonduras              fail      GDP per person              \nNicaragua             fail      GDP per person, fuel share  \nParaguay              fail      GDP per person, fuel share  \nEl Salvador           fail      GDP per person, fuel share  \nUruguay               fail      fuel share                  \n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "CQYB",
+      "code_hash": "36ed51227f78a80ef91f4a5c614fe262",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Panama looks like the best first market for the $20,000 EV: GDP per person is $19,790 (2025), so the car costs about 1.0 years of average income, and fuel is 19.3% of everything it imports (2025). 4 of 15 countries passed: Panama, Dominican Republic, Peru, Chile.\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "Kclp",

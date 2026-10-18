@@ -436,7 +436,7 @@ def _(country_records):
                 ranked_shortlist.append(_r)
 
     len(ranked_shortlist), len(not_passed)
-    return
+    return not_passed, ranked_shortlist
 
 
 @app.cell(hide_code=True)
@@ -450,7 +450,57 @@ def _(mo):
 
 
 @app.cell
-def _():
+def _(not_passed, ranked_shortlist):
+    print("Countries that pass all three filters, highest fuel share first")
+    print()
+    print(f"{'Country':<22}{'GDP/person':>12}{'Year':>6}{'Fuel % imports':>16}{'Year':>6}{'Years of income':>17}")
+    for _r in ranked_shortlist:
+        print(
+            f"{_r['name']:<22}"
+            f"{_r['gdp_per_person']:>12,.0f}"
+            f"{_r['gdp_year']:>6}"
+            f"{_r['fuel_import_share']:>16.1f}"
+            f"{_r['fuel_year']:>6}"
+            f"{_r['years_of_income']:>17.1f}"
+        )
+
+    print()
+    print("Countries that did not pass")
+    print()
+    print(f"{'Country':<22}{'Status':<10}{'Why':<28}")
+    for _r in not_passed:
+        print(f"{_r['name']:<22}{_r['status']:<10}{_r['failed_rules']:<28}")
+    return
+
+
+@app.cell
+def _(
+    candidates,
+    car_price_dollars,
+    min_fuel_import_share,
+    min_gdp_per_person,
+    ranked_shortlist,
+):
+    if len(ranked_shortlist) == 0:
+        answer_sentence = (
+            f"No Latin American country that drives on China's side has GDP per person of at least "
+            f"${min_gdp_per_person:,} and fuel at {min_fuel_import_share}% or more of its imports, "
+            f"so the limits need another look before picking a market."
+        )
+    else:
+        _best = ranked_shortlist[0]
+        _names = []
+        for _r in ranked_shortlist:
+            _names.append(_r["name"])
+        answer_sentence = (
+            f"{_best['name']} looks like the best first market for the ${car_price_dollars:,} EV: "
+            f"GDP per person is ${_best['gdp_per_person']:,.0f} ({_best['gdp_year']}), so the car costs "
+            f"about {_best['years_of_income']} years of average income, and fuel is "
+            f"{_best['fuel_import_share']:.1f}% of everything it imports ({_best['fuel_year']}). "
+            f"{len(ranked_shortlist)} of {len(candidates)} countries passed: {', '.join(_names)}."
+        )
+
+    print(answer_sentence)
     return
 
 
