@@ -1,655 +1,284 @@
 {
   "version": "1",
   "metadata": {
-    "marimo_version": "0.25.1",
+    "marimo_version": "0.24.2",
     "script_metadata_hash": "9868b6f061f02a54a7fa5827a3a61ef5"
   },
   "cells": [
     {
       "id": "Hbol",
-      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "code_hash": null,
+      "outputs": [],
       "console": []
     },
     {
       "id": "MJUe",
-      "code_hash": "652f1ff0e9ca2e7096cc13dc1ba5a949",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"mini-project-2\">Mini Project 2</h1>\n<span class=\"paragraph\">Your choice of project, what each one asks for, the due date and how it is graded are on the Mini Project 2 page of the course site, linked from the calendar. This notebook is the shape to build it in. Keep the headings, and replace each line in italics with your own.</span></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "KBaB",
       "code_hash": null,
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "vblA",
-      "code_hash": "341b470af643068ae6fa175257567582",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"1-the-question\">1. The Question</h2>\n<span class=\"paragraph\"><em>Who would use this, and what decision does it help them make? Two or three sentences, in words somebody outside this course would understand.</em></span></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "hUxF",
-      "code_hash": "8a1f3b71ff599f25e4a585b0648a1f0c",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">A Chinese carmaker wants to launch a $20,000 electric car in Latin America. Brazil and Mexico are getting harder to enter, with rising tariffs and BYD already selling most of the EVs there, so the strategy team wants to know which other markets are worth a closer look. This tool gives them a shortlist of countries where the car can be shipped exactly as it is built in China, where people can realistically afford it, and where buying imported fuel gives drivers a reason to switch to electric.</span>\n<span class=\"paragraph\">I left out Venezuela, Cuba, Haiti and Puerto Rico on purpose: the first three because of sanctions, a very small private car market, or instability, and Puerto Rico because it follows US trade rules, which put very high tariffs on Chinese EVs. I also left out Brazil and Mexico, because tariffs are going up there and BYD already sells most of the EVs.</span></span>"
-          }
-        }
-      ],
+      "code_hash": null,
+      "outputs": [],
       "console": []
     },
     {
       "id": "bkHC",
-      "code_hash": "776354511ed24ebb0509f02eb9b67d00",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"2-my-plan-before-ai\">2. My Plan Before AI</h2>\n<span class=\"paragraph\"><em>Before you ask your agent anything, write how you would solve it: the steps, in order, in plain words, in five lines or more. Then answer these two questions:</em></span>\n<ul>\n<li><em>What does your loop carry from one step to the next, the way a running total carries its sum?</em></li>\n<li><em>Which check will you use in section 6, and which two numbers should agree?</em></li>\n</ul>\n<span class=\"paragraph\"><em>Commit this notebook with the message <code>mp2: plan before AI</code>.</em></span></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "ghNv",
-      "code_hash": "6ba35b0b854239d7d12c4ff791179fe7",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">My tool gets its data from the World Bank, which publishes economic numbers for every country, like average income and what each country imports. I also need to know which countries are in Latin America and drive on the same side as China. REST Countries used to give that for free, but its free version has been retired and the new one needs a key. Since every Spanish, Portuguese and French speaking country in Latin America drives on the right like China, I'll type that list into my inputs instead.</span>\n<span class=\"paragraph\"><strong>Steps</strong></span>\n<ol>\n<li>Get the list of countries the World Bank puts under Latin America &amp; Caribbean. It only sends 20 at a time, so I'll have to ask for each page and put them together into one list. Then check my list has the same number of countries as the total the World Bank gives.</li>\n<li>Narrow the list down. Keep a country if it's on my list of Latin American countries and isn't one I'm leaving out (Venezuela, Cuba, Haiti, Puerto Rico, Brazil, Mexico). I'll keep track of which countries got dropped and why.</li>\n<li>For each country that's left, get its GDP per person (average income in US dollars) and what percent of its imports is fuel. Also save the year for each number, since some countries have older data than others.</li>\n<li>A country passes if GDP per person is $8,000 or more and fuel is 15% or more of its imports. If one of the numbers is missing I'll mark it \"no data\" instead. I'll also figure out how many years of average income the $20,000 car would cost in each country.</li>\n<li>Save everything to a CSV in projects/mp2/data/.</li>\n<li>Sort the countries that passed by fuel share, highest first, because those are the ones where depending on imported fuel hurts the most. Print a table and a sentence that says which country is the best bet and why.</li>\n</ol>\n<span class=\"paragraph\">The point of all this is to help a Chinese EV company figure out where in Latin America its $20,000 car makes the most sense to sell, and at the end I should have a short ranked list of countries that pass all three filters, with the top one named.</span>\n<span class=\"paragraph\"><strong>What does my loop carry from one step to the next, the way a running total carries its sum?</strong></span>\n<span class=\"paragraph\">My loops carry a list that grows instead of a number that grows. When I go through the World Bank's pages, the list of countries collected so far gets each new page's countries added to it, so after the last page it covers the whole region. When I go through the countries that are left, the list of country records gets one new record each time, with that country's GDP per person, fuel share, years of income and whether it passed. A running total ends with one sum; my lists end with one row per country.</span>\n<span class=\"paragraph\"><strong>Which check will I use in section 6, and which two numbers should agree?</strong></span>\n<ol>\n<li>The number of countries I collected should equal the total the World Bank reports on its first page.</li>\n<li>For the top country, total GDP divided by population for the same year should be close to the GDP per person the World Bank publishes.</li>\n</ol>\n<span class=\"paragraph\"><strong>Which functions will my tool need?</strong></span>\n<ul>\n<li><code>get_country_page(region, page, per_page)</code>: a region code, a page number and a page size go in; one page of the World Bank's reply comes out.</li>\n<li><code>get_region_countries(region, per_page)</code>: a region code and a page size go in; a list of every country in it comes out (code, name, income group).</li>\n<li><code>get_latest_value(country_code, indicator)</code>: a country and an indicator code go in; the latest value and its year come out.</li>\n<li><code>get_value_for_year(country_code, indicator, year)</code>: the same, but for one chosen year. I need this for the check.</li>\n</ul>\n<span class=\"paragraph\"><strong>Which addresses will they request?</strong></span>\n<ul>\n<li><code>https://api.worldbank.org/v2/country?region=LCN&amp;format=json&amp;page=1&amp;per_page=20</code></li>\n<li><code>https://api.worldbank.org/v2/country/{code}/indicator/{indicator}?format=json&amp;mrnev=1</code></li>\n<li><code>https://api.worldbank.org/v2/country/{code}/indicator/{indicator}?format=json&amp;date={year}</code></li>\n</ul>\n<span class=\"paragraph\"><strong>How will I know I have every record?</strong></span>\n<span class=\"paragraph\">The World Bank's first page tells me how many pages and how many countries there are. I'll ask for 20 per page so the region takes more than one page and my page loop actually gets used. Then I'll compare the number of countries I collected with the total it reports.</span></span>"
-          }
-        }
-      ],
+      "code_hash": null,
+      "outputs": [],
       "console": []
     },
     {
       "id": "lEQa",
-      "code_hash": "b6d59f77fcce3557b73b2caca0885a04",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"3-inputs\">3. Inputs</h2>\n<span class=\"paragraph\">Every number the project starts from goes in the cell below, and nowhere else, so that changing one input changes every result after it.</span>\n<span class=\"paragraph\">Copy in the default inputs for your project from the Mini Project 2 page. If you chose your own project, type your data in here, or ask your agent to generate it with <code>faker</code>. The required part reads no file.</span></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "fqjc",
-      "code_hash": "9b30bbffcbc5c7fb33bdaa808a7e5dd0",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "Bdmo",
       "code_hash": null,
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": null,
+      "outputs": [],
       "console": []
     },
     {
       "id": "Xref",
-      "code_hash": "71d32bd63e1b86444a83f18329c3c3f8",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"4-the-work\">4. The Work</h2>\n<span class=\"paragraph\">Add as many cells as you need. Try each step yourself before you ask your agent, and commit as you go.</span></span>"
-          }
-        }
-      ],
+      "code_hash": null,
+      "outputs": [],
       "console": []
     },
     {
-      "id": "jRGl",
-      "code_hash": "adaf8a3114539457f83cd301b629a95f",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"every-country-in-the-region\">Every country in the region</h3></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "VQvW",
-      "code_hash": "8e41e132c0014809fc7c6d99010a66d6",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "KyvG",
-      "code_hash": "d29c6d7821cc8a428cbaf207390da297",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "BCWO",
-      "code_hash": "3b924f63efde28296abe0a0c0219edab",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "TEdc",
-      "code_hash": "1828b3423515771f6655825187c15217",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "42 countries in the region:\nAruba\nArgentina\nAntigua and Barbuda\nBahamas, The\nBelize\nBolivia\nBrazil\nBarbados\nChile\nColombia\nCosta Rica\nCuba\nCuracao\nCayman Islands\nDominica\nDominican Republic\nEcuador\nGrenada\nGuatemala\nGuyana\nHonduras\nHaiti\nJamaica\nSt. Kitts and Nevis\nSt. Lucia\nSt. Martin (French part)\nMexico\nNicaragua\nPanama\nPeru\nPuerto Rico (US)\nParaguay\nEl Salvador\nSuriname\nSint Maarten (Dutch part)\nTurks and Caicos Islands\nTrinidad and Tobago\nUruguay\nSt. Vincent and the Grenadines\nVenezuela, RB\nBritish Virgin Islands\nVirgin Islands (U.S.)\n",
-          "mimetype": "text/plain"
-        }
-      ]
-    },
-    {
-      "id": "gFCZ",
-      "code_hash": "c924564955d62cf2637aac1330dfe98b",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"filter-1-latin-american-same-side-of-the-road-as-china-not-left-out\">Filter 1: Latin American, same side of the road as China, not left out</h3>\n<span class=\"paragraph\">My plan used REST Countries for driving side and languages, but it retired its free address after I wrote the plan, and the new version needs a key. Since every Spanish, Portuguese and French speaking country in Latin America drives on the right like China, I typed that list into the Inputs cell instead. All the economic data still comes live from the World Bank.</span></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "wtgd",
-      "code_hash": "073a9b2ac9dbfc6099680e32bf995fc0",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[15, 27]"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "qaKz",
-      "code_hash": "4c91ebd73270d21a4dee8e09c36ee898",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Filters 2 and 3: GDP per person and fuel share of imports</span></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "aNDY",
-      "code_hash": "31718e3ea49ded78d75240beaa81dbcc",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "kUNI",
-      "code_hash": "11285279a6ee227bceb8ac4ddea44a84",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>15</pre>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "YJGF",
-      "code_hash": "9f2530724d266e6a4677e48ed5daff82",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "kxQi",
-      "code_hash": "52133b2b5ecb756431521293c843990a",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>&#x27;wrote data/latam_ev_screen.csv&#x27;</pre>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "NSLl",
-      "code_hash": "4e051bd800fd9ec54d8066c6bd7444a9",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "NvOd",
-      "code_hash": "f6dbf8d4c01f4814228a9691f6859617",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[4, 11]"
-          }
-        }
-      ],
+      "id": "SFPL",
+      "code_hash": null,
+      "outputs": [],
       "console": []
     },
     {
       "id": "BYtC",
-      "code_hash": "189948d98f771b65614d9dc06a5a3ea6",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"5-the-answer\">5. The Answer</h2>\n<span class=\"paragraph\"><em>A table of your results in the cell below, printed with <code>print</code> and f-strings, then one sentence here that answers the question in section 1, with the number in it.</em></span></span>"
-          }
-        }
-      ],
+      "code_hash": null,
+      "outputs": [],
       "console": []
     },
     {
-      "id": "kHGr",
-      "code_hash": "66a98959ed6c68b7294df831a805ff1e",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "Countries that pass all three filters, highest fuel share first\n\nCountry                 GDP/person  Year  Fuel % imports  Year  Years of income\nPanama                      19,790  2025            19.3  2025              1.0\nDominican Republic          11,059  2025            17.6  2025              1.8\nPeru                         9,684  2025            16.4  2024              2.1\nChile                       17,995  2025            15.5  2025              1.1\n\nCountries that did not pass\n\nCountry               Status    Why                         \nArgentina             fail      fuel share                  \nBolivia               fail      GDP per person              \nColombia              fail      fuel share                  \nCosta Rica            fail      fuel share                  \nEcuador               fail      GDP per person              \nGuatemala             fail      GDP per person, fuel share  \nHonduras              fail      GDP per person              \nNicaragua             fail      GDP per person, fuel share  \nParaguay              fail      GDP per person, fuel share  \nEl Salvador           fail      GDP per person, fuel share  \nUruguay               fail      fuel share                  \n",
-          "mimetype": "text/plain"
-        }
-      ]
-    },
-    {
-      "id": "CQYB",
-      "code_hash": "36ed51227f78a80ef91f4a5c614fe262",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "Panama looks like the best first market for the $20,000 EV: GDP per person is $19,790 (2025), so the car costs about 1.0 years of average income, and fuel is 19.3% of everything it imports (2025). 4 of 15 countries passed: Panama, Dominican Republic, Peru, Chile.\n",
-          "mimetype": "text/plain"
-        }
-      ]
+      "id": "RGSE",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
     },
     {
       "id": "Kclp",
-      "code_hash": "cefd9fb4105f4ca556cfc0dc69895e7a",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"6-how-i-know-these-numbers-are-right\">6. How I Know These Numbers Are Right</h2>\n<span class=\"paragraph\"><em>At least one check that reaches a result a second, independent way. Name what you compared and what came out.</em></span></span>"
-          }
-        }
-      ],
+      "code_hash": null,
+      "outputs": [],
       "console": []
     },
     {
-      "id": "mOYh",
-      "code_hash": "25d9996eee0f4626dd21037790b1f9c6",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "id": "emfo",
+      "code_hash": null,
+      "outputs": [],
       "console": []
-    },
-    {
-      "id": "RziT",
-      "code_hash": "69a2656069b65ec8d7968a1f40b4300b",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "Countries I collected:      42\nWorld Bank says there are:  42\nSame: True\n",
-          "mimetype": "text/plain"
-        }
-      ]
-    },
-    {
-      "id": "esbf",
-      "code_hash": "5226f641b35e37bb69b3cc5cb87b3108",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "qwBk",
-      "code_hash": "fdc5c784b3bd6788ff81cd6c20284bba",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "xOiW",
-      "code_hash": "8043232ce2955f43c54eb90ecc86dbb9",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "Panama, 2025\nGDP per person (World Bank):  $19,789.73\nTotal GDP / population:       $19,789.73\nDifference: 0.0%   Within 1%: True\n",
-          "mimetype": "text/plain"
-        }
-      ]
     },
     {
       "id": "Hstk",
-      "code_hash": "4fa513d08c761dfe89641eaef1357bc2",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"7-working-with-the-agent\">7. Working With the Agent</h2>\n<span class=\"paragraph\"><em>Pick one piece of AI output you did not accept as-is. What did it give you, what did you change, and how did you know? Point to the commit or the cell.</em></span>\n<span class=\"paragraph\"><em>If the agent got it right the first time: what did you do to verify that?</em></span></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "QiqM",
-      "code_hash": "17b82847cf9221964626f5eb1fac5752",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>What it gave me:</strong> The agent wrote two functions, <code>get_driving_side</code> and <code>get_country_details</code>, that asked REST Countries which side of the road China and every country in the Americas drive on. The code looked fine, but when I ran it I got <code>KeyError: 0</code> on the line <code>return side_reply.json()[0]['car']['side']</code>.</span>\n<span class=\"paragraph\"><strong>How I knew something was wrong:</strong> The error meant the reply wasn't a list like the code expected. I added a cell that printed the raw reply instead of picking pieces out of it, and the reply said this version of the API had been deprecated. The agent had written code for an address that no longer works the way it used to.</span>\n<span class=\"paragraph\"><strong>What I changed:</strong> The new version of REST Countries needs an API key, which would have meant setting up a <code>.env</code> file and a new package. Since every Spanish, Portuguese and French speaking country in Latin America drives on the right like China, I deleted both functions and typed the list of Latin American country codes into my Inputs cell instead. I rewrote the filter cell to check each World Bank country against that list. The GDP and fuel data still comes live from the World Bank.</span>\n<span class=\"paragraph\"><strong>How I checked the fix:</strong> The filter cell now shows (15, 27): 21 Latin American countries minus the 6 I leave out is 15, and 42 minus 15 is 27, which matches the World Bank's total of 42.</span></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "nIOi",
-      "code_hash": "aa56d27daa37c510848546f68b70221a",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"8-reading-it-back\">8. Reading It Back</h1>\n<h2 id=\"get_region_countries\">get_region_countries</h2>\n<span class=\"paragraph\"><strong>What goes in:</strong> A region code, like \"LCN\" for Latin America &amp; Caribbean, and how many countries to ask for on each page.</span>\n<span class=\"paragraph\"><strong>What comes out:</strong> One list with every country in that region. Each country is a small record with its two-letter code, its name and its income group.</span>\n<span class=\"paragraph\"><strong>How it works:</strong> It asks the World Bank for page 1 first, because that page also says how many pages there are in total. Then it goes through the rest of the pages one by one and adds each page's countries to the same list. At the end it keeps only the three fields I need from each country.</span>\n<span class=\"paragraph\"><strong>A line I had to ask about:</strong> <code>for page in range(2, pages + 1):</code>. I didn't get why it starts at 2 and ends at pages + 1. It starts at 2 because page 1 was already fetched above the loop, and it's pages + 1 because range stops one before the last number, so to include the last page you have to go one past it. With 3 pages, range(2, 4) gives 2 and 3.</span>\n<h2 id=\"get_latest_value\">get_latest_value</h2>\n<span class=\"paragraph\"><strong>What goes in:</strong> A country's two-letter code and the World Bank code for the number I want, like NY.GDP.PCAP.CD for GDP per person.</span>\n<span class=\"paragraph\"><strong>What comes out:</strong> The most recent value the World Bank has for that country, and the year it's from. If there's no value, it gives back None for both instead of crashing.</span>\n<span class=\"paragraph\"><strong>How it works:</strong> It asks the World Bank for one indicator for one country, with mrnev=1, which means \"the most recent year that actually has a value.\" The reply comes back as two parts, info about the reply and then the data, so it takes the value and year from the second part.</span>\n<span class=\"paragraph\"><strong>A line I had to ask about:</strong> <code>if value_page[1] is None:</code>. I didn't know why this was needed if the request worked. It turns out that when a country has no data for an indicator, the World Bank still answers, but the data part comes back empty (None). Without this check the code would try to read a value from nothing and stop with an error, so it would break the whole loop over one missing country.</span>\n<h2 id=\"my-prediction\">My prediction</h2>\n<span class=\"paragraph\">I'm changing <code>min_fuel_import_share</code> in the Inputs cell from 15 to 10.</span>\n<span class=\"paragraph\">I expect the shortlist to grow from 4 countries to 6, because my Going Further table showed 6 countries passing at 10%. The 2 new countries should show up at the bottom of the ranking, since the list is sorted by fuel share and they have lower shares than the original four. Panama should still be the top market, so the answer sentence should still name Panama with the same numbers, but it should now say 6 of 15 countries passed instead of 4.</span></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "ohaI",
-      "code_hash": "7af4f1d881427ccd4b0911ede13ef9c4",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"what-happened\">What happened</h2>\n<span class=\"paragraph\">I changed min_fuel_import_share from 15 to 10 and the notebook reran everything after it. The shortlist grew from 4 countries to 6, as I predicted. The two new countries are Uruguay and Costa Rica, and they came in at the bottom of the ranking, since they import less fuel as a share of everything they buy than the original four. Panama stayed on top with the same numbers: GDP per person of $19,790 (2025), so the car costs about 1.0 years of average income, and fuel is 19.3% of its imports (2025). The answer sentence now says 6 of 15 countries passed: Panama, Dominican Republic, Peru, Chile, Uruguay and Costa Rica.</span>\n<span class=\"paragraph\">It matched my prediction. The agents summary said the new countries were Peru and Costa Rica, but Peru was already on the list at 15%, so I checked the answer sentence against my earlier shortlist instead of trusting the summary.</span></span>"
-          }
-        }
-      ],
+      "code_hash": null,
+      "outputs": [],
       "console": []
     },
     {
       "id": "nWHF",
-      "code_hash": "9e11622311558f577bd7fefb4cd2c3ec",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"8-going-further\">8. Going Further</h2>\n<span class=\"paragraph\"><em>Take at least one step past the main task, in any direction, and use your agent as much as you like. It does not have to work. State what you tried, what you found, and where it is in this notebook.</em></span></span>"
-          }
-        }
-      ],
+      "code_hash": null,
+      "outputs": [],
       "console": []
     },
     {
-      "id": "FEoL",
-      "code_hash": "d31d35a7dfe3021d811950f1724d47a0",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "id": "iLit",
+      "code_hash": null,
+      "outputs": [],
       "console": []
     },
     {
-      "id": "iNsm",
-      "code_hash": "58a4c227f05b9d34ecfa1d022bfed9ed",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "Fuel limit %  Countries passing\n          10                  6\n          15                  4\n          20                  0\n          25                  0\n",
-          "mimetype": "text/plain"
-        }
-      ]
-    },
-    {
-      "id": "oGHr",
-      "code_hash": "5aafb2654c6e1ad61ff26deee680cd6f",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>What I tried:</strong> I picked 15% as the cutoff for \"depends on imported fuel,\" but that number was my own judgment, so I wanted to see what happens if the team picks a different one. I reran the same filter at 10%, 15%, 20% and 25%, using the data I already had, so it didn't need any new requests.</span>\n<span class=\"paragraph\"><strong>What I found:</strong> At 10%, 6 countries passed. At 15% it was 4, and at 20% and 25% none passed. So every country on my shortlist gets between 15% and 20% of its imports from fuel, and the answer depends a lot on where the cutoff is. If the team decided \"high dependence\" means 20%, the tool would say no market qualifies. That's worth telling them, because the 15% line is a judgment call, not a hard rule.</span>\n<span class=\"paragraph\"><strong>Where it is:</strong> The first cell in section 9. It uses <code>fuel_limits_to_test</code> from the Inputs cell, so the team can try other limits by changing that list.</span></span>"
-          }
-        }
-      ],
+      "id": "ZHCJ",
+      "code_hash": null,
+      "outputs": [],
       "console": []
     },
     {
-      "id": "HgAO",
-      "code_hash": "c4ee40560d74db015e94dbee46104411",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "id": "ROlb",
+      "code_hash": null,
+      "outputs": [],
       "console": []
     },
     {
-      "id": "LiXA",
-      "code_hash": "b5382d71e82309eae2ab4e4a5a3cc29c",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stdout",
-          "text": "Country                 Renewable % of power  Year\nPanama                                  69.0  2021\nDominican Republic                      17.1  2021\nPeru                                    61.8  2021\nChile                                   48.1  2021\n",
-          "mimetype": "text/plain"
-        }
-      ]
-    },
-    {
-      "id": "isAV",
-      "code_hash": "3c13775e651240c5517f526707594b14",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>What I tried:</strong> An EV is only as cheap and clean as the electricity behind it, so for each country on the shortlist I asked the World Bank for the share of its electricity that comes from renewables.</span>\n<span class=\"paragraph\"><strong>What I found:</strong> Panama had the highest renewable share at 69.0%, then Peru at 61.8%, Chile at 48.1%, and the Dominican Republic at 17.1%, all from 2021. Panama is also top of my main ranking, so it looks even stronger: drivers would be switching from imported fuel to mostly local clean power. The Dominican Republic is the weak spot. It passes the fuel filter, but most of its electricity still comes from fossil fuels, so the \"run your car on local power\" pitch doesn't really work there. The data is from 2021, so it shows the general picture rather than today's grid.</span>\n<span class=\"paragraph\">One thing I'd check before trusting Panamas number: a lot of goods pass through Panama's canal and free trade zone, so its import figures might include fuel that gets sold on to other countries rather than used there.</span>\n<span class=\"paragraph\"><strong>Where it is:</strong> The second cell in section 9. It uses <code>renewable_indicator</code> from the Inputs cell and the same <code>get_latest_value</code> function as the main task.</span></span>"
-          }
-        }
-      ],
+      "id": "qnkX",
+      "code_hash": null,
+      "outputs": [],
       "console": []
     },
     {
-      "id": "wkVx",
-      "code_hash": "e5f8f998f6e443761f260360fe0f707b",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"10-time-spent\">10. Time Spent</h2>\n<span class=\"paragraph\">6.5</span></span>"
-          }
-        }
-      ],
+      "id": "TqIu",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Vxnm",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "DnEU",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ulZA",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ecfG",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Pvdt",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ZBYS",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "aLJB",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "nHfw",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "xXTn",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "AjVT",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "pHFh",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "NCOB",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "aqbW",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "TRpd",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "TXez",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "dNNg",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "yCnT",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "wlCL",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "kqZH",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "wAgl",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "rEll",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "dGlV",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "SdmI",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "lgWD",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "yOPj",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "fwwy",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "LJZf",
+      "code_hash": null,
+      "outputs": [],
       "console": []
     }
   ]
