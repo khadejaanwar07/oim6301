@@ -59,25 +59,12 @@
     },
     {
       "id": "hUxF",
-      "code_hash": "66f6dab2469453236299954a10e8ffbd",
+      "code_hash": "8a1f3b71ff599f25e4a585b0648a1f0c",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">A Chinese carmaker wants to launch a $20,000 electric car in Latin America. Brazil and Mexico are getting harder to enter, with rising tariffs and BYD already selling most of the EVs there, so the strategy team wants to know which other markets are worth a closer look. This tool gives them a shortlist of countries where the car can be shipped exactly as it is built in China, where people can realistically afford it, and where buying imported fuel gives drivers a reason to switch to electric.</span></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "txUI",
-      "code_hash": "e27a73652289d7f6b071cd58ab377bf2",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">I left out Venezuela, Cuba, Haiti and Puerto Rico on purpose. The first three have been removed due to sanctions, a very small private car market or instability, and Puerto Rico because it has been remvoved since it follows US trade rules, which put very high tariffs on Chinese EVs.</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">A Chinese carmaker wants to launch a $20,000 electric car in Latin America. Brazil and Mexico are getting harder to enter, with rising tariffs and BYD already selling most of the EVs there, so the strategy team wants to know which other markets are worth a closer look. This tool gives them a shortlist of countries where the car can be shipped exactly as it is built in China, where people can realistically afford it, and where buying imported fuel gives drivers a reason to switch to electric.</span>\n<span class=\"paragraph\">I left out Venezuela, Cuba, Haiti and Puerto Rico on purpose: the first three because of sanctions, a very small private car market, or instability, and Puerto Rico because it follows US trade rules, which put very high tariffs on Chinese EVs. I also left out Brazil and Mexico, because tariffs are going up there and BYD already sells most of the EVs.</span></span>"
           }
         }
       ],
@@ -201,6 +188,72 @@
       "console": []
     },
     {
+      "id": "wNRX",
+      "code_hash": "66c6000cdf512011186d7cea3f006a70",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Yxbs",
+      "code_hash": "e6ff9b2409af00d0ee8e08975231432b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "xMcX",
+      "code_hash": "40820e2477ff3bee6f5c48be08086ae5",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "exception",
+          "evalue": "0",
+          "traceback": null
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">\"C:\\Users\\Dr.Tanvir\\AppData\\Local\\Temp\\marimo_5136\\__marimo__cell_xMcX_.py\"</span>, line <span class=\"m\">1</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"n\">home_side</span> <span class=\"o\">=</span> <span class=\"n\">get_driving_side</span><span class=\"p\">(</span><span class=\"n\">home_country_code</span><span class=\"p\">)</span>\n  File <span class=\"nb\">\"C:\\Users\\Dr.Tanvir\\AppData\\Local\\Temp\\marimo_5136\\__marimo__cell_wNRX_.py\"</span>, line <span class=\"m\">7</span>, in <span class=\"n\">get_driving_side</span>\n<span class=\"w\">    </span><span class=\"k\">return</span> <span class=\"n\">side_reply</span><span class=\"o\">.</span><span class=\"n\">json</span><span class=\"p\">()[</span><span class=\"mi\">0</span><span class=\"p\">][</span><span class=\"s2\">\"car\"</span><span class=\"p\">][</span><span class=\"s2\">\"side\"</span><span class=\"p\">]</span>\n<span class=\"w\">           </span><span class=\"pm\">~~~~~~~~~~~~~~~~~^^^</span>\n<span class=\"gr\">KeyError</span>: <span class=\"n\">0</span>\n</pre></div>\n</span>",
+          "mimetype": "application/vnd.marimo+traceback"
+        }
+      ]
+    },
+    {
+      "id": "lhhF",
+      "code_hash": "097aaf77bc9bd1191890dabd375ba723",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "{'success': False, 'data': None, 'errors': [{'message': 'This API version has been deprecated. Please visit https://restcountries.com/docs/countries/legacy-api-deprecation to migrate to our new version (v5).'}]}\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
       "id": "BYtC",
       "code_hash": "189948d98f771b65614d9dc06a5a3ea6",
       "outputs": [
@@ -215,16 +268,49 @@
     },
     {
       "id": "RGSE",
-      "code_hash": null,
+      "code_hash": "66a98959ed6c68b7294df831a805ff1e",
       "outputs": [
         {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
+          "type": "error",
+          "ename": "exception",
+          "evalue": "name 'ranked_shortlist' is not defined",
+          "traceback": null
         }
       ],
-      "console": []
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Countries that pass all three filters, highest fuel share first\n\nCountry                 GDP/person  Year  Fuel % imports  Year  Years of income\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">\"C:\\Users\\Dr.Tanvir\\AppData\\Local\\Temp\\marimo_5136\\__marimo__cell_RGSE_.py\"</span>, line <span class=\"m\">4</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"k\">for</span> <span class=\"n\">_r</span> <span class=\"ow\">in</span> <span class=\"n\">ranked_shortlist</span><span class=\"p\">:</span>\n<span class=\"w\">              </span><span class=\"pm\">^^^^^^^^^^^^^^^^</span>\n<span class=\"gr\">NameError</span>: <span class=\"n\">name 'ranked_shortlist' is not defined</span>\n</pre></div>\n</span>",
+          "mimetype": "application/vnd.marimo+traceback"
+        }
+      ]
+    },
+    {
+      "id": "khkx",
+      "code_hash": "36ed51227f78a80ef91f4a5c614fe262",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "exception",
+          "evalue": "name 'ranked_shortlist' is not defined",
+          "traceback": null
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">\"C:\\Users\\Dr.Tanvir\\AppData\\Local\\Temp\\marimo_5136\\__marimo__cell_khkx_.py\"</span>, line <span class=\"m\">1</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"k\">if</span> <span class=\"nb\">len</span><span class=\"p\">(</span><span class=\"n\">ranked_shortlist</span><span class=\"p\">)</span> <span class=\"o\">==</span> <span class=\"mi\">0</span><span class=\"p\">:</span>\n<span class=\"w\">           </span><span class=\"pm\">^^^^^^^^^^^^^^^^</span>\n<span class=\"gr\">NameError</span>: <span class=\"n\">name 'ranked_shortlist' is not defined</span>\n</pre></div>\n</span>",
+          "mimetype": "application/vnd.marimo+traceback"
+        }
+      ]
     },
     {
       "id": "Kclp",

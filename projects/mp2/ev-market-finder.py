@@ -50,14 +50,8 @@ def _(mo):
 def _(mo):
     mo.md(r"""
     A Chinese carmaker wants to launch a $20,000 electric car in Latin America. Brazil and Mexico are getting harder to enter, with rising tariffs and BYD already selling most of the EVs there, so the strategy team wants to know which other markets are worth a closer look. This tool gives them a shortlist of countries where the car can be shipped exactly as it is built in China, where people can realistically afford it, and where buying imported fuel gives drivers a reason to switch to electric.
-    """)
-    return
 
-
-@app.cell(hide_code=True)
-def _(mo):
-    mo.md(r"""
-    I left out Venezuela, Cuba, Haiti and Puerto Rico on purpose. The first three have been removed due to sanctions, a very small private car market or instability, and Puerto Rico because it has been remvoved since it follows US trade rules, which put very high tariffs on Chinese EVs.
+    I left out Venezuela, Cuba, Haiti and Puerto Rico on purpose: the first three because of sanctions, a very small private car market, or instability, and Puerto Rico because it follows US trade rules, which put very high tariffs on Chinese EVs. I also left out Brazil and Mexico, because tariffs are going up there and BYD already sells most of the EVs.
     """)
     return
 
@@ -165,7 +159,15 @@ def _():
     # Going further
     fuel_limits_to_test = [10, 15, 20, 25]
     renewable_indicator = "EG.ELC.RNEW.ZS"
-    return page_size, region_code
+    return (
+        americas_region,
+        car_price_dollars,
+        home_country_code,
+        min_fuel_import_share,
+        min_gdp_per_person,
+        page_size,
+        region_code,
+    )
 
 
 @app.cell(hide_code=True)
@@ -233,6 +235,67 @@ def _(get_region_countries, page_size, region_code):
     return
 
 
+@app.cell
+def _(requests):
+    def get_driving_side(country_code):
+        side_reply = requests.get(
+            "https://restcountries.com/v3.1/alpha",
+            params={"codes": country_code, "fields": "cca2,car"},
+            timeout=10,
+        )
+        return side_reply.json()[0]["car"]["side"]
+
+    return (get_driving_side,)
+
+
+@app.cell
+def _(requests):
+    def get_country_details(region_name):
+        details_reply = requests.get(
+            f"https://restcountries.com/v3.1/region/{region_name}",
+            params={"fields": "cca2,car,languages"},
+            timeout=10,
+        )
+        details = []
+        for country in details_reply.json():
+            language_names = []
+            for code, language in country.get("languages", {}).items():
+                language_names.append(language)
+            details.append(
+                {
+                    "code": country["cca2"],
+                    "driving_side": country["car"]["side"],
+                    "languages": language_names,
+                }
+            )
+        return details
+
+    return (get_country_details,)
+
+
+@app.cell
+def _(
+    americas_region,
+    get_country_details,
+    get_driving_side,
+    home_country_code,
+):
+    home_side = get_driving_side(home_country_code)
+    americas_details = get_country_details(americas_region)
+    home_side, len(americas_details)
+    return
+
+
+@app.cell
+def _(requests):
+    print(requests.get(
+        "https://restcountries.com/v3.1/alpha",
+        params={"codes": "CN", "fields": "cca2,car"},
+        timeout=10,
+    ).json())
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -244,7 +307,57 @@ def _(mo):
 
 
 @app.cell
-def _():
+def _(not_passed, ranked_shortlist):
+    print("Countries that pass all three filters, highest fuel share first")
+    print()
+    print(f"{'Country':<22}{'GDP/person':>12}{'Year':>6}{'Fuel % imports':>16}{'Year':>6}{'Years of income':>17}")
+    for _r in ranked_shortlist:
+        print(
+            f"{_r['name']:<22}"
+            f"{_r['gdp_per_person']:>12,.0f}"
+            f"{_r['gdp_year']:>6}"
+            f"{_r['fuel_import_share']:>16.1f}"
+            f"{_r['fuel_year']:>6}"
+            f"{_r['years_of_income']:>17.1f}"
+        )
+
+    print()
+    print("Countries that did not pass")
+    print()
+    print(f"{'Country':<22}{'Status':<10}{'Why':<28}")
+    for _r in not_passed:
+        print(f"{_r['name']:<22}{_r['status']:<10}{_r['failed_rules']:<28}")
+    return
+
+
+@app.cell
+def _(
+    candidates,
+    car_price_dollars,
+    min_fuel_import_share,
+    min_gdp_per_person,
+    ranked_shortlist,
+):
+    if len(ranked_shortlist) == 0:
+        answer_sentence = (
+            f"No Latin American country that drives on China's side has GDP per person of at least "
+            f"${min_gdp_per_person:,} and fuel at {min_fuel_import_share}% or more of its imports, "
+            f"so the limits need another look before picking a market."
+        )
+    else:
+        _best = ranked_shortlist[0]
+        _names = []
+        for _r in ranked_shortlist:
+            _names.append(_r["name"])
+        answer_sentence = (
+            f"{_best['name']} looks like the best first market for the ${car_price_dollars:,} EV: "
+            f"GDP per person is ${_best['gdp_per_person']:,.0f} ({_best['gdp_year']}), so the car costs "
+            f"about {_best['years_of_income']} years of average income, and fuel is "
+            f"{_best['fuel_import_share']:.1f}% of everything it imports ({_best['fuel_year']}). "
+            f"{len(ranked_shortlist)} of {len(candidates)} countries passed: {', '.join(_names)}."
+        )
+
+    print(answer_sentence)
     return
 
 
