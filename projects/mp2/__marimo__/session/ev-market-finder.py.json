@@ -247,13 +247,13 @@
       "console": []
     },
     {
-      "id": "euPs",
-      "code_hash": "ee4cbb0a15511b770bcbc411066b7708",
+      "id": "qaKz",
+      "code_hash": "4c91ebd73270d21a4dee8e09c36ee898",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"filters-2-and-3-gdp-per-person-and-fuel-share-of-imports\">Filters 2 and 3: GDP per person and fuel share of imports</h3></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Filters 2 and 3: GDP per person and fuel share of imports</span></span>"
           }
         }
       ],
@@ -536,12 +536,12 @@
     },
     {
       "id": "nWHF",
-      "code_hash": "2e85f27ba5f6d48677795550304523b3",
+      "code_hash": "9e11622311558f577bd7fefb4cd2c3ec",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"9-going-further\">9. Going Further</h2>\n<span class=\"paragraph\"><em>Take at least one step past the main task, in any direction, and use your agent as much as you like. It does not have to work. State what you tried, what you found, and where it is in this notebook.</em></span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"8-going-further\">8. Going Further</h2>\n<span class=\"paragraph\"><em>Take at least one step past the main task, in any direction, and use your agent as much as you like. It does not have to work. State what you tried, what you found, and where it is in this notebook.</em></span></span>"
           }
         }
       ],
@@ -650,12 +650,6 @@
           }
         }
       ],
-      "console": []
-    },
-    {
-      "id": "LJgr",
-      "code_hash": null,
-      "outputs": [],
       "console": []
     }
   ]

@@ -295,13 +295,9 @@ def _(excluded_countries, latam_countries, latin_american_codes):
 
 @app.cell(hide_code=True)
 def _(mo):
-    _df = mo.sql(
-        f"""
-        mo.md(r\"""
-        ### Filters 2 and 3: GDP per person and fuel share of imports
-        \""")
-        """
-    )
+    mo.md(r"""
+    Filters 2 and 3: GDP per person and fuel share of imports
+    """)
     return
 
 
@@ -665,7 +661,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    ## 9. Going Further
+    ## 8. Going Further
 
     *Take at least one step past the main task, in any direction, and use your agent as much as you like. It does not have to work. State what you tried, what you found, and where it is in this notebook.*
     """)
@@ -741,14 +737,6 @@ def _(mo):
     ## 10. Time Spent
 
     6.5
-    """)
-    return
-
-
-@app.cell
-def _(mo):
-    mo.md(r"""
-    ### Filters 2 and 3: GDP per person and fuel share of imports
     """)
     return
 
