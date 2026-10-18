@@ -125,7 +125,14 @@
     {
       "id": "Bdmo",
       "code_hash": null,
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -143,8 +150,15 @@
     },
     {
       "id": "jRGl",
-      "code_hash": null,
-      "outputs": [],
+      "code_hash": "adaf8a3114539457f83cd301b629a95f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"every-country-in-the-region\">Every country in the region</h3></span>"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -476,6 +490,19 @@
           "type": "data",
           "data": {
             "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"7-working-with-the-agent\">7. Working With the Agent</h2>\n<span class=\"paragraph\"><em>Pick one piece of AI output you did not accept as-is. What did it give you, what did you change, and how did you know? Point to the commit or the cell.</em></span>\n<span class=\"paragraph\"><em>If the agent got it right the first time: what did you do to verify that?</em></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "QiqM",
+      "code_hash": "377488353212c45e14275b40e05a19d7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>What it gave me:</strong> The agent wrote two functions, <code>get_driving_side</code> and <code>get_country_details</code>, that asked REST Countries which side of the road China and every country in the Americas drive on. The code looked fine, but when I ran it I got <code>KeyError: 0</code> on the line <code>return side_reply.json()[0]['car']['side']</code>.</span>\n<span class=\"paragraph\"><strong>How I knew something was wrong:</strong> The error meant the reply wasn't a list like the code expected. I added a cell that printed the raw reply instead of picking pieces out of it, and the reply said this version of the API had been deprecated. The agent had written code for an address that no longer works the way it used to.</span>\n<span class=\"paragraph\"><strong>What I changed:</strong> The new version of REST Countries needs an API key, which would have meant setting up a <code>.env</code> file and a new package. Since every Spanish, Portuguese and French speaking country in Latin America drives on the right like China, I deleted both functions and typed the list of Latin American country codes into my Inputs cell instead. I rewrote the filter cell to check each World Bank country against that list. The GDP and fuel data still comes live from the World Bank.</span>\n<span class=\"paragraph\"><strong>How I checked the fix:</strong> The filter cell now shows (15, 27): 21 Latin American countries minus the 6 I leave out is 15, and 42 minus 15 is 27, which matches the World Bank's total of 42.</span>\n<span class=\"paragraph\"><strong>Where it is:</strong> The filter cell in section 4, the <code>latin_american_codes</code> list in the Inputs cell, and commit [your commit message].</span></span>"
           }
         }
       ],

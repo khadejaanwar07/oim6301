@@ -605,6 +605,22 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    **What it gave me:** The agent wrote two functions, `get_driving_side` and `get_country_details`, that asked REST Countries which side of the road China and every country in the Americas drive on. The code looked fine, but when I ran it I got `KeyError: 0` on the line `return side_reply.json()[0]['car']['side']`.
+
+    **How I knew something was wrong:** The error meant the reply wasn't a list like the code expected. I added a cell that printed the raw reply instead of picking pieces out of it, and the reply said this version of the API had been deprecated. The agent had written code for an address that no longer works the way it used to.
+
+    **What I changed:** The new version of REST Countries needs an API key, which would have meant setting up a `.env` file and a new package. Since every Spanish, Portuguese and French speaking country in Latin America drives on the right like China, I deleted both functions and typed the list of Latin American country codes into my Inputs cell instead. I rewrote the filter cell to check each World Bank country against that list. The GDP and fuel data still comes live from the World Bank.
+
+    **How I checked the fix:** The filter cell now shows (15, 27): 21 Latin American countries minus the 6 I leave out is 15, and 42 minus 15 is 27, which matches the World Bank's total of 42.
+
+    **Where it is:** The filter cell in section 4, the `latin_american_codes` list in the Inputs cell, and commit [your commit message].
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     ## 8. Going Further
 
     *Take at least one step past the main task, in any direction, and use your agent as much as you like. It does not have to work. State what you tried, what you found, and where it is in this notebook.*
