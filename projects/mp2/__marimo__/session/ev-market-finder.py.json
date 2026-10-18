@@ -111,7 +111,7 @@
     },
     {
       "id": "fqjc",
-      "code_hash": "2a53338f7581b98c60b0fec595f03b3f",
+      "code_hash": "9b30bbffcbc5c7fb33bdaa808a7e5dd0",
       "outputs": [
         {
           "type": "data",
@@ -331,7 +331,7 @@
         {
           "type": "data",
           "data": {
-            "application/json": "[6, 9]"
+            "application/json": "[4, 11]"
           }
         }
       ],
@@ -365,7 +365,7 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "Countries that pass all three filters, highest fuel share first\n\nCountry                 GDP/person  Year  Fuel % imports  Year  Years of income\nPanama                      19,790  2025            19.3  2025              1.0\nDominican Republic          11,059  2025            17.6  2025              1.8\nPeru                         9,684  2025            16.4  2024              2.1\nChile                       17,995  2025            15.5  2025              1.1\nUruguay                     25,216  2025            14.2  2024              0.8\nCosta Rica                  19,970  2025            10.3  2024              1.0\n\nCountries that did not pass\n\nCountry               Status    Why                         \nArgentina             fail      fuel share                  \nBolivia               fail      GDP per person              \nColombia              fail      fuel share                  \nEcuador               fail      GDP per person              \nGuatemala             fail      GDP per person              \nHonduras              fail      GDP per person              \nNicaragua             fail      GDP per person              \nParaguay              fail      GDP per person              \nEl Salvador           fail      GDP per person              \n",
+          "text": "Countries that pass all three filters, highest fuel share first\n\nCountry                 GDP/person  Year  Fuel % imports  Year  Years of income\nPanama                      19,790  2025            19.3  2025              1.0\nDominican Republic          11,059  2025            17.6  2025              1.8\nPeru                         9,684  2025            16.4  2024              2.1\nChile                       17,995  2025            15.5  2025              1.1\n\nCountries that did not pass\n\nCountry               Status    Why                         \nArgentina             fail      fuel share                  \nBolivia               fail      GDP per person              \nColombia              fail      fuel share                  \nCosta Rica            fail      fuel share                  \nEcuador               fail      GDP per person              \nGuatemala             fail      GDP per person, fuel share  \nHonduras              fail      GDP per person              \nNicaragua             fail      GDP per person, fuel share  \nParaguay              fail      GDP per person, fuel share  \nEl Salvador           fail      GDP per person, fuel share  \nUruguay               fail      fuel share                  \n",
           "mimetype": "text/plain"
         }
       ]
@@ -385,7 +385,7 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "Panama looks like the best first market for the $20,000 EV: GDP per person is $19,790 (2025), so the car costs about 1.0 years of average income, and fuel is 19.3% of everything it imports (2025). 6 of 15 countries passed: Panama, Dominican Republic, Peru, Chile, Uruguay, Costa Rica.\n",
+          "text": "Panama looks like the best first market for the $20,000 EV: GDP per person is $19,790 (2025), so the car costs about 1.0 years of average income, and fuel is 19.3% of everything it imports (2025). 4 of 15 countries passed: Panama, Dominican Republic, Peru, Chile.\n",
           "mimetype": "text/plain"
         }
       ]
@@ -536,12 +536,12 @@
     },
     {
       "id": "nWHF",
-      "code_hash": "9e11622311558f577bd7fefb4cd2c3ec",
+      "code_hash": "2e85f27ba5f6d48677795550304523b3",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"8-going-further\">8. Going Further</h2>\n<span class=\"paragraph\"><em>Take at least one step past the main task, in any direction, and use your agent as much as you like. It does not have to work. State what you tried, what you found, and where it is in this notebook.</em></span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"9-going-further\">9. Going Further</h2>\n<span class=\"paragraph\"><em>Take at least one step past the main task, in any direction, and use your agent as much as you like. It does not have to work. State what you tried, what you found, and where it is in this notebook.</em></span></span>"
           }
         }
       ],
@@ -621,7 +621,7 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "Country                 Renewable % of power  Year\nPanama                                  69.0  2021\nDominican Republic                      17.1  2021\nPeru                                    61.8  2021\nChile                                   48.1  2021\nUruguay                                 84.4  2021\nCosta Rica                              99.4  2021\n",
+          "text": "Country                 Renewable % of power  Year\nPanama                                  69.0  2021\nDominican Republic                      17.1  2021\nPeru                                    61.8  2021\nChile                                   48.1  2021\n",
           "mimetype": "text/plain"
         }
       ]
@@ -650,6 +650,12 @@
           }
         }
       ],
+      "console": []
+    },
+    {
+      "id": "LJgr",
+      "code_hash": null,
+      "outputs": [],
       "console": []
     }
   ]

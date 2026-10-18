@@ -148,7 +148,7 @@ def _():
     # The car and the filters
     car_price_dollars = 20000
     min_gdp_per_person = 8000
-    min_fuel_import_share = 10
+    min_fuel_import_share = 15
 
     # World Bank indicators
     gdp_indicator = "NY.GDP.PCAP.CD"
@@ -665,7 +665,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    ## 8. Going Further
+    ## 9. Going Further
 
     *Take at least one step past the main task, in any direction, and use your agent as much as you like. It does not have to work. State what you tried, what you found, and where it is in this notebook.*
     """)
@@ -741,6 +741,14 @@ def _(mo):
     ## 10. Time Spent
 
     6.5
+    """)
+    return
+
+
+@app.cell
+def _(mo):
+    mo.md(r"""
+    ### Filters 2 and 3: GDP per person and fuel share of imports
     """)
     return
 
