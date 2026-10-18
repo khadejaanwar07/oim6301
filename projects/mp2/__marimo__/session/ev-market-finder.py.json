@@ -638,6 +638,19 @@
         }
       ],
       "console": []
+    },
+    {
+      "id": "wkVx",
+      "code_hash": "e5f8f998f6e443761f260360fe0f707b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"10-time-spent\">10. Time Spent</h2>\n<span class=\"paragraph\">6.5</span></span>"
+          }
+        }
+      ],
+      "console": []
     }
   ]
 }

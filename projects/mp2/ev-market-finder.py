@@ -735,5 +735,15 @@ def _(mo):
     return
 
 
+@app.cell
+def _(mo):
+    mo.md(r"""
+    ## 10. Time Spent
+
+    6.5
+    """)
+    return
+
+
 if __name__ == "__main__":
     app.run()
