@@ -1,21 +1,14 @@
 {
   "version": "1",
   "metadata": {
-    "marimo_version": "0.25.1",
+    "marimo_version": "0.24.2",
     "script_metadata_hash": "9868b6f061f02a54a7fa5827a3a61ef5"
   },
   "cells": [
     {
       "id": "Hbol",
       "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -73,57 +66,29 @@
     {
       "id": "PKri",
       "code_hash": "ca2ac0a7aad14823f2bd2758cd901e5e",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "Xref",
       "code_hash": "b9a3dad2977289276ed8dbc74e102af3",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>106.25</pre>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "hwhx",
-      "code_hash": "b9a3dad2977289276ed8dbc74e102af3",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>106.25</pre>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "bWkc",
-      "code_hash": "699cbe147979f9bbdbb0bd0df8ecd4ee",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>280.5</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "SFPL",
+      "code_hash": "b9a3dad2977289276ed8dbc74e102af3",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "699cbe147979f9bbdbb0bd0df8ecd4ee",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "RGSE",
       "code_hash": "5f64dd94c496a257231a6d32da4385f6",
       "outputs": [
         {
@@ -136,20 +101,13 @@
       "console": []
     },
     {
-      "id": "BYtC",
+      "id": "Kclp",
       "code_hash": "c8f862e56b4e11f6d7863336e449abd5",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[[\"AAPL\", 100, \"text/plain+float:173.93\"], [\"MSFT\", 50, \"text/plain+float:319.53\"], [\"GOOG\", 80, \"text/plain+float:131.36\"], [\"AMZN\", 200, \"text/plain+float:129.33\"], [\"NVDA\", 20, \"text/plain+float:410.17\"], [\"TSLA\", 150, \"text/plain+float:255.7\"]]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "RGSE",
+      "id": "emfo",
       "code_hash": "e17c0c935a6894f9b0a913ce52991ff3",
       "outputs": [
         {
@@ -162,59 +120,31 @@
       "console": []
     },
     {
-      "id": "QpmS",
-      "code_hash": null,
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "Kclp",
-      "code_hash": "aa47a66a71c35e7150c7add7c49850cb",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>116302.7</pre>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "iDyA",
-      "code_hash": "93119d7bb38de5bba1936e6e5b6202e2",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "emfo",
-      "code_hash": "fbcdd90c11ec2831b00fa6033a5c4c9a",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>116302.7</pre>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
       "id": "Hstk",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "aa47a66a71c35e7150c7add7c49850cb",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "iLit",
+      "code_hash": "303874c858fd3c2a52c65f592e3dc3f0",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "fbcdd90c11ec2831b00fa6033a5c4c9a",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ROlb",
       "code_hash": "bd7ee892fc676a6cf6a7cb23022de5db",
       "outputs": [
         {
@@ -227,33 +157,19 @@
       "console": []
     },
     {
-      "id": "nWHF",
+      "id": "qnkX",
       "code_hash": "428b4c0c99c1cdc56d12353697857ed6",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[[\"VTI\", 120, \"text/plain+float:228.4\"], [\"BND\", 300, \"text/plain+float:72.15\"], [\"AAPL\", 40, \"text/plain+float:173.93\"]]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "iLit",
+      "id": "TqIu",
       "code_hash": "f081abd5f16aabef5649ae6239b827c2",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>56010.2</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "ZHCJ",
+      "id": "Vxnm",
       "code_hash": "eb51551cc1b953d497d83074f8864c79",
       "outputs": [
         {
@@ -266,7 +182,7 @@
       "console": []
     },
     {
-      "id": "ROlb",
+      "id": "DnEU",
       "code_hash": "30bc962c16a83e62af1603e2656f8ec1",
       "outputs": [
         {
@@ -279,7 +195,7 @@
       "console": []
     },
     {
-      "id": "qnkX",
+      "id": "ulZA",
       "code_hash": "056a1aa629d6f6d618e4be5ac43dae47",
       "outputs": [
         {
@@ -292,7 +208,7 @@
       "console": []
     },
     {
-      "id": "TqIu",
+      "id": "ecfG",
       "code_hash": "ddcc597ad8d2a511c60b96b824e2527a",
       "outputs": [
         {
@@ -305,7 +221,7 @@
       "console": []
     },
     {
-      "id": "Vxnm",
+      "id": "Pvdt",
       "code_hash": "c01b781978f92d5352e10c48ef3cdc8f",
       "outputs": [
         {
@@ -318,33 +234,19 @@
       "console": []
     },
     {
-      "id": "DnEU",
+      "id": "ZBYS",
       "code_hash": "8e41e132c0014809fc7c6d99010a66d6",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "ulZA",
+      "id": "aLJB",
       "code_hash": "afdea3774b798b782ef68b655c7e9fad",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "{\"source\": \"Massachusetts Department of Revenue, Division of Local Services, Municipal Databank (https://www.mass.gov/info-details/division-of-local-services-municipal-databank)\", \"endpoints\": {\"/ma/towns\": \"Every town with its latest single-family value and bill, 50 to a page. Query: county, name, max_bill, max_value, sort (name, population, income, value, bill), order (asc, desc), page, per_page\", \"/ma/towns/{dor_code}\": \"One town and its latest finances\", \"/ma/towns/{dor_code}/history\": \"Tax rates and single-family bills by fiscal year. Query: from_year, to_year\", \"/ma/counties\": \"The 14 counties, with their number of towns and population\", \"/ma/votes\": \"Override and underride ballot votes. Query: dor_code, from_year, to_year, page, per_page\"}}"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "ecfG",
+      "id": "nHfw",
       "code_hash": "4b5a93d2e8ce98582c6bbd2317ff5d1a",
       "outputs": [
         {
@@ -357,20 +259,13 @@
       "console": []
     },
     {
-      "id": "Pvdt",
+      "id": "xXTn",
       "code_hash": "14cde2c50bca4b2639420fbb27ccefe8",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[200, \"https://oim.zhili.dev/ma/towns?county=Norfolk\"]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "ZBYS",
+      "id": "AjVT",
       "code_hash": "273ad27da5202e9987d8f1064ce63260",
       "outputs": [
         {
@@ -383,20 +278,13 @@
       "console": []
     },
     {
-      "id": "aLJB",
+      "id": "pHFh",
       "code_hash": "38507227e42cfbedc8c8954016b16b92",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "{\"page\": 1, \"per_page\": 50, \"total\": 28, \"pages\": 1, \"has_next\": false, \"has_prev\": false}"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "nHfw",
+      "id": "NCOB",
       "code_hash": "85d1e963f1492b3256b7696534a75f64",
       "outputs": [
         {
@@ -409,20 +297,13 @@
       "console": []
     },
     {
-      "id": "xXTn",
+      "id": "aqbW",
       "code_hash": "a71705731d61b6a8136fd49323b520cb",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "{\"dor_code\": \"018\", \"name\": \"Avon\", \"county\": \"Norfolk\", \"type\": \"town\", \"area_square_miles\": \"text/plain+float:5.1\", \"founded_year\": 1888, \"population\": 4801, \"income_per_capita_dollars\": 44742, \"equalized_value_dollars\": 1239903800, \"equalized_value_per_capita_dollars\": 258259, \"data_fiscal_year\": 2027, \"average_single_family_value_dollars\": 572492, \"average_single_family_bill_dollars\": 7643, \"finances_fiscal_year\": 2026}"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "AjVT",
+      "id": "TRpd",
       "code_hash": "42a13f4f3662c1b41e9650a0fcad9bf4",
       "outputs": [
         {
@@ -435,33 +316,19 @@
       "console": []
     },
     {
-      "id": "pHFh",
+      "id": "TXez",
       "code_hash": "4109b7e974f26a60556ee3f973cb12d3",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "NCOB",
+      "id": "dNNg",
       "code_hash": "887930193010547e7f6c8af54f576e31",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[{\"dor_code\": \"035\", \"name\": \"Boston\", \"county\": \"Suffolk\", \"type\": \"city\", \"area_square_miles\": \"text/plain+float:48.4\", \"founded_year\": 1630, \"population\": 673458, \"income_per_capita_dollars\": 65287, \"equalized_value_dollars\": 241761863000, \"equalized_value_per_capita_dollars\": 358986, \"data_fiscal_year\": 2027, \"average_single_family_value_dollars\": 615084, \"average_single_family_bill_dollars\": 7627, \"finances_fiscal_year\": 2026}, {\"dor_code\": \"057\", \"name\": \"Chelsea\", \"county\": \"Suffolk\", \"type\": \"city\", \"area_square_miles\": \"text/plain+float:2.2\", \"founded_year\": 1739, \"population\": 40245, \"income_per_capita_dollars\": 27806, \"equalized_value_dollars\": 6348238400, \"equalized_value_per_capita_dollars\": 157740, \"data_fiscal_year\": 2027, \"average_single_family_value_dollars\": 367078, \"average_single_family_bill_dollars\": 4214, \"finances_fiscal_year\": 2026}, {\"dor_code\": \"248\", \"name\": \"Revere\", \"county\": \"Suffolk\", \"type\": \"city\", \"area_square_miles\": \"text/plain+float:5.9\", \"founded_year\": 1871, \"population\": 60702, \"income_per_capita_dollars\": 33133, \"equalized_value_dollars\": 12020129000, \"equalized_value_per_capita_dollars\": 198019, \"data_fiscal_year\": 2027, \"average_single_family_value_dollars\": 623461, \"average_single_family_bill_dollars\": 5574, \"finances_fiscal_year\": 2026}, {\"dor_code\": \"346\", \"name\": \"Winthrop\", \"county\": \"Suffolk\", \"type\": \"town\", \"area_square_miles\": \"text/plain+float:2.0\", \"founded_year\": 1852, \"population\": 18739, \"income_per_capita_dollars\": 47434, \"equalized_value_dollars\": 3873447100, \"equalized_value_per_capita_dollars\": 206705, \"data_fiscal_year\": 2027, \"average_single_family_value_dollars\": 744423, \"average_single_family_bill_dollars\": 8293, \"finances_fiscal_year\": 2026}]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "aqbW",
+      "id": "yCnT",
       "code_hash": "a96b1fdd29c00a998b975a5a4f141712",
       "outputs": [
         {
@@ -474,7 +341,7 @@
       "console": []
     },
     {
-      "id": "TRpd",
+      "id": "wlCL",
       "code_hash": "2b42f203181527333e0b5e30e6c3ee36",
       "outputs": [
         {
@@ -487,7 +354,7 @@
       "console": []
     },
     {
-      "id": "TXez",
+      "id": "kqZH",
       "code_hash": "2c8b7518589165dd64e0ae0b892da438",
       "outputs": [
         {
@@ -500,7 +367,7 @@
       "console": []
     },
     {
-      "id": "dNNg",
+      "id": "wAgl",
       "code_hash": "791d5450bb1270c077aadb7767186041",
       "outputs": [
         {
@@ -513,20 +380,13 @@
       "console": []
     },
     {
-      "id": "yCnT",
+      "id": "rEll",
       "code_hash": "a8af7dc0d3029782a8e02b74a19d0330",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[50, {\"page\": 1, \"per_page\": 50, \"total\": 351, \"pages\": 8, \"has_next\": true, \"has_prev\": false}]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "wlCL",
+      "id": "dGlV",
       "code_hash": "f08188965e2ca3d6b7bae9b82363bb02",
       "outputs": [
         {
@@ -539,20 +399,13 @@
       "console": []
     },
     {
-      "id": "kqZH",
+      "id": "SdmI",
       "code_hash": "c7fc10556c32764f544faf48140c6d25",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "[422, {\"detail\": [{\"type\": \"less_than_equal\", \"loc\": [\"query\", \"per_page\"], \"msg\": \"Input should be less than or equal to 100\", \"input\": \"500\", \"ctx\": {\"le\": 100}}]}]"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "wAgl",
+      "id": "lgWD",
       "code_hash": "456896db175c75dd58608079c2c68df5",
       "outputs": [
         {
@@ -565,33 +418,19 @@
       "console": []
     },
     {
-      "id": "rEll",
+      "id": "yOPj",
       "code_hash": "6faf21dd04d541a6216521c2c7181fe4",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "dGlV",
+      "id": "fwwy",
       "code_hash": "fac3aeaf89e0bdbcc0f9cfba304ef1c5",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "application/json": "{\"page\": 1, \"per_page\": 100, \"total\": 351, \"pages\": 4, \"has_next\": true, \"has_prev\": false}"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "SdmI",
+      "id": "LJZf",
       "code_hash": "1a426f997ebbbda468b5b1b4a41f0795",
       "outputs": [
         {
@@ -604,7 +443,7 @@
       "console": []
     },
     {
-      "id": "lgWD",
+      "id": "urSm",
       "code_hash": "dcb8df5206efe5e43e96963f6ebfa97d",
       "outputs": [
         {
@@ -617,7 +456,7 @@
       "console": []
     },
     {
-      "id": "yOPj",
+      "id": "jxvo",
       "code_hash": "581690e023997bfeb94e6fa4377a7396",
       "outputs": [
         {
@@ -630,7 +469,7 @@
       "console": []
     },
     {
-      "id": "fwwy",
+      "id": "mWxS",
       "code_hash": "f6db42935d7668e7cafa636b45f39caa",
       "outputs": [
         {
@@ -643,7 +482,7 @@
       "console": []
     },
     {
-      "id": "LJZf",
+      "id": "CcZR",
       "code_hash": "0d706c28f83befd260cc045b42689f83",
       "outputs": [
         {
@@ -656,7 +495,7 @@
       "console": []
     },
     {
-      "id": "urSm",
+      "id": "YWSi",
       "code_hash": "19549899e0e3b0cbc9e6733515af5a2b",
       "outputs": [
         {
@@ -669,7 +508,7 @@
       "console": []
     },
     {
-      "id": "jxvo",
+      "id": "zlud",
       "code_hash": "84938202538efdb9400af5c614f1d3e7",
       "outputs": [
         {
