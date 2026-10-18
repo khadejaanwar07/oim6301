@@ -134,11 +134,18 @@ def _(mo):
 def _():
     # Where the data comes from
     region_code = "LCN"
-    americas_region = "americas"
-    home_country_code = "CN"
-    latin_languages = ["Spanish", "Portuguese", "French"]
-    excluded_countries = ["VE", "CU", "HT", "PR", "BR", "MX"]
     page_size = 20
+
+    # Spanish-, Portuguese- and French-speaking countries in the World Bank's
+    # Latin America & Caribbean group. All drive on the right, like China,
+    # so the car ships without changes.
+    latin_american_codes = [
+        "AR", "BO", "BR", "CL", "CO", "CR", "CU", "DO", "EC", "SV", "GT",
+        "HT", "HN", "MX", "NI", "PA", "PY", "PE", "PR", "UY", "VE",
+    ]
+
+    # Venezuela, Cuba, Haiti, Puerto Rico, Brazil, Mexico
+    excluded_countries = ["VE", "CU", "HT", "PR", "BR", "MX"]
 
     # The car and the filters
     car_price_dollars = 20000
@@ -158,9 +165,7 @@ def _():
     fuel_limits_to_test = [10, 15, 20, 25]
     renewable_indicator = "EG.ELC.RNEW.ZS"
     return (
-        americas_region,
         car_price_dollars,
-        home_country_code,
         min_fuel_import_share,
         min_gdp_per_person,
         page_size,
