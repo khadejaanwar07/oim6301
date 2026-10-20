@@ -10,7 +10,7 @@
 
 import marimo
 
-__generated_with = "0.25.1"
+__generated_with = "0.24.2"
 app = marimo.App(width="medium", sql_output="polars")
 
 
@@ -218,12 +218,65 @@ def _(mo):
     return
 
 
+@app.function
+def count_shares(portfolio):
+    total_shares = 0
+    for symbol, shares, price in portfolio:
+        total_shares = total_shares + shares
+    return total_shares
+
+
+@app.cell
+def _(holdings, retirement_holdings):
+    count_shares(holdings), count_shares(retirement_holdings)
+    return
+
+
+@app.function
+def find_largest(portfolio):
+    largest_ticker = ""
+    largest_cost = 0
+    for symbol, shares, price in portfolio:
+        cost = shares * price
+        if cost > largest_cost:
+            largest_cost = cost
+            largest_ticker = symbol
+    return (largest_ticker, largest_cost)
+
+
+@app.cell
+def _(holdings, retirement_holdings):
+    find_largest(holdings), find_largest(retirement_holdings)
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
     ## ✏️ B · Without `return`
 
     Copy `count_shares` into a new cell under a new name, and put `print(...)` where the `return` was. Call it and keep the result in a name. In a markdown cell under it, answer: what does that name hold, and what could the next cell do with it?
+    """)
+    return
+
+
+@app.cell
+def _(holdings):
+    def count_shares_printed(portfolio):
+        total_shares = 0
+        for symbol, shares, price in portfolio:
+            total_shares = total_shares + shares
+        print(total_shares)
+
+    shares_result = count_shares_printed(holdings)
+    shares_result
+    return
+
+
+@app.cell
+def _(mo):
+    mo.md(r"""
+    `shares_result` holds `None`. `print(...)` only shows the total on the screen while the function runs; it does not hand the value back to whatever called the function. Without a `return`, the next cell has nothing to work with — `shares_result` cannot be added to, compared, or passed into another function, the way the real `count_shares(holdings)` could.
     """)
     return
 
@@ -363,6 +416,36 @@ def _(mo):
     return
 
 
+@app.cell
+def _(requests):
+    def get_temperature(town):
+        search_reply = requests.get(
+            "https://geocoding-api.open-meteo.com/v1/search",
+            params={"name": town, "count": 1},
+            timeout=10,
+        )
+        place = search_reply.json()["results"][0]
+        weather_reply = requests.get(
+            "https://api.open-meteo.com/v1/forecast",
+            params={
+                "latitude": place["latitude"],
+                "longitude": place["longitude"],
+                "current": "temperature_2m",
+                "temperature_unit": "fahrenheit",
+            },
+            timeout=10,
+        )
+        return weather_reply.json()["current"]["temperature_2m"]
+
+    return (get_temperature,)
+
+
+@app.cell
+def _(get_temperature):
+    get_temperature("Wellesley")
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
@@ -372,6 +455,16 @@ def _(mo):
 
     *Check yourself: Dover, Wellesley, Cohasset, Needham, Westwood.*
     """)
+    return
+
+
+@app.cell
+def _(requests):
+    requests.get(
+        "https://oim.zhili.dev/ma/towns",
+        params={"county": "Norfolk", "sort": "income", "order": "desc", "per_page": 5},
+        timeout=10,
+    ).json()["items"]
     return
 
 
@@ -388,6 +481,14 @@ def _(mo):
 
     **Going further.** Write `town_history(name)`, which takes a town's name, makes both requests, and returns the history.
     """)
+    return
+
+
+@app.cell
+def _(requests):
+    _w = requests.get("https://oim.zhili.dev/ma/towns", params={"name": "Wellesley"}, timeout=10).json()["items"][0]
+    _h = requests.get(f"https://oim.zhili.dev/ma/towns/{_w['dor_code']}/history", params={"from_year": 2026, "to_year": 2026}, timeout=10).json()
+    _w["dor_code"], _h
     return
 
 
@@ -469,6 +570,26 @@ def _(mo):
 
     **Going further.** Which town has the highest average single-family tax bill in the state, and which the lowest?
     """)
+    return
+
+
+@app.cell
+def _(get_page):
+    def get_all_towns():
+        first_page = get_page(1)
+        pages = first_page["pagination"]["pages"]
+        all_towns = first_page["items"]
+        for page_number in range(2, pages + 1):
+            all_towns = all_towns + get_page(page_number)["items"]
+        return all_towns
+
+    return (get_all_towns,)
+
+
+@app.cell
+def _(get_all_towns):
+    all_towns = get_all_towns()
+    len(all_towns), all_towns[0]["name"], all_towns[-1]["name"]
     return
 
 

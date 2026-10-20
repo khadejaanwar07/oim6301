@@ -8,7 +8,14 @@
     {
       "id": "Hbol",
       "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -66,25 +73,53 @@
     {
       "id": "PKri",
       "code_hash": "ca2ac0a7aad14823f2bd2758cd901e5e",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "Xref",
       "code_hash": "b9a3dad2977289276ed8dbc74e102af3",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>106.25</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "SFPL",
       "code_hash": "b9a3dad2977289276ed8dbc74e102af3",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>106.25</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "BYtC",
       "code_hash": "699cbe147979f9bbdbb0bd0df8ecd4ee",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>280.5</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -103,7 +138,14 @@
     {
       "id": "Kclp",
       "code_hash": "c8f862e56b4e11f6d7863336e449abd5",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[[\"AAPL\", 100, \"text/plain+float:173.93\"], [\"MSFT\", 50, \"text/plain+float:319.53\"], [\"GOOG\", 80, \"text/plain+float:131.36\"], [\"AMZN\", 200, \"text/plain+float:129.33\"], [\"NVDA\", 20, \"text/plain+float:410.17\"], [\"TSLA\", 150, \"text/plain+float:255.7\"]]"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -122,25 +164,53 @@
     {
       "id": "Hstk",
       "code_hash": null,
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "nWHF",
       "code_hash": "aa47a66a71c35e7150c7add7c49850cb",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>116302.7</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "iLit",
       "code_hash": "303874c858fd3c2a52c65f592e3dc3f0",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "ZHCJ",
       "code_hash": "fbcdd90c11ec2831b00fa6033a5c4c9a",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>116302.7</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -159,13 +229,27 @@
     {
       "id": "qnkX",
       "code_hash": "428b4c0c99c1cdc56d12353697857ed6",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[[\"VTI\", 120, \"text/plain+float:228.4\"], [\"BND\", 300, \"text/plain+float:72.15\"], [\"AAPL\", 40, \"text/plain+float:173.93\"]]"
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "TqIu",
       "code_hash": "f081abd5f16aabef5649ae6239b827c2",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>56010.2</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -195,6 +279,58 @@
       "console": []
     },
     {
+      "id": "gqYt",
+      "code_hash": "dffb131a9dffc59e6008b8cc0054c556",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "NUYw",
+      "code_hash": "4ad300f7ed4a3c97f351be7e1b386aa4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[600, 460]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "CMSo",
+      "code_hash": "283bb0a710ccba4c1b22797d0ab9fcd8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "FzLG",
+      "code_hash": "c7ae37eea93a791da828858594fcb296",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[[\"TSLA\", \"text/plain+float:38355.0\"], [\"VTI\", \"text/plain+float:27408.0\"]]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "ulZA",
       "code_hash": "056a1aa629d6f6d618e4be5ac43dae47",
       "outputs": [
@@ -202,6 +338,39 @@
           "type": "data",
           "data": {
             "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"b-without-return\">\u270f\ufe0f B \u00b7 Without <code>return</code></h2>\n<span class=\"paragraph\">Copy <code>count_shares</code> into a new cell under a new name, and put <code>print(...)</code> where the <code>return</code> was. Call it and keep the result in a name. In a markdown cell under it, answer: what does that name hold, and what could the next cell do with it?</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "rYnD",
+      "code_hash": "2cebc0807005a6b748512d279342cf00",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "600\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "ObXq",
+      "code_hash": "9d18073ab7d7a16306d99636c93b710c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><code>shares_result</code> holds <code>None</code>. <code>print(...)</code> only shows the total on the screen while the function runs; it does not hand the value back to whatever called the function. Without a <code>return</code>, the next cell has nothing to work with \u2014 <code>shares_result</code> cannot be added to, compared, or passed into another function, the way the real <code>count_shares(holdings)</code> could.</span></span>"
           }
         }
       ],
@@ -236,13 +405,27 @@
     {
       "id": "ZBYS",
       "code_hash": "8e41e132c0014809fc7c6d99010a66d6",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "aLJB",
       "code_hash": "afdea3774b798b782ef68b655c7e9fad",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"source\": \"Massachusetts Department of Revenue, Division of Local Services, Municipal Databank (https://www.mass.gov/info-details/division-of-local-services-municipal-databank)\", \"endpoints\": {\"/ma/towns\": \"Every town with its latest single-family value and bill, 50 to a page. Query: county, name, max_bill, max_value, sort (name, population, income, value, bill), order (asc, desc), page, per_page\", \"/ma/towns/{dor_code}\": \"One town and its latest finances\", \"/ma/towns/{dor_code}/history\": \"Tax rates and single-family bills by fiscal year. Query: from_year, to_year\", \"/ma/counties\": \"The 14 counties, with their number of towns and population\", \"/ma/votes\": \"Override and underride ballot votes. Query: dor_code, from_year, to_year, page, per_page\"}}"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -261,7 +444,14 @@
     {
       "id": "xXTn",
       "code_hash": "14cde2c50bca4b2639420fbb27ccefe8",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[200, \"https://oim.zhili.dev/ma/towns?county=Norfolk\"]"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -280,7 +470,14 @@
     {
       "id": "pHFh",
       "code_hash": "38507227e42cfbedc8c8954016b16b92",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"page\": 1, \"per_page\": 50, \"total\": 28, \"pages\": 1, \"has_next\": false, \"has_prev\": false}"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -299,7 +496,14 @@
     {
       "id": "aqbW",
       "code_hash": "a71705731d61b6a8136fd49323b520cb",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"dor_code\": \"018\", \"name\": \"Avon\", \"county\": \"Norfolk\", \"type\": \"town\", \"area_square_miles\": \"text/plain+float:5.1\", \"founded_year\": 1888, \"population\": 4801, \"income_per_capita_dollars\": 44742, \"equalized_value_dollars\": 1239903800, \"equalized_value_per_capita_dollars\": 258259, \"data_fiscal_year\": 2027, \"average_single_family_value_dollars\": 572492, \"average_single_family_bill_dollars\": 7643, \"finances_fiscal_year\": 2026}"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -318,13 +522,27 @@
     {
       "id": "TXez",
       "code_hash": "4109b7e974f26a60556ee3f973cb12d3",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "dNNg",
       "code_hash": "887930193010547e7f6c8af54f576e31",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[{\"dor_code\": \"035\", \"name\": \"Boston\", \"county\": \"Suffolk\", \"type\": \"city\", \"area_square_miles\": \"text/plain+float:48.4\", \"founded_year\": 1630, \"population\": 673458, \"income_per_capita_dollars\": 65287, \"equalized_value_dollars\": 241761863000, \"equalized_value_per_capita_dollars\": 358986, \"data_fiscal_year\": 2027, \"average_single_family_value_dollars\": 615084, \"average_single_family_bill_dollars\": 7627, \"finances_fiscal_year\": 2026}, {\"dor_code\": \"057\", \"name\": \"Chelsea\", \"county\": \"Suffolk\", \"type\": \"city\", \"area_square_miles\": \"text/plain+float:2.2\", \"founded_year\": 1739, \"population\": 40245, \"income_per_capita_dollars\": 27806, \"equalized_value_dollars\": 6348238400, \"equalized_value_per_capita_dollars\": 157740, \"data_fiscal_year\": 2027, \"average_single_family_value_dollars\": 367078, \"average_single_family_bill_dollars\": 4214, \"finances_fiscal_year\": 2026}, {\"dor_code\": \"248\", \"name\": \"Revere\", \"county\": \"Suffolk\", \"type\": \"city\", \"area_square_miles\": \"text/plain+float:5.9\", \"founded_year\": 1871, \"population\": 60702, \"income_per_capita_dollars\": 33133, \"equalized_value_dollars\": 12020129000, \"equalized_value_per_capita_dollars\": 198019, \"data_fiscal_year\": 2027, \"average_single_family_value_dollars\": 623461, \"average_single_family_bill_dollars\": 5574, \"finances_fiscal_year\": 2026}, {\"dor_code\": \"346\", \"name\": \"Winthrop\", \"county\": \"Suffolk\", \"type\": \"town\", \"area_square_miles\": \"text/plain+float:2.0\", \"founded_year\": 1852, \"population\": 18739, \"income_per_capita_dollars\": 47434, \"equalized_value_dollars\": 3873447100, \"equalized_value_per_capita_dollars\": 206705, \"data_fiscal_year\": 2027, \"average_single_family_value_dollars\": 744423, \"average_single_family_bill_dollars\": 8293, \"finances_fiscal_year\": 2026}]"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -335,6 +553,32 @@
           "type": "data",
           "data": {
             "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"weather-by-town\">\u270f\ufe0f Weather by Town</h2>\n<span class=\"paragraph\">In notebook 3 you searched Open-Meteo for a town (F) and asked for the weather at a pair of coordinates. Put the two requests in one function.</span>\n<span class=\"paragraph\">Add a cell that defines <code>get_temperature(town)</code>. It searches for <code>town</code> with <code>count=1</code>, takes the latitude and longitude of the first result, asks for the current temperature in \u00b0F, and returns that number. Then call it: <code>get_temperature(\"Wellesley\")</code>.</span>\n<span class=\"paragraph\"><em>Check yourself: within a degree or two of notebook 3's reading at Babson, since Wellesley is next door.</em></span>\n<span class=\"paragraph\"><strong>Going further.</strong> Try <code>get_temperature(\"Babson Park\")</code>. Add a second parameter, <code>state</code>, so the function uses the first place in that state.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "zrsU",
+      "code_hash": "58f54f995602c1e501ccb3fbda30b898",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "NNXM",
+      "code_hash": "64da432222702bb59ad0e1577beb1d20",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>59.5</pre>"
           }
         }
       ],
@@ -354,6 +598,19 @@
       "console": []
     },
     {
+      "id": "lZgS",
+      "code_hash": "ea5b307634783aa034b7c7975f4f5d6c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[{\"dor_code\": \"078\", \"name\": \"Dover\", \"county\": \"Norfolk\", \"type\": \"town\", \"area_square_miles\": \"text/plain+float:15.2\", \"founded_year\": 1784, \"population\": 6057, \"income_per_capita_dollars\": 264727, \"equalized_value_dollars\": 3605308900, \"equalized_value_per_capita_dollars\": 595230, \"data_fiscal_year\": 2027, \"average_single_family_value_dollars\": 1705816, \"average_single_family_bill_dollars\": 19088, \"finances_fiscal_year\": 2026}, {\"dor_code\": \"317\", \"name\": \"Wellesley\", \"county\": \"Norfolk\", \"type\": \"town\", \"area_square_miles\": \"text/plain+float:10.5\", \"founded_year\": 1881, \"population\": 31242, \"income_per_capita_dollars\": 212430, \"equalized_value_dollars\": 18013343600, \"equalized_value_per_capita_dollars\": 576575, \"data_fiscal_year\": 2027, \"average_single_family_value_dollars\": 2020758, \"average_single_family_bill_dollars\": 20551, \"finances_fiscal_year\": 2026}, {\"dor_code\": \"065\", \"name\": \"Cohasset\", \"county\": \"Norfolk\", \"type\": \"town\", \"area_square_miles\": \"text/plain+float:9.9\", \"founded_year\": 1770, \"population\": 8532, \"income_per_capita_dollars\": 154676, \"equalized_value_dollars\": 4232219500, \"equalized_value_per_capita_dollars\": 496041, \"data_fiscal_year\": 2027, \"average_single_family_value_dollars\": 1481437, \"average_single_family_bill_dollars\": 16814, \"finances_fiscal_year\": 2026}, {\"dor_code\": \"199\", \"name\": \"Needham\", \"county\": \"Norfolk\", \"type\": \"town\", \"area_square_miles\": \"text/plain+float:12.8\", \"founded_year\": 1711, \"population\": 32931, \"income_per_capita_dollars\": 139002, \"equalized_value_dollars\": 14275936100, \"equalized_value_per_capita_dollars\": 433511, \"data_fiscal_year\": 2027, \"average_single_family_value_dollars\": 1541061, \"average_single_family_bill_dollars\": 16690, \"finances_fiscal_year\": 2026}, {\"dor_code\": \"335\", \"name\": \"Westwood\", \"county\": \"Norfolk\", \"type\": \"town\", \"area_square_miles\": \"text/plain+float:11.0\", \"founded_year\": 1897, \"population\": 16533, \"income_per_capita_dollars\": 127497, \"equalized_value_dollars\": 7283384500, \"equalized_value_per_capita_dollars\": 440536, \"data_fiscal_year\": 2027, \"average_single_family_value_dollars\": 1250705, \"average_single_family_bill_dollars\": 16097, \"finances_fiscal_year\": 2026}]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "kqZH",
       "code_hash": "2c8b7518589165dd64e0ae0b892da438",
       "outputs": [
@@ -361,6 +618,19 @@
           "type": "data",
           "data": {
             "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"d-from-a-name-to-a-history\">\u270f\ufe0f D \u00b7 From a Name to a History</h2>\n<ol>\n<li>Find Wellesley's <code>dor_code</code> with the <code>name</code> parameter of <code>/ma/towns</code>.</li>\n<li>Use it to ask <code>/ma/towns/{dor_code}/history</code> for fiscal year 2026.</li>\n<li>Check the bill a second way: the average value times the tax rate, divided by 1,000.</li>\n</ol>\n<span class=\"paragraph\"><em>Check yourself: <code>317</code>. Then $2,020,758 \u00d7 10.17 / 1,000 = $20,551.11, and the reply's bill is $20,551.</em></span>\n<span class=\"paragraph\"><strong>Going further.</strong> Write <code>town_history(name)</code>, which takes a town's name, makes both requests, and returns the history.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "jTBr",
+      "code_hash": "3819abd14e48ab65c717e24d84315675",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[\"317\", {\"dor_code\": \"317\", \"name\": \"Wellesley\", \"years\": [{\"fiscal_year\": 2026, \"residential_rate_per_thousand\": \"text/plain+float:10.17\", \"commercial_rate_per_thousand\": \"text/plain+float:10.17\", \"single_family_parcels\": 7319, \"average_single_family_value_dollars\": 2020758, \"average_single_family_bill_dollars\": 20551}]}]"
           }
         }
       ],
@@ -382,7 +652,14 @@
     {
       "id": "rEll",
       "code_hash": "a8af7dc0d3029782a8e02b74a19d0330",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[50, {\"page\": 1, \"per_page\": 50, \"total\": 351, \"pages\": 8, \"has_next\": true, \"has_prev\": false}]"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -401,7 +678,14 @@
     {
       "id": "SdmI",
       "code_hash": "c7fc10556c32764f544faf48140c6d25",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[422, {\"detail\": [{\"type\": \"less_than_equal\", \"loc\": [\"query\", \"per_page\"], \"msg\": \"Input should be less than or equal to 100\", \"input\": \"500\", \"ctx\": {\"le\": 100}}]}]"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -420,13 +704,27 @@
     {
       "id": "yOPj",
       "code_hash": "6faf21dd04d541a6216521c2c7181fe4",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "fwwy",
       "code_hash": "fac3aeaf89e0bdbcc0f9cfba304ef1c5",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"page\": 1, \"per_page\": 100, \"total\": 351, \"pages\": 4, \"has_next\": true, \"has_prev\": false}"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -437,6 +735,32 @@
           "type": "data",
           "data": {
             "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"e-every-town\">\u270f\ufe0f E \u00b7 Every town</h2>\n<span class=\"paragraph\">Write <code>get_all_towns()</code>. It reads page 1, takes <code>pages</code> from its <code>pagination</code>, reads the pages after it with <code>range(2, pages + 1)</code>, and returns one list of every town.</span>\n<span class=\"paragraph\"><em>Check yourself: 351 towns, the same number as <code>pagination[\"total\"]</code>. The first is Abington and the last is Yarmouth.</em></span>\n<span class=\"paragraph\">The count you collected against the total the server reports is a check you can run on any API that sends pages.</span>\n<span class=\"paragraph\"><strong>Going further.</strong> Which town has the highest average single-family tax bill in the state, and which the lowest?</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "VOZm",
+      "code_hash": "4c4e91f0702853356034dca52fae3c93",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "NYcR",
+      "code_hash": "6dd6bee98ab14b57679dd7af4ccf4b9c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[351, \"Abington\", \"Yarmouth\"]"
           }
         }
       ],
