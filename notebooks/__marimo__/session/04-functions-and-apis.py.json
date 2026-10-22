@@ -86,14 +86,7 @@
     {
       "id": "Xref",
       "code_hash": "b9a3dad2977289276ed8dbc74e102af3",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<pre class='text-xs'>106.25</pre>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -164,14 +157,7 @@
     {
       "id": "Hstk",
       "code_hash": null,
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
@@ -279,7 +265,7 @@
       "console": []
     },
     {
-      "id": "gqYt",
+      "id": "ulZA",
       "code_hash": "dffb131a9dffc59e6008b8cc0054c556",
       "outputs": [
         {
@@ -292,7 +278,7 @@
       "console": []
     },
     {
-      "id": "NUYw",
+      "id": "ecfG",
       "code_hash": "4ad300f7ed4a3c97f351be7e1b386aa4",
       "outputs": [
         {
@@ -305,7 +291,7 @@
       "console": []
     },
     {
-      "id": "CMSo",
+      "id": "Pvdt",
       "code_hash": "283bb0a710ccba4c1b22797d0ab9fcd8",
       "outputs": [
         {
@@ -318,7 +304,7 @@
       "console": []
     },
     {
-      "id": "FzLG",
+      "id": "ZBYS",
       "code_hash": "c7ae37eea93a791da828858594fcb296",
       "outputs": [
         {
@@ -331,7 +317,7 @@
       "console": []
     },
     {
-      "id": "ulZA",
+      "id": "aLJB",
       "code_hash": "056a1aa629d6f6d618e4be5ac43dae47",
       "outputs": [
         {
@@ -344,7 +330,7 @@
       "console": []
     },
     {
-      "id": "rYnD",
+      "id": "nHfw",
       "code_hash": "2cebc0807005a6b748512d279342cf00",
       "outputs": [
         {
@@ -364,7 +350,7 @@
       ]
     },
     {
-      "id": "ObXq",
+      "id": "xXTn",
       "code_hash": "9d18073ab7d7a16306d99636c93b710c",
       "outputs": [
         {
@@ -377,7 +363,7 @@
       "console": []
     },
     {
-      "id": "ecfG",
+      "id": "AjVT",
       "code_hash": "ddcc597ad8d2a511c60b96b824e2527a",
       "outputs": [
         {
@@ -390,7 +376,7 @@
       "console": []
     },
     {
-      "id": "Pvdt",
+      "id": "pHFh",
       "code_hash": "c01b781978f92d5352e10c48ef3cdc8f",
       "outputs": [
         {
@@ -403,7 +389,7 @@
       "console": []
     },
     {
-      "id": "ZBYS",
+      "id": "NCOB",
       "code_hash": "8e41e132c0014809fc7c6d99010a66d6",
       "outputs": [
         {
@@ -416,7 +402,7 @@
       "console": []
     },
     {
-      "id": "aLJB",
+      "id": "aqbW",
       "code_hash": "afdea3774b798b782ef68b655c7e9fad",
       "outputs": [
         {
@@ -429,7 +415,7 @@
       "console": []
     },
     {
-      "id": "nHfw",
+      "id": "TRpd",
       "code_hash": "4b5a93d2e8ce98582c6bbd2317ff5d1a",
       "outputs": [
         {
@@ -442,7 +428,7 @@
       "console": []
     },
     {
-      "id": "xXTn",
+      "id": "TXez",
       "code_hash": "14cde2c50bca4b2639420fbb27ccefe8",
       "outputs": [
         {
@@ -455,7 +441,7 @@
       "console": []
     },
     {
-      "id": "AjVT",
+      "id": "dNNg",
       "code_hash": "273ad27da5202e9987d8f1064ce63260",
       "outputs": [
         {
@@ -468,7 +454,7 @@
       "console": []
     },
     {
-      "id": "pHFh",
+      "id": "yCnT",
       "code_hash": "38507227e42cfbedc8c8954016b16b92",
       "outputs": [
         {
@@ -481,7 +467,7 @@
       "console": []
     },
     {
-      "id": "NCOB",
+      "id": "wlCL",
       "code_hash": "85d1e963f1492b3256b7696534a75f64",
       "outputs": [
         {
@@ -494,7 +480,7 @@
       "console": []
     },
     {
-      "id": "aqbW",
+      "id": "kqZH",
       "code_hash": "a71705731d61b6a8136fd49323b520cb",
       "outputs": [
         {
@@ -507,7 +493,7 @@
       "console": []
     },
     {
-      "id": "TRpd",
+      "id": "wAgl",
       "code_hash": "42a13f4f3662c1b41e9650a0fcad9bf4",
       "outputs": [
         {
@@ -520,7 +506,7 @@
       "console": []
     },
     {
-      "id": "TXez",
+      "id": "rEll",
       "code_hash": "4109b7e974f26a60556ee3f973cb12d3",
       "outputs": [
         {
@@ -533,7 +519,7 @@
       "console": []
     },
     {
-      "id": "dNNg",
+      "id": "dGlV",
       "code_hash": "887930193010547e7f6c8af54f576e31",
       "outputs": [
         {
@@ -546,7 +532,7 @@
       "console": []
     },
     {
-      "id": "yCnT",
+      "id": "SdmI",
       "code_hash": "a96b1fdd29c00a998b975a5a4f141712",
       "outputs": [
         {
@@ -559,7 +545,7 @@
       "console": []
     },
     {
-      "id": "zrsU",
+      "id": "lgWD",
       "code_hash": "58f54f995602c1e501ccb3fbda30b898",
       "outputs": [
         {
@@ -572,7 +558,7 @@
       "console": []
     },
     {
-      "id": "NNXM",
+      "id": "yOPj",
       "code_hash": "64da432222702bb59ad0e1577beb1d20",
       "outputs": [
         {
@@ -585,7 +571,7 @@
       "console": []
     },
     {
-      "id": "wlCL",
+      "id": "fwwy",
       "code_hash": "2b42f203181527333e0b5e30e6c3ee36",
       "outputs": [
         {
@@ -598,7 +584,7 @@
       "console": []
     },
     {
-      "id": "lZgS",
+      "id": "LJZf",
       "code_hash": "ea5b307634783aa034b7c7975f4f5d6c",
       "outputs": [
         {
@@ -611,7 +597,7 @@
       "console": []
     },
     {
-      "id": "kqZH",
+      "id": "urSm",
       "code_hash": "2c8b7518589165dd64e0ae0b892da438",
       "outputs": [
         {
@@ -624,7 +610,7 @@
       "console": []
     },
     {
-      "id": "jTBr",
+      "id": "jxvo",
       "code_hash": "3819abd14e48ab65c717e24d84315675",
       "outputs": [
         {
@@ -637,7 +623,7 @@
       "console": []
     },
     {
-      "id": "wAgl",
+      "id": "mWxS",
       "code_hash": "791d5450bb1270c077aadb7767186041",
       "outputs": [
         {
@@ -650,7 +636,7 @@
       "console": []
     },
     {
-      "id": "rEll",
+      "id": "CcZR",
       "code_hash": "a8af7dc0d3029782a8e02b74a19d0330",
       "outputs": [
         {
@@ -663,7 +649,7 @@
       "console": []
     },
     {
-      "id": "dGlV",
+      "id": "YWSi",
       "code_hash": "f08188965e2ca3d6b7bae9b82363bb02",
       "outputs": [
         {
@@ -676,7 +662,7 @@
       "console": []
     },
     {
-      "id": "SdmI",
+      "id": "zlud",
       "code_hash": "c7fc10556c32764f544faf48140c6d25",
       "outputs": [
         {
@@ -689,7 +675,7 @@
       "console": []
     },
     {
-      "id": "lgWD",
+      "id": "tZnO",
       "code_hash": "456896db175c75dd58608079c2c68df5",
       "outputs": [
         {
@@ -702,7 +688,7 @@
       "console": []
     },
     {
-      "id": "yOPj",
+      "id": "xvXZ",
       "code_hash": "6faf21dd04d541a6216521c2c7181fe4",
       "outputs": [
         {
@@ -715,7 +701,7 @@
       "console": []
     },
     {
-      "id": "fwwy",
+      "id": "CLip",
       "code_hash": "fac3aeaf89e0bdbcc0f9cfba304ef1c5",
       "outputs": [
         {
@@ -728,7 +714,7 @@
       "console": []
     },
     {
-      "id": "LJZf",
+      "id": "YECM",
       "code_hash": "1a426f997ebbbda468b5b1b4a41f0795",
       "outputs": [
         {
@@ -741,7 +727,7 @@
       "console": []
     },
     {
-      "id": "VOZm",
+      "id": "cEAS",
       "code_hash": "4c4e91f0702853356034dca52fae3c93",
       "outputs": [
         {
@@ -754,7 +740,7 @@
       "console": []
     },
     {
-      "id": "NYcR",
+      "id": "iXej",
       "code_hash": "6dd6bee98ab14b57679dd7af4ccf4b9c",
       "outputs": [
         {
@@ -767,7 +753,7 @@
       "console": []
     },
     {
-      "id": "urSm",
+      "id": "EJmg",
       "code_hash": "dcb8df5206efe5e43e96963f6ebfa97d",
       "outputs": [
         {
@@ -780,7 +766,7 @@
       "console": []
     },
     {
-      "id": "jxvo",
+      "id": "UmEG",
       "code_hash": "581690e023997bfeb94e6fa4377a7396",
       "outputs": [
         {
@@ -793,20 +779,20 @@
       "console": []
     },
     {
-      "id": "mWxS",
-      "code_hash": "f6db42935d7668e7cafa636b45f39caa",
+      "id": "vEBW",
+      "code_hash": "7df0465b6a131553d2c23643f4021cb7",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"f-write-on-the-board\">\u270f\ufe0f F \u00b7 Write on the board</h2>\n<ol>\n<li>Look up a town you know with the <code>name</code> parameter of <code>/ma/towns</code>. Keep its name as <code>town_name</code> and its average single-family bill as <code>town_bill</code>.</li>\n<li>Add a cell with the code below, put your GitHub username in place of the brackets, and run it.</li>\n</ol>\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"n\">board_reply</span> <span class=\"o\">=</span> <span class=\"n\">requests</span><span class=\"o\">.</span><span class=\"n\">post</span><span class=\"p\">(</span>\n    <span class=\"s2\">\"https://oim.zhili.dev/message\"</span><span class=\"p\">,</span>\n    <span class=\"n\">headers</span><span class=\"o\">=</span><span class=\"p\">{</span><span class=\"s2\">\"x-token\"</span><span class=\"p\">:</span> <span class=\"s2\">\"&lt;your-github-username&gt;\"</span><span class=\"p\">},</span>\n    <span class=\"n\">json</span><span class=\"o\">=</span><span class=\"p\">{</span><span class=\"s2\">\"message\"</span><span class=\"p\">:</span> <span class=\"sa\">f</span><span class=\"s2\">\"</span><span class=\"si\">{</span><span class=\"n\">town_name</span><span class=\"si\">}</span><span class=\"s2\">: $</span><span class=\"si\">{</span><span class=\"n\">town_bill</span><span class=\"si\">:</span><span class=\"s2\">,</span><span class=\"si\">}</span><span class=\"s2\">\"</span><span class=\"p\">},</span>\n    <span class=\"n\">timeout</span><span class=\"o\">=</span><span class=\"mi\">10</span><span class=\"p\">,</span>\n<span class=\"p\">)</span>\n<span class=\"n\">board_reply</span><span class=\"o\">.</span><span class=\"n\">status_code</span><span class=\"p\">,</span> <span class=\"n\">board_reply</span><span class=\"o\">.</span><span class=\"n\">json</span><span class=\"p\">()</span>\n</code></pre></div>\n<span class=\"paragraph\"><em>Check yourself: </em><em>201</em><em>, which means the server created something, and your town on the board.</em></span>\n<ol start=\"3\">\n<li>Delete the <code>headers=</code> line and run it again. In a markdown cell under it, answer: what did the server answer, and why does it need to know who sent a message?</li>\n</ol>\n<span class=\"paragraph\"><strong>Going further.</strong> Post something more useful than one town's bill: choose a question somebody would ask, answer it from live data, and post the answer, in 140 characters or fewer.</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"f-write-on-the-board\">\u270f\ufe0f F \u00b7 Write on the board</h2>\n<ol>\n<li>Look up a town you know with the <code>name</code> parameter of <code>/ma/towns</code>. Keep its name as <code>town_name</code> and its average single-family bill as <code>town_bill</code>.</li>\n<li>Add a cell with the code below, put your GitHub username in place of the brackets, and run it.</li>\n</ol>\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"n\">board_reply</span> <span class=\"o\">=</span> <span class=\"n\">requests</span><span class=\"o\">.</span><span class=\"n\">post</span><span class=\"p\">(</span>\n    <span class=\"s2\">\"https://oim.zhili.dev/message\"</span><span class=\"p\">,</span>\n    <span class=\"n\">headers</span><span class=\"o\">=</span><span class=\"p\">{</span><span class=\"s2\">\"x-token\"</span><span class=\"p\">:</span> <span class=\"s2\">\"&lt;khadejaanwar07&gt;\"</span><span class=\"p\">},</span>\n    <span class=\"n\">json</span><span class=\"o\">=</span><span class=\"p\">{</span><span class=\"s2\">\"message\"</span><span class=\"p\">:</span> <span class=\"o\">=</span> <span class=\"sa\">f</span><span class=\"s2\">\"Hi from Khadeja\"</span><span class=\"p\">},</span>\n    <span class=\"n\">timeout</span><span class=\"o\">=</span><span class=\"mi\">10</span><span class=\"p\">,</span>\n<span class=\"p\">)</span>\n<span class=\"n\">board_reply</span><span class=\"o\">.</span><span class=\"n\">status_code</span><span class=\"p\">,</span> <span class=\"n\">board_reply</span><span class=\"o\">.</span><span class=\"n\">json</span><span class=\"p\">()</span>\n</code></pre></div>\n<span class=\"paragraph\"><em>Check yourself: </em><em>201</em><em>, which means the server created something, and your town on the board.</em></span>\n<ol start=\"3\">\n<li>Delete the <code>headers=</code> line and run it again. In a markdown cell under it, answer: what did the server answer, and why does it need to know who sent a message?</li>\n</ol>\n<span class=\"paragraph\"><strong>Going further.</strong> Post something more useful than one town's bill: choose a question somebody would ask, answer it from live data, and post the answer, in 140 characters or fewer.</span></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "CcZR",
+      "id": "kLmu",
       "code_hash": "0d706c28f83befd260cc045b42689f83",
       "outputs": [
         {
@@ -819,7 +805,7 @@
       "console": []
     },
     {
-      "id": "YWSi",
+      "id": "IpqN",
       "code_hash": "19549899e0e3b0cbc9e6733515af5a2b",
       "outputs": [
         {
@@ -832,7 +818,7 @@
       "console": []
     },
     {
-      "id": "zlud",
+      "id": "dxZZ",
       "code_hash": "84938202538efdb9400af5c614f1d3e7",
       "outputs": [
         {

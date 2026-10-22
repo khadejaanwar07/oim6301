@@ -626,8 +626,8 @@ def _(mo):
        ```python
        board_reply = requests.post(
            "https://oim.zhili.dev/message",
-           headers={"x-token": "<your-github-username>"},
-           json={"message": f"{town_name}: ${town_bill:,}"},
+           headers={"x-token": "<khadejaanwar07>"},
+           json={"message": = f"Hi from Khadeja"},
            timeout=10,
        )
        board_reply.status_code, board_reply.json()
