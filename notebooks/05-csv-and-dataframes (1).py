@@ -110,6 +110,7 @@ def _(get_towns, ma_counties):
         for _town in get_towns(_county["name"]):
             ma_towns.append(_town)
     len(ma_towns)
+    #ma_towns
     return (ma_towns,)
 
 
@@ -196,6 +197,34 @@ def _(mo):
 
     **Going further.** Find the town with the most expensive average home in each county.
     """)
+    return
+
+
+@app.cell
+def _(towns_from_file):
+    # 1
+    # input: towns_from_file, a list of dictionaries, e.g.
+
+    # output: {Middlesex: xx, Worcester: xx}
+
+    county_counts = {}
+
+    for t in towns_from_file:
+        if int(t["average_single_family_value_dollars"]) >= 1000000:
+            c = t["county"]
+
+            if c in county_counts:
+                county_counts[c] += 1
+            else:
+                county_counts[c] = 1
+
+    county_counts
+    return (county_counts,)
+
+
+@app.cell
+def _(county_counts):
+    sum(county_counts.values())
     return
 
 
@@ -313,7 +342,7 @@ def _(mo):
 
 @app.cell
 def _(town_table):
-    town_table.sort("population")
+    town_table.sort("population", descending = True)
     return
 
 
