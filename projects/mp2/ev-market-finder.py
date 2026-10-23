@@ -630,7 +630,7 @@ def _():
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    # 8. Reading It Back
+    # Reading It Back
 
     ## get_region_countries
 
