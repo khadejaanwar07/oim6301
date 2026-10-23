@@ -119,6 +119,14 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
+    My original plan is in my first "mp2: plan before AI" commit. I revised it in "mp2: plan before AI (final)" after REST Countries turned out to need a key (see section 7).
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     ## 3. Inputs
 
     Every number the project starts from goes in the cell below, and nowhere else, so that changing one input changes every result after it.
