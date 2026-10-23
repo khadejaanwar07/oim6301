@@ -118,7 +118,14 @@
     {
       "id": "BYtC",
       "code_hash": "9b30bbffcbc5c7fb33bdaa808a7e5dd0",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -156,26 +163,61 @@
     {
       "id": "Hstk",
       "code_hash": "8e41e132c0014809fc7c6d99010a66d6",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "nWHF",
       "code_hash": "d29c6d7821cc8a428cbaf207390da297",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "iLit",
       "code_hash": "3b924f63efde28296abe0a0c0219edab",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "ZHCJ",
       "code_hash": "1828b3423515771f6655825187c15217",
-      "outputs": [],
-      "console": []
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "42 countries in the region:\nAruba\nArgentina\nAntigua and Barbuda\nBahamas, The\nBelize\nBolivia\nBrazil\nBarbados\nChile\nColombia\nCosta Rica\nCuba\nCuracao\nCayman Islands\nDominica\nDominican Republic\nEcuador\nGrenada\nGuatemala\nGuyana\nHonduras\nHaiti\nJamaica\nSt. Kitts and Nevis\nSt. Lucia\nSt. Martin (French part)\nMexico\nNicaragua\nPanama\nPeru\nPuerto Rico (US)\nParaguay\nEl Salvador\nSuriname\nSint Maarten (Dutch part)\nTurks and Caicos Islands\nTrinidad and Tobago\nUruguay\nSt. Vincent and the Grenadines\nVenezuela, RB\nBritish Virgin Islands\nVirgin Islands (U.S.)\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "ROlb",
@@ -193,7 +235,14 @@
     {
       "id": "qnkX",
       "code_hash": "073a9b2ac9dbfc6099680e32bf995fc0",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[15, 27]"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -212,13 +261,27 @@
     {
       "id": "Vxnm",
       "code_hash": "31718e3ea49ded78d75240beaa81dbcc",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "DnEU",
       "code_hash": "11285279a6ee227bceb8ac4ddea44a84",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>15</pre>"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -242,7 +305,14 @@
     {
       "id": "ZBYS",
       "code_hash": "f6dbf8d4c01f4814228a9691f6859617",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[4, 11]"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -261,14 +331,42 @@
     {
       "id": "nHfw",
       "code_hash": "66a98959ed6c68b7294df831a805ff1e",
-      "outputs": [],
-      "console": []
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Countries that pass all three filters, highest fuel share first\n\nCountry                 GDP/person  Year  Fuel % imports  Year  Years of income\nPanama                      19,790  2025            19.3  2025              1.0\nDominican Republic          11,059  2025            17.6  2025              1.8\nPeru                         9,684  2025            16.4  2024              2.1\nChile                       17,995  2025            15.5  2025              1.1\n\nCountries that did not pass\n\nCountry               Status    Why                         \nArgentina             fail      fuel share                  \nBolivia               fail      GDP per person              \nColombia              fail      fuel share                  \nCosta Rica            fail      fuel share                  \nEcuador               fail      GDP per person              \nGuatemala             fail      GDP per person, fuel share  \nHonduras              fail      GDP per person              \nNicaragua             fail      GDP per person, fuel share  \nParaguay              fail      GDP per person, fuel share  \nEl Salvador           fail      GDP per person, fuel share  \nUruguay               fail      fuel share                  \n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "xXTn",
       "code_hash": "36ed51227f78a80ef91f4a5c614fe262",
-      "outputs": [],
-      "console": []
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Panama looks like the best first market for the $20,000 EV: GDP per person is $19,790 (2025), so the car costs about 1.0 years of average income, and fuel is 19.3% of everything it imports (2025). 4 of 15 countries passed: Panama, Dominican Republic, Peru, Chile.\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "AjVT",
