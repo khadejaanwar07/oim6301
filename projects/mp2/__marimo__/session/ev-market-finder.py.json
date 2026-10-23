@@ -198,12 +198,12 @@
     },
     {
       "id": "TqIu",
-      "code_hash": "4c91ebd73270d21a4dee8e09c36ee898",
+      "code_hash": "ee4cbb0a15511b770bcbc411066b7708",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Filters 2 and 3: GDP per person and fuel share of imports</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"filters-2-and-3-gdp-per-person-and-fuel-share-of-imports\">Filters 2 and 3: GDP per person and fuel share of imports</h3></span>"
           }
         }
       ],
@@ -354,12 +354,12 @@
     },
     {
       "id": "wlCL",
-      "code_hash": "bc2ca72befa4fdc0641eb703e510f3ca",
+      "code_hash": "7c22de4f07324a71be98217ab6695b7c",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"reading-it-back\">Reading It Back</h1>\n<h2 id=\"get_region_countries\">get_region_countries</h2>\n<span class=\"paragraph\"><strong>What goes in:</strong> A region code, like \"LCN\" for Latin America &amp; Caribbean, and how many countries to ask for on each page.</span>\n<span class=\"paragraph\"><strong>What comes out:</strong> One list with every country in that region. Each country is a small record with its two-letter code, its name and its income group.</span>\n<span class=\"paragraph\"><strong>How it works:</strong> It asks the World Bank for page 1 first, because that page also says how many pages there are in total. Then it goes through the rest of the pages one by one and adds each page's countries to the same list. At the end it keeps only the three fields I need from each country.</span>\n<span class=\"paragraph\"><strong>A line I had to ask about:</strong> <code>for page in range(2, pages + 1):</code>. I didn't get why it starts at 2 and ends at pages + 1. It starts at 2 because page 1 was already fetched above the loop, and it's pages + 1 because range stops one before the last number, so to include the last page you have to go one past it. With 3 pages, range(2, 4) gives 2 and 3.</span>\n<h2 id=\"get_latest_value\">get_latest_value</h2>\n<span class=\"paragraph\"><strong>What goes in:</strong> A country's two-letter code and the World Bank code for the number I want, like NY.GDP.PCAP.CD for GDP per person.</span>\n<span class=\"paragraph\"><strong>What comes out:</strong> The most recent value the World Bank has for that country, and the year it's from. If there's no value, it gives back None for both instead of crashing.</span>\n<span class=\"paragraph\"><strong>How it works:</strong> It asks the World Bank for one indicator for one country, with mrnev=1, which means \"the most recent year that actually has a value.\" The reply comes back as two parts, info about the reply and then the data, so it takes the value and year from the second part.</span>\n<span class=\"paragraph\"><strong>A line I had to ask about:</strong> <code>if value_page[1] is None:</code>. I didn't know why this was needed if the request worked. It turns out that when a country has no data for an indicator, the World Bank still answers, but the data part comes back empty (None). Without this check the code would try to read a value from nothing and stop with an error, so it would break the whole loop over one missing country.</span>\n<h2 id=\"my-prediction\">My prediction</h2>\n<span class=\"paragraph\">I'm changing <code>min_fuel_import_share</code> in the Inputs cell from 15 to 10.</span>\n<span class=\"paragraph\">I expect the shortlist to grow from 4 countries to 6, because my Going Further table showed 6 countries passing at 10%. The 2 new countries should show up at the bottom of the ranking, since the list is sorted by fuel share and they have lower shares than the original four. Panama should still be the top market, so the answer sentence should still name Panama with the same numbers, but it should now say 6 of 15 countries passed instead of 4.</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"8-reading-it-back\">8. <strong>Reading It Back</strong></h2>\n<span class=\"paragraph\">get_region_countries</span>\n<span class=\"paragraph\"><strong>What goes in:</strong> A region code, like \"LCN\" for Latin America &amp; Caribbean, and how many countries to ask for on each page.</span>\n<span class=\"paragraph\"><strong>What comes out:</strong> One list with every country in that region. Each country is a small record with its two-letter code, its name and its income group.</span>\n<span class=\"paragraph\"><strong>How it works:</strong> It asks the World Bank for page 1 first, because that page also says how many pages there are in total. Then it goes through the rest of the pages one by one and adds each page's countries to the same list. At the end it keeps only the three fields I need from each country.</span>\n<span class=\"paragraph\"><strong>A line I had to ask about:</strong> <code>for page in range(2, pages + 1):</code>. I didn't get why it starts at 2 and ends at pages + 1. It starts at 2 because page 1 was already fetched above the loop, and it's pages + 1 because range stops one before the last number, so to include the last page you have to go one past it. With 3 pages, range(2, 4) gives 2 and 3.</span>\n<h2 id=\"get_latest_value\">get_latest_value</h2>\n<span class=\"paragraph\"><strong>What goes in:</strong> A country's two-letter code and the World Bank code for the number I want, like NY.GDP.PCAP.CD for GDP per person.</span>\n<span class=\"paragraph\"><strong>What comes out:</strong> The most recent value the World Bank has for that country, and the year it's from. If there's no value, it gives back None for both instead of crashing.</span>\n<span class=\"paragraph\"><strong>How it works:</strong> It asks the World Bank for one indicator for one country, with mrnev=1, which means \"the most recent year that actually has a value.\" The reply comes back as two parts, info about the reply and then the data, so it takes the value and year from the second part.</span>\n<span class=\"paragraph\"><strong>A line I had to ask about:</strong> <code>if value_page[1] is None:</code>. I didn't know why this was needed if the request worked. It turns out that when a country has no data for an indicator, the World Bank still answers, but the data part comes back empty (None). Without this check the code would try to read a value from nothing and stop with an error, so it would break the whole loop over one missing country.</span>\n<h2 id=\"my-prediction\">My prediction</h2>\n<span class=\"paragraph\">I'm changing <code>min_fuel_import_share</code> in the Inputs cell from 15 to 10.</span>\n<span class=\"paragraph\">I expect the shortlist to grow from 4 countries to 6, because my Going Further table showed 6 countries passing at 10%. The 2 new countries should show up at the bottom of the ranking, since the list is sorted by fuel share and they have lower shares than the original four. Panama should still be the top market, so the answer sentence should still name Panama with the same numbers, but it should now say 6 of 15 countries passed instead of 4.</span></span>"
           }
         }
       ],
@@ -380,12 +380,12 @@
     },
     {
       "id": "wAgl",
-      "code_hash": "9e11622311558f577bd7fefb4cd2c3ec",
+      "code_hash": "2e85f27ba5f6d48677795550304523b3",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"8-going-further\">8. Going Further</h2>\n<span class=\"paragraph\"><em>Take at least one step past the main task, in any direction, and use your agent as much as you like. It does not have to work. State what you tried, what you found, and where it is in this notebook.</em></span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"9-going-further\">9. Going Further</h2>\n<span class=\"paragraph\"><em>Take at least one step past the main task, in any direction, and use your agent as much as you like. It does not have to work. State what you tried, what you found, and where it is in this notebook.</em></span></span>"
           }
         }
       ],
@@ -443,12 +443,12 @@
     },
     {
       "id": "LJZf",
-      "code_hash": "e5f8f998f6e443761f260360fe0f707b",
+      "code_hash": "51b3dd2b2433709a4f4b941ee526147a",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"10-time-spent\">10. Time Spent</h2>\n<span class=\"paragraph\">6.5</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><ol start=\"10\">\n<li>Time Spent</li>\n</ol>\n<span class=\"paragraph\">7 hours</span></span>"
           }
         }
       ],

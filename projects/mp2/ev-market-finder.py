@@ -304,7 +304,7 @@ def _(excluded_countries, latam_countries, latin_american_codes):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    Filters 2 and 3: GDP per person and fuel share of imports
+    ### Filters 2 and 3: GDP per person and fuel share of imports
     """)
     return
 
@@ -634,9 +634,9 @@ def _():
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    # Reading It Back
+    ## 8. **Reading It Back**
 
-    ## get_region_countries
+    get_region_countries
 
     **What goes in:** A region code, like "LCN" for Latin America & Caribbean, and how many countries to ask for on each page.
 
@@ -680,16 +680,18 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    ## 8. Going Further
+    ## 9. Going Further
 
     *Take at least one step past the main task, in any direction, and use your agent as much as you like. It does not have to work. State what you tried, what you found, and where it is in this notebook.*
     """)
     return
 
 
-@app.cell
-def _():
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     ## How much does the shortlist depend on my 15% fuel limit?
+    """)
     return
 
 
@@ -718,9 +720,11 @@ def _(mo):
     return
 
 
-@app.cell
-def _():
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     ## Can the power grid charge the car cleanly?** Share of electricity from renewables for each country on the shortlist. This data is often a few years old, so I show the year.
+    """)
     return
 
 
@@ -753,9 +757,9 @@ def _(mo):
 @app.cell
 def _(mo):
     mo.md(r"""
-    ## 10. Time Spent
+    10. Time Spent
 
-    6.5
+    7 hours
     """)
     return
 
