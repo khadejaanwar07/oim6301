@@ -521,9 +521,11 @@ def _(mo):
     return
 
 
-@app.cell
-def _():
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     ### Check 1 The number of countries I collected should match the total the World Bank reports.
+    """)
     return
 
 
@@ -536,9 +538,11 @@ def _(get_country_page, latam_countries, page_size, region_code):
     return
 
 
-@app.cell
-def _():
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
     ### Check 2 - For the top country, total GDP divided by population (same year) should be really close to the GDP per person the World Bank reports.
+    """)
     return
 
 

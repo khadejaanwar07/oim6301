@@ -286,7 +286,14 @@
     {
       "id": "pHFh",
       "code_hash": "25d9996eee0f4626dd21037790b1f9c6",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
