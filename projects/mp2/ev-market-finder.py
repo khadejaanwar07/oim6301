@@ -10,7 +10,7 @@
 
 import marimo
 
-__generated_with = "0.25.1"
+__generated_with = "0.24.2"
 app = marimo.App(width="medium", sql_output="polars")
 
 
@@ -608,7 +608,14 @@ def _(mo):
     **What I changed:** The new version of REST Countries needs an API key, which would have meant setting up a `.env` file and a new package. Since every Spanish, Portuguese and French speaking country in Latin America drives on the right like China, I deleted both functions and typed the list of Latin American country codes into my Inputs cell instead. I rewrote the filter cell to check each World Bank country against that list. The GDP and fuel data still comes live from the World Bank.
 
     **How I checked the fix:** The filter cell now shows (15, 27): 21 Latin American countries minus the 6 I leave out is 15, and 42 minus 15 is 27, which matches the World Bank's total of 42.
+
+    You can see the fix in the Filter 1 cell in section 4 and in the country list in the Inputs cell.
     """)
+    return
+
+
+@app.cell
+def _():
     return
 
 
