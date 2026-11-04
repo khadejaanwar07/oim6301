@@ -149,6 +149,25 @@
       "console": []
     },
     {
+      "id": "KHnA",
+      "code_hash": "3c24752dc01ccbaa33a3bc2f9c3b40b1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='KHnA-0' random-id='72a64a00-4240-ba86-7f70-3daebe685270'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;Barnstable&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25001&#92;&quot;,&#92;&quot;towns&#92;&quot;:15,&#92;&quot;population&#92;&quot;:232570,&#92;&quot;founded_year&#92;&quot;:1685,&#92;&quot;government_abolished_year&#92;&quot;:null},{&#92;&quot;name&#92;&quot;:&#92;&quot;Berkshire&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25003&#92;&quot;,&#92;&quot;towns&#92;&quot;:32,&#92;&quot;population&#92;&quot;:128726,&#92;&quot;founded_year&#92;&quot;:1761,&#92;&quot;government_abolished_year&#92;&quot;:2000},{&#92;&quot;name&#92;&quot;:&#92;&quot;Bristol&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25005&#92;&quot;,&#92;&quot;towns&#92;&quot;:20,&#92;&quot;population&#92;&quot;:588593,&#92;&quot;founded_year&#92;&quot;:1685,&#92;&quot;government_abolished_year&#92;&quot;:null},{&#92;&quot;name&#92;&quot;:&#92;&quot;Dukes&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25007&#92;&quot;,&#92;&quot;towns&#92;&quot;:7,&#92;&quot;population&#92;&quot;:21061,&#92;&quot;founded_year&#92;&quot;:1695,&#92;&quot;government_abolished_year&#92;&quot;:null},{&#92;&quot;name&#92;&quot;:&#92;&quot;Essex&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25009&#92;&quot;,&#92;&quot;towns&#92;&quot;:34,&#92;&quot;population&#92;&quot;:823938,&#92;&quot;founded_year&#92;&quot;:1643,&#92;&quot;government_abolished_year&#92;&quot;:1999},{&#92;&quot;name&#92;&quot;:&#92;&quot;Franklin&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25011&#92;&quot;,&#92;&quot;towns&#92;&quot;:26,&#92;&quot;population&#92;&quot;:70871,&#92;&quot;founded_year&#92;&quot;:1811,&#92;&quot;government_abolished_year&#92;&quot;:1997},{&#92;&quot;name&#92;&quot;:&#92;&quot;Hampden&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25013&#92;&quot;,&#92;&quot;towns&#92;&quot;:23,&#92;&quot;population&#92;&quot;:464151,&#92;&quot;founded_year&#92;&quot;:1812,&#92;&quot;government_abolished_year&#92;&quot;:1998},{&#92;&quot;name&#92;&quot;:&#92;&quot;Hampshire&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25015&#92;&quot;,&#92;&quot;towns&#92;&quot;:20,&#92;&quot;population&#92;&quot;:165399,&#92;&quot;founded_year&#92;&quot;:1662,&#92;&quot;government_abolished_year&#92;&quot;:1999},{&#92;&quot;name&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25017&#92;&quot;,&#92;&quot;towns&#92;&quot;:54,&#92;&quot;population&#92;&quot;:1668956,&#92;&quot;founded_year&#92;&quot;:1643,&#92;&quot;government_abolished_year&#92;&quot;:1997},{&#92;&quot;name&#92;&quot;:&#92;&quot;Nantucket&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25019&#92;&quot;,&#92;&quot;towns&#92;&quot;:1,&#92;&quot;population&#92;&quot;:14670,&#92;&quot;founded_year&#92;&quot;:1695,&#92;&quot;government_abolished_year&#92;&quot;:null}]&quot;' data-total-rows='14' data-total-columns='6' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;fips_code&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;towns&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;population&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;founded_year&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;government_abolished_year&quot;,[&quot;integer&quot;,&quot;i32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "KkOv",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
       "id": "emfo",
       "code_hash": "e05678a755e50c6716f858730b78b84c",
       "outputs": [
@@ -208,8 +227,15 @@
     },
     {
       "id": "ROlb",
-      "code_hash": "e322948be7e2a30bd9bad072b58b2ae9",
-      "outputs": [],
+      "code_hash": "2d3b9d9b015c41e7f3d9423e6e52dea2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='ROlb-0' random-id='6499cbde-ec86-ddb5-0cb7-1389e8f3e080'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;Barnstable&#92;&quot;,&#92;&quot;population&#92;&quot;:49831,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:5599},{&#92;&quot;name&#92;&quot;:&#92;&quot;Bourne&#92;&quot;,&#92;&quot;population&#92;&quot;:20508,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:6075},{&#92;&quot;name&#92;&quot;:&#92;&quot;Brewster&#92;&quot;,&#92;&quot;population&#92;&quot;:10447,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:7014},{&#92;&quot;name&#92;&quot;:&#92;&quot;Chatham&#92;&quot;,&#92;&quot;population&#92;&quot;:6711,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:6587},{&#92;&quot;name&#92;&quot;:&#92;&quot;Dennis&#92;&quot;,&#92;&quot;population&#92;&quot;:14862,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:3873},{&#92;&quot;name&#92;&quot;:&#92;&quot;Eastham&#92;&quot;,&#92;&quot;population&#92;&quot;:5824,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:7249},{&#92;&quot;name&#92;&quot;:&#92;&quot;Falmouth&#92;&quot;,&#92;&quot;population&#92;&quot;:33227,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:5881},{&#92;&quot;name&#92;&quot;:&#92;&quot;Harwich&#92;&quot;,&#92;&quot;population&#92;&quot;:13620,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:5872},{&#92;&quot;name&#92;&quot;:&#92;&quot;Mashpee&#92;&quot;,&#92;&quot;population&#92;&quot;:15482,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:6346},{&#92;&quot;name&#92;&quot;:&#92;&quot;Orleans&#92;&quot;,&#92;&quot;population&#92;&quot;:6485,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:8969}]&quot;' data-total-rows='351' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;population&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;average_single_family_bill_dollars&quot;,[&quot;integer&quot;,&quot;i32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
       "console": []
     },
     {

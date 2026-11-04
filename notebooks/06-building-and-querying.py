@@ -198,6 +198,17 @@ def _(ask):
     return
 
 
+@app.cell
+def _(ask):
+    ask("SELECT * FROM counties")
+    return
+
+
+@app.cell
+def _():
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
