@@ -100,7 +100,7 @@ def _(mo, pl, requests):
         town_rows = pl.DataFrame(_records).select(town_columns)
 
     county_rows.shape, town_rows.shape
-    return
+    return county_rows, town_rows
 
 
 @app.cell(hide_code=True)
@@ -130,10 +130,13 @@ def _(mo):
 
 
 @app.cell
-def _(duckdb, mo):
+def _(county_rows, duckdb, mo, town_rows):
     _file = mo.notebook_dir().parent / "data" / "ma-towns.duckdb"
     _file.parent.mkdir(exist_ok=True)
     _file.unlink(missing_ok=True)
+
+    # referencing these here so marimo knows this cell depends on them
+    _ = (county_rows, town_rows)
 
     with duckdb.connect(_file) as _con:
         _con.execute("""
@@ -377,18 +380,6 @@ def _(mo):
     # 3. Asking One Table
 
     `SELECT` names the columns, `FROM` the table, `WHERE` keeps the rows that pass a condition, `ORDER BY` sorts and `LIMIT` cuts the list short. Read it as a sentence: the towns in Norfolk County, the highest bill first.
-    """)
-    return
-
-
-@app.cell
-def _(ask):
-    ask("""
-        SELECT name, population, average_single_family_bill_dollars
-        FROM towns
-        WHERE county = 'Norfolk'
-        ORDER BY average_single_family_bill_dollars DESC
-        LIMIT 5
     """)
     return
 
