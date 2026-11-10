@@ -24,7 +24,7 @@ def _():
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    # 1. The Tables
+    1. The Tables
     """)
     return
 
@@ -39,7 +39,7 @@ def _(mo):
         database.unlink()
 
     with duckdb.connect(database) as _con:
-    
+
     ### Members Table
     # Stores loyalty members' names, contact details, joining dates and points balances.
 
@@ -139,7 +139,35 @@ def _(mo):
             )
         """)
 
-    
+
+    return database, duckdb
+
+
+@app.cell
+def _(database, duckdb):
+    def ask(sql):
+        with duckdb.connect(database, read_only=True) as _con:
+            return _con.sql(sql).pl()
+
+    return (ask,)
+
+
+@app.cell
+def _(ask):
+    ask("SHOW TABLES")
+    return
+
+
+@app.cell
+def _():
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    The Data
+    """)
     return
 
 

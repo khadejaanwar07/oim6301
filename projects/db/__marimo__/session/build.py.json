@@ -8,31 +8,17 @@
     {
       "id": "Hbol",
       "code_hash": null,
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "ffPG",
+      "id": "MJUe",
       "code_hash": null,
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "JdrJ",
+      "id": "vblA",
       "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
       "outputs": [
         {
@@ -45,21 +31,21 @@
       "console": []
     },
     {
-      "id": "Uwrj",
-      "code_hash": "8fd16389f77992561bcf6cf581978af0",
+      "id": "bkHC",
+      "code_hash": "c743f34c10ab7e170278d3f183898b3c",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"1-the-tables\">1. The Tables</h1></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><ol>\n<li>The Tables</li>\n</ol></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "zoMK",
-      "code_hash": "1bb92946b7acc192d283227230b4ab90",
+      "id": "lEQa",
+      "code_hash": "f5ebf3a965b23622124cc02447d92ad4",
       "outputs": [
         {
           "type": "data",
@@ -71,16 +57,54 @@
       "console": []
     },
     {
-      "id": "FNsG",
+      "id": "PKri",
+      "code_hash": "1ce0170991256257cf40825a5e64a19b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "smtv",
+      "code_hash": "9578b5bcefad6976fda990615f02ddd1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='smtv-0' random-id='e9b59c46-720a-7377-84cd-ea8caed6c0cb'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;line_options&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;members&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;options&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;order_lines&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;orders&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;payments&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;products&#92;&quot;}]&quot;' data-total-rows='7' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "fzEa",
       "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "XvYO",
+      "code_hash": "94fb65acb287415923ed7d594252d242",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/plain": ""
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">The Data</span></span>"
           }
         }
       ],
+      "console": []
+    },
+    {
+      "id": "Dtpi",
+      "code_hash": null,
+      "outputs": [],
       "console": []
     }
   ]
