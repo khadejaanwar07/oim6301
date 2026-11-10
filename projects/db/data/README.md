@@ -74,3 +74,10 @@ erDiagram
 - One row of `payments` is one payment toward one order, by one method; an order can have several.
 
 ## 4. Design Choices
+- I chose member_id as the primary key for the MEMBERS table instead of using a mobile number or email. A member's mobile number can change, and email is optional, so using a unique member ID is more reliable.
+
+- Not every customer is a loyalty member, so an order does not always need a member_id. Members can also join without placing any orders. Similarly, an order line may have no add-ons, and a product may exist on the menu without being ordered.
+
+- The database cannot use a simple CHECK constraint to ensure that an order's payments equal the total cost of its products and add-ons. I will use a SQL query to calculate both totals for each order, compare them, and identify any differences.
+
+- I checked the relationship between ORDERS and PAYMENTS to make sure it matched the scenario. Each order must have at least one payment, but it can have multiple payments if a customer splits the bill between methods such as card and points. The ERD represents this as a one-to-many relationship.
