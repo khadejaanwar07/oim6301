@@ -142,7 +142,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='Kclp-0' random-id='4aa69025-081d-8a52-5d31-50c6b3bc85ab'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;counties&#92;&quot;:14,&#92;&quot;towns&#92;&quot;:351}]&quot;' data-total-rows='1' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;counties&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;towns&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='Kclp-0' random-id='52e40aab-7c23-f456-c42a-4a77300cd7e8'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;counties&#92;&quot;:14,&#92;&quot;towns&#92;&quot;:351}]&quot;' data-total-rows='1' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;counties&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;towns&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -155,7 +155,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='emfo-0' random-id='8b2d1a66-0fb4-cb43-efdc-2cdc66f036db'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;Barnstable&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25001&#92;&quot;,&#92;&quot;towns&#92;&quot;:15,&#92;&quot;population&#92;&quot;:232570,&#92;&quot;founded_year&#92;&quot;:1685,&#92;&quot;government_abolished_year&#92;&quot;:null},{&#92;&quot;name&#92;&quot;:&#92;&quot;Berkshire&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25003&#92;&quot;,&#92;&quot;towns&#92;&quot;:32,&#92;&quot;population&#92;&quot;:128726,&#92;&quot;founded_year&#92;&quot;:1761,&#92;&quot;government_abolished_year&#92;&quot;:2000},{&#92;&quot;name&#92;&quot;:&#92;&quot;Bristol&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25005&#92;&quot;,&#92;&quot;towns&#92;&quot;:20,&#92;&quot;population&#92;&quot;:588593,&#92;&quot;founded_year&#92;&quot;:1685,&#92;&quot;government_abolished_year&#92;&quot;:null},{&#92;&quot;name&#92;&quot;:&#92;&quot;Dukes&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25007&#92;&quot;,&#92;&quot;towns&#92;&quot;:7,&#92;&quot;population&#92;&quot;:21061,&#92;&quot;founded_year&#92;&quot;:1695,&#92;&quot;government_abolished_year&#92;&quot;:null},{&#92;&quot;name&#92;&quot;:&#92;&quot;Essex&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25009&#92;&quot;,&#92;&quot;towns&#92;&quot;:34,&#92;&quot;population&#92;&quot;:823938,&#92;&quot;founded_year&#92;&quot;:1643,&#92;&quot;government_abolished_year&#92;&quot;:1999},{&#92;&quot;name&#92;&quot;:&#92;&quot;Franklin&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25011&#92;&quot;,&#92;&quot;towns&#92;&quot;:26,&#92;&quot;population&#92;&quot;:70871,&#92;&quot;founded_year&#92;&quot;:1811,&#92;&quot;government_abolished_year&#92;&quot;:1997},{&#92;&quot;name&#92;&quot;:&#92;&quot;Hampden&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25013&#92;&quot;,&#92;&quot;towns&#92;&quot;:23,&#92;&quot;population&#92;&quot;:464151,&#92;&quot;founded_year&#92;&quot;:1812,&#92;&quot;government_abolished_year&#92;&quot;:1998},{&#92;&quot;name&#92;&quot;:&#92;&quot;Hampshire&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25015&#92;&quot;,&#92;&quot;towns&#92;&quot;:20,&#92;&quot;population&#92;&quot;:165399,&#92;&quot;founded_year&#92;&quot;:1662,&#92;&quot;government_abolished_year&#92;&quot;:1999},{&#92;&quot;name&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25017&#92;&quot;,&#92;&quot;towns&#92;&quot;:54,&#92;&quot;population&#92;&quot;:1668956,&#92;&quot;founded_year&#92;&quot;:1643,&#92;&quot;government_abolished_year&#92;&quot;:1997},{&#92;&quot;name&#92;&quot;:&#92;&quot;Nantucket&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25019&#92;&quot;,&#92;&quot;towns&#92;&quot;:1,&#92;&quot;population&#92;&quot;:14670,&#92;&quot;founded_year&#92;&quot;:1695,&#92;&quot;government_abolished_year&#92;&quot;:null}]&quot;' data-total-rows='14' data-total-columns='6' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;fips_code&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;towns&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;population&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;founded_year&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;government_abolished_year&quot;,[&quot;integer&quot;,&quot;i32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='emfo-0' random-id='ce3fc1a4-fa3b-cdc5-9aa1-18eae8f71bb0'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;Barnstable&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25001&#92;&quot;,&#92;&quot;towns&#92;&quot;:15,&#92;&quot;population&#92;&quot;:232570,&#92;&quot;founded_year&#92;&quot;:1685,&#92;&quot;government_abolished_year&#92;&quot;:null},{&#92;&quot;name&#92;&quot;:&#92;&quot;Berkshire&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25003&#92;&quot;,&#92;&quot;towns&#92;&quot;:32,&#92;&quot;population&#92;&quot;:128726,&#92;&quot;founded_year&#92;&quot;:1761,&#92;&quot;government_abolished_year&#92;&quot;:2000},{&#92;&quot;name&#92;&quot;:&#92;&quot;Bristol&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25005&#92;&quot;,&#92;&quot;towns&#92;&quot;:20,&#92;&quot;population&#92;&quot;:588593,&#92;&quot;founded_year&#92;&quot;:1685,&#92;&quot;government_abolished_year&#92;&quot;:null},{&#92;&quot;name&#92;&quot;:&#92;&quot;Dukes&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25007&#92;&quot;,&#92;&quot;towns&#92;&quot;:7,&#92;&quot;population&#92;&quot;:21061,&#92;&quot;founded_year&#92;&quot;:1695,&#92;&quot;government_abolished_year&#92;&quot;:null},{&#92;&quot;name&#92;&quot;:&#92;&quot;Essex&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25009&#92;&quot;,&#92;&quot;towns&#92;&quot;:34,&#92;&quot;population&#92;&quot;:823938,&#92;&quot;founded_year&#92;&quot;:1643,&#92;&quot;government_abolished_year&#92;&quot;:1999},{&#92;&quot;name&#92;&quot;:&#92;&quot;Franklin&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25011&#92;&quot;,&#92;&quot;towns&#92;&quot;:26,&#92;&quot;population&#92;&quot;:70871,&#92;&quot;founded_year&#92;&quot;:1811,&#92;&quot;government_abolished_year&#92;&quot;:1997},{&#92;&quot;name&#92;&quot;:&#92;&quot;Hampden&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25013&#92;&quot;,&#92;&quot;towns&#92;&quot;:23,&#92;&quot;population&#92;&quot;:464151,&#92;&quot;founded_year&#92;&quot;:1812,&#92;&quot;government_abolished_year&#92;&quot;:1998},{&#92;&quot;name&#92;&quot;:&#92;&quot;Hampshire&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25015&#92;&quot;,&#92;&quot;towns&#92;&quot;:20,&#92;&quot;population&#92;&quot;:165399,&#92;&quot;founded_year&#92;&quot;:1662,&#92;&quot;government_abolished_year&#92;&quot;:1999},{&#92;&quot;name&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25017&#92;&quot;,&#92;&quot;towns&#92;&quot;:54,&#92;&quot;population&#92;&quot;:1668956,&#92;&quot;founded_year&#92;&quot;:1643,&#92;&quot;government_abolished_year&#92;&quot;:1997},{&#92;&quot;name&#92;&quot;:&#92;&quot;Nantucket&#92;&quot;,&#92;&quot;fips_code&#92;&quot;:&#92;&quot;25019&#92;&quot;,&#92;&quot;towns&#92;&quot;:1,&#92;&quot;population&#92;&quot;:14670,&#92;&quot;founded_year&#92;&quot;:1695,&#92;&quot;government_abolished_year&#92;&quot;:null}]&quot;' data-total-rows='14' data-total-columns='6' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;fips_code&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;towns&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;population&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;founded_year&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;government_abolished_year&quot;,[&quot;integer&quot;,&quot;i32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -207,7 +207,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='ZHCJ-0' random-id='05428ef6-cf7e-6ccf-abac-4ac615e2f80a'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;town&#92;&quot;:&#92;&quot;Wellesley&#92;&quot;,&#92;&quot;year&#92;&quot;:2025,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:19792},{&#92;&quot;town&#92;&quot;:&#92;&quot;Wellesley&#92;&quot;,&#92;&quot;year&#92;&quot;:2026,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:20551}]&quot;' data-total-rows='2' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;town&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;year&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;average_single_family_bill_dollars&quot;,[&quot;integer&quot;,&quot;i32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='ZHCJ-0' random-id='bf462701-715b-100b-9160-abce53e35790'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;town&#92;&quot;:&#92;&quot;Wellesley&#92;&quot;,&#92;&quot;year&#92;&quot;:2025,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:19792},{&#92;&quot;town&#92;&quot;:&#92;&quot;Wellesley&#92;&quot;,&#92;&quot;year&#92;&quot;:2026,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:20551}]&quot;' data-total-rows='2' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;town&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;year&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;average_single_family_bill_dollars&quot;,[&quot;integer&quot;,&quot;i32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -260,7 +260,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='TqIu-0' random-id='57a8f317-539d-e3e7-2ccd-4f4c68bc32b5'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;table_name&#92;&quot;:&#92;&quot;counties&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;towns&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;town_bill&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;high_bill_towns_by_county&#92;&quot;}]&quot;' data-total-rows='4' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;table_name&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='TqIu-0' random-id='1eb9e4e2-39bd-9b24-c234-adf01be9c908'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;table_name&#92;&quot;:&#92;&quot;counties&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;towns&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;town_bill&#92;&quot;},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;high_bill_towns_by_county&#92;&quot;}]&quot;' data-total-rows='4' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;table_name&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -385,14 +385,14 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='nHfw-0' random-id='2034541b-8657-25b9-a980-1a0b45c2e9f9'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;Brookline&#92;&quot;,&#92;&quot;population&#92;&quot;:63925,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:26237},{&#92;&quot;name&#92;&quot;:&#92;&quot;Wellesley&#92;&quot;,&#92;&quot;population&#92;&quot;:31242,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:20551},{&#92;&quot;name&#92;&quot;:&#92;&quot;Dover&#92;&quot;,&#92;&quot;population&#92;&quot;:6057,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:19088},{&#92;&quot;name&#92;&quot;:&#92;&quot;Cohasset&#92;&quot;,&#92;&quot;population&#92;&quot;:8532,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:16814},{&#92;&quot;name&#92;&quot;:&#92;&quot;Needham&#92;&quot;,&#92;&quot;population&#92;&quot;:32931,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:16690}]&quot;' data-total-rows='5' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;population&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;average_single_family_bill_dollars&quot;,[&quot;integer&quot;,&quot;i32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='nHfw-0' random-id='9e37d0cd-6a2d-2326-5365-d18c9c6ba74a'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;Brookline&#92;&quot;,&#92;&quot;population&#92;&quot;:63925,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:26237},{&#92;&quot;name&#92;&quot;:&#92;&quot;Wellesley&#92;&quot;,&#92;&quot;population&#92;&quot;:31242,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:20551},{&#92;&quot;name&#92;&quot;:&#92;&quot;Dover&#92;&quot;,&#92;&quot;population&#92;&quot;:6057,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:19088},{&#92;&quot;name&#92;&quot;:&#92;&quot;Cohasset&#92;&quot;,&#92;&quot;population&#92;&quot;:8532,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:16814},{&#92;&quot;name&#92;&quot;:&#92;&quot;Needham&#92;&quot;,&#92;&quot;population&#92;&quot;:32931,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:16690}]&quot;' data-total-rows='5' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;population&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;average_single_family_bill_dollars&quot;,[&quot;integer&quot;,&quot;i32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "AjVT",
+      "id": "xXTn",
       "code_hash": "d7ab3bfb612d5a47767718c6ed30ad0e",
       "outputs": [
         {
@@ -405,20 +405,20 @@
       "console": []
     },
     {
-      "id": "pHFh",
+      "id": "AjVT",
       "code_hash": "b3b18d9e642a5dbbfb3417b17b9c4909",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='pHFh-0' random-id='73c4e483-edda-aa1d-c0e4-dd01a341008e'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;Brookline&#92;&quot;,&#92;&quot;population&#92;&quot;:63925,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:26237},{&#92;&quot;name&#92;&quot;:&#92;&quot;Newton&#92;&quot;,&#92;&quot;population&#92;&quot;:90700,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:17077},{&#92;&quot;name&#92;&quot;:&#92;&quot;Cambridge&#92;&quot;,&#92;&quot;population&#92;&quot;:121186,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:14678},{&#92;&quot;name&#92;&quot;:&#92;&quot;Somerville&#92;&quot;,&#92;&quot;population&#92;&quot;:82149,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:9376},{&#92;&quot;name&#92;&quot;:&#92;&quot;Quincy&#92;&quot;,&#92;&quot;population&#92;&quot;:103434,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:8250}]&quot;' data-total-rows='5' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;population&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;average_single_family_bill_dollars&quot;,[&quot;integer&quot;,&quot;i32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='AjVT-0' random-id='63c40488-03ea-13c2-2699-0e05ef75d58e'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;Brookline&#92;&quot;,&#92;&quot;population&#92;&quot;:63925,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:26237},{&#92;&quot;name&#92;&quot;:&#92;&quot;Newton&#92;&quot;,&#92;&quot;population&#92;&quot;:90700,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:17077},{&#92;&quot;name&#92;&quot;:&#92;&quot;Cambridge&#92;&quot;,&#92;&quot;population&#92;&quot;:121186,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:14678},{&#92;&quot;name&#92;&quot;:&#92;&quot;Somerville&#92;&quot;,&#92;&quot;population&#92;&quot;:82149,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:9376},{&#92;&quot;name&#92;&quot;:&#92;&quot;Quincy&#92;&quot;,&#92;&quot;population&#92;&quot;:103434,&#92;&quot;average_single_family_bill_dollars&#92;&quot;:8250}]&quot;' data-total-rows='5' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;population&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;average_single_family_bill_dollars&quot;,[&quot;integer&quot;,&quot;i32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "NCOB",
+      "id": "pHFh",
       "code_hash": "19905b2ac849960732f5993a6eb355d2",
       "outputs": [
         {
@@ -431,20 +431,20 @@
       "console": []
     },
     {
-      "id": "aqbW",
+      "id": "NCOB",
       "code_hash": "3c646d2de1df110536de16ea37161658",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='aqbW-0' random-id='87fa7dce-573b-f355-b293-816dbf1249b0'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;county&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;towns&#92;&quot;:26},{&#92;&quot;county&#92;&quot;:&#92;&quot;Essex&#92;&quot;,&#92;&quot;towns&#92;&quot;:13},{&#92;&quot;county&#92;&quot;:&#92;&quot;Norfolk&#92;&quot;,&#92;&quot;towns&#92;&quot;:12},{&#92;&quot;county&#92;&quot;:&#92;&quot;Worcester&#92;&quot;,&#92;&quot;towns&#92;&quot;:5},{&#92;&quot;county&#92;&quot;:&#92;&quot;Plymouth&#92;&quot;,&#92;&quot;towns&#92;&quot;:5},{&#92;&quot;county&#92;&quot;:&#92;&quot;Dukes&#92;&quot;,&#92;&quot;towns&#92;&quot;:2},{&#92;&quot;county&#92;&quot;:&#92;&quot;Barnstable&#92;&quot;,&#92;&quot;towns&#92;&quot;:1},{&#92;&quot;county&#92;&quot;:&#92;&quot;Hampden&#92;&quot;,&#92;&quot;towns&#92;&quot;:1}]&quot;' data-total-rows='8' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;county&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;towns&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='NCOB-0' random-id='07e612ee-0b99-19d9-d8a0-03bd722480b7'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;county&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;towns&#92;&quot;:26},{&#92;&quot;county&#92;&quot;:&#92;&quot;Essex&#92;&quot;,&#92;&quot;towns&#92;&quot;:13},{&#92;&quot;county&#92;&quot;:&#92;&quot;Norfolk&#92;&quot;,&#92;&quot;towns&#92;&quot;:12},{&#92;&quot;county&#92;&quot;:&#92;&quot;Plymouth&#92;&quot;,&#92;&quot;towns&#92;&quot;:5},{&#92;&quot;county&#92;&quot;:&#92;&quot;Worcester&#92;&quot;,&#92;&quot;towns&#92;&quot;:5},{&#92;&quot;county&#92;&quot;:&#92;&quot;Dukes&#92;&quot;,&#92;&quot;towns&#92;&quot;:2},{&#92;&quot;county&#92;&quot;:&#92;&quot;Barnstable&#92;&quot;,&#92;&quot;towns&#92;&quot;:1},{&#92;&quot;county&#92;&quot;:&#92;&quot;Hampden&#92;&quot;,&#92;&quot;towns&#92;&quot;:1}]&quot;' data-total-rows='8' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;county&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;towns&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "TRpd",
+      "id": "aqbW",
       "code_hash": "e6d98347e93a30a396d5dc513dd136ce",
       "outputs": [
         {
@@ -457,20 +457,33 @@
       "console": []
     },
     {
-      "id": "TXez",
-      "code_hash": "cd2a7c8908f4b4d3a326b3d562608cd1",
+      "id": "TRpd",
+      "code_hash": "c694ce3fcb2a35c7182cec1a907b00cf",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='TXez-0' random-id='4908fb59-a7ec-d8a0-387d-246ce062ccd5'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;county&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;towns&#92;&quot;:26},{&#92;&quot;county&#92;&quot;:&#92;&quot;Essex&#92;&quot;,&#92;&quot;towns&#92;&quot;:13},{&#92;&quot;county&#92;&quot;:&#92;&quot;Norfolk&#92;&quot;,&#92;&quot;towns&#92;&quot;:12}]&quot;' data-total-rows='3' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;county&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;towns&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='TRpd-0' random-id='3711c794-c4b1-83f6-4113-dd13a44b5a42'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;county&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;towns&#92;&quot;:26},{&#92;&quot;county&#92;&quot;:&#92;&quot;Essex&#92;&quot;,&#92;&quot;towns&#92;&quot;:13}]&quot;' data-total-rows='2' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;county&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;towns&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "dNNg",
+      "id": "AUlP",
+      "code_hash": "2082bd07e24a05471511adb58ef20850",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='AUlP-0' random-id='bf739fe5-b8ef-bedb-470d-3b1b62f14c73'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;county&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;town_count&#92;&quot;:54,&#92;&quot;total_pop&#92;&quot;:&#92;&quot;1668956&#92;&quot;,&#92;&quot;avg_pop&#92;&quot;:30907.0,&#92;&quot;avg_bill&#92;&quot;:11327.04,&#92;&quot;max_pop&#92;&quot;:121186},{&#92;&quot;county&#92;&quot;:&#92;&quot;Worcester&#92;&quot;,&#92;&quot;town_count&#92;&quot;:60,&#92;&quot;total_pop&#92;&quot;:&#92;&quot;881248&#92;&quot;,&#92;&quot;avg_pop&#92;&quot;:14687.0,&#92;&quot;avg_bill&#92;&quot;:6877.2,&#92;&quot;max_pop&#92;&quot;:211286},{&#92;&quot;county&#92;&quot;:&#92;&quot;Essex&#92;&quot;,&#92;&quot;town_count&#92;&quot;:34,&#92;&quot;total_pop&#92;&quot;:&#92;&quot;823938&#92;&quot;,&#92;&quot;avg_pop&#92;&quot;:24233.0,&#92;&quot;avg_bill&#92;&quot;:9797.65,&#92;&quot;max_pop&#92;&quot;:103489},{&#92;&quot;county&#92;&quot;:&#92;&quot;Suffolk&#92;&quot;,&#92;&quot;town_count&#92;&quot;:4,&#92;&quot;total_pop&#92;&quot;:&#92;&quot;793144&#92;&quot;,&#92;&quot;avg_pop&#92;&quot;:198286.0,&#92;&quot;avg_bill&#92;&quot;:6427.0,&#92;&quot;max_pop&#92;&quot;:673458},{&#92;&quot;county&#92;&quot;:&#92;&quot;Norfolk&#92;&quot;,&#92;&quot;town_count&#92;&quot;:28,&#92;&quot;total_pop&#92;&quot;:&#92;&quot;740754&#92;&quot;,&#92;&quot;avg_pop&#92;&quot;:26456.0,&#92;&quot;avg_bill&#92;&quot;:11148.46,&#92;&quot;max_pop&#92;&quot;:103434},{&#92;&quot;county&#92;&quot;:&#92;&quot;Bristol&#92;&quot;,&#92;&quot;town_count&#92;&quot;:20,&#92;&quot;total_pop&#92;&quot;:&#92;&quot;588593&#92;&quot;,&#92;&quot;avg_pop&#92;&quot;:29430.0,&#92;&quot;avg_bill&#92;&quot;:6275.7,&#92;&quot;max_pop&#92;&quot;:101318},{&#92;&quot;county&#92;&quot;:&#92;&quot;Plymouth&#92;&quot;,&#92;&quot;town_count&#92;&quot;:27,&#92;&quot;total_pop&#92;&quot;:&#92;&quot;542090&#92;&quot;,&#92;&quot;avg_pop&#92;&quot;:20077.0,&#92;&quot;avg_bill&#92;&quot;:8264.63,&#92;&quot;max_pop&#92;&quot;:105788},{&#92;&quot;county&#92;&quot;:&#92;&quot;Hampden&#92;&quot;,&#92;&quot;town_count&#92;&quot;:23,&#92;&quot;total_pop&#92;&quot;:&#92;&quot;464151&#92;&quot;,&#92;&quot;avg_pop&#92;&quot;:20180.0,&#92;&quot;avg_bill&#92;&quot;:5650.04,&#92;&quot;max_pop&#92;&quot;:154888},{&#92;&quot;county&#92;&quot;:&#92;&quot;Barnstable&#92;&quot;,&#92;&quot;town_count&#92;&quot;:15,&#92;&quot;total_pop&#92;&quot;:&#92;&quot;232570&#92;&quot;,&#92;&quot;avg_pop&#92;&quot;:15505.0,&#92;&quot;avg_bill&#92;&quot;:6919.47,&#92;&quot;max_pop&#92;&quot;:49831},{&#92;&quot;county&#92;&quot;:&#92;&quot;Hampshire&#92;&quot;,&#92;&quot;town_count&#92;&quot;:20,&#92;&quot;total_pop&#92;&quot;:&#92;&quot;165399&#92;&quot;,&#92;&quot;avg_pop&#92;&quot;:8270.0,&#92;&quot;avg_bill&#92;&quot;:6165.1,&#92;&quot;max_pop&#92;&quot;:40989}]&quot;' data-total-rows='14' data-total-columns='6' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;county&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;town_count&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;total_pop&quot;,[&quot;number&quot;,&quot;decimal[38,0]&quot;]],[&quot;avg_pop&quot;,[&quot;number&quot;,&quot;f64&quot;]],[&quot;avg_bill&quot;,[&quot;number&quot;,&quot;f64&quot;]],[&quot;max_pop&quot;,[&quot;integer&quot;,&quot;i32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TXez",
       "code_hash": "7cbce546e15760b9a948ec1d9e2e5758",
       "outputs": [
         {
@@ -483,7 +496,7 @@
       "console": []
     },
     {
-      "id": "yCnT",
+      "id": "dNNg",
       "code_hash": "c64d616861c10560c7a19125454b29b2",
       "outputs": [
         {
@@ -496,20 +509,20 @@
       "console": []
     },
     {
-      "id": "wlCL",
+      "id": "yCnT",
       "code_hash": "26c29b84d27276e5089e7e93b9a706f9",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='wlCL-0' random-id='f46a7094-cb7e-861d-c27c-2f3a53fbe925'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;county&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;towns&#92;&quot;:26},{&#92;&quot;county&#92;&quot;:&#92;&quot;Essex&#92;&quot;,&#92;&quot;towns&#92;&quot;:13},{&#92;&quot;county&#92;&quot;:&#92;&quot;Norfolk&#92;&quot;,&#92;&quot;towns&#92;&quot;:12},{&#92;&quot;county&#92;&quot;:&#92;&quot;Worcester&#92;&quot;,&#92;&quot;towns&#92;&quot;:5},{&#92;&quot;county&#92;&quot;:&#92;&quot;Plymouth&#92;&quot;,&#92;&quot;towns&#92;&quot;:5},{&#92;&quot;county&#92;&quot;:&#92;&quot;Dukes&#92;&quot;,&#92;&quot;towns&#92;&quot;:2},{&#92;&quot;county&#92;&quot;:&#92;&quot;Barnstable&#92;&quot;,&#92;&quot;towns&#92;&quot;:1},{&#92;&quot;county&#92;&quot;:&#92;&quot;Hampden&#92;&quot;,&#92;&quot;towns&#92;&quot;:1}]&quot;' data-total-rows='8' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;county&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;towns&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='yCnT-0' random-id='ea30c22a-4010-8258-bfd0-31abc558896f'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;county&#92;&quot;:&#92;&quot;Middlesex&#92;&quot;,&#92;&quot;towns&#92;&quot;:26},{&#92;&quot;county&#92;&quot;:&#92;&quot;Essex&#92;&quot;,&#92;&quot;towns&#92;&quot;:13},{&#92;&quot;county&#92;&quot;:&#92;&quot;Norfolk&#92;&quot;,&#92;&quot;towns&#92;&quot;:12},{&#92;&quot;county&#92;&quot;:&#92;&quot;Plymouth&#92;&quot;,&#92;&quot;towns&#92;&quot;:5},{&#92;&quot;county&#92;&quot;:&#92;&quot;Worcester&#92;&quot;,&#92;&quot;towns&#92;&quot;:5},{&#92;&quot;county&#92;&quot;:&#92;&quot;Dukes&#92;&quot;,&#92;&quot;towns&#92;&quot;:2},{&#92;&quot;county&#92;&quot;:&#92;&quot;Barnstable&#92;&quot;,&#92;&quot;towns&#92;&quot;:1},{&#92;&quot;county&#92;&quot;:&#92;&quot;Hampden&#92;&quot;,&#92;&quot;towns&#92;&quot;:1}]&quot;' data-total-rows='8' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;county&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;towns&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "kqZH",
+      "id": "wlCL",
       "code_hash": "30f33e47cb2cc77dfff6e693fe46472d",
       "outputs": [
         {
@@ -522,7 +535,7 @@
       "console": []
     },
     {
-      "id": "wAgl",
+      "id": "kqZH",
       "code_hash": "9515b9e216d9b7f586517edd61034cda",
       "outputs": [
         {
@@ -535,20 +548,20 @@
       "console": []
     },
     {
-      "id": "rEll",
+      "id": "wAgl",
       "code_hash": "4bf85498e810420ebb569c0797c110e8",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='rEll-0' random-id='2c411673-b092-955b-3ae7-c16158801804'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;orders&#92;&quot;:16282}]&quot;' data-total-rows='1' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;orders&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='wAgl-0' random-id='fc5935f2-4e64-aae4-5168-9876b296d2f4'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;orders&#92;&quot;:16282}]&quot;' data-total-rows='1' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;orders&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "dGlV",
+      "id": "rEll",
       "code_hash": "1754cc0a1be9c542861085cc24cb0bdb",
       "outputs": [
         {
@@ -561,7 +574,7 @@
       "console": []
     },
     {
-      "id": "SdmI",
+      "id": "dGlV",
       "code_hash": "0473285a203e9d5e3ba75f1a0fd8a9c9",
       "outputs": [
         {
@@ -574,7 +587,7 @@
       "console": []
     },
     {
-      "id": "lgWD",
+      "id": "SdmI",
       "code_hash": "81283c0067831d792da9437eb5bc36ee",
       "outputs": [
         {
