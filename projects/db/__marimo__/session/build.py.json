@@ -32,7 +32,7 @@
     },
     {
       "id": "bkHC",
-      "code_hash": "c743f34c10ab7e170278d3f183898b3c",
+      "code_hash": "59af904369153f779b4d5439f2906868",
       "outputs": [
         {
           "type": "data",
@@ -45,13 +45,39 @@
     },
     {
       "id": "lEQa",
-      "code_hash": "f5ebf3a965b23622124cc02447d92ad4",
+      "code_hash": "9f57af698b33c0f7c473feceea3cf141",
       "outputs": [
         {
           "type": "data",
           "data": {
             "text/plain": ""
           }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "wYXL",
+      "code_hash": "af280b8a2f3d87d5a333061bba6e19ab",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='wYXL-0' random-id='60367421-6c0b-c951-8dbb-ec85d5c0e4a3'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;total_members&#92;&quot;:50}]&quot;' data-total-rows='1' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;total_members&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nVoi",
+      "code_hash": "12c0cb6c3e3f52348f18d276863c3955",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "syntax",
+          "evalue": "line 19\n    _con.execute(\"\"\"\nIndentationError: unexpected indent\n",
+          "traceback": []
         }
       ],
       "console": []
@@ -70,41 +96,216 @@
       "console": []
     },
     {
-      "id": "smtv",
+      "id": "Xref",
       "code_hash": "9578b5bcefad6976fda990615f02ddd1",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='smtv-0' random-id='e9b59c46-720a-7377-84cd-ea8caed6c0cb'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;line_options&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;members&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;options&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;order_lines&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;orders&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;payments&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;products&#92;&quot;}]&quot;' data-total-rows='7' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='Xref-0' random-id='9374413b-c5e7-99cf-5aba-e9731e16b3c0'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;line_options&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;members&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;options&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;order_lines&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;orders&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;payments&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;product_sales&#92;&quot;},{&#92;&quot;name&#92;&quot;:&#92;&quot;products&#92;&quot;}]&quot;' data-total-rows='8' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "fzEa",
+      "id": "SFPL",
       "code_hash": null,
       "outputs": [],
       "console": []
     },
     {
-      "id": "XvYO",
-      "code_hash": "94fb65acb287415923ed7d594252d242",
+      "id": "BYtC",
+      "code_hash": "9082fc2990d8bd6db4f537cde30b36c5",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">The Data</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><ol start=\"2\">\n<li>The Data</li>\n</ol></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "Dtpi",
+      "id": "RGSE",
+      "code_hash": "7c3d4f5671f8b8b49bdbafa2e2363fb8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">The data was generated using <code>make_data.py</code> and saved as seven CSV files in the <code>data</code> folder.</span>\n<span class=\"paragraph\">I generated 50 loyalty members, 25 products, 10 options, 1,200 orders, 2,377 order lines, 2,064 line options and 1,515 payments.</span>\n<span class=\"paragraph\">The data covers the 12-month period ending November 1, 2026. I used a fixed random seed of 6301 so the same data is generated each time.</span>\n<span class=\"paragraph\">I intentionally made the payment totals for Orders 1 and 2 incorrect by adding $1.00 to each. I will check for these differences using SQL in Part B.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "pmCu",
+      "code_hash": "3c3bb66be094c6d4d337e2d5a2f26a1e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><ol start=\"3\">\n<li>A Look at the Data</li>\n</ol></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "rmYm",
+      "code_hash": "a8e21c21d05f8d272a3cf5edcaaceea5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='rmYm-0' random-id='023e59a2-ff4b-e350-0b76-6dadbac2f4a0'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;hour&#92;&quot;:7,&#92;&quot;number_of_orders&#92;&quot;:88},{&#92;&quot;hour&#92;&quot;:8,&#92;&quot;number_of_orders&#92;&quot;:139},{&#92;&quot;hour&#92;&quot;:9,&#92;&quot;number_of_orders&#92;&quot;:178},{&#92;&quot;hour&#92;&quot;:10,&#92;&quot;number_of_orders&#92;&quot;:162},{&#92;&quot;hour&#92;&quot;:11,&#92;&quot;number_of_orders&#92;&quot;:106},{&#92;&quot;hour&#92;&quot;:12,&#92;&quot;number_of_orders&#92;&quot;:148},{&#92;&quot;hour&#92;&quot;:13,&#92;&quot;number_of_orders&#92;&quot;:159},{&#92;&quot;hour&#92;&quot;:14,&#92;&quot;number_of_orders&#92;&quot;:73},{&#92;&quot;hour&#92;&quot;:15,&#92;&quot;number_of_orders&#92;&quot;:38},{&#92;&quot;hour&#92;&quot;:16,&#92;&quot;number_of_orders&#92;&quot;:43}]&quot;' data-total-rows='12' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;hour&quot;,[&quot;integer&quot;,&quot;i8&quot;]],[&quot;number_of_orders&quot;,[&quot;integer&quot;,&quot;u32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "qnlA",
+      "code_hash": "c1e9eef7f34f724d566c373394472069",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "qUrR",
+      "code_hash": "18b8bfdbbf98252710aaed7257f0de4f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Initially, my data showed orders spread almost evenly throughout the day, which did not seem realistic for a campus caf\u00e9. I changed the order generation in make_data.py to make mornings and lunchtime busier. The updated chart now shows the highest number of orders around 9 AM and another busy period between 12 PM and 1 PM, with fewer orders later in the afternoon. This seems more realistic for a caf\u00e9 serving students.## Summary</span>\n<span class=\"paragraph\">By adjusting the order generation logic to weight morning and lunchtime hours more heavily, the synthetic data now reflects realistic caf\u00e9 traffic patterns. This makes the dashboard more useful for identifying true peak hours, which could help with staffing decisions or inventory planning in a real-world scenario.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "DGsp",
+      "code_hash": "22eb84104b87fdfdd6a5f2861a6f9529",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><ol start=\"4\">\n<li>Row Counts</li>\n</ol></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "dVDg",
+      "code_hash": "5ff13abdaac3c13d19cfc21052319c66",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='dVDg-0' random-id='82aaeb05-8972-791f-079f-b56fab097ebb'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;table_name&#92;&quot;:&#92;&quot;members&#92;&quot;,&#92;&quot;total_rows&#92;&quot;:50},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;products&#92;&quot;,&#92;&quot;total_rows&#92;&quot;:25},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;options&#92;&quot;,&#92;&quot;total_rows&#92;&quot;:10},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;orders&#92;&quot;,&#92;&quot;total_rows&#92;&quot;:1200},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;order_lines&#92;&quot;,&#92;&quot;total_rows&#92;&quot;:2405},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;line_options&#92;&quot;,&#92;&quot;total_rows&#92;&quot;:2122},{&#92;&quot;table_name&#92;&quot;:&#92;&quot;payments&#92;&quot;,&#92;&quot;total_rows&#92;&quot;:1513}]&quot;' data-total-rows='7' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;table_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;total_rows&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BdqZ",
       "code_hash": null,
       "outputs": [],
+      "console": []
+    },
+    {
+      "id": "cmFD",
+      "code_hash": "a883e82709a70428b9ea176e818c694e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Database refused the row:\nConstraint Error: CHECK constraint failed on table products with expression CHECK((price >= \"cost\"))\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "nYkS",
+      "code_hash": "b215f389703ce44056b681d0110b041d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Section 6: Answers You Already Knew</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "fLNd",
+      "code_hash": "e81dcd205c54a717c8054e6abf986f3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">I generated the data using make_data.py, so I already know the answers to these three questions before running the SQL queries.</span>\n<span class=\"paragraph\">How many loyalty members are there? I expect 50 because my script generated 50 members.</span>\n<span class=\"paragraph\">How many products are on the menu? I expect 25 because I included 25 menu items.</span>\n<span class=\"paragraph\">How many orders were generated? I expect 1,200 because my script created 1,200 orders.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "CuLl",
+      "code_hash": "ef706162ee2ce5513b767f0acf33b7a7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='CuLl-0' random-id='c607de7d-89bc-7d9f-6198-740f9e87d5c4'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;question&#92;&quot;:&#92;&quot;Members&#92;&quot;,&#92;&quot;actual&#92;&quot;:50},{&#92;&quot;question&#92;&quot;:&#92;&quot;Products&#92;&quot;,&#92;&quot;actual&#92;&quot;:25},{&#92;&quot;question&#92;&quot;:&#92;&quot;Orders&#92;&quot;,&#92;&quot;actual&#92;&quot;:1200}]&quot;' data-total-rows='3' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;question&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;actual&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "WpfB",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "GLHH",
+      "code_hash": "2e6fdbfc8a9142b271d0447e423b9f7b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='GLHH-0' random-id='583999f5-a87e-5867-b246-9590f4c1a204'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;product_id&#92;&quot;:4,&#92;&quot;name&#92;&quot;:&#92;&quot;Espresso&#92;&quot;,&#92;&quot;units_sold&#92;&quot;:&#92;&quot;218&#92;&quot;,&#92;&quot;revenue&#92;&quot;:&#92;&quot;1268.76&#92;&quot;},{&#92;&quot;product_id&#92;&quot;:22,&#92;&quot;name&#92;&quot;:&#92;&quot;Brownie&#92;&quot;,&#92;&quot;units_sold&#92;&quot;:&#92;&quot;195&#92;&quot;,&#92;&quot;revenue&#92;&quot;:&#92;&quot;1242.15&#92;&quot;},{&#92;&quot;product_id&#92;&quot;:15,&#92;&quot;name&#92;&quot;:&#92;&quot;Iced Tea&#92;&quot;,&#92;&quot;units_sold&#92;&quot;:&#92;&quot;190&#92;&quot;,&#92;&quot;revenue&#92;&quot;:&#92;&quot;1130.50&#92;&quot;},{&#92;&quot;product_id&#92;&quot;:23,&#92;&quot;name&#92;&quot;:&#92;&quot;Yogurt&#92;&quot;,&#92;&quot;units_sold&#92;&quot;:&#92;&quot;217&#92;&quot;,&#92;&quot;revenue&#92;&quot;:&#92;&quot;1113.21&#92;&quot;},{&#92;&quot;product_id&#92;&quot;:3,&#92;&quot;name&#92;&quot;:&#92;&quot;Americano&#92;&quot;,&#92;&quot;units_sold&#92;&quot;:&#92;&quot;205&#92;&quot;,&#92;&quot;revenue&#92;&quot;:&#92;&quot;1072.15&#92;&quot;},{&#92;&quot;product_id&#92;&quot;:21,&#92;&quot;name&#92;&quot;:&#92;&quot;Sandwich&#92;&quot;,&#92;&quot;units_sold&#92;&quot;:&#92;&quot;191&#92;&quot;,&#92;&quot;revenue&#92;&quot;:&#92;&quot;1042.86&#92;&quot;},{&#92;&quot;product_id&#92;&quot;:20,&#92;&quot;name&#92;&quot;:&#92;&quot;Banana Bread&#92;&quot;,&#92;&quot;units_sold&#92;&quot;:&#92;&quot;150&#92;&quot;,&#92;&quot;revenue&#92;&quot;:&#92;&quot;970.50&#92;&quot;},{&#92;&quot;product_id&#92;&quot;:9,&#92;&quot;name&#92;&quot;:&#92;&quot;Flat White&#92;&quot;,&#92;&quot;units_sold&#92;&quot;:&#92;&quot;191&#92;&quot;,&#92;&quot;revenue&#92;&quot;:&#92;&quot;962.64&#92;&quot;},{&#92;&quot;product_id&#92;&quot;:8,&#92;&quot;name&#92;&quot;:&#92;&quot;Macchiato&#92;&quot;,&#92;&quot;units_sold&#92;&quot;:&#92;&quot;174&#92;&quot;,&#92;&quot;revenue&#92;&quot;:&#92;&quot;903.06&#92;&quot;},{&#92;&quot;product_id&#92;&quot;:19,&#92;&quot;name&#92;&quot;:&#92;&quot;Chocolate Cookie&#92;&quot;,&#92;&quot;units_sold&#92;&quot;:&#92;&quot;200&#92;&quot;,&#92;&quot;revenue&#92;&quot;:&#92;&quot;902.00&#92;&quot;}]&quot;' data-total-rows='25' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;product_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;units_sold&quot;,[&quot;number&quot;,&quot;decimal[38,0]&quot;]],[&quot;revenue&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BajK",
+      "code_hash": "0a2ead9d34e6fed909b415211d64c206",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">I created a view called product_sales to track how many units of each product were sold and the revenue generated, excluding add-ons. Espresso had the highest product revenue at $1,268.76, followed by Brownie at $1,242.15. The caf\u00e9 can use this view regularly to see which products are generating the most sales without rewriting the SQL query.</span></span>"
+          }
+        }
+      ],
       "console": []
     }
   ]
