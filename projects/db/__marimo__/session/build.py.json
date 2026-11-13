@@ -32,12 +32,12 @@
     },
     {
       "id": "bkHC",
-      "code_hash": "59af904369153f779b4d5439f2906868",
+      "code_hash": "8ddd0ac11b4ba89878d5671bffe2c877",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><ol>\n<li>The Tables</li>\n</ol></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"1-the-tables\">1. The Tables</h2></span>"
           }
         }
       ],
@@ -116,12 +116,12 @@
     },
     {
       "id": "BYtC",
-      "code_hash": "9082fc2990d8bd6db4f537cde30b36c5",
+      "code_hash": "503e4c6bf9f14fa9727a28605a64704f",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><ol start=\"2\">\n<li>The Data</li>\n</ol></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"2-the-data\">2. The Data</h2></span>"
           }
         }
       ],
@@ -142,12 +142,12 @@
     },
     {
       "id": "pmCu",
-      "code_hash": "3c3bb66be094c6d4d337e2d5a2f26a1e",
+      "code_hash": "c70e8ddc63f2904db3bc30760af72c7a",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><ol start=\"3\">\n<li>A Look at the Data</li>\n</ol></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"3-a-look-at-the-data\">3. A Look at the Data</h2></span>"
           }
         }
       ],
@@ -187,12 +187,12 @@
     },
     {
       "id": "DGsp",
-      "code_hash": "22eb84104b87fdfdd6a5f2861a6f9529",
+      "code_hash": "d0aee121648ac328d023e8148a9df96d",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><ol start=\"4\">\n<li>Row Counts</li>\n</ol></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"4-row-counts\">4. Row Counts</h2></span>"
           }
         }
       ],
@@ -213,8 +213,15 @@
     },
     {
       "id": "BdqZ",
-      "code_hash": null,
-      "outputs": [],
+      "code_hash": "e67e54dc065f2ba39376e6c31fb27094",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"section-5-a-row-it-refuses\">Section 5: A Row It Refuses</h2></span>"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -239,12 +246,12 @@
     },
     {
       "id": "nYkS",
-      "code_hash": "b215f389703ce44056b681d0110b041d",
+      "code_hash": "be66818947bcc987143bac56479316ea",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Section 6: Answers You Already Knew</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"section-6-answers-you-already-knew\">Section 6: Answers You Already Knew</h2></span>"
           }
         }
       ],
@@ -278,8 +285,15 @@
     },
     {
       "id": "WpfB",
-      "code_hash": null,
-      "outputs": [],
+      "code_hash": "f2852c90d67cf798d61c7935bc42d2a8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"section-7-a-view\">Section 7: A View</h2></span>"
+          }
+        }
+      ],
       "console": []
     },
     {

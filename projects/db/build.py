@@ -24,7 +24,7 @@ def _():
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    1. The Tables
+    ## 1. The Tables
     """)
     return
 
@@ -227,7 +227,7 @@ def _():
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    2. The Data
+    ## 2. The Data
     """)
     return
 
@@ -249,7 +249,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    3. A Look at the Data
+    ## 3. A Look at the Data
     """)
     return
 
@@ -334,7 +334,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    4. Row Counts
+    ## 4. Row Counts
     """)
     return
 
@@ -362,7 +362,7 @@ def _(ask):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    5. A Row It Refuses
+    ## Section 5: A Row It Refuses
     """)
     return
 
@@ -385,7 +385,7 @@ def _(database, duckdb):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    Section 6: Answers You Already Knew
+    ## Section 6: Answers You Already Knew
     """)
     return
 
@@ -416,13 +416,11 @@ def _(ask):
     return
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
-    _df = mo.sql(
-        f"""
-        7. A View
-        """
-    )
+    mo.md(r"""
+    ## Section 7: A View
+    """)
     return
 
 

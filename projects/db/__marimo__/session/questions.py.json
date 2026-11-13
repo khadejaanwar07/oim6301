@@ -1,0 +1,48 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.24.2",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "GjyE",
+      "code_hash": "c0743783f8cac3d844d8d57f6f4df812",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "zfxs",
+      "code_hash": "6bbfd93cbdab0b27d4c1aaba42b6883b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"part-b-babson-bean-cafe\">Part B: Babson Bean Caf\u00e9</h1>\n<h2 id=\"1-business-questions\">1. Business Questions</h2>\n<h2 id=\"2-how-i-know-these-numbers-are-right\">2. How I Know These Numbers Are Right</h2>\n<h2 id=\"3-working-with-the-agent\">3. Working With the Agent</h2>\n<h2 id=\"4-reading-it-back\">4. Reading It Back</h2>\n<h2 id=\"5-going-further\">5. Going Further</h2>\n<h2 id=\"6-time-spent\">6. Time Spent</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
