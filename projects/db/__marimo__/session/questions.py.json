@@ -19,7 +19,7 @@
       "console": []
     },
     {
-      "id": "GjyE",
+      "id": "MJUe",
       "code_hash": "c0743783f8cac3d844d8d57f6f4df812",
       "outputs": [
         {
@@ -32,7 +32,7 @@
       "console": []
     },
     {
-      "id": "jlcU",
+      "id": "vblA",
       "code_hash": "0c47739df92e4a4428e9877632a576b1",
       "outputs": [
         {
@@ -45,33 +45,363 @@
       "console": []
     },
     {
-      "id": "zfxs",
-      "code_hash": "11941d6523d8403d70be358c4a5084cc",
+      "id": "bkHC",
+      "code_hash": "651f073552d60099eaeb660d2f79d260",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"part-b-babson-bean-cafe\">Part B: Babson Bean Caf\u00e9</h1>\n<h2 id=\"1-business-questions\">1. Business Questions</h2>\n<h2 id=\"2-how-i-know-these-numbers-are-right\">2. How I Know These Numbers Are Right</h2>\n<h2 id=\"3-working-with-the-agent\">3. Working With the Agent</h2>\n<h2 id=\"4-reading-it-back\">4. Reading It Back</h2>\n<span class=\"paragraph\">Prediction: Question 2</span>\n<span class=\"paragraph\">I chose Question 2, which calculates revenue, cost and margin by product category using the PRODUCTS, ORDER_LINES and LINE_OPTIONS tables.</span>\n<span class=\"paragraph\">I have 2,405 order lines and 2,122 line options. I predict the joins will produce around 3,500 rows before grouping. I'm using a LEFT JOIN because some order lines have multiple add-ons while others have none. This means every order line will appear at least once, and lines with multiple add-ons will appear more than once.</span>\n<span class=\"paragraph\">I'll compare my prediction with the actual number of rows and explain any difference.</span>\n<h2 id=\"5-going-further\">5. Going Further</h2>\n<h2 id=\"6-time-spent\">6. Time Spent</h2></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"part-b-babson-bean-cafe\">Part B: Babson Bean Caf\u00e9</h1>\n<h2 id=\"1-business-questions\">1. Business Questions</h2></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "DbKv",
+      "id": "lEQa",
+      "code_hash": "12c87f38175ee780e7d23f1b8f5a6b30",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"question-1-what-were-the-three-best-selling-products-last-month\">Question 1: What were the three best-selling products last month?</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "e022e18563f3cd656c3e4f49f3e3015b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='PKri-0' random-id='1c76f93e-6cb8-c393-786c-53d4bb28bb68'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;product&#92;&quot;:&#92;&quot;Flat White&#92;&quot;,&#92;&quot;units_sold&#92;&quot;:&#92;&quot;27&#92;&quot;},{&#92;&quot;product&#92;&quot;:&#92;&quot;Croissant&#92;&quot;,&#92;&quot;units_sold&#92;&quot;:&#92;&quot;27&#92;&quot;},{&#92;&quot;product&#92;&quot;:&#92;&quot;Cappuccino&#92;&quot;,&#92;&quot;units_sold&#92;&quot;:&#92;&quot;25&#92;&quot;}]&quot;' data-total-rows='3' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;product&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;units_sold&quot;,[&quot;number&quot;,&quot;decimal[38,0]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "f4e552b34a5a9d07684f0c39c8f32bec",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">In October 2026, Flat White and Croissant were the best-selling products with 27 units each, followed by Cappuccino with 25 units sold.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "719c3c86ad0495ef5e3fc6f2b31ce1ae",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"question-2-what-are-the-revenue-cost-and-margin-for-each-menu-category\">Question 2: What are the revenue, cost and margin for each menu category?</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "fcac52640dc19ee6cc7d7e5b8fd81f34",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='BYtC-0' random-id='a4a88b8f-dd85-028b-51b6-d29d366bbad6'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;category&#92;&quot;:&#92;&quot;coffee&#92;&quot;,&#92;&quot;total_revenue&#92;&quot;:&#92;&quot;10914.26&#92;&quot;,&#92;&quot;total_cost&#92;&quot;:&#92;&quot;3749.81&#92;&quot;,&#92;&quot;margin&#92;&quot;:&#92;&quot;7164.45&#92;&quot;},{&#92;&quot;category&#92;&quot;:&#92;&quot;food&#92;&quot;,&#92;&quot;total_revenue&#92;&quot;:&#92;&quot;7604.83&#92;&quot;,&#92;&quot;total_cost&#92;&quot;:&#92;&quot;3546.62&#92;&quot;,&#92;&quot;margin&#92;&quot;:&#92;&quot;4058.21&#92;&quot;},{&#92;&quot;category&#92;&quot;:&#92;&quot;tea&#92;&quot;,&#92;&quot;total_revenue&#92;&quot;:&#92;&quot;4731.56&#92;&quot;,&#92;&quot;total_cost&#92;&quot;:&#92;&quot;1891.55&#92;&quot;,&#92;&quot;margin&#92;&quot;:&#92;&quot;2840.01&#92;&quot;},{&#92;&quot;category&#92;&quot;:&#92;&quot;other&#92;&quot;,&#92;&quot;total_revenue&#92;&quot;:&#92;&quot;1328.87&#92;&quot;,&#92;&quot;total_cost&#92;&quot;:&#92;&quot;443.00&#92;&quot;,&#92;&quot;margin&#92;&quot;:&#92;&quot;885.87&#92;&quot;}]&quot;' data-total-rows='4' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;category&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;total_revenue&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;total_cost&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;margin&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "cc8f47d75514454a3d33b434a2d13dcb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Coffee generated the highest revenue at $10,914.26 and the highest margin at $7,164.45, followed by food with a margin of $4,058.21, tea at $2,840.01 and other products at $885.87. These figures include add-on revenue and costs.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "74da971b31f0f09dd545f6738615d728",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"question-3-which-loyalty-members-spend-more-than-the-average-member\">Question 3: Which loyalty members spend more than the average member?</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "4a0f7cb4660ad93fe3c4baf3bf3a2104",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='emfo-0' random-id='36da3b5c-e49e-dbf9-341f-2d7f38552a86'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;member_id&#92;&quot;:19,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member19&#92;&quot;,&#92;&quot;number_of_orders&#92;&quot;:27,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;621.54&#92;&quot;,&#92;&quot;average_order&#92;&quot;:23.02},{&#92;&quot;member_id&#92;&quot;:6,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member6&#92;&quot;,&#92;&quot;number_of_orders&#92;&quot;:25,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;578.48&#92;&quot;,&#92;&quot;average_order&#92;&quot;:23.14},{&#92;&quot;member_id&#92;&quot;:40,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member40&#92;&quot;,&#92;&quot;number_of_orders&#92;&quot;:30,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;556.35&#92;&quot;,&#92;&quot;average_order&#92;&quot;:18.55},{&#92;&quot;member_id&#92;&quot;:22,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member22&#92;&quot;,&#92;&quot;number_of_orders&#92;&quot;:24,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;536.38&#92;&quot;,&#92;&quot;average_order&#92;&quot;:22.35},{&#92;&quot;member_id&#92;&quot;:25,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member25&#92;&quot;,&#92;&quot;number_of_orders&#92;&quot;:23,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;509.32&#92;&quot;,&#92;&quot;average_order&#92;&quot;:22.14},{&#92;&quot;member_id&#92;&quot;:39,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member39&#92;&quot;,&#92;&quot;number_of_orders&#92;&quot;:22,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;506.28&#92;&quot;,&#92;&quot;average_order&#92;&quot;:23.01},{&#92;&quot;member_id&#92;&quot;:44,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member44&#92;&quot;,&#92;&quot;number_of_orders&#92;&quot;:21,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;498.19&#92;&quot;,&#92;&quot;average_order&#92;&quot;:23.72},{&#92;&quot;member_id&#92;&quot;:36,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member36&#92;&quot;,&#92;&quot;number_of_orders&#92;&quot;:23,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;497.67&#92;&quot;,&#92;&quot;average_order&#92;&quot;:21.64},{&#92;&quot;member_id&#92;&quot;:41,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member41&#92;&quot;,&#92;&quot;number_of_orders&#92;&quot;:29,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;491.62&#92;&quot;,&#92;&quot;average_order&#92;&quot;:16.95},{&#92;&quot;member_id&#92;&quot;:16,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member16&#92;&quot;,&#92;&quot;number_of_orders&#92;&quot;:23,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;491.25&#92;&quot;,&#92;&quot;average_order&#92;&quot;:21.36}]&quot;' data-total-rows='30' data-total-columns='5' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;member_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;first_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;number_of_orders&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;total_spent&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;average_order&quot;,[&quot;number&quot;,&quot;f64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "d72bb393ccb75500c28042cee691382f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Out of 50 loyalty members, 30 spent more than the average member. Member19 spent the most at $621.54 across 27 orders, followed by Member6 at $578.48 and Member40 at $556.35</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "2ca1703f605a441b63402874d9caafdf",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"question-4-do-all-orders-have-payments-that-match-their-total\">Question 4: Do all orders have payments that match their total?</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "iLit",
+      "code_hash": "672c962b91785f23cb5c8081eea94019",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='iLit-0' random-id='0034420d-8b7c-b06e-262e-56682a00a930'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;order_id&#92;&quot;:1,&#92;&quot;order_total&#92;&quot;:&#92;&quot;6.33&#92;&quot;,&#92;&quot;payment_total&#92;&quot;:&#92;&quot;7.33&#92;&quot;,&#92;&quot;difference&#92;&quot;:&#92;&quot;1.00&#92;&quot;},{&#92;&quot;order_id&#92;&quot;:2,&#92;&quot;order_total&#92;&quot;:&#92;&quot;29.98&#92;&quot;,&#92;&quot;payment_total&#92;&quot;:&#92;&quot;30.98&#92;&quot;,&#92;&quot;difference&#92;&quot;:&#92;&quot;1.00&#92;&quot;}]&quot;' data-total-rows='2' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;order_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;order_total&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;payment_total&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;difference&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "3942739110b925e743a991372f659da1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Out of 1,200 orders, two had payment totals that did not match their purchase amounts. Order 1 had a total of $6.33 but payments of $7.33, while Order 2 had a total of $29.98 but payments of $30.98. Both were overpaid by $1.00, matching the errors I intentionally added in make_data.py.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ROlb",
+      "code_hash": "1416bcda0d17b2fe78e296d18d9a415d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"question-5-which-loyalty-members-have-never-placed-an-order\">Question 5: Which loyalty members have never placed an order?</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "qnkX",
+      "code_hash": "54d0ed3568e44386aed84a438bd40598",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='qnkX-0' random-id='d0882eec-9d61-af36-29f5-8ec831011509'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;member_id&#92;&quot;:46,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member46&#92;&quot;,&#92;&quot;join_date&#92;&quot;:&#92;&quot;2025-07-26&#92;&quot;},{&#92;&quot;member_id&#92;&quot;:47,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member47&#92;&quot;,&#92;&quot;join_date&#92;&quot;:&#92;&quot;2025-01-11&#92;&quot;},{&#92;&quot;member_id&#92;&quot;:48,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member48&#92;&quot;,&#92;&quot;join_date&#92;&quot;:&#92;&quot;2025-02-14&#92;&quot;},{&#92;&quot;member_id&#92;&quot;:49,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member49&#92;&quot;,&#92;&quot;join_date&#92;&quot;:&#92;&quot;2025-07-05&#92;&quot;},{&#92;&quot;member_id&#92;&quot;:50,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member50&#92;&quot;,&#92;&quot;join_date&#92;&quot;:&#92;&quot;2025-04-21&#92;&quot;}]&quot;' data-total-rows='5' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;member_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;first_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;join_date&quot;,[&quot;date&quot;,&quot;date&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "qmJF",
+      "code_hash": "e5e469516af46e7b5d3f83d0851e69a6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Five loyalty members have never placed an order: Member46, Member47, Member48, Member49 and Member50. All five joined the loyalty program in 2025 but have not made a purchase.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "OEAn",
+      "code_hash": "f976b277ef2a4d85ed09ad3e91d43140",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"question-6-what-percentage-of-orders-were-paid-at-least-partly-with-loyalty-points-each-month\">Question 6: What percentage of orders were paid at least partly with loyalty points each month?</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "GiAR",
+      "code_hash": "99c3a1c22854ff536e83c63d5000664a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='GiAR-0' random-id='381ef7e5-d6f4-cc75-fa81-05f5e6e49b6a'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;month&#92;&quot;:&#92;&quot;2025-11&#92;&quot;,&#92;&quot;total_orders&#92;&quot;:92,&#92;&quot;orders_using_points&#92;&quot;:38,&#92;&quot;points_percentage&#92;&quot;:41.3},{&#92;&quot;month&#92;&quot;:&#92;&quot;2025-12&#92;&quot;,&#92;&quot;total_orders&#92;&quot;:94,&#92;&quot;orders_using_points&#92;&quot;:47,&#92;&quot;points_percentage&#92;&quot;:50.0},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-01&#92;&quot;,&#92;&quot;total_orders&#92;&quot;:102,&#92;&quot;orders_using_points&#92;&quot;:44,&#92;&quot;points_percentage&#92;&quot;:43.14},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-02&#92;&quot;,&#92;&quot;total_orders&#92;&quot;:85,&#92;&quot;orders_using_points&#92;&quot;:37,&#92;&quot;points_percentage&#92;&quot;:43.53},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-03&#92;&quot;,&#92;&quot;total_orders&#92;&quot;:101,&#92;&quot;orders_using_points&#92;&quot;:49,&#92;&quot;points_percentage&#92;&quot;:48.51},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-04&#92;&quot;,&#92;&quot;total_orders&#92;&quot;:120,&#92;&quot;orders_using_points&#92;&quot;:50,&#92;&quot;points_percentage&#92;&quot;:41.67},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-05&#92;&quot;,&#92;&quot;total_orders&#92;&quot;:96,&#92;&quot;orders_using_points&#92;&quot;:35,&#92;&quot;points_percentage&#92;&quot;:36.46},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-06&#92;&quot;,&#92;&quot;total_orders&#92;&quot;:111,&#92;&quot;orders_using_points&#92;&quot;:50,&#92;&quot;points_percentage&#92;&quot;:45.05},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-07&#92;&quot;,&#92;&quot;total_orders&#92;&quot;:97,&#92;&quot;orders_using_points&#92;&quot;:49,&#92;&quot;points_percentage&#92;&quot;:50.52},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-08&#92;&quot;,&#92;&quot;total_orders&#92;&quot;:89,&#92;&quot;orders_using_points&#92;&quot;:37,&#92;&quot;points_percentage&#92;&quot;:41.57}]&quot;' data-total-rows='12' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;month&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;total_orders&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;orders_using_points&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;points_percentage&quot;,[&quot;number&quot;,&quot;f64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "XOJP",
+      "code_hash": "a6998cea3fce803b2678d086ad527a21",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">The share of orders paid at least partly with loyalty points varied by month. July 2026 had the highest share at 50.52%, with 49 out of 97 orders using points. In comparison, May 2026 had a lower share of 36.46%. This shows that loyalty point usage fluctuated throughout the year.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "azzT",
+      "code_hash": "cc3f3bc8fd8020354c104cc5497f8bc0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"question-7-which-products-have-not-sold-in-the-last-60-days\">Question 7: Which products have not sold in the last 60 days?</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lvGa",
+      "code_hash": "8304a009f96cbf5f4bb0767c58c9d59c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='lvGa-0' random-id='99608982-0356-9587-b746-6109bf51ccaf'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[]&quot;' data-total-rows='0' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;product_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;category&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;available_today&quot;,[&quot;boolean&quot;,&quot;bool&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TqIu",
+      "code_hash": "2380f3148782943c67011ae8c2752c49",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"2-how-i-know-these-numbers-are-right\">2. How I Know These Numbers Are Right</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Vxnm",
       "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "DnEU",
+      "code_hash": "77a90dd897bb13c03399ad9749feead8",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/plain": ""
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"3-working-with-the-agent\">3. Working With the Agent</h2></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "NmeQ",
+      "id": "ulZA",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ecfG",
+      "code_hash": "1b579b37d00af2794c77595980c5fcd3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"4-reading-it-back\">4. Reading It Back</h2>\n<span class=\"paragraph\">Prediction: Question 2</span>\n<span class=\"paragraph\">I chose Question 2, which calculates revenue, cost and margin by product category using the PRODUCTS, ORDER_LINES and LINE_OPTIONS tables.</span>\n<span class=\"paragraph\">I have 2,405 order lines and 2,122 line options. I predict the joins will produce around 3,500 rows before grouping. I'm using a LEFT JOIN because some order lines have multiple add-ons while others have none. This means every order line will appear at least once, and lines with multiple add-ons will appear more than once.</span>\n<span class=\"paragraph\">I'll compare my prediction with the actual number of rows and explain any difference.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Pvdt",
+      "code_hash": "f687522e66ff542007d200288da71419",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"5-going-further\">5. Going Further</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZBYS",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "aLJB",
+      "code_hash": "1eb1d63fef601159438a5186cd227687",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"6-time-spent\">6. Time Spent</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nHfw",
       "code_hash": null,
       "outputs": [],
       "console": []

@@ -165,7 +165,7 @@ for i in range(1, 1201):
     )
 
     # Some customers are loyalty members, others are not
-    member_id = random.randint(1, 50) if random.random() < 0.75 else ""
+    member_id = random.randint(1, 45) if random.random() < 0.75 else ""
 
     # Orders can be placed at the counter or through the app
     channel = random.choice(["counter", "app"])
@@ -198,7 +198,7 @@ for order in orders:
     num_lines = random.randint(1, 3)
 
     # Choose products without repeating them in the same order
-    selected_products = random.sample(products, num_lines)
+    selected_products = random.sample(products[:-2], num_lines)
 
     for product in selected_products:
         product_id = product[0]
