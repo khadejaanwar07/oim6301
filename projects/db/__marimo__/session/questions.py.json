@@ -32,16 +32,48 @@
       "console": []
     },
     {
-      "id": "zfxs",
-      "code_hash": "6bbfd93cbdab0b27d4c1aaba42b6883b",
+      "id": "jlcU",
+      "code_hash": "0c47739df92e4a4428e9877632a576b1",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"part-b-babson-bean-cafe\">Part B: Babson Bean Caf\u00e9</h1>\n<h2 id=\"1-business-questions\">1. Business Questions</h2>\n<h2 id=\"2-how-i-know-these-numbers-are-right\">2. How I Know These Numbers Are Right</h2>\n<h2 id=\"3-working-with-the-agent\">3. Working With the Agent</h2>\n<h2 id=\"4-reading-it-back\">4. Reading It Back</h2>\n<h2 id=\"5-going-further\">5. Going Further</h2>\n<h2 id=\"6-time-spent\">6. Time Spent</h2></span>"
+            "text/plain": ""
           }
         }
       ],
+      "console": []
+    },
+    {
+      "id": "zfxs",
+      "code_hash": "11941d6523d8403d70be358c4a5084cc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"part-b-babson-bean-cafe\">Part B: Babson Bean Caf\u00e9</h1>\n<h2 id=\"1-business-questions\">1. Business Questions</h2>\n<h2 id=\"2-how-i-know-these-numbers-are-right\">2. How I Know These Numbers Are Right</h2>\n<h2 id=\"3-working-with-the-agent\">3. Working With the Agent</h2>\n<h2 id=\"4-reading-it-back\">4. Reading It Back</h2>\n<span class=\"paragraph\">Prediction: Question 2</span>\n<span class=\"paragraph\">I chose Question 2, which calculates revenue, cost and margin by product category using the PRODUCTS, ORDER_LINES and LINE_OPTIONS tables.</span>\n<span class=\"paragraph\">I have 2,405 order lines and 2,122 line options. I predict the joins will produce around 3,500 rows before grouping. I'm using a LEFT JOIN because some order lines have multiple add-ons while others have none. This means every order line will appear at least once, and lines with multiple add-ons will appear more than once.</span>\n<span class=\"paragraph\">I'll compare my prediction with the actual number of rows and explain any difference.</span>\n<h2 id=\"5-going-further\">5. Going Further</h2>\n<h2 id=\"6-time-spent\">6. Time Spent</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "DbKv",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "NmeQ",
+      "code_hash": null,
+      "outputs": [],
       "console": []
     }
   ]
