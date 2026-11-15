@@ -553,12 +553,12 @@
     },
     {
       "id": "CcZR",
-      "code_hash": "1eb1d63fef601159438a5186cd227687",
+      "code_hash": "2c9846fe6913135a2cd74458f3c30b52",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"6-time-spent\">6. Time Spent</h2></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"time-spent\">Time Spent</h2></span>"
           }
         }
       ],

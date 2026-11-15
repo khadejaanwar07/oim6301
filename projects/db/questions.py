@@ -833,7 +833,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    ## 6. Time Spent
+    ## Time Spent
     """)
     return
 
