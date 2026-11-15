@@ -705,11 +705,11 @@ def _(ask):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    I originally predicted approximately 3,500 joined rows. After running the query against the final database, the actual number was [insert result].
+    I predicted that joining the PRODUCTS, ORDER_LINES and LINE_OPTIONS tables would produce around 3,500 rows. The actual result was 3,490 rows, which was only 10 fewer than my prediction.
 
-    The join creates more rows than the ORDER_LINES table contains because order lines with multiple add-ons appear once for each add-on. Lines without add-ons are still included because of the LEFT JOIN.
+    The number of rows increases because some order lines have multiple add-ons, so they appear more than once after the join. I used a LEFT JOIN to include order lines without add-ons.
 
-    The final result for Question 2 has one row per menu category, showing its revenue, cost and margin.
+    For Question 2, the final result has one row per menu category, showing total revenue, cost and margin. The query uses the `product_sales` view for product revenue and calculates add-ons separately to avoid counting product revenue more than once.
     """)
     return
 
@@ -756,7 +756,7 @@ def _(as_of, ask, mo):
                 2
             ) AS points_percentage
         FROM orders o
-       WHERE o.ordered_at < DATE '{as_of}' + INTERVAL '1 day'
+       WHERE o.ordered_at < DATE '{as_of}'
         GROUP BY STRFTIME(o.ordered_at, '%Y-%m')
         ORDER BY month
     """)
@@ -825,7 +825,7 @@ def _(as_of, ask, mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    I created a chart to see how often customers used loyalty points throughout the year. The percentage varied across the months, showing that customers did not use their points at the same rate every month. This chart makes it easier to compare loyalty point usage over time.
+    I created a chart to see how often customers used loyalty points throughout the year. Usage varied by month, with May 2026 reaching 54.17% compared with 36.47% in February. This made it easier to see how customer use of loyalty points changed over time.
     """)
     return
 

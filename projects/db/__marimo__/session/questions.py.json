@@ -393,7 +393,14 @@
     {
       "id": "yCnT",
       "code_hash": "a144d66cf18977acc61a7c64b72685f2",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='yCnT-0' random-id='2ff5f77e-dbd7-7a3c-95a6-0642ccf5bfa0'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;channel_revenue&#92;&quot;:&#92;&quot;24775.09&#92;&quot;,&#92;&quot;independent_revenue&#92;&quot;:&#92;&quot;24775.09&#92;&quot;,&#92;&quot;difference&#92;&quot;:&#92;&quot;0.00&#92;&quot;,&#92;&quot;numbers_match&#92;&quot;:true}]&quot;' data-total-rows='1' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;channel_revenue&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;independent_revenue&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;difference&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;numbers_match&quot;,[&quot;boolean&quot;,&quot;bool&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
       "console": []
     },
     {
@@ -470,17 +477,24 @@
     {
       "id": "lgWD",
       "code_hash": "8f141a08f3e22a4d3dbd4454121d0d60",
-      "outputs": [],
-      "console": []
-    },
-    {
-      "id": "yOPj",
-      "code_hash": "9b2ef79ec6b4b6edcb87c3c44321cab0",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">I originally predicted approximately 3,500 joined rows. After running the query against the final database, the actual number was [insert result].</span>\n<span class=\"paragraph\">The join creates more rows than the ORDER_LINES table contains because order lines with multiple add-ons appear once for each add-on. Lines without add-ons are still included because of the LEFT JOIN.</span>\n<span class=\"paragraph\">The final result for Question 2 has one row per menu category, showing its revenue, cost and margin.</span></span>"
+            "text/html": "<marimo-ui-element object-id='lgWD-0' random-id='dc2f677e-4326-b9bf-c665-37f5e82ab816'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;actual_joined_rows&#92;&quot;:3490}]&quot;' data-total-rows='1' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;actual_joined_rows&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "yOPj",
+      "code_hash": "2c570e647c38c0b8e904bf025473c29a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">I predicted that joining the PRODUCTS, ORDER_LINES and LINE_OPTIONS tables would produce around 3,500 rows. The actual result was 3,490 rows, which was only 10 fewer than my prediction.</span>\n<span class=\"paragraph\">The number of rows increases because some order lines have multiple add-ons, so they appear more than once after the join. I used a LEFT JOIN to include order lines without add-ons.</span>\n<span class=\"paragraph\">For Question 2, the final result has one row per menu category, showing total revenue, cost and margin. The query uses the <code>product_sales</code> view for product revenue and calculates add-ons separately to avoid counting product revenue more than once.</span></span>"
           }
         }
       ],
@@ -520,18 +534,18 @@
     },
     {
       "id": "jxvo",
-      "code_hash": "8f13619904667533ebaf93050d051b39",
+      "code_hash": "e10de47fb225d4e595ee3816fd330aba",
       "outputs": [],
       "console": []
     },
     {
       "id": "mWxS",
-      "code_hash": "01759c3753e2cf8c0ed92a480e5c7bb1",
+      "code_hash": "51dbf7bcf32e2859ce9728555fa6b8b8",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">I created a chart to see how often customers used loyalty points throughout the year. The percentage varied across the months, showing that customers did not use their points at the same rate every month. This chart makes it easier to compare loyalty point usage over time.</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">I created a chart to see how often customers used loyalty points throughout the year. Usage varied by month, with May 2026 reaching 54.17% compared with 36.47% in February. This made it easier to see how customer use of loyalty points changed over time.</span></span>"
           }
         }
       ],
