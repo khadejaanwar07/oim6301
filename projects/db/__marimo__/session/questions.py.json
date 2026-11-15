@@ -46,12 +46,12 @@
     },
     {
       "id": "bkHC",
-      "code_hash": "651f073552d60099eaeb660d2f79d260",
+      "code_hash": "a07da189f7506e29da64fddfab9d77d5",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"part-b-babson-bean-cafe\">Part B: Babson Bean Caf\u00e9</h1>\n<h2 id=\"1-business-questions\">1. Business Questions</h2></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"part-b-babson-bean-cafe\">Part B: Babson Bean Caf\u00e9</h1>\n<h2 id=\"business-questions\">Business Questions</h2></span>"
           }
         }
       ],
@@ -73,24 +73,17 @@
     {
       "id": "PKri",
       "code_hash": "e022e18563f3cd656c3e4f49f3e3015b",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<marimo-ui-element object-id='PKri-0' random-id='1c76f93e-6cb8-c393-786c-53d4bb28bb68'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;product&#92;&quot;:&#92;&quot;Flat White&#92;&quot;,&#92;&quot;units_sold&#92;&quot;:&#92;&quot;27&#92;&quot;},{&#92;&quot;product&#92;&quot;:&#92;&quot;Croissant&#92;&quot;,&#92;&quot;units_sold&#92;&quot;:&#92;&quot;27&#92;&quot;},{&#92;&quot;product&#92;&quot;:&#92;&quot;Cappuccino&#92;&quot;,&#92;&quot;units_sold&#92;&quot;:&#92;&quot;25&#92;&quot;}]&quot;' data-total-rows='3' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;product&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;units_sold&quot;,[&quot;number&quot;,&quot;decimal[38,0]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "Xref",
-      "code_hash": "f4e552b34a5a9d07684f0c39c8f32bec",
+      "code_hash": "f0d02145a9b02a5ed65e7c3c0345e6f1",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">In October 2026, Flat White and Croissant were the best-selling products with 27 units each, followed by Cappuccino with 25 units sold.</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">In October 2026, Mocha was the best-selling product with 35 units sold, followed by Drip Coffee with 33 units and Blueberry Muffin with 30 units.</span></span>"
           }
         }
       ],
@@ -111,25 +104,18 @@
     },
     {
       "id": "BYtC",
-      "code_hash": "fcac52640dc19ee6cc7d7e5b8fd81f34",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<marimo-ui-element object-id='BYtC-0' random-id='a4a88b8f-dd85-028b-51b6-d29d366bbad6'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;category&#92;&quot;:&#92;&quot;coffee&#92;&quot;,&#92;&quot;total_revenue&#92;&quot;:&#92;&quot;10914.26&#92;&quot;,&#92;&quot;total_cost&#92;&quot;:&#92;&quot;3749.81&#92;&quot;,&#92;&quot;margin&#92;&quot;:&#92;&quot;7164.45&#92;&quot;},{&#92;&quot;category&#92;&quot;:&#92;&quot;food&#92;&quot;,&#92;&quot;total_revenue&#92;&quot;:&#92;&quot;7604.83&#92;&quot;,&#92;&quot;total_cost&#92;&quot;:&#92;&quot;3546.62&#92;&quot;,&#92;&quot;margin&#92;&quot;:&#92;&quot;4058.21&#92;&quot;},{&#92;&quot;category&#92;&quot;:&#92;&quot;tea&#92;&quot;,&#92;&quot;total_revenue&#92;&quot;:&#92;&quot;4731.56&#92;&quot;,&#92;&quot;total_cost&#92;&quot;:&#92;&quot;1891.55&#92;&quot;,&#92;&quot;margin&#92;&quot;:&#92;&quot;2840.01&#92;&quot;},{&#92;&quot;category&#92;&quot;:&#92;&quot;other&#92;&quot;,&#92;&quot;total_revenue&#92;&quot;:&#92;&quot;1328.87&#92;&quot;,&#92;&quot;total_cost&#92;&quot;:&#92;&quot;443.00&#92;&quot;,&#92;&quot;margin&#92;&quot;:&#92;&quot;885.87&#92;&quot;}]&quot;' data-total-rows='4' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;category&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;total_revenue&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;total_cost&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;margin&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
-          }
-        }
-      ],
+      "code_hash": "a427c9b3b05cfa21469d362e805bc8e1",
+      "outputs": [],
       "console": []
     },
     {
       "id": "RGSE",
-      "code_hash": "cc8f47d75514454a3d33b434a2d13dcb",
+      "code_hash": "02ca3567c0202b3495040439d90ad62c",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Coffee generated the highest revenue at $10,914.26 and the highest margin at $7,164.45, followed by food with a margin of $4,058.21, tea at $2,840.01 and other products at $885.87. These figures include add-on revenue and costs.</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Coffee generated the highest revenue at $11,495.74 and the highest margin at $7,568.84, followed by food with a margin of $4,459.65 and tea at $2,937.79. The other category had no sales. I used the product_sales view from Part A to calculate product revenue and added the revenue and costs from options separately.</span></span>"
           }
         }
       ],
@@ -151,24 +137,17 @@
     {
       "id": "emfo",
       "code_hash": "4a0f7cb4660ad93fe3c4baf3bf3a2104",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<marimo-ui-element object-id='emfo-0' random-id='36da3b5c-e49e-dbf9-341f-2d7f38552a86'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;member_id&#92;&quot;:19,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member19&#92;&quot;,&#92;&quot;number_of_orders&#92;&quot;:27,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;621.54&#92;&quot;,&#92;&quot;average_order&#92;&quot;:23.02},{&#92;&quot;member_id&#92;&quot;:6,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member6&#92;&quot;,&#92;&quot;number_of_orders&#92;&quot;:25,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;578.48&#92;&quot;,&#92;&quot;average_order&#92;&quot;:23.14},{&#92;&quot;member_id&#92;&quot;:40,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member40&#92;&quot;,&#92;&quot;number_of_orders&#92;&quot;:30,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;556.35&#92;&quot;,&#92;&quot;average_order&#92;&quot;:18.55},{&#92;&quot;member_id&#92;&quot;:22,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member22&#92;&quot;,&#92;&quot;number_of_orders&#92;&quot;:24,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;536.38&#92;&quot;,&#92;&quot;average_order&#92;&quot;:22.35},{&#92;&quot;member_id&#92;&quot;:25,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member25&#92;&quot;,&#92;&quot;number_of_orders&#92;&quot;:23,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;509.32&#92;&quot;,&#92;&quot;average_order&#92;&quot;:22.14},{&#92;&quot;member_id&#92;&quot;:39,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member39&#92;&quot;,&#92;&quot;number_of_orders&#92;&quot;:22,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;506.28&#92;&quot;,&#92;&quot;average_order&#92;&quot;:23.01},{&#92;&quot;member_id&#92;&quot;:44,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member44&#92;&quot;,&#92;&quot;number_of_orders&#92;&quot;:21,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;498.19&#92;&quot;,&#92;&quot;average_order&#92;&quot;:23.72},{&#92;&quot;member_id&#92;&quot;:36,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member36&#92;&quot;,&#92;&quot;number_of_orders&#92;&quot;:23,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;497.67&#92;&quot;,&#92;&quot;average_order&#92;&quot;:21.64},{&#92;&quot;member_id&#92;&quot;:41,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member41&#92;&quot;,&#92;&quot;number_of_orders&#92;&quot;:29,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;491.62&#92;&quot;,&#92;&quot;average_order&#92;&quot;:16.95},{&#92;&quot;member_id&#92;&quot;:16,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member16&#92;&quot;,&#92;&quot;number_of_orders&#92;&quot;:23,&#92;&quot;total_spent&#92;&quot;:&#92;&quot;491.25&#92;&quot;,&#92;&quot;average_order&#92;&quot;:21.36}]&quot;' data-total-rows='30' data-total-columns='5' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;member_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;first_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;number_of_orders&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;total_spent&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;average_order&quot;,[&quot;number&quot;,&quot;f64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "Hstk",
-      "code_hash": "d72bb393ccb75500c28042cee691382f",
+      "code_hash": "cda24769d5cf95e22f1f7cb373389654",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Out of 50 loyalty members, 30 spent more than the average member. Member19 spent the most at $621.54 across 27 orders, followed by Member6 at $578.48 and Member40 at $556.35</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Out of 50 loyalty members, 32 spent more than the average member. Member40 spent the most at $685.34 across 30 orders, followed by Member41 at $612.99 and Member29 at $601.24.</span></span>"
           }
         }
       ],
@@ -190,24 +169,17 @@
     {
       "id": "iLit",
       "code_hash": "672c962b91785f23cb5c8081eea94019",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<marimo-ui-element object-id='iLit-0' random-id='0034420d-8b7c-b06e-262e-56682a00a930'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;order_id&#92;&quot;:1,&#92;&quot;order_total&#92;&quot;:&#92;&quot;6.33&#92;&quot;,&#92;&quot;payment_total&#92;&quot;:&#92;&quot;7.33&#92;&quot;,&#92;&quot;difference&#92;&quot;:&#92;&quot;1.00&#92;&quot;},{&#92;&quot;order_id&#92;&quot;:2,&#92;&quot;order_total&#92;&quot;:&#92;&quot;29.98&#92;&quot;,&#92;&quot;payment_total&#92;&quot;:&#92;&quot;30.98&#92;&quot;,&#92;&quot;difference&#92;&quot;:&#92;&quot;1.00&#92;&quot;}]&quot;' data-total-rows='2' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;order_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;order_total&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;payment_total&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]],[&quot;difference&quot;,[&quot;number&quot;,&quot;decimal[38,2]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "ZHCJ",
-      "code_hash": "3942739110b925e743a991372f659da1",
+      "code_hash": "e4faa82c1df6ad7012ab99b19bd3f53a",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Out of 1,200 orders, two had payment totals that did not match their purchase amounts. Order 1 had a total of $6.33 but payments of $7.33, while Order 2 had a total of $29.98 but payments of $30.98. Both were overpaid by $1.00, matching the errors I intentionally added in make_data.py.</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Out of 1,200 orders, two had payment totals that did not match their purchase amounts. Order 1 had a total of $5.24 but payments of $6.24, while Order 2 had a total of $38.50 but payments of $39.50. Both were overpaid by $1.00, matching the errors I intentionally added in <code>make_data.py</code>.</span></span>"
           }
         }
       ],
@@ -229,18 +201,11 @@
     {
       "id": "qnkX",
       "code_hash": "54d0ed3568e44386aed84a438bd40598",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<marimo-ui-element object-id='qnkX-0' random-id='d0882eec-9d61-af36-29f5-8ec831011509'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;member_id&#92;&quot;:46,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member46&#92;&quot;,&#92;&quot;join_date&#92;&quot;:&#92;&quot;2025-07-26&#92;&quot;},{&#92;&quot;member_id&#92;&quot;:47,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member47&#92;&quot;,&#92;&quot;join_date&#92;&quot;:&#92;&quot;2025-01-11&#92;&quot;},{&#92;&quot;member_id&#92;&quot;:48,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member48&#92;&quot;,&#92;&quot;join_date&#92;&quot;:&#92;&quot;2025-02-14&#92;&quot;},{&#92;&quot;member_id&#92;&quot;:49,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member49&#92;&quot;,&#92;&quot;join_date&#92;&quot;:&#92;&quot;2025-07-05&#92;&quot;},{&#92;&quot;member_id&#92;&quot;:50,&#92;&quot;first_name&#92;&quot;:&#92;&quot;Member50&#92;&quot;,&#92;&quot;join_date&#92;&quot;:&#92;&quot;2025-04-21&#92;&quot;}]&quot;' data-total-rows='5' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;member_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;first_name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;join_date&quot;,[&quot;date&quot;,&quot;date&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
-      "id": "qmJF",
+      "id": "TqIu",
       "code_hash": "e5e469516af46e7b5d3f83d0851e69a6",
       "outputs": [
         {
@@ -253,7 +218,7 @@
       "console": []
     },
     {
-      "id": "OEAn",
+      "id": "Vxnm",
       "code_hash": "f976b277ef2a4d85ed09ad3e91d43140",
       "outputs": [
         {
@@ -266,33 +231,26 @@
       "console": []
     },
     {
-      "id": "GiAR",
-      "code_hash": "99c3a1c22854ff536e83c63d5000664a",
+      "id": "DnEU",
+      "code_hash": "d8ffe949ed7f0c298fdc6e78c8801565",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ulZA",
+      "code_hash": "9d5e2e2419b8b4c742c976203ac73eea",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='GiAR-0' random-id='381ef7e5-d6f4-cc75-fa81-05f5e6e49b6a'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;month&#92;&quot;:&#92;&quot;2025-11&#92;&quot;,&#92;&quot;total_orders&#92;&quot;:92,&#92;&quot;orders_using_points&#92;&quot;:38,&#92;&quot;points_percentage&#92;&quot;:41.3},{&#92;&quot;month&#92;&quot;:&#92;&quot;2025-12&#92;&quot;,&#92;&quot;total_orders&#92;&quot;:94,&#92;&quot;orders_using_points&#92;&quot;:47,&#92;&quot;points_percentage&#92;&quot;:50.0},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-01&#92;&quot;,&#92;&quot;total_orders&#92;&quot;:102,&#92;&quot;orders_using_points&#92;&quot;:44,&#92;&quot;points_percentage&#92;&quot;:43.14},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-02&#92;&quot;,&#92;&quot;total_orders&#92;&quot;:85,&#92;&quot;orders_using_points&#92;&quot;:37,&#92;&quot;points_percentage&#92;&quot;:43.53},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-03&#92;&quot;,&#92;&quot;total_orders&#92;&quot;:101,&#92;&quot;orders_using_points&#92;&quot;:49,&#92;&quot;points_percentage&#92;&quot;:48.51},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-04&#92;&quot;,&#92;&quot;total_orders&#92;&quot;:120,&#92;&quot;orders_using_points&#92;&quot;:50,&#92;&quot;points_percentage&#92;&quot;:41.67},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-05&#92;&quot;,&#92;&quot;total_orders&#92;&quot;:96,&#92;&quot;orders_using_points&#92;&quot;:35,&#92;&quot;points_percentage&#92;&quot;:36.46},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-06&#92;&quot;,&#92;&quot;total_orders&#92;&quot;:111,&#92;&quot;orders_using_points&#92;&quot;:50,&#92;&quot;points_percentage&#92;&quot;:45.05},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-07&#92;&quot;,&#92;&quot;total_orders&#92;&quot;:97,&#92;&quot;orders_using_points&#92;&quot;:49,&#92;&quot;points_percentage&#92;&quot;:50.52},{&#92;&quot;month&#92;&quot;:&#92;&quot;2026-08&#92;&quot;,&#92;&quot;total_orders&#92;&quot;:89,&#92;&quot;orders_using_points&#92;&quot;:37,&#92;&quot;points_percentage&#92;&quot;:41.57}]&quot;' data-total-rows='12' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;month&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;total_orders&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;orders_using_points&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;points_percentage&quot;,[&quot;number&quot;,&quot;f64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">The share of orders paid at least partly with loyalty points varied by month. In May 2026, 54.17% of orders (52 out of 96) used loyalty points, compared with 36.47% in February 2026. This shows that loyalty point usage changed throughout the year.</span></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "XOJP",
-      "code_hash": "a6998cea3fce803b2678d086ad527a21",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">The share of orders paid at least partly with loyalty points varied by month. July 2026 had the highest share at 50.52%, with 49 out of 97 orders using points. In comparison, May 2026 had a lower share of 36.46%. This shows that loyalty point usage fluctuated throughout the year.</span></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "azzT",
+      "id": "ecfG",
       "code_hash": "cc3f3bc8fd8020354c104cc5497f8bc0",
       "outputs": [
         {
@@ -305,90 +263,282 @@
       "console": []
     },
     {
-      "id": "lvGa",
-      "code_hash": "8304a009f96cbf5f4bb0767c58c9d59c",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<marimo-ui-element object-id='lvGa-0' random-id='99608982-0356-9587-b746-6109bf51ccaf'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[]&quot;' data-total-rows='0' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;product_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;category&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;available_today&quot;,[&quot;boolean&quot;,&quot;bool&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "TqIu",
-      "code_hash": "2380f3148782943c67011ae8c2752c49",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"2-how-i-know-these-numbers-are-right\">2. How I Know These Numbers Are Right</h2></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "Vxnm",
-      "code_hash": null,
-      "outputs": [],
-      "console": []
-    },
-    {
-      "id": "DnEU",
-      "code_hash": "77a90dd897bb13c03399ad9749feead8",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"3-working-with-the-agent\">3. Working With the Agent</h2></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "ulZA",
-      "code_hash": null,
-      "outputs": [],
-      "console": []
-    },
-    {
-      "id": "ecfG",
-      "code_hash": "1b579b37d00af2794c77595980c5fcd3",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"4-reading-it-back\">4. Reading It Back</h2>\n<span class=\"paragraph\">Prediction: Question 2</span>\n<span class=\"paragraph\">I chose Question 2, which calculates revenue, cost and margin by product category using the PRODUCTS, ORDER_LINES and LINE_OPTIONS tables.</span>\n<span class=\"paragraph\">I have 2,405 order lines and 2,122 line options. I predict the joins will produce around 3,500 rows before grouping. I'm using a LEFT JOIN because some order lines have multiple add-ons while others have none. This means every order line will appear at least once, and lines with multiple add-ons will appear more than once.</span>\n<span class=\"paragraph\">I'll compare my prediction with the actual number of rows and explain any difference.</span></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
       "id": "Pvdt",
-      "code_hash": "f687522e66ff542007d200288da71419",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"5-going-further\">5. Going Further</h2></span>"
-          }
-        }
-      ],
+      "code_hash": "8304a009f96cbf5f4bb0767c58c9d59c",
+      "outputs": [],
       "console": []
     },
     {
       "id": "ZBYS",
+      "code_hash": "54d354383915fb412f865314ed8eecd1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Bottled Water and Orange Juice had no sales in the 60-day period ending November 1, 2026. Both products are currently unavailable and had no recorded sales during that period.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "aLJB",
+      "code_hash": "77eeb1cde09192cccbbe2f8be0bb0019",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"question-8-what-is-the-average-number-of-add-ons-per-order-line-for-each-coffee-and-tea-product\">Question 8: What is the average number of add-ons per order line for each coffee and tea product?</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nHfw",
+      "code_hash": "33c17eeef3e1dc04269e5290e873f904",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "xXTn",
+      "code_hash": "563ec7fc93107b7c73a69e588adbbf4a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Cold Brew had the highest average number of add-ons at 1.63 per order line, followed by Espresso at 1.61. Black Tea and Mocha both averaged 1.54 add-ons per line. These averages include orders where customers selected no add-ons.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "AjVT",
+      "code_hash": "c4f63f06798c20aa6daa59e400033e6c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"question-9-which-ordering-channel-generates-more-sales-revenue\">Question 9: Which ordering channel generates more sales revenue?</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "pHFh",
+      "code_hash": "4522958dff6b0346c9db871f784f2140",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "NCOB",
+      "code_hash": "7d7f76409479ee15820a118874699fc3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Counter orders generated more revenue at $12,522.14 compared with $12,252.95 from app orders, despite the app receiving more orders (609 versus 591). Counter orders also had a higher average value of $21.19 compared with $20.12 for app orders.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "aqbW",
+      "code_hash": "f0c4fd643845fb4fab9a7ab4b4798d97",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"question-10-which-day-of-the-week-has-the-highest-average-number-of-orders-on-days-with-sales\">Question 10: Which day of the week has the highest average number of orders on days with sales?</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TRpd",
+      "code_hash": "5ec0c0246ad088b538ff1002b272f08c",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "TXez",
+      "code_hash": "45857790d1bfee64e87b5af9192d834b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Tuesday had the highest average number of orders at 3.59 per day, followed by Wednesday at 3.58 and Monday at 3.55. Friday had the lowest average at 2.84 orders per day. These averages are based only on days when at least one order was recorded.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "dNNg",
+      "code_hash": "3148948053489f46440466d7300d82de",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"how-i-know-these-numbers-are-right\">How I Know These Numbers Are Right</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "yCnT",
+      "code_hash": "a144d66cf18977acc61a7c64b72685f2",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "wlCL",
+      "code_hash": "99ddc5df237d8b2c69467fa3c4d2fdf4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">I checked Question 9 by calculating total revenue in two different ways. First, I added revenue from counter and app orders. Then I calculated revenue directly from the order lines and their add-ons. Both methods gave $24,775.09, with a difference of $0.00, which confirms that the revenue totals match.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "kqZH",
+      "code_hash": "3a75e1d752d30e98be03f30f57416ee2",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "wAgl",
+      "code_hash": "fc36fc8e57a3d480160dc389f6ee150c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">I also checked the payment mismatches from Question 4 using a separate calculation of each order's purchase total and payments. The query identified exactly two mismatches, Orders 1 and 2, which matches the errors I intentionally created in <code>make_data.py</code>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "rEll",
+      "code_hash": "e97bfe838b73e969266a7000c61b2548",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"working-with-the-agent\">Working With the Agent</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "dGlV",
+      "code_hash": "f2f66ba4b6890540606b1639a6d270f8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Initially, the agent generated order times randomly between 7 AM and 6 PM, which meant orders were almost evenly distributed throughout the day.</span>\n<span class=\"paragraph\">When I plotted the orders by hour, I noticed that the pattern didn't seem realistic for a campus caf\u00e9. I would expect more customers in the morning and around lunchtime.</span>\n<span class=\"paragraph\">I changed the code in make_data.py from random.randint() to random.choices() and assigned higher weights to the morning and lunch hours. I then regenerated the data and checked the chart again.</span>\n<span class=\"paragraph\">The updated chart showed a clear morning peak around 9 AM and another busy period around 12 PM to 1 PM, which made more sense for the caf\u00e9.</span>\n<span class=\"paragraph\">This change is visible in the ORDERS section of make_data.py, where the order hours are generated</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SdmI",
+      "code_hash": "de0053513bee4b44b0c1d2db66213e50",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"reading-it-back\">Reading It Back</h2>\n<span class=\"paragraph\">Prediction: Question 2</span>\n<span class=\"paragraph\">This three-table join also helped me understand why calculating product revenue directly after joining LINE_OPTIONS could lead to double-counting. Therefore, in Question 2, I calculated product revenue and option revenue separately before combining them by category.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lgWD",
+      "code_hash": "8f141a08f3e22a4d3dbd4454121d0d60",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "yOPj",
+      "code_hash": "9b2ef79ec6b4b6edcb87c3c44321cab0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">I originally predicted approximately 3,500 joined rows. After running the query against the final database, the actual number was [insert result].</span>\n<span class=\"paragraph\">The join creates more rows than the ORDER_LINES table contains because order lines with multiple add-ons appear once for each add-on. Lines without add-ons are still included because of the LEFT JOIN.</span>\n<span class=\"paragraph\">The final result for Question 2 has one row per menu category, showing its revenue, cost and margin.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "fwwy",
       "code_hash": null,
       "outputs": [],
       "console": []
     },
     {
-      "id": "aLJB",
+      "id": "LJZf",
+      "code_hash": "6968396dd190f15eb8707144fbcb59cc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"going-further\">Going Further</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "urSm",
+      "code_hash": "34dd46af166e57c9fd06e91f703c3aad",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">I wanted to see how loyalty point usage changed over time, so I created a chart showing the percentage of orders paid at least partly with points each month.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "jxvo",
+      "code_hash": "8f13619904667533ebaf93050d051b39",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "mWxS",
+      "code_hash": "01759c3753e2cf8c0ed92a480e5c7bb1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">I created a chart to see how often customers used loyalty points throughout the year. The percentage varied across the months, showing that customers did not use their points at the same rate every month. This chart makes it easier to compare loyalty point usage over time.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "CcZR",
       "code_hash": "1eb1d63fef601159438a5186cd227687",
       "outputs": [
         {
@@ -401,9 +551,16 @@
       "console": []
     },
     {
-      "id": "nHfw",
-      "code_hash": null,
-      "outputs": [],
+      "id": "YWSi",
+      "code_hash": "4198ecb778f1dbe9d4529f82b7501856",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">14 hours</span></span>"
+          }
+        }
+      ],
       "console": []
     }
   ]

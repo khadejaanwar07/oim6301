@@ -80,4 +80,4 @@ erDiagram
 
 - The database cannot use a simple CHECK constraint to ensure that an order's payments equal the total cost of its products and add-ons. I will use a SQL query to calculate both totals for each order, compare them, and identify any differences.
 
-- I checked the relationship between ORDERS and PAYMENTS to make sure it matched the scenario. Each order must have at least one payment, but it can have multiple payments if a customer splits the bill between methods such as card and points. The ERD represents this as a one-to-many relationship.
+- I reviewed the relationship between ORDERS and PAYMENTS to make sure it matched how customers pay at the café. Each order needs at least one payment, but customers can split payments between methods such as card and loyalty points. I checked that the ERD showed a one-to-many relationship and that the PAYMENTS table had an order_id foreign key linking each payment to an order. I also checked that the data generation code created at least one payment for every order.

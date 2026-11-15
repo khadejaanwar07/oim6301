@@ -172,8 +172,7 @@ def _(mo):
                 ON p.product_id = ol.product_id
             GROUP BY p.product_id, p.name
         """)
-     
-
+ 
     return database, duckdb
 
 
@@ -200,7 +199,6 @@ def _(ask):
         UNION ALL
         SELECT 'payments', COUNT(*) FROM payments
     """)
-
     return
 
 
@@ -237,11 +235,13 @@ def _(mo):
     mo.md(r"""
     The data was generated using `make_data.py` and saved as seven CSV files in the `data` folder.
 
-    I generated 50 loyalty members, 25 products, 10 options, 1,200 orders, 2,377 order lines, 2,064 line options and 1,515 payments.
+    I generated 50 loyalty members, 25 products, 10 options, 1,200 orders, 2,387 order lines, 2,243 line options and 1,513 payments.
 
     The data covers the 12-month period ending November 1, 2026. I used a fixed random seed of 6301 so the same data is generated each time.
 
     I intentionally made the payment totals for Orders 1 and 2 incorrect by adding $1.00 to each. I will check for these differences using SQL in Part B.
+
+    I also excluded Bottled Water and Orange Juice from the generated orders so I could identify products with no sales in Question 7.
     """)
     return
 
@@ -437,7 +437,7 @@ def _(ask):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    I created a view called product_sales to track how many units of each product were sold and the revenue generated, excluding add-ons. Espresso had the highest product revenue at $1,268.76, followed by Brownie at $1,242.15. The café can use this view regularly to see which products are generating the most sales without rewriting the SQL query.
+    I created a view called `product_sales` to see how many units of each product were sold and how much revenue they generated, excluding add-ons. Brownie generated the highest revenue at $1,503.32, followed by Espresso at $1,262.94 and Iced Tea at $1,154.30. The café can use this view to track its best-selling products without writing the full SQL query again.
     """)
     return
 
