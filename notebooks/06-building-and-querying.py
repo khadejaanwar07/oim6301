@@ -492,6 +492,58 @@ def _(mo):
     return
 
 
+@app.cell
+def _(ask):
+    ask("""
+        SELECT towns.county, count(*) AS counted_towns, counties.towns AS counties_towns
+        FROM towns
+        JOIN counties ON towns.county = counties.name
+        GROUP BY towns.county, counties.towns
+        ORDER BY counted_towns DESC
+    """)
+    return
+
+
+@app.cell
+def _(ask):
+    ask("""
+        SELECT sum(town_count) AS total_towns
+        FROM (
+            SELECT county, count(*) AS town_count
+            FROM towns
+            GROUP BY county
+        )
+    """)
+    return
+
+
+@app.cell
+def _(mo):
+    mo.md(r"""
+    The sum has to equal the number of rows in `towns` because `GROUP BY county` splits the table into groups with no overlap and no gaps: every row belongs to exactly one county's group, since `county` always holds a value and never two at once. Adding up each group's count is just counting every row once, in a different order, so the total matches `351` exactly.
+    """)
+    return
+
+
+@app.cell
+def _(ask):
+    ask("""
+        SELECT
+            county,
+            sum(population) AS total_pop,
+            sum(CASE WHEN average_single_family_bill_dollars > 10000 THEN population ELSE 0 END) AS high_bill_pop,
+            round(
+                sum(CASE WHEN average_single_family_bill_dollars > 10000 THEN population ELSE 0 END) * 100.0
+                / sum(population),
+                1
+            ) AS high_bill_share_pct
+        FROM towns
+        GROUP BY county
+        ORDER BY total_pop DESC
+    """)
+    return
+
+
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
