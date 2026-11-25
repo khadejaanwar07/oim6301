@@ -253,33 +253,46 @@
       "console": []
     },
     {
-      "id": "zszz",
-      "code_hash": "88cf011fb989c2ef1f05aaee6fca8428",
-      "outputs": [
-        {
-          "type": "error",
-          "ename": "sql-error",
-          "evalue": "Catalog Error: Table with name towns does not exist!\nDid you mean \"pg_constraint\"?",
-          "traceback": []
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "rwUo",
-      "code_hash": "d85c92d4635f59a87741243644e9b08e",
-      "outputs": [
-        {
-          "type": "error",
-          "ename": "sql-error",
-          "evalue": "Catalog Error: Table with name towns does not exist!\nDid you mean \"pg_constraint\"?",
-          "traceback": []
-        }
-      ],
-      "console": []
-    },
-    {
       "id": "Vxnm",
+      "code_hash": "c172975a8bf00ecb2af5f41c469b260f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='Vxnm-0' random-id='ec3deeed-9f1b-a4a3-e5fe-5da9fdb9d194'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;count_star()&#92;&quot;:351}]&quot;' data-total-rows='1' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;count_star()&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "DnEU",
+      "code_hash": "b63220e21e9fbbbe181d81b128c28e34",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='DnEU-0' random-id='d55f8aa7-285d-b5da-a11b-82bd16a17dd4'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;town&#92;&quot;:&#92;&quot;Nantucket&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Nantucket&#92;&quot;,&#92;&quot;town_population&#92;&quot;:14670,&#92;&quot;county_population&#92;&quot;:14670,&#92;&quot;population_share&#92;&quot;:100.0},{&#92;&quot;town&#92;&quot;:&#92;&quot;Boston&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Suffolk&#92;&quot;,&#92;&quot;town_population&#92;&quot;:673458,&#92;&quot;county_population&#92;&quot;:793144,&#92;&quot;population_share&#92;&quot;:84.9},{&#92;&quot;town&#92;&quot;:&#92;&quot;Pittsfield&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Berkshire&#92;&quot;,&#92;&quot;town_population&#92;&quot;:43121,&#92;&quot;county_population&#92;&quot;:128726,&#92;&quot;population_share&#92;&quot;:33.5},{&#92;&quot;town&#92;&quot;:&#92;&quot;Springfield&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Hampden&#92;&quot;,&#92;&quot;town_population&#92;&quot;:154888,&#92;&quot;county_population&#92;&quot;:464151,&#92;&quot;population_share&#92;&quot;:33.4},{&#92;&quot;town&#92;&quot;:&#92;&quot;Oak Bluffs&#92;&quot;,&#92;&quot;county&#92;&quot;:&#92;&quot;Dukes&#92;&quot;,&#92;&quot;town_population&#92;&quot;:5407,&#92;&quot;county_population&#92;&quot;:21061,&#92;&quot;population_share&#92;&quot;:25.7}]&quot;' data-total-rows='5' data-total-columns='5' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;town&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;county&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;town_population&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;county_population&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;population_share&quot;,[&quot;number&quot;,&quot;f64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Rbig",
+      "code_hash": "50ec56851b5c8147084ad92348fda7f0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">The JOIN returns 351 rows, which is the same as the number of rows in the towns table. This is because every town belongs to exactly one county and has a matching record in the counties table. Therefore, no rows are lost or duplicated during the JOIN.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ulZA",
       "code_hash": "07abec9c33d499fe7c91699eb76dac8b",
       "outputs": [
         {
@@ -292,7 +305,7 @@
       "console": []
     },
     {
-      "id": "DnEU",
+      "id": "ecfG",
       "code_hash": "6e80cea9781686ce25645a6a7217dde3",
       "outputs": [
         {
@@ -305,7 +318,7 @@
       "console": []
     },
     {
-      "id": "ulZA",
+      "id": "Pvdt",
       "code_hash": "0d51f159eb971c7fdbab2bcab4ff9898",
       "outputs": [
         {
@@ -318,7 +331,7 @@
       "console": []
     },
     {
-      "id": "ecfG",
+      "id": "ZBYS",
       "code_hash": "7c2b5b41c2eb6f8785fafb3f21f0415f",
       "outputs": [
         {
@@ -331,7 +344,7 @@
       "console": []
     },
     {
-      "id": "PRTD",
+      "id": "aLJB",
       "code_hash": "a51f36aefe4285fa89ee5216dd9994f4",
       "outputs": [
         {
@@ -344,7 +357,7 @@
       "console": []
     },
     {
-      "id": "Pvdt",
+      "id": "nHfw",
       "code_hash": "744035161ab741a2ef96168e8f0fca03",
       "outputs": [
         {
@@ -357,7 +370,7 @@
       "console": []
     },
     {
-      "id": "ZBYS",
+      "id": "xXTn",
       "code_hash": "570b103d8da3bb03be752425184e980a",
       "outputs": [
         {
@@ -370,7 +383,7 @@
       "console": []
     },
     {
-      "id": "aLJB",
+      "id": "AjVT",
       "code_hash": "ead45d452c6069c897ff784b1f0d6d45",
       "outputs": [
         {
@@ -383,7 +396,7 @@
       "console": []
     },
     {
-      "id": "nHfw",
+      "id": "pHFh",
       "code_hash": "83332e51d03f3013eaeada3e352812c5",
       "outputs": [
         {
@@ -396,7 +409,7 @@
       "console": []
     },
     {
-      "id": "xXTn",
+      "id": "NCOB",
       "code_hash": "c19dba22bdff8bdbf7280671bcca841b",
       "outputs": [
         {
@@ -409,7 +422,7 @@
       "console": []
     },
     {
-      "id": "AjVT",
+      "id": "aqbW",
       "code_hash": "05695bf41302f98169654167922058c7",
       "outputs": [
         {
@@ -422,7 +435,7 @@
       "console": []
     },
     {
-      "id": "pHFh",
+      "id": "TRpd",
       "code_hash": "a804cab6238aec3a3c4e08a1ce929af2",
       "outputs": [
         {
@@ -435,7 +448,7 @@
       "console": []
     },
     {
-      "id": "NCOB",
+      "id": "TXez",
       "code_hash": "510f41844e882130c6a9373eab823d17",
       "outputs": [
         {
@@ -448,7 +461,7 @@
       "console": []
     },
     {
-      "id": "aqbW",
+      "id": "dNNg",
       "code_hash": "9f810ab059d1ab2b075e8fa20f49edae",
       "outputs": [
         {
@@ -461,7 +474,7 @@
       "console": []
     },
     {
-      "id": "TRpd",
+      "id": "yCnT",
       "code_hash": "7756ca68cc25a6add10171e461e89953",
       "outputs": [
         {
@@ -474,7 +487,7 @@
       "console": []
     },
     {
-      "id": "ouaZ",
+      "id": "wlCL",
       "code_hash": "7d7731ccbc515c0bb59b07df87d2d48b",
       "outputs": [
         {
@@ -487,7 +500,7 @@
       "console": []
     },
     {
-      "id": "TXez",
+      "id": "kqZH",
       "code_hash": "32b9f5190b70d897e6bb17678fd2f289",
       "outputs": [
         {
@@ -500,7 +513,7 @@
       "console": []
     },
     {
-      "id": "zKyr",
+      "id": "wAgl",
       "code_hash": "d24e4e3ba42a505aa2a6560272fdca73",
       "outputs": [
         {
@@ -513,7 +526,7 @@
       "console": []
     },
     {
-      "id": "SsUF",
+      "id": "rEll",
       "code_hash": "1d2319ee89c09c833d914b023c17739e",
       "outputs": [
         {
@@ -526,7 +539,7 @@
       "console": []
     },
     {
-      "id": "dNNg",
+      "id": "dGlV",
       "code_hash": "0690e5ec28d42ebd5d1d766cbe0cd056",
       "outputs": [
         {
@@ -539,7 +552,7 @@
       "console": []
     },
     {
-      "id": "yCnT",
+      "id": "SdmI",
       "code_hash": "4e6d102a38fc7a76a8ed9f28e17d79a9",
       "outputs": [
         {
@@ -552,7 +565,7 @@
       "console": []
     },
     {
-      "id": "wlCL",
+      "id": "lgWD",
       "code_hash": "1d9ee8fa29085c2175feb3e8ffb11f24",
       "outputs": [
         {
@@ -565,20 +578,20 @@
       "console": []
     },
     {
-      "id": "kqZH",
+      "id": "yOPj",
       "code_hash": "5eca7e34c31653e170bf0f33223b3f1b",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<pre class='text-xs'>&#x27;Copy the four lines from the Canvas page into .env first, as step 3 describes.&#x27;</pre>"
+            "text/html": "<marimo-ui-element object-id='yOPj-0' random-id='95420993-8420-1f9a-84bb-54c3918d90d1'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;SalesOrderID&#92;&quot;:43659,&#92;&quot;OrderDate&#92;&quot;:&#92;&quot;2011-05-31 00:00:00&#92;&quot;,&#92;&quot;Freight&#92;&quot;:&#92;&quot;616.0984&#92;&quot;},{&#92;&quot;SalesOrderID&#92;&quot;:43660,&#92;&quot;OrderDate&#92;&quot;:&#92;&quot;2011-05-31 00:00:00&#92;&quot;,&#92;&quot;Freight&#92;&quot;:&#92;&quot;38.8276&#92;&quot;},{&#92;&quot;SalesOrderID&#92;&quot;:43661,&#92;&quot;OrderDate&#92;&quot;:&#92;&quot;2011-05-31 00:00:00&#92;&quot;,&#92;&quot;Freight&#92;&quot;:&#92;&quot;985.5530&#92;&quot;},{&#92;&quot;SalesOrderID&#92;&quot;:43662,&#92;&quot;OrderDate&#92;&quot;:&#92;&quot;2011-05-31 00:00:00&#92;&quot;,&#92;&quot;Freight&#92;&quot;:&#92;&quot;867.2389&#92;&quot;},{&#92;&quot;SalesOrderID&#92;&quot;:43663,&#92;&quot;OrderDate&#92;&quot;:&#92;&quot;2011-05-31 00:00:00&#92;&quot;,&#92;&quot;Freight&#92;&quot;:&#92;&quot;12.5838&#92;&quot;}]&quot;' data-total-rows='5' data-total-columns='3' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;SalesOrderID&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;OrderDate&quot;,[&quot;datetime&quot;,&quot;datetime[\u03bcs]&quot;]],[&quot;Freight&quot;,[&quot;number&quot;,&quot;decimal[38,4]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "wAgl",
+      "id": "fwwy",
       "code_hash": "81c40dfeb6cdcfe03c502ab0937d1c4d",
       "outputs": [
         {
@@ -591,7 +604,7 @@
       "console": []
     },
     {
-      "id": "rEll",
+      "id": "LJZf",
       "code_hash": "68b329da9893e34099c7d8ad5cb9c940",
       "outputs": [
         {
@@ -604,7 +617,7 @@
       "console": []
     },
     {
-      "id": "dGlV",
+      "id": "urSm",
       "code_hash": "a7a02dc7c870020e368d094d624321a8",
       "outputs": [
         {
@@ -617,7 +630,7 @@
       "console": []
     },
     {
-      "id": "gjSw",
+      "id": "jxvo",
       "code_hash": "597b6e19a9d6d7b00c0a60718cc89877",
       "outputs": [
         {
@@ -630,7 +643,7 @@
       "console": []
     },
     {
-      "id": "ddIX",
+      "id": "mWxS",
       "code_hash": "add502d842b320c223490cf3c6cfd0b1",
       "outputs": [
         {
@@ -643,7 +656,7 @@
       "console": []
     },
     {
-      "id": "fatv",
+      "id": "CcZR",
       "code_hash": "20e5185fbdf99516c2c3366ff472caec",
       "outputs": [
         {
@@ -656,7 +669,7 @@
       "console": []
     },
     {
-      "id": "SdmI",
+      "id": "YWSi",
       "code_hash": "37c256d82abb9831e444cb2a6ddfc4df",
       "outputs": [
         {
@@ -669,7 +682,7 @@
       "console": []
     },
     {
-      "id": "Qqmd",
+      "id": "zlud",
       "code_hash": "9b0abe34a4840076d08a3cebbb8721d7",
       "outputs": [
         {
@@ -682,7 +695,7 @@
       "console": []
     },
     {
-      "id": "lgWD",
+      "id": "tZnO",
       "code_hash": "659feca7944df5f189e8157e1f026fd9",
       "outputs": [
         {
@@ -695,7 +708,7 @@
       "console": []
     },
     {
-      "id": "cTVh",
+      "id": "xvXZ",
       "code_hash": "510b49b2fbbdb6776002459296ac3471",
       "outputs": [
         {
@@ -708,7 +721,7 @@
       "console": []
     },
     {
-      "id": "yOPj",
+      "id": "CLip",
       "code_hash": "a7592057143b06d5b1eda78114fb31c7",
       "outputs": [
         {
@@ -721,7 +734,7 @@
       "console": []
     },
     {
-      "id": "gurq",
+      "id": "YECM",
       "code_hash": "f8e9b67ae8b3b25c0dcbd449ae064466",
       "outputs": [
         {
@@ -734,7 +747,7 @@
       "console": []
     },
     {
-      "id": "fwwy",
+      "id": "cEAS",
       "code_hash": "124e2db21b2f5a6a5b8a9bdd22984cf1",
       "outputs": [
         {
@@ -747,7 +760,7 @@
       "console": []
     },
     {
-      "id": "hdXp",
+      "id": "iXej",
       "code_hash": "b1ad4955f053b78fdc176ed1d9698af4",
       "outputs": [
         {
@@ -760,7 +773,7 @@
       "console": []
     },
     {
-      "id": "LJZf",
+      "id": "EJmg",
       "code_hash": "6cf7d570866bfc75125e1cd1441339d1",
       "outputs": [
         {
@@ -773,7 +786,7 @@
       "console": []
     },
     {
-      "id": "Utzb",
+      "id": "UmEG",
       "code_hash": "41785de7ce2bd59d1da0aba0c681b84d",
       "outputs": [
         {
@@ -786,7 +799,7 @@
       "console": []
     },
     {
-      "id": "Eqdu",
+      "id": "vEBW",
       "code_hash": "89fa048064eeb2f3ec80c9ebfccb7561",
       "outputs": [
         {
@@ -799,7 +812,7 @@
       "console": []
     },
     {
-      "id": "urSm",
+      "id": "kLmu",
       "code_hash": "6f3f8d8745eeab01a685d489ebd5426e",
       "outputs": [
         {
@@ -812,7 +825,7 @@
       "console": []
     },
     {
-      "id": "jxvo",
+      "id": "IpqN",
       "code_hash": "25e2994058a7fdc8f44ca3c28303937b",
       "outputs": [
         {
@@ -825,7 +838,7 @@
       "console": []
     },
     {
-      "id": "tamh",
+      "id": "dxZZ",
       "code_hash": "daa4b569d174eb652a6d1cf0bc232dcd",
       "outputs": [
         {

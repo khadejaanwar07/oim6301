@@ -217,28 +217,36 @@ def _(mo):
 
 
 @app.cell
-def _(mo, towns):
-    mo.sql("""
-    SELECT COUNT(*)
-    FROM towns
+def _(ask, towns_database):
+    ask(towns_database, """
+        SELECT COUNT(*)
+        FROM towns AS t
+        JOIN counties AS c ON t.county = c.name
     """)
     return
 
 
 @app.cell
-def _(counties, mo, towns):
-    mo.sql("""
-    SELECT
-        t.name AS town,
-        c.name AS county,
-        t.population AS town_population,
-        c.population AS county_population,
-        ROUND(100.0 * t.population / c.population, 1) AS population_share
-    FROM towns AS t
-    JOIN counties AS c
-        ON t.county_id = c.county_id
-    ORDER BY population_share DESC
-    LIMIT 5
+def _(ask, towns_database):
+    ask(towns_database, """
+        SELECT
+            t.name AS town,
+            t.county,
+            t.population AS town_population,
+            c.population AS county_population,
+            ROUND(100.0 * t.population / c.population, 1) AS population_share
+        FROM towns AS t
+        JOIN counties AS c ON t.county = c.name
+        ORDER BY population_share DESC
+        LIMIT 5
+    """)
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    The JOIN returns 351 rows, which is the same as the number of rows in the towns table. This is because every town belongs to exactly one county and has a matching record in the counties table. Therefore, no rows are lost or duplicated during the JOIN.
     """)
     return
 
